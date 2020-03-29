@@ -34,7 +34,7 @@ namespace flight1
             label31.Text = Global.p1email;
             label35.Text = Global.phone.ToString();
             label57.Text = Global.cardname;
-            label56.Text = "**** "+Global.card4.ToString();
+            
             
             label58.Text = Global.p2name;
             label59.Text = Global.p3name;
@@ -83,6 +83,14 @@ namespace flight1
                 panel12.Visible = true;
 
             }
+
+            label51.Text = (Global.outticket + Global.returnticket).ToString ("C1");
+            label52.Text = Global.servicefee.ToString("C1");
+            label53.Text = Global.airportfee.ToString("C1");
+            label54.Text = Global.tax.ToString("C1");
+            label55.Text = Global.totaltick.ToString("C1");
+            label30.Text = Global.guest.ToString();
+            label40.Text = Global.finaltick.ToString("C1");
 
         }
 

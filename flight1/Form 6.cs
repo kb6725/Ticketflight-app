@@ -217,8 +217,8 @@ namespace flight1
             f7.label49.Text = label49.Text;
             f7.label10.Text = label10.Text;
             f7.label9.Text = label9.Text;
-           
-            
+
+            f7.label56.Text = "**** " + textBox16.Text;
 
             try
             {
