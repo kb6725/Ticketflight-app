@@ -1,1 +1,0 @@
-This is our MIS 310 C# Project.

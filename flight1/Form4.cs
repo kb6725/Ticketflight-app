@@ -28,8 +28,8 @@ namespace flight1
 
         private void Form4_Load(object sender, EventArgs e)
         {
+
             
-           
 
 
         }
@@ -41,8 +41,8 @@ namespace flight1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(90, Color.White);
-            panel8.BackColor = Color.FromArgb(90, Color.White);
+            panel1.BackColor = Color.FromArgb(180, Color.White);
+            panel8.BackColor = Color.FromArgb(120, Color.White);
             panel3.BackColor = Color.FromArgb(240, Color.White);
             panel4.BackColor = Color.FromArgb(240, Color.White);
             panel5.BackColor = Color.FromArgb(240, Color.White);
@@ -71,133 +71,38 @@ namespace flight1
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
+            Global.returnticket = 0;
+            Global.airportfee = 0;
+            Global.tax = 0;
 
+            if (Global.cabin == "Economy")
+            { Global.returnticket = Global.e1; }
+            if (Global.cabin == "Business")
+            { Global.returnticket = Global.b1; }
+            if (Global.cabin == "First Class")
+            { Global.returnticket = Global.f1; }
+
+
+            Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
+            Global.tax= (Global.outticket + Global.returnticket) * 10 / 100;
+            Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
+
+            f5.label62.Text = (Global.outticket+Global.returnticket).ToString("c1");
+            f5.label53.Text = Global.airportfee.ToString("c1");
+            f5.label54.Text = Global.tax.ToString("c1");
             
-            decimal price2 = 0, outboundprice = 0, returnprice = 0;
-
-            outboundprice = decimal.Parse(label56.Text.Substring(1));
-            returnprice = decimal.Parse(label57.Text);
-            price2 = returnprice + outboundprice;
-
-            f5.label51.Text = price2.ToString("c1");
-            f5.label53.Text = ((decimal)price2 * 5 / 100).ToString("c1");
-            f5.label54.Text = ((decimal)price2 * 10 / 100).ToString("c1");
-            f5.label55.Text = (price2 + ((decimal)price2 * 15 / 100)).ToString("c1");
-
-
+            f5.label55.Text = (Global.totaltick.ToString("c1"));
 
             f5.Show();
-            f5.label10.Text = label10.Text;
-            f5.comboBox1.SelectedItem = label10.Text;
-            if (f5.label10.Text == "First Class")
-            {
-                f5.comboBox2.Items.Clear();
-                f5.comboBox2.Items.AddRange(new object[]
-                {
-                 "A6",
-                "A7",
-                "A8",
-                "B6",
-                "B7",
-                "B8",
-                "C6",
-                "C7",
-                "C8",
-                "D6",
-                "D7",
-                "D8",
-                });
-
-            }
-
-
-
-
-            if (f5.label10.Text == "Business")
-            {
-                f5.comboBox2.Items.Clear();
-                f5.comboBox2.Items.AddRange(new object[]
-                {
-                "A9",
-                "A10",
-                "A11",
-                "A12",
-                "A13",
-                "B9",
-               "B10",
-                "B11",
-                "B12",
-                "B13",
-                "C9",
-                "C10",
-                "C11",
-                "C12",
-                "C13",
-                "D9",
-                "D10",
-                "D11",
-                "D12",
-                "D13",
-            });
-
-
-            }
-
-
-
-            if (f5.label10.Text == "Economy")
-            {
-               f5.comboBox2.Items.Clear();
-                f5.comboBox2.Items.AddRange(new object[]
- {
-
-                "A14",
-                "A15",
-                "A16",
-                "A17",
-                "A18",
-                "A19",
-                "A20",
-                "A21",
-                "B14",
-                "B15",
-                "B16",
-                "B17",
-                "B18",
-                "B19",
-                "B20",
-                "B21",
-                "C14",
-                "C15",
-                "C16",
-                "C17",
-                "C18",
-                "C19",
-                "C20",
-                "C21",
-                "D14",
-                "D15",
-                "D16",
-                "D17",
-                "D18",
-                "D19",
-                "D20",
-                "D21",
-                 });
-
-            }
-
-            f5.labelsum.Text = labelsum.Text;
-            f5.label49.Text = label49.Text;
-            f5.label6.Text = label6.Text;
-            f5.label10.Text= label10.Text;
-            f5.label9.Text = label9.Text;
-            f5.label4.Text = label4.Text;
-
+            f5.label10.Text = Global.cabin;
+            f5.comboBox1.SelectedItem = Global.cabin;
            
-
-
-            
+            f5.labelsum.Text = labelsum.Text;
+            f5.label49.Text = Global.duration.ToString();
+            f5.label6.Text = label6.Text;
+            f5.label10.Text= Global.cabin;
+            f5.label9.Text = Global.guest.ToString() ;
+            f5.label4.Text = label4.Text;
 
         }
 
@@ -205,57 +110,115 @@ namespace flight1
         {
 
             button1.PerformClick();
-            ;
-            decimal price2 = 0, outboundprice = 0, returnprice = 0;
-            outboundprice = decimal.Parse(label56.Text.Substring(1));
-            returnprice = decimal.Parse(label52.Text);
-            price2 = returnprice + outboundprice;
-            f5.label51.Text = price2.ToString("c1");
-            f5.label53.Text = ((decimal)price2 * 5 / 100).ToString("c1");
-            f5.label54.Text = ((decimal)price2 * 10 / 100).ToString("c1");
-            f5.label55.Text = (price2 + ((decimal)price2 * 15 / 100)).ToString("c1");
+            Global.returnticket = 0;
+            Global.airportfee = 0;
+            Global.tax = 0;
+            Global.totaltick = 0;
+
+            if (Global.cabin == "Economy")
+            { Global.returnticket = Global.e2; }
+            if (Global.cabin == "Business")
+            { Global.returnticket = Global.b2; }
+            if (Global.cabin == "First Class")
+            { Global.returnticket = Global.f2; }
+
+
+            Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
+            Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
+            Global.totaltick = Global.tax + Global.outticket + Global.returnticket +  Global.airportfee;
+
+            f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
+            f5.label53.Text = Global.airportfee.ToString("c1");
+            f5.label54.Text = Global.tax.ToString("c1");
+
+            f5.label55.Text = (Global.totaltick.ToString("c1"));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             button1.PerformClick();
 
-            decimal price2 = 0, outboundprice = 0, returnprice = 0;
-            outboundprice = decimal.Parse(label56.Text.Substring(1));
-            returnprice = decimal.Parse(label53.Text);
-            price2 = returnprice + outboundprice;
-            f5.label51.Text = price2.ToString("c1");
-            f5.label53.Text = ((decimal)price2 * 5 / 100).ToString("c1");
-            f5.label54.Text = ((decimal)price2 * 10 / 100).ToString("c1");
-            f5.label55.Text = (price2 + ((decimal)price2 * 15 / 100)).ToString("c1");
-        }
+            Global.returnticket = 0;
+            Global.airportfee = 0;
+            Global.tax = 0;
+            Global.totaltick = 0;
 
-        private void button4_Click(object sender, EventArgs e)
+            if (Global.cabin == "Economy")
+            { Global.returnticket = Global.e3; }
+            if (Global.cabin == "Business")
+            { Global.returnticket = Global.b3; }
+            if (Global.cabin == "First Class")
+            { Global.returnticket = Global.f3; }
+            Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
+            Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
+            Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
+
+            f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
+            f5.label53.Text = Global.airportfee.ToString("c1");
+            f5.label54.Text = Global.tax.ToString("c1");
+
+            f5.label55.Text = (Global.totaltick.ToString("c1"));
+        }
+            private void button4_Click(object sender, EventArgs e)
         {
             button1.PerformClick();
 
-            decimal price2 = 0, outboundprice = 0, returnprice = 0;
-            outboundprice = decimal.Parse(label54.Text.Substring(1));
-            returnprice = decimal.Parse(label54.Text);
-            price2 = returnprice + outboundprice;
-            f5.label51.Text = price2.ToString("c1");
-            f5.label53.Text = ((decimal)price2 * 5 / 100).ToString("c1");
-            f5.label54.Text = ((decimal)price2 * 10 / 100).ToString("c1");
-            f5.label55.Text = (price2 + ((decimal)price2 * 15 / 100)).ToString("c1");
-        }
+                Global.returnticket = 0;
+                Global.airportfee = 0;
+                Global.tax = 0;
+                Global.totaltick = 0;
+
+            if (Global.cabin == "Economy")
+            { Global.returnticket = Global.e4; }
+            if (Global.cabin == "Business")
+            { Global.returnticket = Global.b4; }
+            if (Global.cabin == "First Class")
+            { Global.returnticket = Global.f4; }
+            Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
+                Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
+                Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
+
+                f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
+                f5.label53.Text = Global.airportfee.ToString("c1");
+                f5.label54.Text = Global.tax.ToString("c1");
+
+                f5.label55.Text = (Global.totaltick.ToString("c1"));
+            }
 
         private void button5_Click(object sender, EventArgs e)
         {
             button1.PerformClick();
 
-            decimal price2 = 0, outboundprice = 0, returnprice = 0;
-            outboundprice = decimal.Parse(label56.Text.Substring(1));
-            returnprice = decimal.Parse(label55.Text);
-            price2 = returnprice + outboundprice;
-            f5.label51.Text = price2.ToString("c1");
-            f5.label53.Text = ((decimal)price2 * 5 / 100).ToString("c1");
-            f5.label54.Text = ((decimal)price2 * 10 / 100).ToString("c1");
-            f5.label55.Text = (price2 + ((decimal)price2 * 15 / 100)).ToString("c1");
+                Global.returnticket = 0;
+                Global.airportfee = 0;
+                Global.tax = 0;
+                Global.totaltick = 0;
+
+            if (Global.cabin == "Economy")
+            { Global.returnticket = Global.e5; }
+            if (Global.cabin == "Business")
+            { Global.returnticket = Global.b5; }
+            if (Global.cabin == "First Class")
+            { Global.returnticket = Global.f5; }
+            Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
+                Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
+                Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
+
+                f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
+                f5.label53.Text = Global.airportfee.ToString("c1");
+                f5.label54.Text = Global.tax.ToString("c1");
+
+                f5.label55.Text = (Global.totaltick.ToString("c1"));
+            }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

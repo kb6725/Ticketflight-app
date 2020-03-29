@@ -11,3 +11,5 @@ C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\D
 C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\Debug\flight1.Form2.resources
 C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\Debug\flight1.Form4.resources
 C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\Debug\flight1.Form5.resources
+C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\Debug\flight1.Form6.resources
+C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\Debug\flight1.Form7.resources
