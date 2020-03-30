@@ -50,8 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            //this.placesTableAdapter = new flight1.flightDataSetTableAdapters.PlacesTableAdapter();
-            //this.placesTableAdapter1 = new flight1.flightDataSet1TableAdapters.PlacesTableAdapter();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimereturn = new System.Windows.Forms.DateTimePicker();
             this.dateTimeout = new System.Windows.Forms.DateTimePicker();
@@ -74,6 +72,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource)).BeginInit();
@@ -333,14 +332,6 @@
             this.groupBox1.Text = "Select ticket type";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // placesTableAdapter
-            // 
-            //this.placesTableAdapter.ClearBeforeFill = true;
-            // 
-            // placesTableAdapter1
-            // 
-            //this.placesTableAdapter1.ClearBeforeFill = true;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dateTimereturn);
@@ -538,6 +529,7 @@
             this.panel6.Controls.Add(this.button5);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(15, 367);
             this.panel6.Name = "panel6";
@@ -549,7 +541,7 @@
             // 
             this.button6.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(86, 282);
+            this.button6.Location = new System.Drawing.Point(86, 299);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 70);
             this.button6.TabIndex = 1;
@@ -559,17 +551,18 @@
             // 
             this.button5.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(86, 118);
+            this.button5.Location = new System.Drawing.Point(86, 156);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 70);
             this.button5.TabIndex = 1;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(11, 360);
+            this.label11.Location = new System.Drawing.Point(11, 377);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(218, 28);
             this.label11.TabIndex = 0;
@@ -580,12 +573,13 @@
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 193);
+            this.label10.Location = new System.Drawing.Point(13, 231);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(218, 28);
             this.label10.TabIndex = 0;
             this.label10.Text = "Login";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -597,6 +591,17 @@
             this.label9.Size = new System.Drawing.Size(213, 27);
             this.label9.TabIndex = 0;
             this.label9.Text = "Account Management";
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(237, 77);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Sign up or Log in to retrieve your booking";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
@@ -684,6 +689,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
 

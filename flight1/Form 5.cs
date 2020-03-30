@@ -74,7 +74,9 @@ namespace flight1
         }
 
         private void Form5_Load(object sender, EventArgs e)
-        {   if (Global.returnflight == true)
+        {
+           
+            if (Global.returnflight == true)
 
             { Global.duration = Global.duration * 2; }
             label49.Text = Global.duration.ToString();
@@ -539,10 +541,17 @@ namespace flight1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            
+
             Form6 f6 = new Form6();
 
             if (Global.guest == 5)
             {
+                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1 || comboBox8.SelectedIndex == -1 || comboBox9.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please pick seat selection. Seat allocation should not be unselected", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox2.SelectedIndex != comboBox9.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox9.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex && comboBox7.SelectedIndex != comboBox9.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex && comboBox8.SelectedIndex != comboBox9.SelectedIndex)
                 {
                     this.Hide();
@@ -555,18 +564,22 @@ namespace flight1
                 else
                 {
                     MessageBox.Show("Passengers' seats cannot be duplicated or blank","Invalid Seat Selection",MessageBoxButtons.OK, MessageBoxIcon.Warning );
-                    comboBox2.SelectedIndex = -1;
-                    comboBox6.SelectedIndex = -1;
-                    comboBox7.SelectedIndex = -1;
-                    comboBox8.SelectedIndex = -1;
-                    comboBox9.SelectedIndex = -1;
+                   
 
                     return;
                 }
+
+               
+
             }
 
             if (Global.guest == 4)
             {
+                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1 || comboBox8.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex &&  comboBox7.SelectedIndex != comboBox8.SelectedIndex)
                 {
                     this.Hide();
@@ -578,18 +591,23 @@ namespace flight1
 
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated");
-                    comboBox2.SelectedIndex = -1;
-                    comboBox6.SelectedIndex = -1;
-                    comboBox7.SelectedIndex = -1;
-                    comboBox8.SelectedIndex = -1;
-                    comboBox9.SelectedIndex = -1;
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+                    
 
                     return;
                 }
+             
+
             }
+
             if (Global.guest == 3)
             {
+                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex)
                 {
                     this.Hide();
@@ -601,46 +619,64 @@ namespace flight1
 
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated");
-                    comboBox2.SelectedIndex = -1;
-                    comboBox6.SelectedIndex = -1;
-                    comboBox7.SelectedIndex = -1;
-                    comboBox8.SelectedIndex = -1;
-                    comboBox9.SelectedIndex = -1;
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
+                    
+
+                    return;
+                }
+
+            
+
+            }
+
+            if (Global.guest == 2)
+            {
+
+                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (comboBox2.SelectedIndex != comboBox6.SelectedIndex)
+                {
+                    this.Hide();
+
+                    f6.Show();
+                }
+
+             
+
+                else
+                {
+                    
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
 
                     return;
                 }
             }
-                if (Global.guest == 2)
-                {
-                    if (comboBox2.SelectedIndex != comboBox6.SelectedIndex )
+            
+            if (Global.guest ==1)
+            {
+                    if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
                     {
-                        this.Hide();
-                        
-                        f6.Show();
-
-                    }
-
-
-                    else
-                    {
-                        MessageBox.Show("Passengers' seats cannot be duplicated");
-                        comboBox2.SelectedIndex = -1;
-                        comboBox6.SelectedIndex = -1;
-                        comboBox7.SelectedIndex = -1;
-                        comboBox8.SelectedIndex = -1;
-                        comboBox9.SelectedIndex = -1;
-
+                        MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
+            }
 
-                }
-                if (Global.guest ==1)
+            if (comboBox3.SelectedIndex == -1 || comboBox4.SelectedIndex == -1 || comboBox5.SelectedIndex == -1)
             {
+
+                MessageBox.Show("Please confirm Meal , Insurance and Baggage option", "Invalid Options Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+
+            }
+
                 this.Hide();
                 
                 f6.Show();
-            }
+            
 
                f6.labelsum.Text  = labelsum.Text;
             f6.label49.Text = label49.Text;

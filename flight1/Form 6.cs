@@ -22,6 +22,7 @@ namespace flight1
 
         private void Form6_Load(object sender, EventArgs e)
         {
+            
 
             label30.Text = Global.guest.ToString();
             Global.finaltick = Global.guest * Global.totaltick;
@@ -189,6 +190,59 @@ namespace flight1
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            if (textBox2.TextLength > 1)
+            {if (textBox2.Text.Contains( "@"))
+                {
+
+                }
+                else 
+                {
+                    MessageBox.Show("Please enter valid email address", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return ; 
+                }     
+            }
+
+            if (textBox1.TextLength < 1 || textBox3.TextLength < 1 || textBox2.TextLength < 1 || maskedTextBox1.TextLength < 1 || textBox8.TextLength < 1 || textBox10.TextLength < 1 || textBox13.TextLength < 1 || textBox16.TextLength < 1 || maskedTextBox2.TextLength < 1 || textBox4.TextLength < 1 || comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 )
+            {
+                MessageBox.Show("Please input all Customer Information and Payment to proceed", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (Global.guest ==2)
+            {
+                if (textBox11.Text == "" && textBox15.Text == "")
+                {
+                    MessageBox.Show("Please input Information for Passenger 2", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            if (Global.guest ==3)
+            {
+                if (textBox17.Text == "" && textBox12.Text == "" && textBox11.Text == "" && textBox15.Text == "")
+                {
+                    MessageBox.Show("Please input Information for Passenger 3", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            if (Global.guest ==4)
+            {
+                if (textBox14.Text == "" && textBox15.Text == ""&& textBox17.Text == "" && textBox12.Text == "" && textBox11.Text == "" && textBox15.Text == "")
+                {
+                    MessageBox.Show("Please input Information for Passenger 4", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            if (Global.guest ==5)
+            {
+                if (textBox17.Text == "" && textBox18.Text == ""&& textBox14.Text == "" && textBox15.Text == "" && textBox17.Text == "" && textBox12.Text == "" && textBox11.Text == "" && textBox15.Text == "")
+                {
+                    MessageBox.Show("Please input Information for Passenger 5", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
+
+
             Form7 f7 = new Form7();
             Global.p1name = textBox1.Text;
             Global.p1pp = textBox3.Text;
@@ -210,6 +264,7 @@ namespace flight1
             Global.p3dob = dateTimePicker2.Value;
             Global.p4dob = dateTimePicker3.Value;
             Global.p5dob = dateTimePicker4.Value;
+            Global.phone = maskedTextBox1.Text;
             f7.labelsum.Text = labelsum.Text;
             f7.label49.Text = label49.Text;
             f7.label4.Text = label4.Text;
@@ -227,8 +282,8 @@ namespace flight1
                 Global.card3 = double.Parse(textBox13.Text);
                 Global.card4= double.Parse(textBox16.Text);
 
-                Global.cvv = double.Parse(textBox9.Text);
-                Global.phone = double.Parse(textBox6.Text);
+                Global.cvv = double.Parse(maskedTextBox2.Text);
+                
                 this.Hide();
                 f7.Show();
             }
@@ -237,6 +292,10 @@ namespace flight1
                 MessageBox.Show("Please input 16-digit Card Number, 3-digit CVV number and Phone number", "Invalid Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
             }
+
+
+
+
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -251,6 +310,7 @@ namespace flight1
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -258,11 +318,43 @@ namespace flight1
         {
             if (textBox8.TextLength == 4)
             { textBox10.Focus(); }
+           
+           
+           
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
             if (textBox10.TextLength == 4)
             { textBox13.Focus(); }
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
             if (textBox13.TextLength == 4)
             { textBox16.Focus(); }
-           
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox4.Text = textBox1.Text;
+                textBox4.Enabled = false;
+            }
+
+            else
+            { textBox4.Enabled = true; }
+        }
+
+        private void dateTimepicker_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     } 
     

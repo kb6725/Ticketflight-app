@@ -72,7 +72,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -115,8 +114,6 @@
             this.dateTimepicker = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -126,6 +123,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -482,9 +483,9 @@
             this.label36.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(23, 91);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(143, 23);
+            this.label36.Size = new System.Drawing.Size(152, 23);
             this.label36.TabIndex = 4;
-            this.label36.Text = "Total Ticket Price";
+            this.label36.Text = "Total Ticket Price :";
             // 
             // label29
             // 
@@ -492,9 +493,9 @@
             this.label29.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(22, 52);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(185, 23);
+            this.label29.Size = new System.Drawing.Size(206, 23);
             this.label29.TabIndex = 4;
-            this.label29.Text = "Number of passengers ";
+            this.label29.Text = "Number of passengers  :   ";
             // 
             // label30
             // 
@@ -569,12 +570,13 @@
             // 
             this.panel4.AutoScroll = true;
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.maskedTextBox2);
+            this.panel4.Controls.Add(this.checkBox1);
             this.panel4.Controls.Add(this.comboBox2);
             this.panel4.Controls.Add(this.comboBox1);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.textBox4);
             this.panel4.Controls.Add(this.label20);
-            this.panel4.Controls.Add(this.textBox9);
             this.panel4.Controls.Add(this.textBox16);
             this.panel4.Controls.Add(this.textBox13);
             this.panel4.Controls.Add(this.textBox10);
@@ -657,15 +659,6 @@
             this.label20.TabIndex = 0;
             this.label20.Text = "Year";
             // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(198, 90);
-            this.textBox9.MaxLength = 3;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(86, 31);
-            this.textBox9.TabIndex = 1;
-            // 
             // textBox16
             // 
             this.textBox16.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -674,6 +667,7 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(50, 31);
             this.textBox16.TabIndex = 4;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // textBox13
             // 
@@ -683,6 +677,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(50, 31);
             this.textBox13.TabIndex = 3;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // textBox10
             // 
@@ -692,6 +687,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(50, 31);
             this.textBox10.TabIndex = 2;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // textBox8
             // 
@@ -797,11 +793,11 @@
             this.dateTimePicker4.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker4.Location = new System.Drawing.Point(190, 53);
-            this.dateTimePicker4.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker4.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(177, 31);
             this.dateTimePicker4.TabIndex = 5;
-            this.dateTimePicker4.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker4.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             // 
             // label42
             // 
@@ -868,11 +864,11 @@
             this.dateTimePicker3.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker3.Location = new System.Drawing.Point(190, 53);
-            this.dateTimePicker3.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker3.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(177, 31);
             this.dateTimePicker3.TabIndex = 5;
-            this.dateTimePicker3.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker3.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             // 
             // label38
             // 
@@ -939,11 +935,11 @@
             this.dateTimePicker2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(190, 53);
-            this.dateTimePicker2.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker2.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(177, 31);
             this.dateTimePicker2.TabIndex = 5;
-            this.dateTimePicker2.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker2.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             // 
             // label34
             // 
@@ -1010,11 +1006,11 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(190, 53);
-            this.dateTimePicker1.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(177, 31);
             this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             // 
             // label28
             // 
@@ -1056,11 +1052,11 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.maskedTextBox1);
             this.panel3.Controls.Add(this.dateTimepicker);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox6);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label25);
@@ -1079,11 +1075,12 @@
             this.dateTimepicker.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimepicker.Location = new System.Drawing.Point(198, 90);
-            this.dateTimepicker.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimepicker.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimepicker.Name = "dateTimepicker";
             this.dateTimepicker.Size = new System.Drawing.Size(177, 31);
             this.dateTimepicker.TabIndex = 5;
-            this.dateTimepicker.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimepicker.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimepicker.ValueChanged += new System.EventHandler(this.dateTimepicker_ValueChanged);
             // 
             // label16
             // 
@@ -1102,24 +1099,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(253, 31);
             this.textBox3.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(710, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 31);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(710, 91);
-            this.textBox6.MaxLength = 10;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(253, 31);
-            this.textBox6.TabIndex = 1;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox1
             // 
@@ -1216,6 +1195,47 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(710, 49);
+            this.textBox2.MaxLength = 10;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(253, 31);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(564, 11);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(236, 27);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Same as Primary Customer";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(711, 90);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(253, 31);
+            this.maskedTextBox1.TabIndex = 6;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(198, 86);
+            this.maskedTextBox2.Mask = "000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(100, 31);
+            this.maskedTextBox2.TabIndex = 6;
+            this.maskedTextBox2.ValidatingType = typeof(int);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1302,7 +1322,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label14;
@@ -1312,14 +1331,12 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DateTimePicker dateTimepicker;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
@@ -1359,5 +1376,9 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }

@@ -23,7 +23,7 @@ namespace flight1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+        
         }
 
         private void label1_Click(object sender, EventArgs e)

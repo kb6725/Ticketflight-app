@@ -300,6 +300,7 @@ namespace flight1
 
         private void buttonsearch_Click(object sender, EventArgs e)
         {
+           
             if (comboFrom.Text == comboTo.Text)
             { MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
 
@@ -307,7 +308,7 @@ namespace flight1
             { MessageBox.Show("Please select Destination and Arrival to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
 
 
-            this.Cursor = Cursors.WaitCursor;
+            
             
             Global.flightfrom = comboFrom.Text;
             Global.flightto = comboTo.Text;
@@ -512,6 +513,16 @@ namespace flight1
         private void label14_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
