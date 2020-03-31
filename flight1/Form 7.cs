@@ -29,7 +29,7 @@ namespace flight1
 
 
             label22.Text = Global.p1name;
-            label23.Text = Global.p1dob.ToString();
+            label23.Text = Global.p1dob.ToShortDateString();
             label27.Text = Global.p1pp;
             label31.Text = Global.p1email;
             label35.Text = Global.phone.ToString();
@@ -222,20 +222,25 @@ namespace flight1
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            panel3.BackColor = Color.FromArgb(220, Color.White);
+            panel3.BackColor = Color.FromArgb(200, Color.White);
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-            panel4.BackColor = Color.FromArgb(220, Color.White);
+            panel4.BackColor = Color.FromArgb(200, Color.White);
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
-            panel5.BackColor = Color.FromArgb(220, Color.White);
+            panel5.BackColor = Color.FromArgb(200, Color.White);
         }
 
         private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
         {
 
         }

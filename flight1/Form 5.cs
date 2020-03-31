@@ -75,7 +75,7 @@ namespace flight1
 
         private void Form5_Load(object sender, EventArgs e)
         {
-           
+            
             if (Global.returnflight == true)
 
             { Global.duration = Global.duration * 2; }
@@ -262,24 +262,24 @@ namespace flight1
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            
+
+
 
             if (Global.cabin == "Economy")
             {
                 if (comboBox1.Text == "Upgrade to First Class (+800)")
                 {
                     Global.cabinupgrade = "First Class";
-                    Global.upseat = 800 ;
+                    Global.upseat = 800;
                     label29.Visible = true;
-                   
+
                 }
 
                 if (comboBox1.Text == "Upgrade to Business (+250)")
@@ -308,141 +308,145 @@ namespace flight1
                     label29.Visible = true;
                 }
 
-                    if (comboBox1.Text == "No, Keep my selection")
-                    {
-                        Global.upseat = 0;
-                    
+                if (comboBox1.Text == "No, Keep my selection")
+                {
+                    Global.upseat = 0;
+
                     Global.cabinupgrade = "Business";
 
-                    }
-                
+                }
+
             }
             if (Global.cabin == "First Class")
             { Global.cabinupgrade = "First Class"; }
 
-                if (Global.cabinupgrade == "First Class")
-                {
-                    comboBox6.DataSource = firstclassseat.ToArray();
-                    comboBox2.DataSource = firstclassseat.ToArray();
-                    comboBox8.DataSource = firstclassseat.ToArray();
-                    comboBox9.DataSource = firstclassseat.ToArray();
-                    comboBox7.DataSource = firstclassseat.ToArray();
-                    comboBox6.SelectedIndex = -1;
-                    comboBox2.SelectedIndex = -1;
-                    comboBox8.SelectedIndex = -1;
-                    comboBox9.SelectedIndex = -1;
-                    comboBox7.SelectedIndex = -1;
-                }
-                if (Global.cabinupgrade == "Business")
-                {
-                    comboBox6.DataSource = bussclassseat.ToArray();
-                    comboBox2.DataSource = bussclassseat.ToArray();
-                    comboBox8.DataSource = bussclassseat.ToArray();
-                    comboBox9.DataSource = bussclassseat.ToArray();
-                    comboBox7.DataSource = bussclassseat.ToArray();
+            if (Global.cabinupgrade == "First Class")
+            {
+                comboBox6.DataSource = firstclassseat.ToArray();
+                comboBox2.DataSource = firstclassseat.ToArray();
+                comboBox8.DataSource = firstclassseat.ToArray();
+                comboBox9.DataSource = firstclassseat.ToArray();
+                comboBox7.DataSource = firstclassseat.ToArray();
+                comboBox6.SelectedIndex = -1;
+                comboBox2.SelectedIndex = -1;
+                comboBox8.SelectedIndex = -1;
+                comboBox9.SelectedIndex = -1;
+                comboBox7.SelectedIndex = -1;
+                
+            }
+            if (Global.cabinupgrade == "Business")
+            {
+                comboBox6.DataSource = bussclassseat.ToArray();
+                comboBox2.DataSource = bussclassseat.ToArray();
+                comboBox8.DataSource = bussclassseat.ToArray();
+                comboBox9.DataSource = bussclassseat.ToArray();
+                comboBox7.DataSource = bussclassseat.ToArray();
 
-                    comboBox6.SelectedIndex = -1;
-                    comboBox2.SelectedIndex = -1;
-                    comboBox8.SelectedIndex = -1;
-                    comboBox9.SelectedIndex = -1;
-                    comboBox7.SelectedIndex = -1;
-                }
-                if (Global.cabinupgrade == "Economy")
-                {
-                    comboBox6.DataSource = ecoclassseat.ToArray();
-                    comboBox2.DataSource = ecoclassseat.ToArray();
-                    comboBox8.DataSource = ecoclassseat.ToArray();
-                    comboBox9.DataSource = ecoclassseat.ToArray();
-                    comboBox7.DataSource = ecoclassseat.ToArray();
+                comboBox6.SelectedIndex = -1;
+                comboBox2.SelectedIndex = -1;
+                comboBox8.SelectedIndex = -1;
+                comboBox9.SelectedIndex = -1;
+                comboBox7.SelectedIndex = -1;
+                
 
-                    comboBox6.SelectedIndex = -1;
-                    comboBox2.SelectedIndex = -1;
-                    comboBox8.SelectedIndex = -1;
-                    comboBox9.SelectedIndex = -1;
-                    comboBox7.SelectedIndex = -1;
-                }
+            }
+            if (Global.cabinupgrade == "Economy")
+            {
+                comboBox6.DataSource = ecoclassseat.ToArray();
+                comboBox2.DataSource = ecoclassseat.ToArray();
+                comboBox8.DataSource = ecoclassseat.ToArray();
+                comboBox9.DataSource = ecoclassseat.ToArray();
+                comboBox7.DataSource = ecoclassseat.ToArray();
+
+                comboBox6.SelectedIndex = -1;
+                comboBox2.SelectedIndex = -1;
+                comboBox8.SelectedIndex = -1;
+                comboBox9.SelectedIndex = -1;
+                comboBox7.SelectedIndex = -1;
+                
+            }
 
 
-                if (Global.guest == 1)
-                {
-                    label13.Visible = true;
+            if (Global.guest == 1)
+            {
+                label13.Visible = true;
                 comboBox2.Visible = true;
                 label25.Visible = false;
                 label26.Visible = false;
-                    label27.Visible = false;
-                    label28.Visible = false;
-                    comboBox2.Visible = true;
-                    comboBox6.Visible = false;
-                    comboBox7.Visible = false;
-                    comboBox8.Visible = false;
-                    comboBox9.Visible = false;
-                }
-                if (Global.guest == 2)
-                {
+                label27.Visible = false;
+                label28.Visible = false;
+                comboBox2.Visible = true;
+                comboBox6.Visible = false;
+                comboBox7.Visible = false;
+                comboBox8.Visible = false;
+                comboBox9.Visible = false;
+            }
+            if (Global.guest == 2)
+            {
                 label13.Visible = true;
                 comboBox2.Visible = true;
                 label25.Visible = true;
                 label26.Visible = false;
-                    label27.Visible = false;
-                    label28.Visible = false;
-                    comboBox6.Visible = true;
-                    comboBox7.Visible = false;
-                    comboBox8.Visible = false;
-                    comboBox9.Visible = false;
-                }
-                if (Global.guest == 3)
-                {
+                label27.Visible = false;
+                label28.Visible = false;
+                comboBox6.Visible = true;
+                comboBox7.Visible = false;
+                comboBox8.Visible = false;
+                comboBox9.Visible = false;
+            }
+            if (Global.guest == 3)
+            {
                 label13.Visible = true;
                 comboBox2.Visible = true;
                 label25.Visible = true;
                 label26.Visible = true;
-                    label27.Visible = false;
-                    label28.Visible = false;
-                    comboBox6.Visible = true;
-                    comboBox7.Visible = true;
-                    comboBox8.Visible = false;
-                    comboBox9.Visible = false;
-                }
-                if (Global.guest == 4)
-                {
+                label27.Visible = false;
+                label28.Visible = false;
+                comboBox6.Visible = true;
+                comboBox7.Visible = true;
+                comboBox8.Visible = false;
+                comboBox9.Visible = false;
+            }
+            if (Global.guest == 4)
+            {
                 label13.Visible = true;
                 comboBox2.Visible = true;
                 label25.Visible = true;
                 label26.Visible = true;
-                    label27.Visible = true;
-                    label28.Visible = false;
-                    comboBox6.Visible = true;
-                    comboBox7.Visible = true;
-                    comboBox8.Visible = true;
-                    comboBox9.Visible = false;
-                }
-                if (Global.guest == 5)
-                {
+                label27.Visible = true;
+                label28.Visible = false;
+                comboBox6.Visible = true;
+                comboBox7.Visible = true;
+                comboBox8.Visible = true;
+                comboBox9.Visible = false;
+            }
+            if (Global.guest == 5)
+            {
                 label13.Visible = true;
                 comboBox2.Visible = true;
                 label25.Visible = true;
                 label26.Visible = true;
-                    label27.Visible = true;
-                    label28.Visible = true;
-                    comboBox6.Visible = true;
-                    comboBox7.Visible = true;
-                    comboBox8.Visible = true;
-                    comboBox9.Visible = true;
-                }
+                label27.Visible = true;
+                label28.Visible = true;
+                comboBox6.Visible = true;
+                comboBox7.Visible = true;
+                comboBox8.Visible = true;
+                comboBox9.Visible = true;
+            }
 
 
 
 
-                Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
-                label52.Text = Global.servicefee.ToString("c1");
+            Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
+            label52.Text = Global.servicefee.ToString("c1");
 
-                label53.Text = (Global.airportfee).ToString("c1");
-                label54.Text = (Global.tax).ToString("c1");
+            label53.Text = (Global.airportfee).ToString("c1");
+            label54.Text = (Global.tax).ToString("c1");
 
 
-                label55.Text = Global.totaltick.ToString("c1");
+            label55.Text = Global.totaltick.ToString("c1");
 
-            
+
         }
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
@@ -454,16 +458,19 @@ namespace flight1
             Global.insurance = 0;
 
             if (comboBox4.Text == "No insurance - $0")
-            { Global.insurance = 0;
-               
+            {
+                Global.insurance = 0;
+
             }
             if (comboBox4.Text == "Basic coverage - $15")
-            { Global.insurance = 15;
-                
+            {
+                Global.insurance = 15;
+
             }
             if (comboBox4.Text == "Premium coverage - $30")
-            { Global.insurance = 30;
-               
+            {
+                Global.insurance = 30;
+
             }
 
             Global.servicefee = Global.insurance + Global.bag + Global.meal + Global.upseat;
@@ -484,19 +491,22 @@ namespace flight1
         {
             Global.bag = 0;
             if (comboBox5.Text == "Carry on - $0")
-            
-            Global.bag = 0; 
+
+                Global.bag = 0;
             if (comboBox5.Text == "1 bag - $20")
-            { Global.bag = 20;
-                
+            {
+                Global.bag = 20;
+
             }
             if (comboBox5.Text == "2 bags - $45")
-            { Global.bag = 45;
-                
+            {
+                Global.bag = 45;
+
             }
             if (comboBox5.Text == "3 bags - $70")
-            { Global.bag = 70;
-                
+            {
+                Global.bag = 70;
+
             }
 
             Global.servicefee = Global.insurance + Global.bag + Global.meal + Global.upseat;
@@ -518,16 +528,19 @@ namespace flight1
         {
             Global.meal = 0;
             if (comboBox3.Text == "No Meal - $0")
-            { Global.meal = 0;
-                
+            {
+                Global.meal = 0;
+
             }
             if (comboBox3.Text == "Regular Meal - $20")
-            { Global.meal = 20;
-                
+            {
+                Global.meal = 20;
+
             }
             if (comboBox3.Text == "Vegetarian Meal - $22")
-            { Global.meal = 22;
-                
+            {
+                Global.meal = 22;
+
             }
 
             Global.servicefee = Global.insurance + Global.bag + Global.meal + Global.upseat;
@@ -537,11 +550,11 @@ namespace flight1
             label55.Text = Global.totaltick.ToString("c1");
 
         }
-        
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
 
             Form6 f6 = new Form6();
 
@@ -555,7 +568,7 @@ namespace flight1
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox2.SelectedIndex != comboBox9.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox9.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex && comboBox7.SelectedIndex != comboBox9.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex && comboBox8.SelectedIndex != comboBox9.SelectedIndex)
                 {
                     this.Hide();
-                   
+
                     f6.Show();
 
                 }
@@ -563,13 +576,13 @@ namespace flight1
 
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated or blank","Invalid Seat Selection",MessageBoxButtons.OK, MessageBoxIcon.Warning );
-                   
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
 
                     return;
                 }
 
-               
+
 
             }
 
@@ -580,10 +593,10 @@ namespace flight1
                     MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex &&  comboBox7.SelectedIndex != comboBox8.SelectedIndex)
+                if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex)
                 {
                     this.Hide();
-                   
+
                     f6.Show();
 
                 }
@@ -592,11 +605,11 @@ namespace flight1
                 else
                 {
                     MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
-                    
+
 
                     return;
                 }
-             
+
 
             }
 
@@ -611,7 +624,7 @@ namespace flight1
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex)
                 {
                     this.Hide();
-                    
+
                     f6.Show();
 
                 }
@@ -619,13 +632,13 @@ namespace flight1
 
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
-                    
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
 
                     return;
                 }
 
-            
+
 
             }
 
@@ -644,25 +657,25 @@ namespace flight1
                     f6.Show();
                 }
 
-             
+
 
                 else
                 {
-                    
+
                     MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
                     return;
                 }
             }
-            
-            if (Global.guest ==1)
+
+            if (Global.guest == 1)
             {
-                    if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
-                    {
-                        MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
+                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             }
 
             if (comboBox3.SelectedIndex == -1 || comboBox4.SelectedIndex == -1 || comboBox5.SelectedIndex == -1)
@@ -673,17 +686,17 @@ namespace flight1
 
             }
 
-                this.Hide();
-                
-                f6.Show();
-            
+            this.Hide();
 
-               f6.labelsum.Text  = labelsum.Text;
+            f6.Show();
+
+
+            f6.labelsum.Text = labelsum.Text;
             f6.label49.Text = label49.Text;
-           f6.label4.Text  =  label4.Text;
-           f6.label6.Text  = label6.Text;
-           f6.label10.Text  = label10.Text;
-           f6.label9.Text  = label9.Text;
+            f6.label4.Text = label4.Text;
+            f6.label6.Text = label6.Text;
+            f6.label10.Text = label10.Text;
+            f6.label9.Text = label9.Text;
 
 
 
@@ -691,17 +704,17 @@ namespace flight1
 
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
         public void Combo()
         {
@@ -720,7 +733,7 @@ namespace flight1
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label22_Click(object sender, EventArgs e)
@@ -731,6 +744,16 @@ namespace flight1
         private void label51_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint_1(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 } 

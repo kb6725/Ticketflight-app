@@ -67,15 +67,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -111,9 +109,11 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.dateTimepicker = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -123,10 +123,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -591,6 +591,28 @@
             this.panel4.TabIndex = 4;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(198, 86);
+            this.maskedTextBox2.Mask = "000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(38, 31);
+            this.maskedTextBox2.TabIndex = 11;
+            this.maskedTextBox2.ValidatingType = typeof(int);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(564, 11);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(236, 27);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Same as Primary Customer";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -607,7 +629,7 @@
             this.comboBox2.Location = new System.Drawing.Point(870, 90);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(94, 31);
-            this.comboBox2.TabIndex = 2;
+            this.comboBox2.TabIndex = 13;
             // 
             // comboBox1
             // 
@@ -629,7 +651,7 @@
             this.comboBox1.Location = new System.Drawing.Point(712, 90);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(88, 31);
-            this.comboBox1.TabIndex = 2;
+            this.comboBox1.TabIndex = 12;
             // 
             // label17
             // 
@@ -647,7 +669,7 @@
             this.textBox4.Location = new System.Drawing.Point(711, 47);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(253, 31);
-            this.textBox4.TabIndex = 1;
+            this.textBox4.TabIndex = 10;
             // 
             // label20
             // 
@@ -658,46 +680,6 @@
             this.label20.Size = new System.Drawing.Size(43, 23);
             this.label20.TabIndex = 0;
             this.label20.Text = "Year";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(366, 49);
-            this.textBox16.MaxLength = 4;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(50, 31);
-            this.textBox16.TabIndex = 4;
-            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(310, 49);
-            this.textBox13.MaxLength = 4;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(50, 31);
-            this.textBox13.TabIndex = 3;
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(254, 49);
-            this.textBox10.MaxLength = 4;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(50, 31);
-            this.textBox10.TabIndex = 2;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(198, 49);
-            this.textBox8.MaxLength = 4;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(50, 31);
-            this.textBox8.TabIndex = 1;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label21
             // 
@@ -796,8 +778,8 @@
             this.dateTimePicker4.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(177, 31);
-            this.dateTimePicker4.TabIndex = 5;
-            this.dateTimePicker4.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker4.TabIndex = 35;
+            this.dateTimePicker4.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             // 
             // label42
             // 
@@ -815,7 +797,7 @@
             this.textBox17.Location = new System.Drawing.Point(190, 13);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(253, 31);
-            this.textBox17.TabIndex = 1;
+            this.textBox17.TabIndex = 33;
             // 
             // textBox18
             // 
@@ -823,7 +805,7 @@
             this.textBox18.Location = new System.Drawing.Point(700, 16);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(253, 31);
-            this.textBox18.TabIndex = 1;
+            this.textBox18.TabIndex = 34;
             // 
             // panel11
             // 
@@ -867,8 +849,8 @@
             this.dateTimePicker3.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(177, 31);
-            this.dateTimePicker3.TabIndex = 5;
-            this.dateTimePicker3.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker3.TabIndex = 32;
+            this.dateTimePicker3.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             // 
             // label38
             // 
@@ -886,7 +868,7 @@
             this.textBox14.Location = new System.Drawing.Point(190, 13);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(253, 31);
-            this.textBox14.TabIndex = 1;
+            this.textBox14.TabIndex = 30;
             // 
             // textBox15
             // 
@@ -894,7 +876,7 @@
             this.textBox15.Location = new System.Drawing.Point(700, 16);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(253, 31);
-            this.textBox15.TabIndex = 1;
+            this.textBox15.TabIndex = 31;
             // 
             // panel7
             // 
@@ -938,8 +920,8 @@
             this.dateTimePicker2.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(177, 31);
-            this.dateTimePicker2.TabIndex = 5;
-            this.dateTimePicker2.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker2.TabIndex = 29;
+            this.dateTimePicker2.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             // 
             // label34
             // 
@@ -957,7 +939,7 @@
             this.textBox7.Location = new System.Drawing.Point(190, 13);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(253, 31);
-            this.textBox7.TabIndex = 1;
+            this.textBox7.TabIndex = 27;
             // 
             // textBox12
             // 
@@ -965,7 +947,7 @@
             this.textBox12.Location = new System.Drawing.Point(700, 16);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(253, 31);
-            this.textBox12.TabIndex = 1;
+            this.textBox12.TabIndex = 28;
             // 
             // panel6
             // 
@@ -1009,8 +991,8 @@
             this.dateTimePicker1.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(177, 31);
-            this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.TabIndex = 26;
+            this.dateTimePicker1.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             // 
             // label28
             // 
@@ -1028,7 +1010,7 @@
             this.textBox11.Location = new System.Drawing.Point(190, 13);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(253, 31);
-            this.textBox11.TabIndex = 1;
+            this.textBox11.TabIndex = 24;
             // 
             // textBox5
             // 
@@ -1036,7 +1018,7 @@
             this.textBox5.Location = new System.Drawing.Point(700, 16);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(253, 31);
-            this.textBox5.TabIndex = 1;
+            this.textBox5.TabIndex = 25;
             // 
             // label26
             // 
@@ -1069,6 +1051,15 @@
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(711, 90);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(253, 31);
+            this.maskedTextBox1.TabIndex = 4;
+            // 
             // dateTimepicker
             // 
             this.dateTimepicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1078,8 +1069,8 @@
             this.dateTimepicker.MinDate = new System.DateTime(1900, 3, 20, 0, 0, 0, 0);
             this.dateTimepicker.Name = "dateTimepicker";
             this.dateTimepicker.Size = new System.Drawing.Size(177, 31);
-            this.dateTimepicker.TabIndex = 5;
-            this.dateTimepicker.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimepicker.TabIndex = 3;
+            this.dateTimepicker.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             this.dateTimepicker.ValueChanged += new System.EventHandler(this.dateTimepicker_ValueChanged);
             // 
             // label16
@@ -1098,7 +1089,17 @@
             this.textBox3.Location = new System.Drawing.Point(198, 130);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(253, 31);
-            this.textBox3.TabIndex = 1;
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(710, 49);
+            this.textBox2.MaxLength = 10;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(253, 31);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox1
             // 
@@ -1107,6 +1108,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(253, 31);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label15
             // 
@@ -1124,9 +1126,9 @@
             this.label25.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(559, 55);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(51, 23);
+            this.label25.Size = new System.Drawing.Size(116, 23);
             this.label25.TabIndex = 0;
-            this.label25.Text = "Email";
+            this.label25.Text = "Email Address";
             // 
             // label19
             // 
@@ -1166,7 +1168,7 @@
             this.button2.Location = new System.Drawing.Point(1502, 868);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(158, 40);
-            this.button2.TabIndex = 10;
+            this.button2.TabIndex = 37;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -1178,7 +1180,7 @@
             this.button3.Location = new System.Drawing.Point(1678, 868);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(158, 40);
-            this.button3.TabIndex = 10;
+            this.button3.TabIndex = 38;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -1186,55 +1188,55 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(1501, 784);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(334, 68);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 36;
             this.button1.Text = "Confirm Payment";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // textBox2
+            // textBox16
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(710, 49);
-            this.textBox2.MaxLength = 10;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 31);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox16.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.Location = new System.Drawing.Point(366, 49);
+            this.textBox16.MaxLength = 4;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(50, 31);
+            this.textBox16.TabIndex = 9;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
-            // checkBox1
+            // textBox13
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(564, 11);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(236, 27);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Same as Primary Customer";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.textBox13.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(310, 49);
+            this.textBox13.MaxLength = 4;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(50, 31);
+            this.textBox13.TabIndex = 8;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
-            // maskedTextBox1
+            // textBox10
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(711, 90);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(253, 31);
-            this.maskedTextBox1.TabIndex = 6;
+            this.textBox10.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(254, 49);
+            this.textBox10.MaxLength = 4;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(50, 31);
+            this.textBox10.TabIndex = 7;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
-            // maskedTextBox2
+            // textBox8
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(198, 86);
-            this.maskedTextBox2.Mask = "000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 31);
-            this.maskedTextBox2.TabIndex = 6;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.textBox8.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(198, 49);
+            this.textBox8.MaxLength = 4;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(50, 31);
+            this.textBox8.TabIndex = 6;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // Form6
             // 
@@ -1331,7 +1333,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -1373,12 +1374,13 @@
         public System.Windows.Forms.Label label30;
         public System.Windows.Forms.Label label40;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox8;
     }
 }

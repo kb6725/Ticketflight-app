@@ -202,8 +202,8 @@ namespace flight1
             
             comboTo.SelectedIndex = -1;
             comboTo.Text = "Select Arrival ..";
-
-            
+            dateTimeout.MinDate = DateTime.Today;
+            dateTimereturn.MinDate = DateTime.Today;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -521,6 +521,11 @@ namespace flight1
         }
 
         private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
         {
 
         }

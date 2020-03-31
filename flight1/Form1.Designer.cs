@@ -38,11 +38,9 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.placesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.flightDataSet = new flight1.flightDataSet();
             this.combocabin = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.placesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.flightDataSet1 = new flight1.flightDataSet1();
             this.labelto = new System.Windows.Forms.Label();
             this.labelguest = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -67,18 +65,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flightDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flightDataSet1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -174,14 +173,14 @@
             this.comboTo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboTo.DataSource = this.placesBindingSource;
             this.comboTo.DisplayMember = "Place";
-            this.comboTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboTo.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboTo.FormattingEnabled = true;
             this.comboTo.IntegralHeight = false;
-            this.comboTo.ItemHeight = 32;
+            this.comboTo.ItemHeight = 29;
             this.comboTo.Location = new System.Drawing.Point(466, 140);
             this.comboTo.Name = "comboTo";
-            this.comboTo.Size = new System.Drawing.Size(260, 40);
+            this.comboTo.Size = new System.Drawing.Size(260, 37);
             this.comboTo.TabIndex = 1;
             this.comboTo.Text = "Select Arrival ..";
             this.comboTo.ValueMember = "Place";
@@ -190,12 +189,6 @@
             // placesBindingSource
             // 
             this.placesBindingSource.DataMember = "Places";
-            this.placesBindingSource.DataSource = this.flightDataSet;
-            // 
-            // flightDataSet
-            // 
-            this.flightDataSet.DataSetName = "flightDataSet";
-            this.flightDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // combocabin
             // 
@@ -206,18 +199,18 @@
             this.combocabin.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.combocabin.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.combocabin.DropDownHeight = 150;
-            this.combocabin.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combocabin.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combocabin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.combocabin.FormattingEnabled = true;
             this.combocabin.IntegralHeight = false;
-            this.combocabin.ItemHeight = 32;
+            this.combocabin.ItemHeight = 29;
             this.combocabin.Items.AddRange(new object[] {
             "First Class",
             "Business",
             "Economy"});
             this.combocabin.Location = new System.Drawing.Point(57, 290);
             this.combocabin.Name = "combocabin";
-            this.combocabin.Size = new System.Drawing.Size(260, 40);
+            this.combocabin.Size = new System.Drawing.Size(260, 37);
             this.combocabin.TabIndex = 1;
             this.combocabin.Text = "Select Cabin ...";
             this.combocabin.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
@@ -229,14 +222,14 @@
             this.comboFrom.DataSource = this.placesBindingSource1;
             this.comboFrom.DisplayMember = "Place";
             this.comboFrom.DropDownHeight = 150;
-            this.comboFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboFrom.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboFrom.FormattingEnabled = true;
             this.comboFrom.IntegralHeight = false;
-            this.comboFrom.ItemHeight = 32;
+            this.comboFrom.ItemHeight = 29;
             this.comboFrom.Location = new System.Drawing.Point(57, 137);
             this.comboFrom.Name = "comboFrom";
-            this.comboFrom.Size = new System.Drawing.Size(260, 40);
+            this.comboFrom.Size = new System.Drawing.Size(260, 37);
             this.comboFrom.TabIndex = 1;
             this.comboFrom.Text = "Select Departure ..";
             this.comboFrom.ValueMember = "Place";
@@ -245,12 +238,6 @@
             // placesBindingSource1
             // 
             this.placesBindingSource1.DataMember = "Places";
-            this.placesBindingSource1.DataSource = this.flightDataSet1;
-            // 
-            // flightDataSet1
-            // 
-            this.flightDataSet1.DataSetName = "flightDataSet1";
-            this.flightDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelto
             // 
@@ -282,7 +269,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(425, 240);
+            this.label4.Location = new System.Drawing.Point(425, 248);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 32);
             this.label4.TabIndex = 0;
@@ -293,11 +280,11 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 237);
+            this.label2.Location = new System.Drawing.Point(5, 245);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 32);
+            this.label2.Size = new System.Drawing.Size(67, 32);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Cabin";
+            this.label2.Text = "Class";
             // 
             // label3
             // 
@@ -347,27 +334,27 @@
             // dateTimereturn
             // 
             this.dateTimereturn.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dateTimereturn.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimereturn.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimereturn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimereturn.Location = new System.Drawing.Point(466, 48);
             this.dateTimereturn.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
             this.dateTimereturn.Name = "dateTimereturn";
-            this.dateTimereturn.Size = new System.Drawing.Size(260, 39);
+            this.dateTimereturn.Size = new System.Drawing.Size(260, 37);
             this.dateTimereturn.TabIndex = 0;
-            this.dateTimereturn.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimereturn.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
             this.dateTimereturn.ValueChanged += new System.EventHandler(this.dateTimereturn_ValueChanged);
             // 
             // dateTimeout
             // 
             this.dateTimeout.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dateTimeout.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeout.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeout.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeout.Location = new System.Drawing.Point(57, 48);
             this.dateTimeout.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
             this.dateTimeout.Name = "dateTimeout";
-            this.dateTimeout.Size = new System.Drawing.Size(260, 39);
+            this.dateTimeout.Size = new System.Drawing.Size(260, 37);
             this.dateTimeout.TabIndex = 0;
-            this.dateTimeout.Value = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimeout.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
             this.dateTimeout.ValueChanged += new System.EventHandler(this.dateTimeout_ValueChanged);
             // 
             // labelreturn
@@ -396,7 +383,7 @@
             // 
             this.buttonsearch.AllowDrop = true;
             this.buttonsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(172)))), ((int)(((byte)(69)))));
-            this.buttonsearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonsearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonsearch.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonsearch.ForeColor = System.Drawing.Color.Black;
             this.buttonsearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonsearch.Image")));
@@ -525,25 +512,48 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.button7);
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.button5);
+            this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(15, 367);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 457);
+            this.panel6.Size = new System.Drawing.Size(250, 509);
             this.panel6.TabIndex = 12;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(15, 422);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(177, 31);
+            this.textBox1.TabIndex = 3;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Location = new System.Drawing.Point(199, 417);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(40, 40);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             this.button6.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(86, 299);
+            this.button6.Location = new System.Drawing.Point(91, 236);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(70, 70);
+            this.button6.Size = new System.Drawing.Size(60, 60);
             this.button6.TabIndex = 1;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -551,18 +561,29 @@
             // 
             this.button5.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(86, 156);
+            this.button5.Location = new System.Drawing.Point(91, 116);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(70, 70);
+            this.button5.Size = new System.Drawing.Size(60, 60);
             this.button5.TabIndex = 1;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(10, 386);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(232, 28);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Look up by Booking Number";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(11, 377);
+            this.label11.Location = new System.Drawing.Point(15, 301);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(218, 28);
             this.label11.TabIndex = 0;
@@ -573,7 +594,7 @@
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 231);
+            this.label10.Location = new System.Drawing.Point(15, 178);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(218, 28);
             this.label10.TabIndex = 0;
@@ -581,27 +602,27 @@
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(213, 27);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Account Management";
-            // 
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 64);
+            this.label13.Location = new System.Drawing.Point(6, 45);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(237, 77);
             this.label13.TabIndex = 0;
             this.label13.Text = "Sign up or Log in to retrieve your booking";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(14, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(213, 27);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Account Management";
             // 
             // Form1
             // 
@@ -627,9 +648,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.flightDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.flightDataSet1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -648,11 +667,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private flightDataSet flightDataSet;
+        //private flightDataSet flightDataSet;
         private System.Windows.Forms.BindingSource placesBindingSource;
         //private flightDataSetTableAdapters.PlacesTableAdapter placesTableAdapter;
         private System.Windows.Forms.ComboBox comboFrom;
-        private flightDataSet1 flightDataSet1;
+        //private flightDataSet1 flightDataSet1;
         private System.Windows.Forms.BindingSource placesBindingSource1;
         //private flightDataSet1TableAdapters.PlacesTableAdapter placesTableAdapter1;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -690,6 +709,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

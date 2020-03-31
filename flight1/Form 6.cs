@@ -22,8 +22,11 @@ namespace flight1
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            
-
+            dateTimepicker.MaxDate = DateTime.Now;
+            dateTimePicker1.MaxDate = DateTime.Now;
+            dateTimePicker2.MaxDate = DateTime.Now;
+            dateTimePicker3.MaxDate = DateTime.Now;
+            dateTimePicker4.MaxDate = DateTime.Now;
             label30.Text = Global.guest.ToString();
             Global.finaltick = Global.guest * Global.totaltick;
             label40.Text = (Global.finaltick).ToString("c1");
@@ -259,6 +262,7 @@ namespace flight1
             Global.p4pp = textBox14.Text;
             Global.p5name = textBox17.Text;
             Global.p5pp = textBox18.Text;
+            
             Global.p1dob = dateTimepicker.Value;
             Global.p2dob = dateTimePicker1.Value;
             Global.p3dob = dateTimePicker2.Value;
@@ -354,7 +358,13 @@ namespace flight1
 
         private void dateTimepicker_ValueChanged(object sender, EventArgs e)
         {
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked==true) 
+            { textBox4.Text = textBox1.Text;  }
+            else { textBox4.Text = ""; }
         }
     } 
     

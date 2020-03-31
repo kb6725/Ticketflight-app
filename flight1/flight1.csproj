@@ -46,22 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="flightDataSet.cs">
-      <DependentUpon>flightDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="flightDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>flightDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="flightDataSet1.cs">
-      <DependentUpon>flightDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="flightDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>flightDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form 7.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,28 +112,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="flightDataSet.xsc">
-      <DependentUpon>flightDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="flightDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>flightDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="flightDataSet.xss">
-      <DependentUpon>flightDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="flightDataSet1.xsc">
-      <DependentUpon>flightDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="flightDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>flightDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="flightDataSet1.xss">
-      <DependentUpon>flightDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -110,6 +110,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -524,6 +525,7 @@
             this.panel8.Controls.Add(this.panel4);
             this.panel8.Controls.Add(this.panel5);
             this.panel8.Controls.Add(this.panel3);
+            this.panel8.Controls.Add(this.label18);
             this.panel8.Location = new System.Drawing.Point(339, 40);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1063, 911);
@@ -534,9 +536,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(433, 71);
+            this.pictureBox2.Location = new System.Drawing.Point(439, 72);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -545,11 +547,12 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(394, 140);
+            this.label20.ForeColor = System.Drawing.Color.Navy;
+            this.label20.Location = new System.Drawing.Point(375, 121);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(244, 27);
+            this.label20.Size = new System.Drawing.Size(249, 28);
             this.label20.TabIndex = 6;
-            this.label20.Text = "Your Booking number is : ";
+            this.label20.Text = "Your Booking Number is : ";
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label12
@@ -893,6 +896,7 @@
             this.label26.TabIndex = 0;
             this.label26.Text = "Other Passengers Information";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // panel3
             // 
@@ -1059,6 +1063,17 @@
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(336, 153);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(458, 23);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Please keep your Booking Number to retrieve your itinerary";
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1185,5 +1200,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label18;
     }
 }

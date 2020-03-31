@@ -425,9 +425,9 @@
             this.label44.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(26, 46);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(196, 23);
+            this.label44.Size = new System.Drawing.Size(200, 23);
             this.label44.TabIndex = 2;
-            this.label44.Text = "Ticket Price / passenger: ";
+            this.label44.Text = "Ticket Price / passenger : ";
             // 
             // label43
             // 
@@ -509,7 +509,7 @@
             // 
             // comboBox5
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Carry on - $0",
@@ -518,8 +518,8 @@
             "3 bags - $70"});
             this.comboBox5.Location = new System.Drawing.Point(227, 138);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(202, 27);
-            this.comboBox5.TabIndex = 2;
+            this.comboBox5.Size = new System.Drawing.Size(202, 30);
+            this.comboBox5.TabIndex = 9;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // pictureBox5
@@ -578,7 +578,7 @@
             // 
             // comboBox4
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "No insurance - $0",
@@ -586,8 +586,8 @@
             "Premium coverage - $30"});
             this.comboBox4.Location = new System.Drawing.Point(227, 128);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(202, 27);
-            this.comboBox4.TabIndex = 2;
+            this.comboBox4.Size = new System.Drawing.Size(202, 30);
+            this.comboBox4.TabIndex = 8;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // pictureBox4
@@ -642,11 +642,11 @@
             // comboBox9
             // 
             this.comboBox9.CausesValidation = false;
-            this.comboBox9.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Location = new System.Drawing.Point(331, 600);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(189, 27);
+            this.comboBox9.Size = new System.Drawing.Size(189, 30);
             this.comboBox9.TabIndex = 6;
             this.comboBox9.Visible = false;
             this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.comboBox9_SelectedIndexChanged);
@@ -654,11 +654,11 @@
             // comboBox8
             // 
             this.comboBox8.CausesValidation = false;
-            this.comboBox8.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(330, 528);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(190, 27);
+            this.comboBox8.Size = new System.Drawing.Size(190, 30);
             this.comboBox8.TabIndex = 5;
             this.comboBox8.Visible = false;
             this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox8_SelectedIndexChanged);
@@ -666,11 +666,11 @@
             // comboBox7
             // 
             this.comboBox7.CausesValidation = false;
-            this.comboBox7.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Location = new System.Drawing.Point(331, 451);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(189, 27);
+            this.comboBox7.Size = new System.Drawing.Size(189, 30);
             this.comboBox7.TabIndex = 4;
             this.comboBox7.Visible = false;
             this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
@@ -678,11 +678,11 @@
             // comboBox6
             // 
             this.comboBox6.CausesValidation = false;
-            this.comboBox6.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(330, 378);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(190, 27);
+            this.comboBox6.Size = new System.Drawing.Size(190, 30);
             this.comboBox6.TabIndex = 3;
             this.comboBox6.Visible = false;
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
@@ -742,7 +742,7 @@
             // 
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(312, 229);
+            this.label29.Location = new System.Drawing.Point(312, 240);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(218, 25);
             this.label29.TabIndex = 2;
@@ -753,7 +753,7 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(318, 279);
+            this.label13.Location = new System.Drawing.Point(325, 279);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(218, 25);
             this.label13.TabIndex = 2;
@@ -764,7 +764,7 @@
             // label22
             // 
             this.label22.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(312, 145);
+            this.label22.Location = new System.Drawing.Point(312, 156);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(224, 50);
             this.label22.TabIndex = 2;
@@ -804,20 +804,20 @@
             // comboBox2
             // 
             this.comboBox2.CausesValidation = false;
-            this.comboBox2.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(330, 304);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(190, 27);
-            this.comboBox2.TabIndex = 1;
+            this.comboBox2.Size = new System.Drawing.Size(190, 30);
+            this.comboBox2.TabIndex = 2;
             this.comboBox2.Visible = false;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(306, 198);
+            this.comboBox1.Location = new System.Drawing.Point(306, 209);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(230, 30);
             this.comboBox1.TabIndex = 1;
@@ -829,7 +829,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(2, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(363, 717);
+            this.pictureBox2.Size = new System.Drawing.Size(363, 743);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -893,7 +893,7 @@
             // 
             // comboBox3
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "No Meal - $0",
@@ -901,8 +901,8 @@
             "Vegetarian Meal - $22"});
             this.comboBox3.Location = new System.Drawing.Point(227, 150);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(202, 27);
-            this.comboBox3.TabIndex = 2;
+            this.comboBox3.Size = new System.Drawing.Size(202, 30);
+            this.comboBox3.TabIndex = 7;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // pictureBox3
@@ -930,6 +930,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(1498, 768);
             this.button1.Name = "button1";
@@ -947,7 +948,7 @@
             this.button2.Location = new System.Drawing.Point(1498, 855);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(158, 40);
-            this.button2.TabIndex = 10;
+            this.button2.TabIndex = 11;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -959,7 +960,7 @@
             this.button3.Location = new System.Drawing.Point(1674, 855);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(158, 40);
-            this.button3.TabIndex = 10;
+            this.button3.TabIndex = 12;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
             // 
