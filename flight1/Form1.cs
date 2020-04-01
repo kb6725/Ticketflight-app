@@ -7,11 +7,14 @@ using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
 using System.Collections;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 namespace flight1
 {
     public partial class Form1 : Form
     {
+
+
 
         ArrayList destination = new ArrayList { "Alabama",
 "Alaska",
@@ -179,13 +182,15 @@ namespace flight1
         public Form1()
         {
             InitializeComponent();
-
+            Cursor.Current = Cursors.WaitCursor;
 
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
+
             comboFrom.DataSource = destination.ToArray();
             comboTo.DataSource = destination.ToArray();
             comboFrom.Focus();
@@ -204,6 +209,7 @@ namespace flight1
             comboTo.Text = "Select Arrival ..";
             dateTimeout.MinDate = DateTime.Today;
             dateTimereturn.MinDate = DateTime.Today;
+            Cursor.Current = Cursors.Default;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -220,6 +226,7 @@ namespace flight1
             dateTimereturn.Hide();
             Global.returnflight = false;
             
+
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -230,7 +237,7 @@ namespace flight1
             dateTimereturn.Show();
 
             Global.returnflight = true;
-
+          
         }
 
         private void comboFrom_SelectedIndexChanged(object sender, EventArgs e)
@@ -300,7 +307,7 @@ namespace flight1
 
         private void buttonsearch_Click(object sender, EventArgs e)
         {
-           
+            
             if (comboFrom.Text == comboTo.Text)
             { MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
 
@@ -308,25 +315,36 @@ namespace flight1
             { MessageBox.Show("Please select Destination and Arrival to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
 
 
-            
-            
+       
+
             Global.flightfrom = comboFrom.Text;
             Global.flightto = comboTo.Text;
             Global.cabin = combocabin.Text;
 
             
-            Form2 f2 = new Form2();
-            this.Hide();
-            f2.Show();
-            f2.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
-            f2.label4.Text = dateTimeout.Text + " - " + dateTimereturn.Text;
+            
 
             Global.fromdate  = dateTimeout.Value;
 
             Global.todate = dateTimereturn.Value;
             System.TimeSpan len = Global.todate - Global.fromdate;
-
-            f2.label6.Text = len.Days.ToString() + " day(s)";
+            int compare = DateTime.Compare(Global.todate, Global.fromdate);
+            if (compare >= 0)
+            { }
+            else
+            {
+                MessageBox.Show("Outbound Date cannot be later than Return Date", "Invalidate Date selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Form2 f2 = new Form2();
+            this.Hide();
+            f2.Show();
+            f2.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
+            f2.label4.Text = dateTimeout.Text + " - " + dateTimereturn.Text;
+            if (radioButton2.Checked)
+            { f2.label6.Text = "One way flight"; }
+            else
+            { f2.label6.Text = len.Days.ToString() + " day(s)"; }
             f2.label9.Text = Global.guest.ToString();
             f2.label10.Text = Global.cabin.ToString();
 

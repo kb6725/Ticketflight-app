@@ -15,7 +15,6 @@ namespace flight1
 {
     public partial class Form5 : Form
     {
-
         ArrayList firstclassseat = new ArrayList { "A6", "A7", "A8", "B6", "B7", "B8", "C6", "C7", "C8", "D6", "D7", "D8" };
         ArrayList bussclassseat = new ArrayList { "A9","A10","A11","A12","A13","B9","B10",
                 "B11",
@@ -196,7 +195,7 @@ namespace flight1
                 comboBox9.SelectedIndex = -1;
                 comboBox7.SelectedIndex = -1;
             }
-
+            Cursor.Current = Cursors.Default;
 
         }
 

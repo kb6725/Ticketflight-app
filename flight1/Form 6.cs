@@ -17,7 +17,7 @@ namespace flight1
         {
 
             InitializeComponent();
-
+            Cursor.Current = Cursors.WaitCursor;
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace flight1
                 panel11.Visible = true;
                 panel12.Visible = false;
             }
-
+            Cursor.Current = Cursors.Default;
         }
 
         private void label1_Click(object sender, EventArgs e)

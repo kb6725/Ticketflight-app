@@ -15,15 +15,17 @@ namespace flight1
         
         Form4 f4 = new Form4();
         Form5 f5 = new Form5();
+      
         public Form2()
         {
             InitializeComponent();
-           
+            Cursor.Current = Cursors.WaitCursor;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-        
+            
+            Cursor.Current = Cursors.Default;
         }
 
         private void label1_Click(object sender, EventArgs e)

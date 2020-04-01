@@ -16,7 +16,6 @@ C:\Users\RICHA\Google Drive\Sem 4\MIS C#\ClassApps\Project\flight1\flight1\obj\D
 C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\flight1.exe.config
 C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\flight1.exe
 C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\flight1.pdb
-C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csprojAssemblyReference.cache
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.Form7.resources
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.Form6.resources
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.Form1.resources
@@ -28,3 +27,4 @@ C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csproj.GenerateResour
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csproj.CoreCompileInputs.cache
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.exe
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.pdb
+C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csprojAssemblyReference.cache

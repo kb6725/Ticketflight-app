@@ -17,7 +17,7 @@ namespace flight1
         {
 
             InitializeComponent();
-
+            Cursor.Current = Cursors.WaitCursor;
         }
 
         private void Form7_Load(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace flight1
             label55.Text = Global.totaltick.ToString("C1");
             label30.Text = Global.guest.ToString();
             label40.Text = Global.finaltick.ToString("C1");
-
+            Cursor.Current = Cursors.Default;
         }
 
         private void label1_Click(object sender, EventArgs e)

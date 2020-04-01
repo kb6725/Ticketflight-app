@@ -16,8 +16,8 @@ namespace flight1
     public partial class Form4 : Form
     {
         Form5 f5 = new Form5();
-
-
+        
+            
 
         public Form4()
         {
@@ -29,7 +29,7 @@ namespace flight1
         private void Form4_Load(object sender, EventArgs e)
         {
 
-            
+            Cursor.Current = Cursors.Default;
 
 
         }
