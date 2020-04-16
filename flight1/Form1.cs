@@ -214,8 +214,8 @@ namespace flight1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(180, Color.White);
-
+            panel1.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panel1.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -281,7 +281,8 @@ namespace flight1
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            panel3.BackColor = Color.FromArgb(180, Color.White);
+            panel3.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -508,10 +509,11 @@ namespace flight1
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             panel2.BackColor = Color.FromArgb(150, Color.White);
-           
+            ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+
         }
 
-    
+
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -520,7 +522,8 @@ namespace flight1
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
-            panel6.BackColor = Color.FromArgb(120, Color.White);
+            panel6.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panel6.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void comboTo_SelectedIndexChanged(object sender, EventArgs e)
@@ -544,6 +547,11 @@ namespace flight1
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }
