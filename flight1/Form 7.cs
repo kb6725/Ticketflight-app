@@ -8,11 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Schema;
+using Microsoft.Office;
+using Microsoft.Office.Core;
+using Microsoft.Office.Interop.Word;
+using WordApplication = Microsoft.Office.Interop.Word.Application;
+using System.IO;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.Reflection;
+using Xceed.Words.NET;
 
 namespace flight1
 {
     public partial class Form7 : Form
     {
+       
         public Form7()
         {
 
@@ -261,8 +271,174 @@ namespace flight1
         {
             ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+            object oMissing = System.Reflection.Missing.Value;
+            object oEndOfDoc = "\\endofdoc";
+
+            Microsoft.Office.Interop.Word._Application oWord;
+            Microsoft.Office.Interop.Word._Document oDoc;
+            oWord = new Microsoft.Office.Interop.Word.Application();
+            oWord.Visible = true;
+            oDoc = oWord.Documents.Add(ref oMissing, ref oMissing, ref oMissing, ref oMissing);
+
+
+            Range range = oDoc.Range();
+
+            Microsoft.Office.Interop.Word.Paragraph oPara1;
+            oPara1 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara1.Range.Text = "Ticket Summary";
+            oPara1.Range.Font.Bold = 1;
+            oPara1.Range.Font.Size = 20;
+            oPara1.Format.SpaceAfter = 4;
+
+            oPara1.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara13;
+            oPara13 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara13.Range.Text = "Booking Number : " + Global.booknum;
+            oPara13.Range.Font.Bold = 0;
+            oPara13.Range.Font.Size = 12;
+            oPara13.Format.SpaceAfter = 4;
+            oPara13.Range.InsertParagraphAfter();
+
+            Microsoft.Office.Interop.Word.Paragraph oPara14;
+            oPara14 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara14.Range.Text = "Payment Status : Confirmed" + "\n" + "Amount Paid : $" + Global.finaltick;
+            oPara14.Range.Font.Bold = 0;
+            oPara14.Range.Font.Size = 12;
+
+            oPara14.Format.SpaceAfter = 40;
+            oPara14.Range.InsertParagraphAfter();
+
+            Microsoft.Office.Interop.Word.Paragraph oPara15;
+            oPara15 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara15.Range.Text = "Flight Information";
+            oPara15.Range.Font.Bold = 1;
+            oPara15.Range.Font.Size = 14;
+            oPara15.Format.SpaceAfter = 12;
+            oPara15.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara16;
+            oPara16 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara16.Range.Text = "Flight Route : " + labelsum.Text + "\t\t\t" + "Flight Date : " + label4.Text;
+            oPara16.Range.Font.Bold = 0;
+            oPara16.Range.Font.Size = 12;
+            oPara16.Format.SpaceAfter = 4;
+            oPara16.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara17;
+            oPara17 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara17.Range.Text = "Cabin : " + Global.cabin + "\t\t\t\t\t" + "Guest : " + Global.guest;
+            oPara17.Range.Font.Bold = 0;
+            oPara17.Range.Font.Size = 12;
+            oPara17.Format.SpaceAfter = 24;
+            oPara17.Range.InsertParagraphAfter();
+
+            Microsoft.Office.Interop.Word.Paragraph oPara2;
+            oPara2 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara2.Range.Text = "Primary Passenger Information";
+            oPara2.Range.Font.Bold = 1;
+            oPara2.Range.Font.Size = 14;
+            oPara2.Format.SpaceAfter = 12;
+            oPara2.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara3;
+            oPara3 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara3.Range.Text = "Passenger's Full Name : " + Global.p1name;
+
+
+            oPara3.Range.Font.Bold = 0;
+            oPara3.Range.Font.Size = 12;
+            oPara3.Format.SpaceAfter = 4;
+
+
+            oPara3.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara4;
+            oPara4 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara4.Range.Text = "Date of Birth :  " + Global.p1dob.ToShortDateString() + "\t\t\t\t\t" + "Phone number : " + Global.phone;
+            oPara4.Range.Font.Bold = 0;
+            oPara4.Range.Font.Size = 12;
+            oPara4.Format.SpaceAfter = 4;
+            oPara4.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara5;
+            oPara5 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara5.Range.Text = "Passport Number :  " + Global.p1pp;
+            oPara5.Range.Font.Bold = 0;
+            oPara5.Range.Font.Size = 12;
+            oPara5.Format.SpaceAfter = 24;
+            oPara5.Range.InsertParagraphAfter();
+
+            Microsoft.Office.Interop.Word.Paragraph oPara6;
+            oPara6 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara6.Range.Text = "Payment Information";
+            oPara6.Range.Font.Bold = 1;
+            oPara6.Range.Font.Size = 14;
+            oPara6.Format.SpaceAfter = 12;
+            oPara6.Range.InsertParagraphAfter();
+            Microsoft.Office.Interop.Word.Paragraph oPara7;
+            oPara7 = oDoc.Content.Paragraphs.Add(ref oMissing);
+            oPara7.Range.Text = "Card Number : **** " + Global.card4 + "\t\t\t\t\t" + "Cardholder's Name : " + Global.cardname;
+            oPara7.Range.Font.Bold = 0;
+            oPara7.Range.Font.Size = 12;
+            oPara7.Format.SpaceAfter = 24;
+            oPara7.Range.InsertParagraphAfter();
+            if (Global.guest > 1)
+            {
+                Microsoft.Office.Interop.Word.Paragraph oPara8;
+                oPara8 = oDoc.Content.Paragraphs.Add(ref oMissing);
+                oPara8.Range.Text = "Other Passenger Information";
+                oPara8.Range.Font.Bold = 1;
+                oPara8.Range.Font.Size = 14;
+                oPara8.Format.SpaceAfter = 12;
+                oPara8.Range.InsertParagraphAfter();
+                Microsoft.Office.Interop.Word.Paragraph oPara9;
+                oPara9 = oDoc.Content.Paragraphs.Add(ref oMissing);
+                oPara9.Range.Text = "Passenger 2 Name : " + Global.p2name + "\t\t\t\t" + "Passport : " + Global.p2pp;
+                oPara9.Range.Font.Bold = 0;
+                oPara9.Range.Font.Size = 12;
+                oPara9.Format.SpaceAfter = 12;
+                oPara9.Range.InsertParagraphAfter();
+                if (Global.guest > 2)
+                {
+                    Microsoft.Office.Interop.Word.Paragraph oPara10;
+                    oPara10 = oDoc.Content.Paragraphs.Add(ref oMissing);
+                    oPara10.Range.Text = "Passenger 3 Name : " + Global.p3name + "\t\t\t\t" + "Passport : " + Global.p3pp;
+                    oPara10.Range.Font.Bold = 0;
+                    oPara10.Range.Font.Size = 12;
+                    oPara10.Format.SpaceAfter = 12;
+                    oPara10.Range.InsertParagraphAfter();
+
+                    if (Global.guest > 3)
+                    {
+                        Microsoft.Office.Interop.Word.Paragraph oPara11;
+                        oPara11 = oDoc.Content.Paragraphs.Add(ref oMissing);
+                        oPara11.Range.Text = "Passenger 4 Name : " + Global.p4name + "\t\t\t\t" + "Passport : " + Global.p4pp;
+                        oPara11.Range.Font.Bold = 0;
+                        oPara11.Range.Font.Size = 12;
+                        oPara11.Format.SpaceAfter = 12;
+                        oPara11.Range.InsertParagraphAfter();
+
+                        if (Global.guest > 4)
+                        {
+                            Microsoft.Office.Interop.Word.Paragraph oPara12;
+                            oPara12 = oDoc.Content.Paragraphs.Add(ref oMissing);
+                            oPara12.Range.Text = "Passenger 5 Name : " + Global.p5name + "\t\t\t\t" + "Passport : " + Global.p5pp;
+                            oPara12.Range.Font.Bold = 0;
+                            oPara12.Range.Font.Size = 12;
+                            oPara12.Format.SpaceAfter = 12;
+                            oPara12.Range.InsertParagraphAfter();
+                        }
+                    }
+                }
+            }
+            oWord.Quit();
+
+
+
+        }
+            
+        }
     } 
     
-    }
+    
     
 

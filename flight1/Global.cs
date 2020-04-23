@@ -13,7 +13,7 @@ namespace flight1
         public static string flightfrom, flightto, cabin,cabinupgrade;
 
         // coreticket: ticket picked from DB-do not use. duration: flight duration, fnumber: flight number, e1-f1-b1: price variable depending on class selection-display only.
-        public static int coreticket, guest = 1, duration,fnumber, fjet,e1,e2,e3,e4,e5,b1,b2,b3,b4,b5,f1,f2,f3,f4,f5;
+        public static int coreticket, guest = 5, duration,fnumber, fjet,e1,e2,e3,e4,e5,b1,b2,b3,b4,b5,f1,f2,f3,f4,f5;
         
         // upseat: seat selection after upgrade, outticket/returnticket: price of ticket after selection, servicefee=meal+bag+seat+insu, totaltick: all fee / 1 pax, finaltick: all fee / all pax
         public static decimal upseat, outticket, returnticket,tax,airportfee,meal,bag,insurance,servicefee,totaltick,finaltick;

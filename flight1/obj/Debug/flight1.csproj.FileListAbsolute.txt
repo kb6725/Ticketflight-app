@@ -28,3 +28,8 @@ C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csproj.CoreCompileInp
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.exe
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.pdb
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csprojAssemblyReference.cache
+C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csproj.ResolveComReference.cache
+C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\Xceed.Document.NET.dll
+C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\Xceed.Words.NET.dll
+C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csproj.CopyComplete
+C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\Resources\logo.png

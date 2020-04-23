@@ -683,20 +683,21 @@ namespace flight1
                 return;
 
             }
+            if (comboBox3.SelectedIndex != -1 && comboBox4.SelectedIndex != -1&& comboBox5.SelectedIndex != -1)
+            {
+                this.Hide();
 
-            this.Hide();
-
-            f6.Show();
-
-
-            f6.labelsum.Text = labelsum.Text;
-            f6.label49.Text = label49.Text;
-            f6.label4.Text = label4.Text;
-            f6.label6.Text = label6.Text;
-            f6.label10.Text = label10.Text;
-            f6.label9.Text = label9.Text;
+                f6.Show();
 
 
+                f6.labelsum.Text = labelsum.Text;
+                f6.label49.Text = label49.Text;
+                f6.label4.Text = label4.Text;
+                f6.label6.Text = label6.Text;
+                f6.label10.Text = label10.Text;
+                f6.label9.Text = label9.Text;
+
+            }
 
         }
 

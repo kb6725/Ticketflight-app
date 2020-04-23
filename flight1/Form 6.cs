@@ -215,33 +215,33 @@ namespace flight1
 
             if (Global.guest ==2)
             {
-                if (textBox11.Text == "" && textBox15.Text == "")
+                if (textBox11.Text == "" || textBox5.Text == "")
                 {
-                    MessageBox.Show("Please input Information for Passenger 2", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             if (Global.guest ==3)
             {
-                if (textBox17.Text == "" && textBox12.Text == "" && textBox11.Text == "" && textBox15.Text == "")
+                if (textBox7.Text == "" || textBox12.Text == "" || textBox11.Text == "" || textBox5.Text == "")
                 {
-                    MessageBox.Show("Please input Information for Passenger 3", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             if (Global.guest ==4)
             {
-                if (textBox14.Text == "" && textBox15.Text == ""&& textBox17.Text == "" && textBox12.Text == "" && textBox11.Text == "" && textBox15.Text == "")
+                if (textBox14.Text == "" || textBox15.Text == ""|| textBox7.Text == "" || textBox12.Text == "" || textBox11.Text == "" || textBox5.Text == "")
                 {
-                    MessageBox.Show("Please input Information for Passenger 4", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             if (Global.guest ==5)
             {
-                if (textBox17.Text == "" && textBox18.Text == ""&& textBox14.Text == "" && textBox15.Text == "" && textBox17.Text == "" && textBox12.Text == "" && textBox11.Text == "" && textBox15.Text == "")
+                if (textBox17.Text == "" || textBox18.Text == ""|| textBox14.Text == "" || textBox15.Text == "" || textBox7.Text == "" || textBox12.Text == "" || textBox11.Text == "" || textBox5.Text == "")
                 {
-                    MessageBox.Show("Please input Information for Passenger 5", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
