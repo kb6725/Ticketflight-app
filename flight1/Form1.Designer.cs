@@ -165,6 +165,7 @@
             this.comboTo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboTo.DataSource = this.placesBindingSource;
             this.comboTo.DisplayMember = "Place";
+            this.comboTo.DropDownHeight = 150;
             this.comboTo.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboTo.FormattingEnabled = true;
@@ -294,7 +295,7 @@
             this.label1.Font = new System.Drawing.Font("Calibri", 28.17391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 56);
+            this.label1.Size = new System.Drawing.Size(265, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Book a Flight";
             // 
@@ -543,7 +544,7 @@
             this.label12.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(148, 11);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 28);
+            this.label12.Size = new System.Drawing.Size(62, 27);
             this.label12.TabIndex = 0;
             this.label12.Text = "News";
             // 
@@ -642,6 +643,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

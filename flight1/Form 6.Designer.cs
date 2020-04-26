@@ -127,6 +127,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -140,6 +146,8 @@
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -1238,6 +1246,67 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.Controls.Add(this.label18);
+            this.panel13.Controls.Add(this.label67);
+            this.panel13.Controls.Add(this.label68);
+            this.panel13.Controls.Add(this.label69);
+            this.panel13.Controls.Add(this.pictureBox7);
+            this.panel13.Location = new System.Drawing.Point(55, 372);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(242, 454);
+            this.panel13.TabIndex = 41;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(29, 149);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(201, 45);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "Seat Reservation\r\nFlight Options";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(28, 414);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(111, 23);
+            this.label67.TabIndex = 17;
+            this.label67.Text = "Confirmation";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(29, 278);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(77, 23);
+            this.label68.TabIndex = 17;
+            this.label68.Text = "Payment";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(27, 40);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(119, 23);
+            this.label69.TabIndex = 17;
+            this.label69.Text = "Choose Flights";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(17, 429);
+            this.pictureBox7.TabIndex = 16;
+            this.pictureBox7.TabStop = false;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1245,12 +1314,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1053);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "Form6";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1278,6 +1349,9 @@
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1382,5 +1456,11 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
