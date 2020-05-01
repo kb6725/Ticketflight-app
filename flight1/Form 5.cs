@@ -79,6 +79,7 @@ namespace flight1
 
             { Global.duration = Global.duration * 2; }
             label49.Text = Global.duration.ToString();
+            
             label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
             // add dropdown selection 
             if (Global.cabin == "Economy")
@@ -196,7 +197,7 @@ namespace flight1
                 comboBox7.SelectedIndex = -1;
             }
             Cursor.Current = Cursors.Default;
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -698,7 +699,7 @@ namespace flight1
                 f6.label9.Text = label9.Text;
 
             }
-
+            Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
         }
 
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)

@@ -33,3 +33,4 @@ C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\Xceed.Document.NET.dll
 C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\Xceed.Words.NET.dll
 C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.csproj.CopyComplete
 C:\Users\RICHA\Desktop\flightapp\flight1\bin\Debug\Resources\logo.png
+C:\Users\RICHA\Desktop\flightapp\flight1\obj\Debug\flight1.Form8.resources

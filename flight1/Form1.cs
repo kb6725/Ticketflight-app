@@ -338,6 +338,7 @@ namespace flight1
                 return;
             }
             Form2 f2 = new Form2();
+            Form8 f8 = new Form8();
             this.Hide();
             f2.Show();
             f2.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
@@ -548,10 +549,18 @@ namespace flight1
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form8 f8 = new Form8();
+            f8.Show();
+            
         }
 
         private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click_1(object sender, EventArgs e)
         {
 
         }

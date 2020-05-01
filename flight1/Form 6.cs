@@ -195,6 +195,7 @@ namespace flight1
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
             if (textBox2.TextLength > 1)
             {if (textBox2.Text.Contains( "@"))
                 {
@@ -261,7 +262,7 @@ namespace flight1
             Global.p3name = textBox7.Text;
             Global.p3pp = textBox12.Text;
             Global.p4name = textBox14.Text;
-            Global.p4pp = textBox14.Text;
+            Global.p4pp = textBox15.Text;
             Global.p5name = textBox17.Text;
             Global.p5pp = textBox18.Text;
             

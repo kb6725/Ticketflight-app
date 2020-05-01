@@ -580,10 +580,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Berlin Sans FB", 21.91304F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Calibri", 21.91304F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(441, 24);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(248, 38);
+            this.label11.Size = new System.Drawing.Size(254, 44);
             this.label11.TabIndex = 3;
             this.label11.Text = "Congratuations ";
             // 

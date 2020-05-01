@@ -52,6 +52,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form 8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form 8.Designer.cs">
+      <DependentUpon>Form 8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form 7.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form 8.resx">
+      <DependentUpon>Form 8.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form 7.resx">
       <DependentUpon>Form 7.cs</DependentUpon>
     </EmbeddedResource>

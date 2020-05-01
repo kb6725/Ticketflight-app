@@ -56,7 +56,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -414,7 +413,6 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.textBox1);
             this.panel6.Controls.Add(this.button7);
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.button5);
@@ -429,24 +427,18 @@
             this.panel6.TabIndex = 12;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(15, 422);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 31);
-            this.textBox1.TabIndex = 3;
-            // 
             // button7
             // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(199, 417);
+            this.button7.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(46, 417);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 40);
+            this.button7.Size = new System.Drawing.Size(151, 48);
             this.button7.TabIndex = 2;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Text = "Search Ticket";
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
@@ -478,8 +470,9 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(232, 28);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Look up by Booking Number";
+            this.label14.Text = "Look up Booking Number";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label14.Click += new System.EventHandler(this.label14_Click_1);
             // 
             // label11
             // 
@@ -705,7 +698,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
