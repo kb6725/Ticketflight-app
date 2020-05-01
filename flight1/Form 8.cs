@@ -330,7 +330,11 @@ namespace flight1
             this.Hide();
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void maskedTextBox1_MaskInputRejected(object sender, EventArgs e)
+        {
+            
+        }
+        private void maskedTextBox1_textchange(object sender, EventArgs e)
         {
             if (maskedTextBox1.Text != "")
             { maskedTextBox1.BackColor = Color.White; }

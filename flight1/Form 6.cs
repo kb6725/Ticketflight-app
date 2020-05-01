@@ -208,7 +208,7 @@ namespace flight1
             { textBox13.BackColor = Color.IndianRed; }
             if (textBox16.Text == "")
             { textBox16.BackColor = Color.IndianRed; }
-            if (textBox2.Text == "" )
+            if (textBox2.Text == "" || textBox2.Text.Contains("@")==false)
             { textBox2.BackColor = Color.IndianRed; }
            
             if (textBox4.Text == "")
