@@ -559,7 +559,7 @@ namespace flight1
 
             if (Global.guest == 5)
             {
-                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1 || comboBox8.SelectedIndex == -1 || comboBox9.SelectedIndex == -1)
+                if (comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1 || comboBox8.SelectedIndex == -1 || comboBox9.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please pick seat selection. Seat allocation should not be unselected", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -587,7 +587,7 @@ namespace flight1
 
             if (Global.guest == 4)
             {
-                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1 || comboBox8.SelectedIndex == -1)
+                if ( comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1 || comboBox8.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -614,7 +614,7 @@ namespace flight1
 
             if (Global.guest == 3)
             {
-                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1)
+                if (comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1 || comboBox7.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -644,7 +644,7 @@ namespace flight1
             if (Global.guest == 2)
             {
 
-                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1)
+                if ( comboBox2.SelectedIndex == -1 || comboBox6.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -670,7 +670,7 @@ namespace flight1
 
             if (Global.guest == 1)
             {
-                if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
+                if ( comboBox2.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
