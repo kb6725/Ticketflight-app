@@ -208,19 +208,20 @@ namespace flight1
         {
             ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
-
+       
         private void button1_Click_2(object sender, EventArgs e)
         {
-            panel1.Visible = true;
+            if (maskedTextBox1.Text == "")
+            { maskedTextBox1.BackColor = Color.IndianRed;return; }
             // search 
             string[] words = File.ReadAllText("data.txt").Split(',');
             string search = maskedTextBox1.Text;
             
             for (int i = 0; i < words.Length; i = i + 1)
             {
-                if (words[i].Contains(search) == true)
+                if (words[i]==search)
                 {
-                    label12.Text = "Record Found";
+                    label12.Text = "";
                     label22.Text = words[i+1];
                     label23.Text = words[i+2];
                     label27.Text = words[i + 3];
@@ -268,6 +269,7 @@ namespace flight1
                         panel5.Visible = true;
                         panel7.Visible = true;
                         panel6.Visible = true;
+                        panel11.Visible = false;
                         panel12.Visible = false;
                     }
 
@@ -290,14 +292,17 @@ namespace flight1
                     }
 
 
-
+                    panel1.Visible = true;
 
                     break;
                 }
                 else
                 {
                     label12.Text = "Record Not Found";
-                    
+                    panel3.Visible = false;
+                    panel4.Visible = false;
+                    panel5.Visible = false;
+                    panel1.Visible = false;
                 }
                 
 
@@ -307,8 +312,30 @@ namespace flight1
 
 
         }
-            
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            if (maskedTextBox1.Text != "")
+            { maskedTextBox1.BackColor = Color.White; }
+        }
+    }
     } 
     
     

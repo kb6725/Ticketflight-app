@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Word;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -195,6 +196,54 @@ namespace flight1
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            { textBox1.BackColor = Color.IndianRed; }
+            if (textBox3.Text == "")
+            { textBox3.BackColor = Color.IndianRed; }
+            if (textBox8.Text == "")
+            { textBox8.BackColor = Color.IndianRed; }
+            if (textBox10.Text == "")
+            { textBox10.BackColor = Color.IndianRed; }
+            if (textBox13.Text == "")
+            { textBox13.BackColor = Color.IndianRed; }
+            if (textBox16.Text == "")
+            { textBox16.BackColor = Color.IndianRed; }
+            if (textBox2.Text == "" )
+            { textBox2.BackColor = Color.IndianRed; }
+           
+            if (textBox4.Text == "")
+            { textBox4.BackColor = Color.IndianRed; }
+            if (comboBox1.Text == "")
+            { comboBox1.BackColor = Color.IndianRed; }
+            if (comboBox2.Text == "")
+            { comboBox2.BackColor = Color.IndianRed; }
+            if (maskedTextBox2.Text == "")
+            { maskedTextBox2.BackColor = Color.IndianRed; }
+
+            if (maskedTextBox1.Text== "(   )    -")
+            { maskedTextBox1.BackColor = Color.IndianRed; }
+            if (textBox11.Text == "")
+            { textBox11.BackColor = Color.IndianRed; }
+            if (textBox7.Text == "")
+            { textBox7.BackColor = Color.IndianRed; }
+            if (textBox14.Text == "")
+            { textBox14.BackColor = Color.IndianRed; }
+
+            if (textBox17.Text == "")
+            { textBox17.BackColor = Color.IndianRed; }
+
+            if (textBox5.Text == "")
+            { textBox5.BackColor = Color.IndianRed; }
+
+            if (textBox12.Text == "")
+            { textBox12.BackColor = Color.IndianRed; }
+
+            if (textBox15.Text == "")
+            { textBox15.BackColor = Color.IndianRed; }
+            if (textBox18.Text == "")
+            { textBox18.BackColor = Color.IndianRed; }
+
+
             Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
             if (textBox2.TextLength > 1)
             {if (textBox2.Text.Contains( "@"))
@@ -319,7 +368,9 @@ namespace flight1
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            
+            if (textBox2.Text != "" && textBox2.Text.Contains("@") == true)
+
+            { textBox2.BackColor = Color.White; }
 
         }
 
@@ -327,26 +378,36 @@ namespace flight1
         {
             if (textBox8.TextLength == 4)
             { textBox10.Focus(); }
-           
-           
-           
+          
+            if (textBox8.Text != "")
+
+            { textBox8.BackColor = Color.White; }
+
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
             if (textBox10.TextLength == 4)
             { textBox13.Focus(); }
+            if (textBox10.Text != "")
+
+            { textBox10.BackColor = Color.White; }
         }
 
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
             if (textBox13.TextLength == 4)
             { textBox16.Focus(); }
+            if (textBox13.Text != "")
+
+            { textBox13.BackColor = Color.White; }
         }
 
         private void textBox16_TextChanged(object sender, EventArgs e)
         {
+            if (textBox16.Text != "")
 
+            { textBox16.BackColor = Color.White; }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -370,6 +431,10 @@ namespace flight1
             if (checkBox1.Checked==true) 
             { textBox4.Text = textBox1.Text;  }
             else { textBox4.Text = ""; }
+            if (textBox1.Text != "")
+
+            { textBox1.BackColor = Color.White; }
+
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
@@ -385,6 +450,155 @@ namespace flight1
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            this.Hide();
+            f5.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox8.Text = "";
+                textBox10.Text = "";
+                textBox13.Text = "";
+                textBox16.Text = "";
+                textBox4.Text = "";
+                textBox11.Text = "";
+                textBox14.Text = "";
+                textBox7.Text = "";
+                textBox17.Text = "";
+                textBox5.Text = "";
+                textBox12.Text = "";
+                textBox15.Text = "";
+                textBox18.Text = "";
+                maskedTextBox2.Text = "";
+                maskedTextBox1.Text = "";
+                checkBox1.Checked = false;
+                comboBox1.SelectedIndex = -1;
+                comboBox2.SelectedIndex = -1;
+
+
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox3.Text != "")
+
+            { textBox3.BackColor = Color.White; }
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            if (maskedTextBox1.Text != "")
+
+            { maskedTextBox1.BackColor = Color.White; }
+        }
+        private void maskedTextBox1_TextChange(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text != "")
+
+            { maskedTextBox1.BackColor = Color.White; }
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+        }
+
+        private void maskedTextBox2_TextChange(object sender, EventArgs e)
+        {
+            if (maskedTextBox2.Text != "")
+
+            { maskedTextBox2.BackColor = Color.White; }
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex != -1)
+
+            { comboBox1.BackColor = Color.White; }
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedIndex != -1)
+
+            { comboBox2.BackColor = Color.White; }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox4.Text != "")
+
+            { textBox4.BackColor = Color.White; }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox11.Text != "" )
+
+            { textBox11.BackColor = Color.White; }
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox7.Text != "")
+
+            { textBox7.BackColor = Color.White; }
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox14.Text != "")
+
+            { textBox14.BackColor = Color.White; }
+        }
+
+        private void textBox17_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox17.Text != "")
+
+            { textBox17.BackColor = Color.White; }
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox12.Text != "")
+
+            { textBox12.BackColor = Color.White; }
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox15.Text != "")
+
+            { textBox15.BackColor = Color.White; }
+        }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox18.Text != "")
+
+            { textBox18.BackColor = Color.White; }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox5.Text != "")
+
+            { textBox5.BackColor = Color.White; }
         }
     } 
     

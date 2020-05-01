@@ -260,5 +260,22 @@ namespace flight1
         {
             ControlPaint.DrawBorder(e.Graphics, panel10.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                this.Close();
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            this.Hide();
+            f2.Show();
+        }
     }
 }

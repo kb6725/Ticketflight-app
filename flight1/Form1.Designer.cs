@@ -379,9 +379,9 @@
             this.buttonsearch.ForeColor = System.Drawing.Color.Black;
             this.buttonsearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonsearch.Image")));
             this.buttonsearch.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonsearch.Location = new System.Drawing.Point(517, 676);
+            this.buttonsearch.Location = new System.Drawing.Point(474, 676);
             this.buttonsearch.Name = "buttonsearch";
-            this.buttonsearch.Size = new System.Drawing.Size(287, 72);
+            this.buttonsearch.Size = new System.Drawing.Size(330, 72);
             this.buttonsearch.TabIndex = 4;
             this.buttonsearch.Text = "Search Flight";
             this.buttonsearch.UseVisualStyleBackColor = false;
@@ -391,9 +391,9 @@
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button4.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(918, 684);
+            this.button4.Location = new System.Drawing.Point(868, 683);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 53);
+            this.button4.Size = new System.Drawing.Size(190, 54);
             this.button4.TabIndex = 5;
             this.button4.Text = "Reset";
             this.button4.UseVisualStyleBackColor = true;
@@ -405,7 +405,7 @@
             this.button3.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(1068, 683);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 54);
+            this.button3.Size = new System.Drawing.Size(190, 54);
             this.button3.TabIndex = 5;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;

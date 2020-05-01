@@ -261,14 +261,16 @@ namespace flight1
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox1.SelectedIndex != -1)
+            { label13.ForeColor = Color.Black; }
         }
 
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox1.SelectedIndex!= - 1)
+            { label22.ForeColor = Color.Black; }
 
 
             if (Global.cabin == "Economy")
@@ -454,6 +456,8 @@ namespace flight1
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox4.SelectedIndex != -1)
+            { label16.ForeColor = Color.Black; }
             Global.insurance = 0;
 
             if (comboBox4.Text == "No insurance - $0")
@@ -488,6 +492,8 @@ namespace flight1
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox5.SelectedIndex != -1)
+            { label18.ForeColor = Color.Black; }
             Global.bag = 0;
             if (comboBox5.Text == "Carry on - $0")
 
@@ -525,6 +531,8 @@ namespace flight1
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox3.SelectedIndex != -1)
+            { label17.ForeColor = Color.Black; }
             Global.meal = 0;
             if (comboBox3.Text == "No Meal - $0")
             {
@@ -554,6 +562,35 @@ namespace flight1
         private void button1_Click_1(object sender, EventArgs e)
         {
 
+            if (comboBox1.SelectedIndex == -1)
+            { label22.ForeColor = Color.IndianRed; }
+            else { label22.ForeColor = Color.Black; }
+            if (comboBox2.SelectedIndex == -1)
+            { label13.ForeColor = Color.IndianRed; }
+            else { label13.ForeColor = Color.Black; }
+           if(comboBox6.SelectedIndex == -1)
+            { label25.ForeColor = Color.IndianRed; }
+            else { label25.ForeColor = Color.Black; }
+
+            if (comboBox7.SelectedIndex == -1)
+            { label26.ForeColor = Color.IndianRed; }
+            else { label26.ForeColor = Color.Black; }
+            if (comboBox8.SelectedIndex == -1)
+            { label27.ForeColor = Color.IndianRed; }
+            else { label27.ForeColor = Color.Black; }
+            if (comboBox9.SelectedIndex == -1)
+            { label28.ForeColor = Color.IndianRed; }
+            else { label28.ForeColor = Color.Black; }
+            if (comboBox3.SelectedIndex == -1)
+            { label17.ForeColor = Color.IndianRed; }
+            else { label17.ForeColor = Color.Black; }
+            if (comboBox4.SelectedIndex == -1)
+            { label16.ForeColor = Color.IndianRed; }
+            else { label16.ForeColor = Color.Black; }
+            if (comboBox5.SelectedIndex == -1)
+            { label18.ForeColor = Color.IndianRed; }
+            else { label18.ForeColor = Color.Black; }
+
 
             Form6 f6 = new Form6();
 
@@ -566,9 +603,7 @@ namespace flight1
                 }
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox2.SelectedIndex != comboBox9.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox9.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex && comboBox7.SelectedIndex != comboBox9.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex && comboBox8.SelectedIndex != comboBox9.SelectedIndex)
                 {
-                    this.Hide();
-
-                    f6.Show();
+                    
 
                 }
 
@@ -594,9 +629,7 @@ namespace flight1
                 }
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox2.SelectedIndex != comboBox8.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox8.SelectedIndex && comboBox7.SelectedIndex != comboBox8.SelectedIndex)
                 {
-                    this.Hide();
-
-                    f6.Show();
+                    
 
                 }
 
@@ -622,9 +655,7 @@ namespace flight1
 
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex && comboBox2.SelectedIndex != comboBox7.SelectedIndex && comboBox6.SelectedIndex != comboBox7.SelectedIndex)
                 {
-                    this.Hide();
-
-                    f6.Show();
+                  
 
                 }
 
@@ -651,9 +682,7 @@ namespace flight1
                 }
                 if (comboBox2.SelectedIndex != comboBox6.SelectedIndex)
                 {
-                    this.Hide();
-
-                    f6.Show();
+                    
                 }
 
 
@@ -676,7 +705,7 @@ namespace flight1
                     return;
                 }
             }
-
+            
             if (comboBox3.SelectedIndex == -1 || comboBox4.SelectedIndex == -1 || comboBox5.SelectedIndex == -1)
             {
 
@@ -684,7 +713,7 @@ namespace flight1
                 return;
 
             }
-            if (comboBox3.SelectedIndex != -1 && comboBox4.SelectedIndex != -1&& comboBox5.SelectedIndex != -1)
+            if (comboBox3.SelectedIndex != -1 && comboBox4.SelectedIndex != -1 && comboBox5.SelectedIndex != -1)
             {
                 this.Hide();
 
@@ -704,17 +733,20 @@ namespace flight1
 
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox9.SelectedIndex != -1)
+            { label28.ForeColor = Color.Black; }
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox2.SelectedIndex != -1)
+            { label25.ForeColor = Color.Black; }
         }
 
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox7.SelectedIndex != -1)
+            { label26.ForeColor = Color.Black; }
         }
         public void Combo()
         {
@@ -733,7 +765,8 @@ namespace flight1
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox8.SelectedIndex != -1)
+            { label27.ForeColor = Color.Black; }
         }
 
         private void label22_Click(object sender, EventArgs e)
@@ -779,6 +812,116 @@ namespace flight1
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            this.Hide();
+            f4.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                comboBox1.SelectedIndex = -1;
+                comboBox2.SelectedIndex = -1;
+                comboBox6.SelectedIndex = -1;
+                comboBox7.SelectedIndex = -1;
+                comboBox8.SelectedIndex = -1;
+                comboBox9.SelectedIndex = -1;
+                comboBox3.SelectedIndex = -1;
+                comboBox4.SelectedIndex = -1;
+                comboBox5.SelectedIndex = -1;
+
+                comboBox2.Visible = false;
+                comboBox6.Visible = false;
+                comboBox7.Visible = false;
+                comboBox8.Visible = false;
+                comboBox9.Visible = false;
+                label13.Visible = false;
+                label25.Visible = false;
+                label26.Visible = false;
+                label27.Visible = false;
+                label28.Visible = false;
+                if (Global.cabin == "First Class")
+                {
+                    if (Global.guest == 1)
+                    {
+                        label13.Visible = true;
+                        label25.Visible = false;
+                        label26.Visible = false;
+                        label27.Visible = false;
+                        label28.Visible = false;
+                        comboBox2.Visible = true;
+                        comboBox6.Visible = false;
+                        comboBox7.Visible = false;
+                        comboBox8.Visible = false;
+                        comboBox9.Visible = false;
+                    }
+                    if (Global.guest == 2)
+                    {
+                        label13.Visible = true;
+                        comboBox2.Visible = true;
+                        label25.Visible = true;
+                        label26.Visible = false;
+                        label27.Visible = false;
+                        label28.Visible = false;
+                        comboBox6.Visible = true;
+                        comboBox7.Visible = false;
+                        comboBox8.Visible = false;
+                        comboBox9.Visible = false;
+                    }
+                    if (Global.guest == 3)
+                    {
+                        label13.Visible = true;
+                        comboBox2.Visible = true;
+                        label25.Visible = true;
+                        label26.Visible = true;
+                        label27.Visible = false;
+                        label28.Visible = false;
+                        comboBox6.Visible = true;
+                        comboBox7.Visible = true;
+                        comboBox8.Visible = false;
+                        comboBox9.Visible = false;
+                    }
+                    if (Global.guest == 4)
+                    {
+                        label13.Visible = true;
+                        comboBox2.Visible = true;
+                        label25.Visible = true;
+                        label26.Visible = true;
+                        label27.Visible = true;
+                        label28.Visible = false;
+                        comboBox6.Visible = true;
+                        comboBox7.Visible = true;
+                        comboBox8.Visible = true;
+                        comboBox9.Visible = false;
+                    }
+                    if (Global.guest == 5)
+                    {
+                        label13.Visible = true;
+                        comboBox2.Visible = true;
+                        label25.Visible = true;
+                        label26.Visible = true;
+                        label27.Visible = true;
+                        label28.Visible = true;
+                        comboBox6.Visible = true;
+                        comboBox7.Visible = true;
+                        comboBox8.Visible = true;
+                        comboBox9.Visible = true;
+                    }
+                }
+
+            }
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
         }
     }
 } 

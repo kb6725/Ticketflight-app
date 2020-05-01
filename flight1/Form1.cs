@@ -242,7 +242,8 @@ namespace flight1
 
         private void comboFrom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (comboFrom.SelectedIndex != -1)
+            { comboFrom.ForeColor = Color.Black; }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -287,7 +288,12 @@ namespace flight1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -297,26 +303,50 @@ namespace flight1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            comboFrom.Text = "Select Departure ..";
-            comboTo.Text = "Select Arrival ..";
-            combocabin.Text = "Select Cabin ..";
-            labelguest.Text = "1";
-            radioButton1.Checked = true;
-            dateTimeout.Value = DateTime.Today;
+            DialogResult res = new DialogResult();
+            res=MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
 
+                comboFrom.Text = "Select Departure ..";
+                comboTo.Text = "Select Arrival ..";
+                combocabin.Text = "Select Cabin ..";
+                labelguest.Text = "1";
+                radioButton1.Checked = true;
+                dateTimeout.Value = DateTime.Today;
+                dateTimereturn.Value = DateTime.Today;
+            }
+           
         }
 
         private void buttonsearch_Click(object sender, EventArgs e)
         {
             
             if (comboFrom.Text == comboTo.Text)
-            { MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
+            { MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                comboFrom.ForeColor = Color.IndianRed;
+                comboFrom.ForeColor = Color.Black;
+                
+                
+                
+                return; }
 
-            if (comboFrom.SelectedIndex <0 ||  comboTo.SelectedIndex <0)
-            { MessageBox.Show("Please select Destination and Arrival to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
+            if (comboFrom.SelectedIndex < 0)
+            {
+                MessageBox.Show("Please select Destination to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                comboFrom.ForeColor = Color.IndianRed;
+                if (comboTo.SelectedIndex < 0)
+                { comboTo.ForeColor = Color.IndianRed; }
+                    return;
+            }
+            else { comboFrom.ForeColor = Color.Black; }
+            if (comboTo.SelectedIndex < 0)
 
-
-       
+            { MessageBox.Show("Please select Arrival to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                comboTo.ForeColor = Color.IndianRed;
+                return;
+            }
+            else { comboTo.ForeColor = Color.Black; }
 
             Global.flightfrom = comboFrom.Text;
             Global.flightto = comboTo.Text;
@@ -499,6 +529,7 @@ namespace flight1
 
             }
 
+           
 
         }
 
@@ -529,7 +560,8 @@ namespace flight1
 
         private void comboTo_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            if (comboTo.SelectedIndex != -1)
+            { comboTo.ForeColor = Color.Black; }
         }
 
         private void label14_Click(object sender, EventArgs e)

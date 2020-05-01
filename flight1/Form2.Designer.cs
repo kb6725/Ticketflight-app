@@ -1172,24 +1172,26 @@
             this.button6.BackColor = System.Drawing.Color.Silver;
             this.button6.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(1674, 873);
+            this.button6.Location = new System.Drawing.Point(1498, 855);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(158, 40);
+            this.button6.Size = new System.Drawing.Size(334, 40);
             this.button6.TabIndex = 14;
             this.button6.Text = "Exit";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Silver;
             this.button7.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(1498, 873);
+            this.button7.Location = new System.Drawing.Point(1497, 802);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(158, 40);
+            this.button7.Size = new System.Drawing.Size(334, 40);
             this.button7.TabIndex = 15;
             this.button7.Text = "Previous";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel13
             // 

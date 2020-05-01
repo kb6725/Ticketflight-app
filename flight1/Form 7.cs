@@ -102,6 +102,30 @@ namespace flight1
             label30.Text = Global.guest.ToString();
             label40.Text = Global.finaltick.ToString("C1");
             Cursor.Current = Cursors.Default;
+
+
+
+            Global.outandreturnticket = Global.outticket + Global.returnticket;
+            Form8 f8 = new Form8();
+            //to DB
+            StreamWriter str;
+
+
+            if (File.Exists("data.txt"))
+
+            {
+                str = File.AppendText("data.txt");
+
+            }
+            else
+            {
+                str = File.CreateText("data.txt");
+
+            }
+            str.WriteLine("," + Global.booknum + "," + Global.p1name + "," + Global.p1dob.ToShortDateString() + "," + Global.p1pp + "," + Global.p1email + "," + Global.phone + "," + Global.card4 + "," + Global.cardname + "," + Global.p2name + "," + Global.p2pp + "," + Global.p3name + "," + Global.p3pp + "," + Global.p4name + "," + Global.p4pp + "," + Global.p5name + "," + Global.p5pp + "," + Global.flightfrom + "," + Global.flightto + "," + Global.fromdate.ToShortDateString() + "," + Global.todate.ToShortDateString() + "," + Global.cabinupgrade + "," + Global.guest + "," + Global.outandreturnticket + "," + Global.servicefee + "," + Global.airportfee + "," + Global.tax + "," + Global.totaltick + "," + Global.finaltick + ",");
+
+
+            str.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -274,27 +298,7 @@ namespace flight1
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            Global.outandreturnticket = Global.outticket + Global.returnticket;
-            Form8 f8 = new Form8();
-            //to DB
-            StreamWriter str;
             
-
-            if (File.Exists("data.txt"))
-
-            {
-                str = File.AppendText("data.txt");
-
-            }
-            else
-            {
-                str = File.CreateText("data.txt");
-
-            }
-            str.WriteLine(","+Global.booknum + "," + Global.p1name+","+ Global.p1dob.ToShortDateString() + "," + Global.p1pp + "," + Global.p1email + "," + Global.phone + "," + Global.card4 + "," + Global.cardname + "," + Global.p2name + "," + Global.p2pp + "," + Global.p3name + "," +Global.p3pp + ","+ Global.p4name + "," + Global.p4pp + "," + Global.p5name + "," + Global.p5pp + "," + Global.flightfrom + "," + Global.flightto + "," + Global.fromdate.ToShortDateString() + "," + Global.todate.ToShortDateString() + "," + Global.cabinupgrade + "," + Global.guest + "," + Global.outandreturnticket + "," + Global.servicefee + "," + Global.airportfee + ","+ Global.tax + "," + Global.totaltick + "," + Global.finaltick + ",");
-                    
-
-            str.Close();
             // export ticket
             object oMissing = System.Reflection.Missing.Value;
             object oEndOfDoc = "\\endofdoc";
@@ -455,8 +459,29 @@ namespace flight1
 
 
         }
-            
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to redirect ?", "Redirect prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                Form1 f1 = new Form1();
+                f1.Show();
+                this.Hide();
+            }
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            DialogResult res = new DialogResult();
+            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (res == DialogResult.OK)
+            {
+                this.Close();
+            }
+        }
+    }
     } 
     
     
