@@ -140,9 +140,11 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(448, 365);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 292);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -156,9 +158,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel9);
-            this.panel1.Location = new System.Drawing.Point(1446, 40);
+            this.panel1.Location = new System.Drawing.Point(1084, 32);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(418, 711);
+            this.panel1.Size = new System.Drawing.Size(314, 578);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -166,9 +169,10 @@
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 182);
+            this.label4.Location = new System.Drawing.Point(28, 148);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 33);
+            this.label4.Size = new System.Drawing.Size(178, 27);
             this.label4.TabIndex = 1;
             this.label4.Text = "a";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -177,9 +181,10 @@
             // 
             this.labelsum.BackColor = System.Drawing.Color.Transparent;
             this.labelsum.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelsum.Location = new System.Drawing.Point(38, 99);
+            this.labelsum.Location = new System.Drawing.Point(28, 80);
+            this.labelsum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelsum.Name = "labelsum";
-            this.labelsum.Size = new System.Drawing.Size(256, 33);
+            this.labelsum.Size = new System.Drawing.Size(192, 27);
             this.labelsum.TabIndex = 1;
             this.labelsum.Text = "a";
             this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -189,9 +194,10 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 156);
+            this.label2.Location = new System.Drawing.Point(28, 127);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 36);
+            this.label2.Size = new System.Drawing.Size(178, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Date";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -200,9 +206,10 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 75);
+            this.label1.Location = new System.Drawing.Point(26, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 36);
+            this.label1.Size = new System.Drawing.Size(194, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Route";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -211,9 +218,10 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 24);
+            this.label3.Location = new System.Drawing.Point(64, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 36);
+            this.label3.Size = new System.Drawing.Size(195, 29);
             this.label3.TabIndex = 1;
             this.label3.Text = "Flight Summary";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -231,9 +239,10 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(31, 51);
+            this.panel2.Location = new System.Drawing.Point(23, 41);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(359, 264);
+            this.panel2.Size = new System.Drawing.Size(269, 214);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -241,9 +250,10 @@
             // 
             this.label49.BackColor = System.Drawing.Color.Transparent;
             this.label49.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(237, 48);
+            this.label49.Location = new System.Drawing.Point(178, 39);
+            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(64, 33);
+            this.label49.Size = new System.Drawing.Size(48, 27);
             this.label49.TabIndex = 4;
             this.label49.Text = "aa";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -252,9 +262,10 @@
             // 
             this.label61.BackColor = System.Drawing.Color.Transparent;
             this.label61.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(296, 49);
+            this.label61.Location = new System.Drawing.Point(222, 40);
+            this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(53, 33);
+            this.label61.Size = new System.Drawing.Size(40, 27);
             this.label61.TabIndex = 4;
             this.label61.Text = "hrs";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -263,9 +274,10 @@
             // 
             this.label50.BackColor = System.Drawing.Color.Transparent;
             this.label50.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(249, 23);
+            this.label50.Location = new System.Drawing.Point(187, 19);
+            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(105, 36);
+            this.label50.Size = new System.Drawing.Size(79, 29);
             this.label50.TabIndex = 5;
             this.label50.Text = "Duration";
             this.label50.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -274,9 +286,10 @@
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(260, 205);
+            this.label9.Location = new System.Drawing.Point(195, 167);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 33);
+            this.label9.Size = new System.Drawing.Size(63, 27);
             this.label9.TabIndex = 1;
             this.label9.Text = "a";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,9 +298,10 @@
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(69, 205);
+            this.label10.Location = new System.Drawing.Point(52, 167);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 33);
+            this.label10.Size = new System.Drawing.Size(82, 27);
             this.label10.TabIndex = 1;
             this.label10.Text = "a";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -297,9 +311,10 @@
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(249, 130);
+            this.label6.Location = new System.Drawing.Point(187, 106);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 33);
+            this.label6.Size = new System.Drawing.Size(77, 27);
             this.label6.TabIndex = 1;
             this.label6.Text = "a";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -308,9 +323,10 @@
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(258, 104);
+            this.label5.Location = new System.Drawing.Point(194, 84);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 36);
+            this.label5.Size = new System.Drawing.Size(64, 29);
             this.label5.TabIndex = 1;
             this.label5.Text = "Length";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -319,9 +335,10 @@
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(233, 179);
+            this.label8.Location = new System.Drawing.Point(175, 145);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 36);
+            this.label8.Size = new System.Drawing.Size(95, 29);
             this.label8.TabIndex = 1;
             this.label8.Text = "Guest";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -330,9 +347,10 @@
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(62, 179);
+            this.label7.Location = new System.Drawing.Point(46, 145);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 36);
+            this.label7.Size = new System.Drawing.Size(95, 29);
             this.label7.TabIndex = 1;
             this.label7.Text = "Cabin";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -351,9 +369,10 @@
             this.panel9.Controls.Add(this.label44);
             this.panel9.Controls.Add(this.label43);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(31, 353);
+            this.panel9.Location = new System.Drawing.Point(23, 287);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(359, 340);
+            this.panel9.Size = new System.Drawing.Size(269, 276);
             this.panel9.TabIndex = 3;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
@@ -361,18 +380,20 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(21, 217);
+            this.label47.Location = new System.Drawing.Point(16, 176);
+            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(194, 23);
+            this.label47.Size = new System.Drawing.Size(168, 19);
             this.label47.TabIndex = 4;
             this.label47.Text = "Total Price / passenger:";
             // 
             // label54
             // 
             this.label54.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(235, 155);
+            this.label54.Location = new System.Drawing.Point(176, 126);
+            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(93, 23);
+            this.label54.Size = new System.Drawing.Size(70, 19);
             this.label54.TabIndex = 4;
             this.label54.Text = "..";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -382,18 +403,20 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(23, 155);
+            this.label46.Location = new System.Drawing.Point(17, 126);
+            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(93, 23);
+            this.label46.Size = new System.Drawing.Size(80, 19);
             this.label46.TabIndex = 4;
             this.label46.Text = "Tax (10%) :";
             // 
             // label53
             // 
             this.label53.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(184, 117);
+            this.label53.Location = new System.Drawing.Point(138, 95);
+            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(144, 23);
+            this.label53.Size = new System.Drawing.Size(108, 19);
             this.label53.TabIndex = 3;
             this.label53.Text = "..";
             this.label53.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -402,18 +425,20 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(23, 117);
+            this.label45.Location = new System.Drawing.Point(17, 95);
+            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(144, 23);
+            this.label45.Size = new System.Drawing.Size(123, 19);
             this.label45.TabIndex = 3;
             this.label45.Text = "Airport Fee (5%) :";
             // 
             // label52
             // 
             this.label52.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(220, 81);
+            this.label52.Location = new System.Drawing.Point(165, 66);
+            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(108, 23);
+            this.label52.Size = new System.Drawing.Size(81, 19);
             this.label52.TabIndex = 2;
             this.label52.Text = "..";
             this.label52.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -422,18 +447,20 @@
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(24, 81);
+            this.label48.Location = new System.Drawing.Point(18, 66);
+            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(108, 23);
+            this.label48.Size = new System.Drawing.Size(95, 19);
             this.label48.TabIndex = 2;
             this.label48.Text = "Service Fee : ";
             // 
             // label51
             // 
             this.label51.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(220, 46);
+            this.label51.Location = new System.Drawing.Point(165, 37);
+            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(108, 23);
+            this.label51.Size = new System.Drawing.Size(81, 19);
             this.label51.TabIndex = 2;
             this.label51.Text = "..";
             this.label51.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -442,9 +469,10 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(24, 46);
+            this.label44.Location = new System.Drawing.Point(18, 37);
+            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(200, 23);
+            this.label44.Size = new System.Drawing.Size(176, 19);
             this.label44.TabIndex = 2;
             this.label44.Text = "Ticket Price / passenger : ";
             // 
@@ -452,9 +480,10 @@
             // 
             this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(53, 4);
+            this.label43.Location = new System.Drawing.Point(40, 3);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(260, 36);
+            this.label43.Size = new System.Drawing.Size(195, 29);
             this.label43.TabIndex = 1;
             this.label43.Text = "Price";
             this.label43.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -466,9 +495,10 @@
             this.panel10.Controls.Add(this.label30);
             this.panel10.Controls.Add(this.label40);
             this.panel10.Controls.Add(this.label55);
-            this.panel10.Location = new System.Drawing.Point(0, 204);
+            this.panel10.Location = new System.Drawing.Point(0, 166);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(359, 136);
+            this.panel10.Size = new System.Drawing.Size(269, 110);
             this.panel10.TabIndex = 5;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
@@ -476,9 +506,10 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(23, 91);
+            this.label36.Location = new System.Drawing.Point(17, 74);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(143, 23);
+            this.label36.Size = new System.Drawing.Size(126, 19);
             this.label36.TabIndex = 4;
             this.label36.Text = "Total Ticket Price";
             // 
@@ -486,18 +517,20 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(22, 52);
+            this.label29.Location = new System.Drawing.Point(16, 42);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(185, 23);
+            this.label29.Size = new System.Drawing.Size(159, 19);
             this.label29.TabIndex = 4;
             this.label29.Text = "Number of passengers ";
             // 
             // label30
             // 
             this.label30.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(176, 52);
+            this.label30.Location = new System.Drawing.Point(132, 42);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(152, 23);
+            this.label30.Size = new System.Drawing.Size(114, 19);
             this.label30.TabIndex = 4;
             this.label30.Text = "..";
             this.label30.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -506,9 +539,10 @@
             // label40
             // 
             this.label40.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(177, 91);
+            this.label40.Location = new System.Drawing.Point(133, 74);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(152, 23);
+            this.label40.Size = new System.Drawing.Size(114, 19);
             this.label40.TabIndex = 4;
             this.label40.Text = "..";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -517,9 +551,10 @@
             // label55
             // 
             this.label55.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(176, 13);
+            this.label55.Location = new System.Drawing.Point(132, 11);
+            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(152, 23);
+            this.label55.Size = new System.Drawing.Size(114, 19);
             this.label55.TabIndex = 4;
             this.label55.Text = "..";
             this.label55.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -535,9 +570,10 @@
             this.panel8.Controls.Add(this.panel5);
             this.panel8.Controls.Add(this.panel3);
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(339, 40);
+            this.panel8.Location = new System.Drawing.Point(273, 32);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1063, 911);
+            this.panel8.Size = new System.Drawing.Size(797, 740);
             this.panel8.TabIndex = 3;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
@@ -545,9 +581,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(439, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(329, 58);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(22, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -557,9 +594,10 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Navy;
-            this.label20.Location = new System.Drawing.Point(389, 121);
+            this.label20.Location = new System.Drawing.Point(292, 98);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(246, 27);
+            this.label20.Size = new System.Drawing.Size(207, 23);
             this.label20.TabIndex = 6;
             this.label20.Text = "Your Booking Number is : ";
             this.label20.Click += new System.EventHandler(this.label20_Click);
@@ -569,9 +607,10 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(474, 75);
+            this.label12.Location = new System.Drawing.Point(356, 61);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(196, 27);
+            this.label12.Size = new System.Drawing.Size(165, 23);
             this.label12.TabIndex = 3;
             this.label12.Text = "Payment authorized";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -581,9 +620,10 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Calibri", 21.91304F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(441, 24);
+            this.label11.Location = new System.Drawing.Point(331, 20);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(248, 42);
+            this.label11.Size = new System.Drawing.Size(214, 37);
             this.label11.TabIndex = 3;
             this.label11.Text = "Congratuations ";
             // 
@@ -596,9 +636,10 @@
             this.panel4.Controls.Add(this.label24);
             this.panel4.Controls.Add(this.label57);
             this.panel4.Controls.Add(this.label56);
-            this.panel4.Location = new System.Drawing.Point(31, 413);
+            this.panel4.Location = new System.Drawing.Point(23, 336);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1008, 88);
+            this.panel4.Size = new System.Drawing.Size(756, 72);
             this.panel4.TabIndex = 4;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -606,9 +647,10 @@
             // 
             this.label17.BackColor = System.Drawing.Color.White;
             this.label17.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(4, 10);
+            this.label17.Location = new System.Drawing.Point(3, 8);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(998, 27);
+            this.label17.Size = new System.Drawing.Size(748, 22);
             this.label17.TabIndex = 0;
             this.label17.Text = "Payment Information";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -618,9 +660,10 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(536, 46);
+            this.label21.Location = new System.Drawing.Point(402, 37);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(170, 23);
+            this.label21.Size = new System.Drawing.Size(145, 19);
             this.label21.TabIndex = 0;
             this.label21.Text = "Cardholder\'s Name : ";
             // 
@@ -629,9 +672,10 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(14, 44);
+            this.label24.Location = new System.Drawing.Point(10, 36);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(126, 23);
+            this.label24.Size = new System.Drawing.Size(106, 19);
             this.label24.TabIndex = 0;
             this.label24.Text = "Card Number : ";
             // 
@@ -640,9 +684,10 @@
             this.label57.AutoSize = true;
             this.label57.BackColor = System.Drawing.Color.Transparent;
             this.label57.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(707, 48);
+            this.label57.Location = new System.Drawing.Point(530, 39);
+            this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(66, 23);
+            this.label57.Size = new System.Drawing.Size(57, 19);
             this.label57.TabIndex = 1;
             this.label57.Text = "label22";
             // 
@@ -651,9 +696,10 @@
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(138, 45);
+            this.label56.Location = new System.Drawing.Point(104, 37);
+            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(66, 23);
+            this.label56.Size = new System.Drawing.Size(57, 19);
             this.label56.TabIndex = 1;
             this.label56.Text = "label22";
             // 
@@ -666,9 +712,10 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.label26);
-            this.panel5.Location = new System.Drawing.Point(31, 536);
+            this.panel5.Location = new System.Drawing.Point(23, 436);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1007, 349);
+            this.panel5.Size = new System.Drawing.Size(755, 284);
             this.panel5.TabIndex = 4;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
@@ -679,9 +726,10 @@
             this.panel12.Controls.Add(this.label42);
             this.panel12.Controls.Add(this.label66);
             this.panel12.Controls.Add(this.label62);
-            this.panel12.Location = new System.Drawing.Point(16, 257);
+            this.panel12.Location = new System.Drawing.Point(12, 209);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(970, 50);
+            this.panel12.Size = new System.Drawing.Size(728, 41);
             this.panel12.TabIndex = 6;
             // 
             // label41
@@ -689,9 +737,10 @@
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(6, 12);
+            this.label41.Location = new System.Drawing.Point(4, 10);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(159, 23);
+            this.label41.Size = new System.Drawing.Size(138, 19);
             this.label41.TabIndex = 0;
             this.label41.Text = "Passenger 5 Name :";
             // 
@@ -700,9 +749,10 @@
             this.label42.AutoSize = true;
             this.label42.BackColor = System.Drawing.Color.Transparent;
             this.label42.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(525, 12);
+            this.label42.Location = new System.Drawing.Point(394, 10);
+            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(152, 23);
+            this.label42.Size = new System.Drawing.Size(129, 19);
             this.label42.TabIndex = 0;
             this.label42.Text = "Passport Number :";
             // 
@@ -711,9 +761,10 @@
             this.label66.AutoSize = true;
             this.label66.BackColor = System.Drawing.Color.Transparent;
             this.label66.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(693, 13);
+            this.label66.Location = new System.Drawing.Point(520, 11);
+            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(66, 23);
+            this.label66.Size = new System.Drawing.Size(57, 19);
             this.label66.TabIndex = 1;
             this.label66.Text = "label22";
             // 
@@ -722,9 +773,10 @@
             this.label62.AutoSize = true;
             this.label62.BackColor = System.Drawing.Color.Transparent;
             this.label62.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(171, 13);
+            this.label62.Location = new System.Drawing.Point(128, 11);
+            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(66, 23);
+            this.label62.Size = new System.Drawing.Size(57, 19);
             this.label62.TabIndex = 1;
             this.label62.Text = "label22";
             // 
@@ -735,9 +787,10 @@
             this.panel11.Controls.Add(this.label38);
             this.panel11.Controls.Add(this.label65);
             this.panel11.Controls.Add(this.label60);
-            this.panel11.Location = new System.Drawing.Point(16, 191);
+            this.panel11.Location = new System.Drawing.Point(12, 155);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(970, 50);
+            this.panel11.Size = new System.Drawing.Size(728, 41);
             this.panel11.TabIndex = 6;
             // 
             // label37
@@ -745,9 +798,10 @@
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(6, 13);
+            this.label37.Location = new System.Drawing.Point(4, 11);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(159, 23);
+            this.label37.Size = new System.Drawing.Size(138, 19);
             this.label37.TabIndex = 0;
             this.label37.Text = "Passenger 4 Name :";
             // 
@@ -756,9 +810,10 @@
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(525, 14);
+            this.label38.Location = new System.Drawing.Point(394, 11);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(152, 23);
+            this.label38.Size = new System.Drawing.Size(129, 19);
             this.label38.TabIndex = 0;
             this.label38.Text = "Passport Number :";
             // 
@@ -767,9 +822,10 @@
             this.label65.AutoSize = true;
             this.label65.BackColor = System.Drawing.Color.Transparent;
             this.label65.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(693, 15);
+            this.label65.Location = new System.Drawing.Point(520, 12);
+            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(66, 23);
+            this.label65.Size = new System.Drawing.Size(57, 19);
             this.label65.TabIndex = 1;
             this.label65.Text = "label22";
             // 
@@ -778,9 +834,10 @@
             this.label60.AutoSize = true;
             this.label60.BackColor = System.Drawing.Color.Transparent;
             this.label60.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(171, 15);
+            this.label60.Location = new System.Drawing.Point(128, 12);
+            this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(66, 23);
+            this.label60.Size = new System.Drawing.Size(57, 19);
             this.label60.TabIndex = 1;
             this.label60.Text = "label22";
             // 
@@ -791,9 +848,10 @@
             this.panel7.Controls.Add(this.label34);
             this.panel7.Controls.Add(this.label64);
             this.panel7.Controls.Add(this.label59);
-            this.panel7.Location = new System.Drawing.Point(16, 126);
+            this.panel7.Location = new System.Drawing.Point(12, 102);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(970, 50);
+            this.panel7.Size = new System.Drawing.Size(728, 41);
             this.panel7.TabIndex = 6;
             // 
             // label33
@@ -801,9 +859,10 @@
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(6, 13);
+            this.label33.Location = new System.Drawing.Point(4, 11);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(159, 23);
+            this.label33.Size = new System.Drawing.Size(138, 19);
             this.label33.TabIndex = 0;
             this.label33.Text = "Passenger 3 Name :";
             // 
@@ -812,9 +871,10 @@
             this.label34.AutoSize = true;
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(525, 13);
+            this.label34.Location = new System.Drawing.Point(394, 11);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(152, 23);
+            this.label34.Size = new System.Drawing.Size(129, 19);
             this.label34.TabIndex = 0;
             this.label34.Text = "Passport Number :";
             // 
@@ -823,9 +883,10 @@
             this.label64.AutoSize = true;
             this.label64.BackColor = System.Drawing.Color.Transparent;
             this.label64.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(693, 14);
+            this.label64.Location = new System.Drawing.Point(520, 11);
+            this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(66, 23);
+            this.label64.Size = new System.Drawing.Size(57, 19);
             this.label64.TabIndex = 1;
             this.label64.Text = "label22";
             // 
@@ -834,9 +895,10 @@
             this.label59.AutoSize = true;
             this.label59.BackColor = System.Drawing.Color.Transparent;
             this.label59.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(171, 14);
+            this.label59.Location = new System.Drawing.Point(128, 11);
+            this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(66, 23);
+            this.label59.Size = new System.Drawing.Size(57, 19);
             this.label59.TabIndex = 1;
             this.label59.Text = "label22";
             // 
@@ -847,9 +909,10 @@
             this.panel6.Controls.Add(this.label28);
             this.panel6.Controls.Add(this.label63);
             this.panel6.Controls.Add(this.label58);
-            this.panel6.Location = new System.Drawing.Point(16, 61);
+            this.panel6.Location = new System.Drawing.Point(12, 50);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(970, 50);
+            this.panel6.Size = new System.Drawing.Size(728, 41);
             this.panel6.TabIndex = 6;
             // 
             // label32
@@ -857,9 +920,10 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(6, 13);
+            this.label32.Location = new System.Drawing.Point(4, 11);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(159, 23);
+            this.label32.Size = new System.Drawing.Size(138, 19);
             this.label32.TabIndex = 0;
             this.label32.Text = "Passenger 2 Name :";
             // 
@@ -868,9 +932,10 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(525, 13);
+            this.label28.Location = new System.Drawing.Point(394, 11);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(152, 23);
+            this.label28.Size = new System.Drawing.Size(129, 19);
             this.label28.TabIndex = 0;
             this.label28.Text = "Passport Number :";
             // 
@@ -879,9 +944,10 @@
             this.label63.AutoSize = true;
             this.label63.BackColor = System.Drawing.Color.Transparent;
             this.label63.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(693, 15);
+            this.label63.Location = new System.Drawing.Point(520, 12);
+            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(66, 23);
+            this.label63.Size = new System.Drawing.Size(57, 19);
             this.label63.TabIndex = 1;
             this.label63.Text = "label22";
             // 
@@ -890,18 +956,20 @@
             this.label58.AutoSize = true;
             this.label58.BackColor = System.Drawing.Color.Transparent;
             this.label58.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(171, 15);
+            this.label58.Location = new System.Drawing.Point(128, 12);
+            this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(66, 23);
+            this.label58.Size = new System.Drawing.Size(57, 19);
             this.label58.TabIndex = 1;
             this.label58.Text = "label22";
             // 
             // label26
             // 
             this.label26.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(4, 10);
+            this.label26.Location = new System.Drawing.Point(3, 8);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(998, 27);
+            this.label26.Size = new System.Drawing.Size(748, 22);
             this.label26.TabIndex = 0;
             this.label26.Text = "Other Passengers Information";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -922,9 +990,10 @@
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Location = new System.Drawing.Point(31, 199);
+            this.panel3.Location = new System.Drawing.Point(23, 162);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1007, 179);
+            this.panel3.Size = new System.Drawing.Size(755, 145);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -933,9 +1002,10 @@
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(679, 95);
+            this.label35.Location = new System.Drawing.Point(509, 77);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(66, 23);
+            this.label35.Size = new System.Drawing.Size(57, 19);
             this.label35.TabIndex = 1;
             this.label35.Text = "label22";
             // 
@@ -944,9 +1014,10 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(606, 56);
+            this.label31.Location = new System.Drawing.Point(454, 46);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(66, 23);
+            this.label31.Size = new System.Drawing.Size(57, 19);
             this.label31.TabIndex = 1;
             this.label31.Text = "label22";
             // 
@@ -955,9 +1026,10 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(166, 133);
+            this.label27.Location = new System.Drawing.Point(124, 108);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(66, 23);
+            this.label27.Size = new System.Drawing.Size(57, 19);
             this.label27.TabIndex = 1;
             this.label27.Text = "label22";
             // 
@@ -966,9 +1038,10 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(132, 94);
+            this.label23.Location = new System.Drawing.Point(99, 76);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(66, 23);
+            this.label23.Size = new System.Drawing.Size(57, 19);
             this.label23.TabIndex = 1;
             this.label23.Text = "label22";
             // 
@@ -977,18 +1050,20 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(204, 54);
+            this.label22.Location = new System.Drawing.Point(153, 44);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 23);
+            this.label22.Size = new System.Drawing.Size(57, 19);
             this.label22.TabIndex = 1;
             this.label22.Text = "label22";
             // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(4, 10);
+            this.label16.Location = new System.Drawing.Point(3, 8);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(998, 27);
+            this.label16.Size = new System.Drawing.Size(748, 22);
             this.label16.TabIndex = 0;
             this.label16.Text = "Primary Passenger Information";
             this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -998,9 +1073,10 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(14, 132);
+            this.label15.Location = new System.Drawing.Point(10, 107);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(154, 23);
+            this.label15.Size = new System.Drawing.Size(128, 19);
             this.label15.TabIndex = 0;
             this.label15.Text = "Passport Number :";
             // 
@@ -1009,9 +1085,10 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(541, 55);
+            this.label25.Location = new System.Drawing.Point(406, 45);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(60, 23);
+            this.label25.Size = new System.Drawing.Size(53, 19);
             this.label25.TabIndex = 0;
             this.label25.Text = "Email :";
             // 
@@ -1020,9 +1097,10 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(541, 94);
+            this.label19.Location = new System.Drawing.Point(406, 76);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(135, 23);
+            this.label19.Size = new System.Drawing.Size(112, 19);
             this.label19.TabIndex = 0;
             this.label19.Text = "Phone Number :";
             // 
@@ -1031,9 +1109,10 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(14, 93);
+            this.label14.Location = new System.Drawing.Point(10, 76);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(120, 23);
+            this.label14.Size = new System.Drawing.Size(104, 19);
             this.label14.TabIndex = 0;
             this.label14.Text = "Date of Birth : ";
             // 
@@ -1042,9 +1121,10 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(14, 53);
+            this.label13.Location = new System.Drawing.Point(10, 43);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(190, 23);
+            this.label13.Size = new System.Drawing.Size(164, 19);
             this.label13.TabIndex = 0;
             this.label13.Text = "Passenger\'s Full Name :";
             // 
@@ -1053,9 +1133,10 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Calibri Light", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(361, 153);
+            this.label18.Location = new System.Drawing.Point(271, 124);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(397, 19);
+            this.label18.Size = new System.Drawing.Size(341, 17);
             this.label18.TabIndex = 0;
             this.label18.Text = "Please keep your Booking Number to retrieve your itinerary";
             // 
@@ -1064,9 +1145,10 @@
             this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(1498, 855);
+            this.button2.Location = new System.Drawing.Point(1124, 695);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 40);
+            this.button2.Size = new System.Drawing.Size(118, 32);
             this.button2.TabIndex = 10;
             this.button2.Text = "Home";
             this.button2.UseVisualStyleBackColor = false;
@@ -1077,9 +1159,10 @@
             this.button3.BackColor = System.Drawing.Color.Silver;
             this.button3.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(1673, 855);
+            this.button3.Location = new System.Drawing.Point(1255, 695);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 40);
+            this.button3.Size = new System.Drawing.Size(118, 32);
             this.button3.TabIndex = 10;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
@@ -1091,9 +1174,10 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1496, 767);
+            this.button1.Location = new System.Drawing.Point(1122, 623);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(334, 68);
+            this.button1.Size = new System.Drawing.Size(250, 55);
             this.button1.TabIndex = 37;
             this.button1.Text = "Export Ticket";
             this.button1.UseVisualStyleBackColor = false;
@@ -1107,17 +1191,19 @@
             this.panel13.Controls.Add(this.label68);
             this.panel13.Controls.Add(this.label69);
             this.panel13.Controls.Add(this.pictureBox7);
-            this.panel13.Location = new System.Drawing.Point(55, 372);
+            this.panel13.Location = new System.Drawing.Point(41, 302);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(242, 454);
+            this.panel13.Size = new System.Drawing.Size(182, 369);
             this.panel13.TabIndex = 40;
             // 
             // label39
             // 
             this.label39.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(29, 149);
+            this.label39.Location = new System.Drawing.Point(22, 121);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(201, 45);
+            this.label39.Size = new System.Drawing.Size(151, 37);
             this.label39.TabIndex = 17;
             this.label39.Text = "Seat Reservation\r\nFlight Options";
             // 
@@ -1125,9 +1211,10 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(28, 414);
+            this.label67.Location = new System.Drawing.Point(21, 336);
+            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(111, 23);
+            this.label67.Size = new System.Drawing.Size(94, 19);
             this.label67.TabIndex = 17;
             this.label67.Text = "Confirmation";
             // 
@@ -1135,9 +1222,10 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(29, 278);
+            this.label68.Location = new System.Drawing.Point(22, 226);
+            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(77, 23);
+            this.label68.Size = new System.Drawing.Size(66, 19);
             this.label68.TabIndex = 17;
             this.label68.Text = "Payment";
             // 
@@ -1145,28 +1233,30 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(27, 40);
+            this.label69.Location = new System.Drawing.Point(20, 32);
+            this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(119, 23);
+            this.label69.Size = new System.Drawing.Size(102, 19);
             this.label69.TabIndex = 17;
             this.label69.Text = "Choose Flights";
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(17, 429);
+            this.pictureBox7.Size = new System.Drawing.Size(13, 349);
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
             // 
             // Form7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1924, 1053);
+            this.ClientSize = new System.Drawing.Size(1443, 856);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
@@ -1175,6 +1265,7 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form7";
             this.Text = "Printable Ticket";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1206,6 +1297,7 @@
             this.panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

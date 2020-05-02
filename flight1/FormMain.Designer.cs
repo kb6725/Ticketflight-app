@@ -102,18 +102,20 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(474, 115);
+            this.panel1.Location = new System.Drawing.Point(356, 93);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 355);
+            this.panel1.Size = new System.Drawing.Size(588, 288);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(473, 274);
+            this.button2.Location = new System.Drawing.Point(355, 223);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 40);
+            this.button2.Size = new System.Drawing.Size(32, 32);
             this.button2.TabIndex = 5;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
@@ -122,9 +124,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(600, 274);
+            this.button1.Location = new System.Drawing.Point(450, 223);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 40);
+            this.button1.Size = new System.Drawing.Size(32, 32);
             this.button1.TabIndex = 5;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
@@ -135,9 +138,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(618, 39);
+            this.radioButton2.Location = new System.Drawing.Point(464, 32);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(112, 31);
+            this.radioButton2.Size = new System.Drawing.Size(98, 27);
             this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "One-way";
@@ -149,9 +153,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(487, 39);
+            this.radioButton1.Location = new System.Drawing.Point(365, 32);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 31);
+            this.radioButton1.Size = new System.Drawing.Size(80, 27);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Return";
@@ -169,10 +174,11 @@
             this.comboTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboTo.FormattingEnabled = true;
             this.comboTo.IntegralHeight = false;
-            this.comboTo.ItemHeight = 29;
-            this.comboTo.Location = new System.Drawing.Point(466, 140);
+            this.comboTo.ItemHeight = 24;
+            this.comboTo.Location = new System.Drawing.Point(350, 114);
+            this.comboTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboTo.Name = "comboTo";
-            this.comboTo.Size = new System.Drawing.Size(260, 37);
+            this.comboTo.Size = new System.Drawing.Size(196, 32);
             this.comboTo.TabIndex = 1;
             this.comboTo.ValueMember = "Place";
             this.comboTo.SelectedIndexChanged += new System.EventHandler(this.comboTo_SelectedIndexChanged);
@@ -194,14 +200,15 @@
             this.combocabin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.combocabin.FormattingEnabled = true;
             this.combocabin.IntegralHeight = false;
-            this.combocabin.ItemHeight = 29;
+            this.combocabin.ItemHeight = 24;
             this.combocabin.Items.AddRange(new object[] {
             "First Class",
             "Business",
             "Economy"});
-            this.combocabin.Location = new System.Drawing.Point(57, 271);
+            this.combocabin.Location = new System.Drawing.Point(43, 220);
+            this.combocabin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combocabin.Name = "combocabin";
-            this.combocabin.Size = new System.Drawing.Size(260, 37);
+            this.combocabin.Size = new System.Drawing.Size(196, 32);
             this.combocabin.TabIndex = 1;
             this.combocabin.Text = "Select Cabin ...";
             this.combocabin.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
@@ -217,10 +224,11 @@
             this.comboFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboFrom.FormattingEnabled = true;
             this.comboFrom.IntegralHeight = false;
-            this.comboFrom.ItemHeight = 29;
-            this.comboFrom.Location = new System.Drawing.Point(57, 137);
+            this.comboFrom.ItemHeight = 24;
+            this.comboFrom.Location = new System.Drawing.Point(43, 111);
+            this.comboFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboFrom.Name = "comboFrom";
-            this.comboFrom.Size = new System.Drawing.Size(260, 37);
+            this.comboFrom.Size = new System.Drawing.Size(196, 32);
             this.comboFrom.TabIndex = 1;
             this.comboFrom.ValueMember = "Place";
             this.comboFrom.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
@@ -234,9 +242,10 @@
             this.labelto.AutoSize = true;
             this.labelto.BackColor = System.Drawing.Color.Transparent;
             this.labelto.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelto.Location = new System.Drawing.Point(425, 93);
+            this.labelto.Location = new System.Drawing.Point(319, 76);
+            this.labelto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelto.Name = "labelto";
-            this.labelto.Size = new System.Drawing.Size(40, 32);
+            this.labelto.Size = new System.Drawing.Size(33, 27);
             this.labelto.TabIndex = 0;
             this.labelto.Text = "To";
             // 
@@ -246,9 +255,10 @@
             this.labelguest.BackColor = System.Drawing.Color.White;
             this.labelguest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelguest.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelguest.Location = new System.Drawing.Point(529, 274);
+            this.labelguest.Location = new System.Drawing.Point(397, 223);
+            this.labelguest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelguest.Name = "labelguest";
-            this.labelguest.Size = new System.Drawing.Size(56, 40);
+            this.labelguest.Size = new System.Drawing.Size(42, 33);
             this.labelguest.TabIndex = 0;
             this.labelguest.Text = "1";
             this.labelguest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,9 +269,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(425, 229);
+            this.label4.Location = new System.Drawing.Point(319, 186);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 32);
+            this.label4.Size = new System.Drawing.Size(65, 27);
             this.label4.TabIndex = 0;
             this.label4.Text = "Guest";
             // 
@@ -270,9 +281,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 226);
+            this.label2.Location = new System.Drawing.Point(4, 184);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 32);
+            this.label2.Size = new System.Drawing.Size(58, 27);
             this.label2.TabIndex = 0;
             this.label2.Text = "Class";
             // 
@@ -281,9 +293,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 90);
+            this.label3.Location = new System.Drawing.Point(2, 73);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 32);
+            this.label3.Size = new System.Drawing.Size(60, 27);
             this.label3.TabIndex = 0;
             this.label3.Text = "From";
             // 
@@ -292,9 +305,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 28.17391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Location = new System.Drawing.Point(2, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 55);
+            this.label1.Size = new System.Drawing.Size(222, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Book a Flight";
             // 
@@ -302,9 +316,11 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(450, 13);
+            this.groupBox1.Location = new System.Drawing.Point(338, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(306, 69);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(230, 56);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select ticket type";
@@ -316,9 +332,10 @@
             this.panel3.Controls.Add(this.dateTimeout);
             this.panel3.Controls.Add(this.labelreturn);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(474, 515);
+            this.panel3.Location = new System.Drawing.Point(356, 418);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(784, 120);
+            this.panel3.Size = new System.Drawing.Size(588, 98);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -327,10 +344,11 @@
             this.dateTimereturn.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dateTimereturn.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimereturn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimereturn.Location = new System.Drawing.Point(466, 48);
+            this.dateTimereturn.Location = new System.Drawing.Point(350, 39);
+            this.dateTimereturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimereturn.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
             this.dateTimereturn.Name = "dateTimereturn";
-            this.dateTimereturn.Size = new System.Drawing.Size(260, 37);
+            this.dateTimereturn.Size = new System.Drawing.Size(196, 32);
             this.dateTimereturn.TabIndex = 0;
             this.dateTimereturn.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
             this.dateTimereturn.ValueChanged += new System.EventHandler(this.dateTimereturn_ValueChanged);
@@ -340,10 +358,11 @@
             this.dateTimeout.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dateTimeout.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeout.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeout.Location = new System.Drawing.Point(57, 48);
+            this.dateTimeout.Location = new System.Drawing.Point(43, 39);
+            this.dateTimeout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimeout.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
             this.dateTimeout.Name = "dateTimeout";
-            this.dateTimeout.Size = new System.Drawing.Size(260, 37);
+            this.dateTimeout.Size = new System.Drawing.Size(196, 32);
             this.dateTimeout.TabIndex = 0;
             this.dateTimeout.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
             this.dateTimeout.ValueChanged += new System.EventHandler(this.dateTimeout_ValueChanged);
@@ -353,9 +372,10 @@
             this.labelreturn.AutoSize = true;
             this.labelreturn.BackColor = System.Drawing.Color.Transparent;
             this.labelreturn.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelreturn.Location = new System.Drawing.Point(425, 8);
+            this.labelreturn.Location = new System.Drawing.Point(319, 6);
+            this.labelreturn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelreturn.Name = "labelreturn";
-            this.labelreturn.Size = new System.Drawing.Size(88, 32);
+            this.labelreturn.Size = new System.Drawing.Size(74, 27);
             this.labelreturn.TabIndex = 0;
             this.labelreturn.Text = "Return";
             // 
@@ -364,9 +384,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 8);
+            this.label5.Location = new System.Drawing.Point(4, 6);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 32);
+            this.label5.Size = new System.Drawing.Size(106, 27);
             this.label5.TabIndex = 0;
             this.label5.Text = "Outbound";
             // 
@@ -379,9 +400,10 @@
             this.buttonsearch.ForeColor = System.Drawing.Color.Black;
             this.buttonsearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonsearch.Image")));
             this.buttonsearch.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonsearch.Location = new System.Drawing.Point(474, 676);
+            this.buttonsearch.Location = new System.Drawing.Point(356, 549);
+            this.buttonsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonsearch.Name = "buttonsearch";
-            this.buttonsearch.Size = new System.Drawing.Size(330, 72);
+            this.buttonsearch.Size = new System.Drawing.Size(248, 58);
             this.buttonsearch.TabIndex = 4;
             this.buttonsearch.Text = "Search Flight";
             this.buttonsearch.UseVisualStyleBackColor = false;
@@ -391,9 +413,10 @@
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button4.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(868, 683);
+            this.button4.Location = new System.Drawing.Point(651, 555);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(190, 54);
+            this.button4.Size = new System.Drawing.Size(142, 44);
             this.button4.TabIndex = 5;
             this.button4.Text = "Reset";
             this.button4.UseVisualStyleBackColor = true;
@@ -403,9 +426,10 @@
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button3.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1068, 683);
+            this.button3.Location = new System.Drawing.Point(801, 555);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(190, 54);
+            this.button3.Size = new System.Drawing.Size(142, 44);
             this.button3.TabIndex = 5;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
@@ -421,9 +445,10 @@
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(21, 367);
+            this.panel6.Location = new System.Drawing.Point(16, 298);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 509);
+            this.panel6.Size = new System.Drawing.Size(188, 414);
             this.panel6.TabIndex = 12;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -433,9 +458,10 @@
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(46, 417);
+            this.button7.Location = new System.Drawing.Point(34, 339);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(151, 48);
+            this.button7.Size = new System.Drawing.Size(113, 39);
             this.button7.TabIndex = 2;
             this.button7.Text = "Search Ticket";
             this.button7.UseVisualStyleBackColor = false;
@@ -445,9 +471,10 @@
             // 
             this.button6.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(91, 236);
+            this.button6.Location = new System.Drawing.Point(68, 192);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(60, 60);
+            this.button6.Size = new System.Drawing.Size(45, 49);
             this.button6.TabIndex = 1;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -455,9 +482,10 @@
             // 
             this.button5.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(91, 116);
+            this.button5.Location = new System.Drawing.Point(68, 94);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 60);
+            this.button5.Size = new System.Drawing.Size(45, 49);
             this.button5.TabIndex = 1;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
@@ -466,9 +494,10 @@
             // 
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(10, 386);
+            this.label14.Location = new System.Drawing.Point(8, 314);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(232, 28);
+            this.label14.Size = new System.Drawing.Size(174, 23);
             this.label14.TabIndex = 0;
             this.label14.Text = "Look up Booking Number";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -478,9 +507,10 @@
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(15, 301);
+            this.label11.Location = new System.Drawing.Point(11, 245);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(218, 28);
+            this.label11.Size = new System.Drawing.Size(164, 23);
             this.label11.TabIndex = 0;
             this.label11.Text = "Sign Up";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -489,9 +519,10 @@
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(15, 178);
+            this.label10.Location = new System.Drawing.Point(11, 145);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(218, 28);
+            this.label10.Size = new System.Drawing.Size(164, 23);
             this.label10.TabIndex = 0;
             this.label10.Text = "Login";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -501,9 +532,10 @@
             // 
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 45);
+            this.label13.Location = new System.Drawing.Point(4, 37);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(237, 77);
+            this.label13.Size = new System.Drawing.Size(178, 63);
             this.label13.TabIndex = 0;
             this.label13.Text = "Sign up or Log in to retrieve your booking";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -514,18 +546,20 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(14, 12);
+            this.label9.Location = new System.Drawing.Point(10, 10);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(213, 27);
+            this.label9.Size = new System.Drawing.Size(179, 23);
             this.label9.TabIndex = 0;
             this.label9.Text = "Account Management";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(28, 312);
+            this.pictureBox3.Location = new System.Drawing.Point(21, 254);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(300, 200);
+            this.pictureBox3.Size = new System.Drawing.Size(225, 162);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -535,9 +569,10 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(148, 11);
+            this.label12.Location = new System.Drawing.Point(111, 9);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 27);
+            this.label12.Size = new System.Drawing.Size(55, 23);
             this.label12.TabIndex = 0;
             this.label12.Text = "News";
             // 
@@ -545,9 +580,10 @@
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 515);
+            this.label7.Location = new System.Drawing.Point(26, 418);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(293, 49);
+            this.label7.Size = new System.Drawing.Size(220, 40);
             this.label7.TabIndex = 9;
             this.label7.Text = "Special Airport help for elderly or infirm passengers";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -556,9 +592,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(28, 54);
+            this.pictureBox2.Location = new System.Drawing.Point(21, 44);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 200);
+            this.pictureBox2.Size = new System.Drawing.Size(225, 162);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -567,9 +604,10 @@
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 257);
+            this.label6.Location = new System.Drawing.Point(23, 209);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(297, 25);
+            this.label6.Size = new System.Drawing.Size(223, 20);
             this.label6.TabIndex = 8;
             this.label6.Text = "Self checkin, a seamless experience";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -577,9 +615,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(35, 586);
+            this.pictureBox4.Location = new System.Drawing.Point(26, 476);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(300, 200);
+            this.pictureBox4.Size = new System.Drawing.Size(225, 162);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -588,9 +627,10 @@
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(37, 789);
+            this.label8.Location = new System.Drawing.Point(28, 641);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(290, 49);
+            this.label8.Size = new System.Drawing.Size(218, 40);
             this.label8.TabIndex = 10;
             this.label8.Text = "Enjoy your flight with a wide selection of of special meals and wines";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -604,9 +644,10 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(1434, 38);
+            this.panel2.Location = new System.Drawing.Point(1076, 31);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(354, 843);
+            this.panel2.Size = new System.Drawing.Size(266, 685);
             this.panel2.TabIndex = 11;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -614,20 +655,22 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 725);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 292);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1899, 985);
+            this.ClientSize = new System.Drawing.Size(1424, 800);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
@@ -637,7 +680,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "FormMain";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -656,6 +700,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
