@@ -30,138 +30,132 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.panelBookFlight = new System.Windows.Forms.Panel();
+            this.buttonGuestMinus = new System.Windows.Forms.Button();
+            this.buttonGuestPlus = new System.Windows.Forms.Button();
+            this.radioButtonOneWay = new System.Windows.Forms.RadioButton();
+            this.radioButtonReturn = new System.Windows.Forms.RadioButton();
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.placesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.combocabin = new System.Windows.Forms.ComboBox();
+            this.comboCabin = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.placesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.labelto = new System.Windows.Forms.Label();
-            this.labelguest = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dateTimereturn = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeout = new System.Windows.Forms.DateTimePicker();
-            this.labelreturn = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.buttonsearch = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.lblTo = new System.Windows.Forms.Label();
+            this.lblGuestCount = new System.Windows.Forms.Label();
+            this.lblGuest = new System.Windows.Forms.Label();
+            this.lblClass = new System.Windows.Forms.Label();
+            this.lblFrom = new System.Windows.Forms.Label();
+            this.lblBookFlight = new System.Windows.Forms.Label();
+            this.groupBoxTicketType = new System.Windows.Forms.GroupBox();
+            this.panelDates = new System.Windows.Forms.Panel();
+            this.dateTimeReturn = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeOut = new System.Windows.Forms.DateTimePicker();
+            this.lblReturn = new System.Windows.Forms.Label();
+            this.lblOutbound = new System.Windows.Forms.Label();
+            this.btnSearchFlight = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panelTicketSearch = new System.Windows.Forms.Panel();
+            this.btnSearchTicket = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.pictureBoxNews2 = new System.Windows.Forms.PictureBox();
+            this.lblNews = new System.Windows.Forms.Label();
+            this.lblNewsDesc2 = new System.Windows.Forms.Label();
+            this.pictureBoxNews1 = new System.Windows.Forms.PictureBox();
+            this.lblNewsDesc1 = new System.Windows.Forms.Label();
+            this.pictureBoxNews3 = new System.Windows.Forms.PictureBox();
+            this.lblNewsDesc3 = new System.Windows.Forms.Label();
+            this.panelNews = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panelBookFlight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDates.SuspendLayout();
+            this.panelTicketSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNews2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNews1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNews3)).BeginInit();
+            this.panelNews.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelBookFlight
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.comboTo);
-            this.panel1.Controls.Add(this.combocabin);
-            this.panel1.Controls.Add(this.comboFrom);
-            this.panel1.Controls.Add(this.labelto);
-            this.panel1.Controls.Add(this.labelguest);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(356, 93);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(588, 288);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panelBookFlight.BackColor = System.Drawing.Color.White;
+            this.panelBookFlight.Controls.Add(this.buttonGuestMinus);
+            this.panelBookFlight.Controls.Add(this.buttonGuestPlus);
+            this.panelBookFlight.Controls.Add(this.radioButtonOneWay);
+            this.panelBookFlight.Controls.Add(this.radioButtonReturn);
+            this.panelBookFlight.Controls.Add(this.comboTo);
+            this.panelBookFlight.Controls.Add(this.comboCabin);
+            this.panelBookFlight.Controls.Add(this.comboFrom);
+            this.panelBookFlight.Controls.Add(this.lblTo);
+            this.panelBookFlight.Controls.Add(this.lblGuestCount);
+            this.panelBookFlight.Controls.Add(this.lblGuest);
+            this.panelBookFlight.Controls.Add(this.lblClass);
+            this.panelBookFlight.Controls.Add(this.lblFrom);
+            this.panelBookFlight.Controls.Add(this.lblBookFlight);
+            this.panelBookFlight.Controls.Add(this.groupBoxTicketType);
+            this.panelBookFlight.Location = new System.Drawing.Point(356, 93);
+            this.panelBookFlight.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBookFlight.Name = "panelBookFlight";
+            this.panelBookFlight.Size = new System.Drawing.Size(588, 288);
+            this.panelBookFlight.TabIndex = 1;
+            this.panelBookFlight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button2
+            // buttonGuestMinus
             // 
-            this.button2.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(355, 223);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 32);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonGuestMinus.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuestMinus.Location = new System.Drawing.Point(355, 223);
+            this.buttonGuestMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGuestMinus.Name = "buttonGuestMinus";
+            this.buttonGuestMinus.Size = new System.Drawing.Size(32, 32);
+            this.buttonGuestMinus.TabIndex = 5;
+            this.buttonGuestMinus.Text = "-";
+            this.buttonGuestMinus.UseVisualStyleBackColor = true;
+            this.buttonGuestMinus.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // buttonGuestPlus
             // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(450, 223);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonGuestPlus.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuestPlus.Location = new System.Drawing.Point(450, 223);
+            this.buttonGuestPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGuestPlus.Name = "buttonGuestPlus";
+            this.buttonGuestPlus.Size = new System.Drawing.Size(32, 32);
+            this.buttonGuestPlus.TabIndex = 5;
+            this.buttonGuestPlus.Text = "+";
+            this.buttonGuestPlus.UseVisualStyleBackColor = true;
+            this.buttonGuestPlus.Click += new System.EventHandler(this.button1_Click);
             // 
-            // radioButton2
+            // radioButtonOneWay
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(464, 32);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(98, 27);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "One-way";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButtonOneWay.AutoSize = true;
+            this.radioButtonOneWay.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonOneWay.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonOneWay.Location = new System.Drawing.Point(464, 32);
+            this.radioButtonOneWay.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButtonOneWay.Name = "radioButtonOneWay";
+            this.radioButtonOneWay.Size = new System.Drawing.Size(98, 27);
+            this.radioButtonOneWay.TabIndex = 3;
+            this.radioButtonOneWay.TabStop = true;
+            this.radioButtonOneWay.Text = "One-way";
+            this.radioButtonOneWay.UseVisualStyleBackColor = false;
+            this.radioButtonOneWay.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton1
+            // radioButtonReturn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(365, 32);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(80, 27);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Return";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButtonReturn.AutoSize = true;
+            this.radioButtonReturn.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonReturn.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonReturn.Location = new System.Drawing.Point(365, 32);
+            this.radioButtonReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButtonReturn.Name = "radioButtonReturn";
+            this.radioButtonReturn.Size = new System.Drawing.Size(80, 27);
+            this.radioButtonReturn.TabIndex = 2;
+            this.radioButtonReturn.TabStop = true;
+            this.radioButtonReturn.Text = "Return";
+            this.radioButtonReturn.UseVisualStyleBackColor = false;
+            this.radioButtonReturn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // comboTo
             // 
@@ -176,7 +170,7 @@
             this.comboTo.IntegralHeight = false;
             this.comboTo.ItemHeight = 24;
             this.comboTo.Location = new System.Drawing.Point(350, 114);
-            this.comboTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboTo.Margin = new System.Windows.Forms.Padding(2);
             this.comboTo.Name = "comboTo";
             this.comboTo.Size = new System.Drawing.Size(196, 32);
             this.comboTo.TabIndex = 1;
@@ -187,31 +181,31 @@
             // 
             this.placesBindingSource.DataMember = "Places";
             // 
-            // combocabin
+            // comboCabin
             // 
-            this.combocabin.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboCabin.AutoCompleteCustomSource.AddRange(new string[] {
             "Economy",
             "Business",
             "First"});
-            this.combocabin.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.combocabin.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.combocabin.DropDownHeight = 150;
-            this.combocabin.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combocabin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.combocabin.FormattingEnabled = true;
-            this.combocabin.IntegralHeight = false;
-            this.combocabin.ItemHeight = 24;
-            this.combocabin.Items.AddRange(new object[] {
+            this.comboCabin.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboCabin.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboCabin.DropDownHeight = 150;
+            this.comboCabin.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCabin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboCabin.FormattingEnabled = true;
+            this.comboCabin.IntegralHeight = false;
+            this.comboCabin.ItemHeight = 24;
+            this.comboCabin.Items.AddRange(new object[] {
             "First Class",
             "Business",
             "Economy"});
-            this.combocabin.Location = new System.Drawing.Point(43, 220);
-            this.combocabin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.combocabin.Name = "combocabin";
-            this.combocabin.Size = new System.Drawing.Size(196, 32);
-            this.combocabin.TabIndex = 1;
-            this.combocabin.Text = "Select Cabin ...";
-            this.combocabin.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
+            this.comboCabin.Location = new System.Drawing.Point(43, 220);
+            this.comboCabin.Margin = new System.Windows.Forms.Padding(2);
+            this.comboCabin.Name = "comboCabin";
+            this.comboCabin.Size = new System.Drawing.Size(196, 32);
+            this.comboCabin.TabIndex = 1;
+            this.comboCabin.Text = "Select Cabin ...";
+            this.comboCabin.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
             // 
             // comboFrom
             // 
@@ -226,7 +220,7 @@
             this.comboFrom.IntegralHeight = false;
             this.comboFrom.ItemHeight = 24;
             this.comboFrom.Location = new System.Drawing.Point(43, 111);
-            this.comboFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboFrom.Margin = new System.Windows.Forms.Padding(2);
             this.comboFrom.Name = "comboFrom";
             this.comboFrom.Size = new System.Drawing.Size(196, 32);
             this.comboFrom.TabIndex = 1;
@@ -237,264 +231,235 @@
             // 
             this.placesBindingSource1.DataMember = "Places";
             // 
-            // labelto
+            // lblTo
             // 
-            this.labelto.AutoSize = true;
-            this.labelto.BackColor = System.Drawing.Color.Transparent;
-            this.labelto.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelto.Location = new System.Drawing.Point(319, 76);
-            this.labelto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelto.Name = "labelto";
-            this.labelto.Size = new System.Drawing.Size(33, 27);
-            this.labelto.TabIndex = 0;
-            this.labelto.Text = "To";
+            this.lblTo.AutoSize = true;
+            this.lblTo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTo.Location = new System.Drawing.Point(319, 76);
+            this.lblTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTo.Name = "lblTo";
+            this.lblTo.Size = new System.Drawing.Size(33, 27);
+            this.lblTo.TabIndex = 0;
+            this.lblTo.Text = "To";
             // 
-            // labelguest
+            // lblGuestCount
             // 
-            this.labelguest.AllowDrop = true;
-            this.labelguest.BackColor = System.Drawing.Color.White;
-            this.labelguest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelguest.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelguest.Location = new System.Drawing.Point(397, 223);
-            this.labelguest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelguest.Name = "labelguest";
-            this.labelguest.Size = new System.Drawing.Size(42, 33);
-            this.labelguest.TabIndex = 0;
-            this.labelguest.Text = "1";
-            this.labelguest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelguest.Click += new System.EventHandler(this.label5_Click);
+            this.lblGuestCount.AllowDrop = true;
+            this.lblGuestCount.BackColor = System.Drawing.Color.White;
+            this.lblGuestCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblGuestCount.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuestCount.Location = new System.Drawing.Point(397, 223);
+            this.lblGuestCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGuestCount.Name = "lblGuestCount";
+            this.lblGuestCount.Size = new System.Drawing.Size(42, 33);
+            this.lblGuestCount.TabIndex = 0;
+            this.lblGuestCount.Text = "1";
+            this.lblGuestCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGuestCount.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label4
+            // lblGuest
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(319, 186);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 27);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Guest";
+            this.lblGuest.AutoSize = true;
+            this.lblGuest.BackColor = System.Drawing.Color.Transparent;
+            this.lblGuest.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuest.Location = new System.Drawing.Point(319, 186);
+            this.lblGuest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGuest.Name = "lblGuest";
+            this.lblGuest.Size = new System.Drawing.Size(65, 27);
+            this.lblGuest.TabIndex = 0;
+            this.lblGuest.Text = "Guest";
             // 
-            // label2
+            // lblClass
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 184);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 27);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Class";
+            this.lblClass.AutoSize = true;
+            this.lblClass.BackColor = System.Drawing.Color.Transparent;
+            this.lblClass.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClass.Location = new System.Drawing.Point(4, 184);
+            this.lblClass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblClass.Name = "lblClass";
+            this.lblClass.Size = new System.Drawing.Size(58, 27);
+            this.lblClass.TabIndex = 0;
+            this.lblClass.Text = "Class";
             // 
-            // label3
+            // lblFrom
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(2, 73);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 27);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "From";
+            this.lblFrom.AutoSize = true;
+            this.lblFrom.BackColor = System.Drawing.Color.Transparent;
+            this.lblFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrom.Location = new System.Drawing.Point(2, 73);
+            this.lblFrom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFrom.Name = "lblFrom";
+            this.lblFrom.Size = new System.Drawing.Size(60, 27);
+            this.lblFrom.TabIndex = 0;
+            this.lblFrom.Text = "From";
             // 
-            // label1
+            // lblBookFlight
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 28.17391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Book a Flight";
+            this.lblBookFlight.AutoSize = true;
+            this.lblBookFlight.BackColor = System.Drawing.Color.Transparent;
+            this.lblBookFlight.Font = new System.Drawing.Font("Calibri", 28.17391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookFlight.Location = new System.Drawing.Point(2, 11);
+            this.lblBookFlight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBookFlight.Name = "lblBookFlight";
+            this.lblBookFlight.Size = new System.Drawing.Size(222, 46);
+            this.lblBookFlight.TabIndex = 0;
+            this.lblBookFlight.Text = "Book a Flight";
             // 
-            // groupBox1
+            // groupBoxTicketType
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(338, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(230, 56);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Select ticket type";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBoxTicketType.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxTicketType.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxTicketType.Location = new System.Drawing.Point(338, 11);
+            this.groupBoxTicketType.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxTicketType.Name = "groupBoxTicketType";
+            this.groupBoxTicketType.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxTicketType.Size = new System.Drawing.Size(230, 56);
+            this.groupBoxTicketType.TabIndex = 4;
+            this.groupBoxTicketType.TabStop = false;
+            this.groupBoxTicketType.Text = "Select ticket type";
+            this.groupBoxTicketType.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // panel3
+            // panelDates
             // 
-            this.panel3.Controls.Add(this.dateTimereturn);
-            this.panel3.Controls.Add(this.dateTimeout);
-            this.panel3.Controls.Add(this.labelreturn);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(356, 418);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(588, 98);
-            this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panelDates.Controls.Add(this.dateTimeReturn);
+            this.panelDates.Controls.Add(this.dateTimeOut);
+            this.panelDates.Controls.Add(this.lblReturn);
+            this.panelDates.Controls.Add(this.lblOutbound);
+            this.panelDates.Location = new System.Drawing.Point(356, 418);
+            this.panelDates.Margin = new System.Windows.Forms.Padding(2);
+            this.panelDates.Name = "panelDates";
+            this.panelDates.Size = new System.Drawing.Size(588, 98);
+            this.panelDates.TabIndex = 3;
+            this.panelDates.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // dateTimereturn
+            // dateTimeReturn
             // 
-            this.dateTimereturn.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dateTimereturn.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimereturn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimereturn.Location = new System.Drawing.Point(350, 39);
-            this.dateTimereturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimereturn.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
-            this.dateTimereturn.Name = "dateTimereturn";
-            this.dateTimereturn.Size = new System.Drawing.Size(196, 32);
-            this.dateTimereturn.TabIndex = 0;
-            this.dateTimereturn.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
-            this.dateTimereturn.ValueChanged += new System.EventHandler(this.dateTimereturn_ValueChanged);
+            this.dateTimeReturn.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dateTimeReturn.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeReturn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeReturn.Location = new System.Drawing.Point(350, 39);
+            this.dateTimeReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimeReturn.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimeReturn.Name = "dateTimeReturn";
+            this.dateTimeReturn.Size = new System.Drawing.Size(196, 32);
+            this.dateTimeReturn.TabIndex = 0;
+            this.dateTimeReturn.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
+            this.dateTimeReturn.ValueChanged += new System.EventHandler(this.dateTimereturn_ValueChanged);
             // 
-            // dateTimeout
+            // dateTimeOut
             // 
-            this.dateTimeout.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dateTimeout.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeout.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeout.Location = new System.Drawing.Point(43, 39);
-            this.dateTimeout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimeout.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
-            this.dateTimeout.Name = "dateTimeout";
-            this.dateTimeout.Size = new System.Drawing.Size(196, 32);
-            this.dateTimeout.TabIndex = 0;
-            this.dateTimeout.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
-            this.dateTimeout.ValueChanged += new System.EventHandler(this.dateTimeout_ValueChanged);
+            this.dateTimeOut.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dateTimeOut.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeOut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeOut.Location = new System.Drawing.Point(43, 39);
+            this.dateTimeOut.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimeOut.MinDate = new System.DateTime(2020, 3, 20, 0, 0, 0, 0);
+            this.dateTimeOut.Name = "dateTimeOut";
+            this.dateTimeOut.Size = new System.Drawing.Size(196, 32);
+            this.dateTimeOut.TabIndex = 0;
+            this.dateTimeOut.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
+            this.dateTimeOut.ValueChanged += new System.EventHandler(this.dateTimeout_ValueChanged);
             // 
-            // labelreturn
+            // lblReturn
             // 
-            this.labelreturn.AutoSize = true;
-            this.labelreturn.BackColor = System.Drawing.Color.Transparent;
-            this.labelreturn.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelreturn.Location = new System.Drawing.Point(319, 6);
-            this.labelreturn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelreturn.Name = "labelreturn";
-            this.labelreturn.Size = new System.Drawing.Size(74, 27);
-            this.labelreturn.TabIndex = 0;
-            this.labelreturn.Text = "Return";
+            this.lblReturn.AutoSize = true;
+            this.lblReturn.BackColor = System.Drawing.Color.Transparent;
+            this.lblReturn.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReturn.Location = new System.Drawing.Point(319, 6);
+            this.lblReturn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblReturn.Name = "lblReturn";
+            this.lblReturn.Size = new System.Drawing.Size(74, 27);
+            this.lblReturn.TabIndex = 0;
+            this.lblReturn.Text = "Return";
             // 
-            // label5
+            // lblOutbound
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(4, 6);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 27);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Outbound";
+            this.lblOutbound.AutoSize = true;
+            this.lblOutbound.BackColor = System.Drawing.Color.Transparent;
+            this.lblOutbound.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutbound.Location = new System.Drawing.Point(4, 6);
+            this.lblOutbound.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOutbound.Name = "lblOutbound";
+            this.lblOutbound.Size = new System.Drawing.Size(106, 27);
+            this.lblOutbound.TabIndex = 0;
+            this.lblOutbound.Text = "Outbound";
             // 
-            // buttonsearch
+            // btnSearchFlight
             // 
-            this.buttonsearch.AllowDrop = true;
-            this.buttonsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(172)))), ((int)(((byte)(69)))));
-            this.buttonsearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonsearch.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonsearch.ForeColor = System.Drawing.Color.Black;
-            this.buttonsearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonsearch.Image")));
-            this.buttonsearch.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonsearch.Location = new System.Drawing.Point(356, 549);
-            this.buttonsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonsearch.Name = "buttonsearch";
-            this.buttonsearch.Size = new System.Drawing.Size(248, 58);
-            this.buttonsearch.TabIndex = 4;
-            this.buttonsearch.Text = "Search Flight";
-            this.buttonsearch.UseVisualStyleBackColor = false;
-            this.buttonsearch.Click += new System.EventHandler(this.buttonsearch_Click);
+            this.btnSearchFlight.AllowDrop = true;
+            this.btnSearchFlight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(172)))), ((int)(((byte)(69)))));
+            this.btnSearchFlight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchFlight.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFlight.ForeColor = System.Drawing.Color.Black;
+            this.btnSearchFlight.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchFlight.Image")));
+            this.btnSearchFlight.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnSearchFlight.Location = new System.Drawing.Point(356, 549);
+            this.btnSearchFlight.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearchFlight.Name = "btnSearchFlight";
+            this.btnSearchFlight.Size = new System.Drawing.Size(248, 58);
+            this.btnSearchFlight.TabIndex = 4;
+            this.btnSearchFlight.Text = "Search Flight";
+            this.btnSearchFlight.UseVisualStyleBackColor = false;
+            this.btnSearchFlight.Click += new System.EventHandler(this.buttonsearch_Click);
             // 
-            // button4
+            // btnReset
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(651, 555);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 44);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Reset";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnReset.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(651, 555);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(142, 44);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(801, 555);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 44);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnExit.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(801, 555);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(142, 44);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel6
+            // panelTicketSearch
             // 
-            this.panel6.Controls.Add(this.button7);
-            this.panel6.Controls.Add(this.button6);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Controls.Add(this.label14);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(16, 298);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(188, 414);
-            this.panel6.TabIndex = 12;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            this.panelTicketSearch.Controls.Add(this.btnSearchTicket);
+            this.panelTicketSearch.Controls.Add(this.label14);
+            this.panelTicketSearch.Location = new System.Drawing.Point(23, 405);
+            this.panelTicketSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTicketSearch.Name = "panelTicketSearch";
+            this.panelTicketSearch.Size = new System.Drawing.Size(188, 135);
+            this.panelTicketSearch.TabIndex = 12;
+            this.panelTicketSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // button7
+            // btnSearchTicket
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(34, 339);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(113, 39);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Search Ticket";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button6
-            // 
-            this.button6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(68, 192);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(45, 49);
-            this.button6.TabIndex = 1;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(68, 94);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 49);
-            this.button5.TabIndex = 1;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            this.btnSearchTicket.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSearchTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchTicket.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSearchTicket.Location = new System.Drawing.Point(38, 67);
+            this.btnSearchTicket.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearchTicket.Name = "btnSearchTicket";
+            this.btnSearchTicket.Size = new System.Drawing.Size(113, 39);
+            this.btnSearchTicket.TabIndex = 2;
+            this.btnSearchTicket.Text = "Search Ticket";
+            this.btnSearchTicket.UseVisualStyleBackColor = false;
+            this.btnSearchTicket.Click += new System.EventHandler(this.button7_Click);
             // 
             // label14
             // 
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(8, 314);
+            this.label14.Location = new System.Drawing.Point(12, 42);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(174, 23);
@@ -503,165 +468,112 @@
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label14.Click += new System.EventHandler(this.label14_Click_1);
             // 
-            // label11
+            // pictureBoxNews2
             // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(11, 245);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(164, 23);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Sign Up";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.pictureBoxNews2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNews2.Image")));
+            this.pictureBoxNews2.Location = new System.Drawing.Point(21, 254);
+            this.pictureBoxNews2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxNews2.Name = "pictureBoxNews2";
+            this.pictureBoxNews2.Size = new System.Drawing.Size(225, 162);
+            this.pictureBoxNews2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNews2.TabIndex = 7;
+            this.pictureBoxNews2.TabStop = false;
             // 
-            // label10
+            // lblNews
             // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(11, 145);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(164, 23);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Login";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.lblNews.AutoSize = true;
+            this.lblNews.BackColor = System.Drawing.Color.Transparent;
+            this.lblNews.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNews.Location = new System.Drawing.Point(111, 9);
+            this.lblNews.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNews.Name = "lblNews";
+            this.lblNews.Size = new System.Drawing.Size(55, 23);
+            this.lblNews.TabIndex = 0;
+            this.lblNews.Text = "News";
             // 
-            // label13
+            // lblNewsDesc2
             // 
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(4, 37);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(178, 63);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Sign up or Log in to retrieve your booking";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.lblNewsDesc2.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewsDesc2.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewsDesc2.Location = new System.Drawing.Point(26, 418);
+            this.lblNewsDesc2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNewsDesc2.Name = "lblNewsDesc2";
+            this.lblNewsDesc2.Size = new System.Drawing.Size(220, 40);
+            this.lblNewsDesc2.TabIndex = 9;
+            this.lblNewsDesc2.Text = "Special Airport help for elderly or infirm passengers";
+            this.lblNewsDesc2.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label9
+            // pictureBoxNews1
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(10, 10);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 23);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Account Management";
+            this.pictureBoxNews1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNews1.Image")));
+            this.pictureBoxNews1.Location = new System.Drawing.Point(21, 44);
+            this.pictureBoxNews1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxNews1.Name = "pictureBoxNews1";
+            this.pictureBoxNews1.Size = new System.Drawing.Size(225, 162);
+            this.pictureBoxNews1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNews1.TabIndex = 6;
+            this.pictureBoxNews1.TabStop = false;
             // 
-            // pictureBox3
+            // lblNewsDesc1
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 254);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(225, 162);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.lblNewsDesc1.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewsDesc1.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewsDesc1.Location = new System.Drawing.Point(23, 209);
+            this.lblNewsDesc1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNewsDesc1.Name = "lblNewsDesc1";
+            this.lblNewsDesc1.Size = new System.Drawing.Size(223, 43);
+            this.lblNewsDesc1.TabIndex = 8;
+            this.lblNewsDesc1.Text = "Self checkin, a seamless experience";
             // 
-            // label12
+            // pictureBoxNews3
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(111, 9);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 23);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "News";
+            this.pictureBoxNews3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNews3.Image")));
+            this.pictureBoxNews3.Location = new System.Drawing.Point(26, 476);
+            this.pictureBoxNews3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxNews3.Name = "pictureBoxNews3";
+            this.pictureBoxNews3.Size = new System.Drawing.Size(225, 162);
+            this.pictureBoxNews3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNews3.TabIndex = 7;
+            this.pictureBoxNews3.TabStop = false;
             // 
-            // label7
+            // lblNewsDesc3
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 418);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 40);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Special Airport help for elderly or infirm passengers";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lblNewsDesc3.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewsDesc3.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewsDesc3.Location = new System.Drawing.Point(28, 641);
+            this.lblNewsDesc3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNewsDesc3.Name = "lblNewsDesc3";
+            this.lblNewsDesc3.Size = new System.Drawing.Size(218, 40);
+            this.lblNewsDesc3.TabIndex = 10;
+            this.lblNewsDesc3.Text = "Enjoy your flight with a wide selection of meals and wines";
             // 
-            // pictureBox2
+            // panelNews
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 44);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(225, 162);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.panelNews.Controls.Add(this.lblNewsDesc3);
+            this.panelNews.Controls.Add(this.pictureBoxNews3);
+            this.panelNews.Controls.Add(this.lblNewsDesc1);
+            this.panelNews.Controls.Add(this.pictureBoxNews1);
+            this.panelNews.Controls.Add(this.lblNewsDesc2);
+            this.panelNews.Controls.Add(this.lblNews);
+            this.panelNews.Controls.Add(this.pictureBoxNews2);
+            this.panelNews.Location = new System.Drawing.Point(1076, 31);
+            this.panelNews.Margin = new System.Windows.Forms.Padding(2);
+            this.panelNews.Name = "panelNews";
+            this.panelNews.Size = new System.Drawing.Size(266, 685);
+            this.panelNews.TabIndex = 11;
+            this.panelNews.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label6
+            // pictureBoxLogo
             // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(23, 209);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(223, 20);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Self checkin, a seamless experience";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(26, 476);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(225, 162);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(28, 641);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(218, 40);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Enjoy your flight with a wide selection of of special meals and wines";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(1076, 31);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(266, 685);
-            this.panel2.TabIndex = 11;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 292);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(11, 8);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(258, 292);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // FormMain
             // 
@@ -671,42 +583,41 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1424, 800);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.buttonsearch);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelTicketSearch);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnSearchFlight);
+            this.Controls.Add(this.panelDates);
+            this.Controls.Add(this.panelBookFlight);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.panelNews);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "FormMain";
-            this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Bamboo Airways Flight Booking";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelBookFlight.ResumeLayout(false);
+            this.panelBookFlight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelDates.ResumeLayout(false);
+            this.panelDates.PerformLayout();
+            this.panelTicketSearch.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNews2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNews1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNews3)).EndInit();
+            this.panelNews.ResumeLayout(false);
+            this.panelNews.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelBookFlight;
+        private System.Windows.Forms.Label lblBookFlight;
         //private flightDataSet flightDataSet;
         private System.Windows.Forms.BindingSource placesBindingSource;
         //private flightDataSetTableAdapters.PlacesTableAdapter placesTableAdapter;
@@ -714,44 +625,38 @@
         //private flightDataSet1 flightDataSet1;
         private System.Windows.Forms.BindingSource placesBindingSource1;
         //private flightDataSet1TableAdapters.PlacesTableAdapter placesTableAdapter1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButtonOneWay;
         private System.Windows.Forms.ComboBox comboTo;
-        private System.Windows.Forms.Label labelto;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox combocabin;
-        private System.Windows.Forms.Label labelguest;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dateTimereturn;
-        private System.Windows.Forms.DateTimePicker dateTimeout;
-        private System.Windows.Forms.Label labelreturn;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttonsearch;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        public System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label lblTo;
+        private System.Windows.Forms.Label lblFrom;
+        private System.Windows.Forms.Button buttonGuestMinus;
+        private System.Windows.Forms.Button buttonGuestPlus;
+        private System.Windows.Forms.ComboBox comboCabin;
+        private System.Windows.Forms.Label lblGuestCount;
+        private System.Windows.Forms.Label lblGuest;
+        private System.Windows.Forms.Label lblClass;
+        private System.Windows.Forms.GroupBox groupBoxTicketType;
+        private System.Windows.Forms.Panel panelDates;
+        private System.Windows.Forms.DateTimePicker dateTimeReturn;
+        private System.Windows.Forms.DateTimePicker dateTimeOut;
+        private System.Windows.Forms.Label lblReturn;
+        private System.Windows.Forms.Label lblOutbound;
+        private System.Windows.Forms.Button btnSearchFlight;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnExit;
+        public System.Windows.Forms.RadioButton radioButtonReturn;
+        private System.Windows.Forms.Panel panelTicketSearch;
+        private System.Windows.Forms.Button btnSearchTicket;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxNews2;
+        private System.Windows.Forms.Label lblNews;
+        private System.Windows.Forms.Label lblNewsDesc2;
+        private System.Windows.Forms.PictureBox pictureBoxNews1;
+        private System.Windows.Forms.Label lblNewsDesc1;
+        private System.Windows.Forms.PictureBox pictureBoxNews3;
+        private System.Windows.Forms.Label lblNewsDesc3;
+        private System.Windows.Forms.Panel panelNews;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }
 

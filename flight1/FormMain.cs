@@ -198,32 +198,32 @@ namespace flight1
             //this.placesTableAdapter1.Fill(this.flightDataSet1.Places);
             // TODO: This line of code loads data into the 'flightDataSet.Places' table. You can move, or remove it, as needed.
             //this.placesTableAdapter.Fill(this.flightDataSet.Places);
-            radioButton1.Checked = true;
+            radioButtonReturn.Checked = true;
 
-            combocabin.SelectedIndex = 1;
+            comboCabin.SelectedIndex = 1;
 
             comboFrom.SelectedIndex = -1;
             comboFrom.Text = "Select Departure ..";
             
             comboTo.SelectedIndex = -1;
             comboTo.Text = "Select Arrival ..";
-            dateTimeout.MinDate = DateTime.Today;
-            dateTimereturn.MinDate = DateTime.Today;
+            dateTimeOut.MinDate = DateTime.Today;
+            dateTimeReturn.MinDate = DateTime.Today;
             Cursor.Current = Cursors.Default;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(150, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel1.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelBookFlight.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelBookFlight.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            labelto.Hide();
+            lblTo.Hide();
             
-            labelreturn.Hide();
-            dateTimereturn.Hide();
+            lblReturn.Hide();
+            dateTimeReturn.Hide();
             Global.returnflight = false;
             
 
@@ -231,10 +231,10 @@ namespace flight1
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            labelto.Show();
+            lblTo.Show();
             comboTo.Show();
-            labelreturn.Show();
-            dateTimereturn.Show();
+            lblReturn.Show();
+            dateTimeReturn.Show();
 
             Global.returnflight = true;
           
@@ -258,7 +258,7 @@ namespace flight1
             
             if (Global.guest > 0 && Global.guest <5)
             { Global.guest = Global.guest + 1; }
-            labelguest.Text = Global.guest.ToString();
+            lblGuestCount.Text = Global.guest.ToString();
 
         }
 
@@ -266,7 +266,7 @@ namespace flight1
         {
             if (Global.guest > 1)
             { Global.guest = Global.guest - 1; }
-            labelguest.Text = Global.guest.ToString();
+            lblGuestCount.Text = Global.guest.ToString();
         }
 
         private void dateTimeout_ValueChanged(object sender, EventArgs e)
@@ -282,8 +282,8 @@ namespace flight1
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            panel3.BackColor = Color.FromArgb(150, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelDates.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelDates.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -310,11 +310,11 @@ namespace flight1
 
                 comboFrom.Text = "Select Departure ..";
                 comboTo.Text = "Select Arrival ..";
-                combocabin.Text = "Select Cabin ..";
-                labelguest.Text = "1";
-                radioButton1.Checked = true;
-                dateTimeout.Value = DateTime.Today;
-                dateTimereturn.Value = DateTime.Today;
+                comboCabin.Text = "Select Cabin ..";
+                lblGuestCount.Text = "1";
+                radioButtonReturn.Checked = true;
+                dateTimeOut.Value = DateTime.Today;
+                dateTimeReturn.Value = DateTime.Today;
             }
            
         }
@@ -350,14 +350,14 @@ namespace flight1
 
             Global.flightfrom = comboFrom.Text;
             Global.flightto = comboTo.Text;
-            Global.cabin = combocabin.Text;
+            Global.cabin = comboCabin.Text;
 
             
             
 
-            Global.fromdate  = dateTimeout.Value;
+            Global.fromdate  = dateTimeOut.Value;
 
-            Global.todate = dateTimereturn.Value;
+            Global.todate = dateTimeReturn.Value;
             System.TimeSpan len = Global.todate - Global.fromdate;
             int compare = DateTime.Compare(Global.todate, Global.fromdate);
             if (compare >= 0)
@@ -372,8 +372,8 @@ namespace flight1
             this.Hide();
             f2.Show();
             f2.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
-            f2.label4.Text = dateTimeout.Text + " - " + dateTimereturn.Text;
-            if (radioButton2.Checked)
+            f2.label4.Text = dateTimeOut.Text + " - " + dateTimeReturn.Text;
+            if (radioButtonOneWay.Checked)
             { f2.label6.Text = "One way flight"; }
             else
             { f2.label6.Text = len.Days.ToString() + " day(s)"; }
@@ -540,8 +540,8 @@ namespace flight1
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            panel2.BackColor = Color.FromArgb(150, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelNews.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelNews.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
 
         }
 
@@ -554,8 +554,8 @@ namespace flight1
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
-            panel6.BackColor = Color.FromArgb(150, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel6.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelTicketSearch.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelTicketSearch.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void comboTo_SelectedIndexChanged(object sender, EventArgs e)
