@@ -183,14 +183,10 @@ namespace flight1
         {
             InitializeComponent();
             Cursor.Current = Cursors.WaitCursor;
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-
             comboFrom.DataSource = destination.ToArray();
             comboTo.DataSource = destination.ToArray();
             comboFrom.Focus();
@@ -225,8 +221,6 @@ namespace flight1
             lblReturn.Hide();
             dateTimeReturn.Hide();
             Global.returnflight = false;
-            
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -237,7 +231,6 @@ namespace flight1
             dateTimeReturn.Show();
 
             Global.returnflight = true;
-          
         }
 
         private void comboFrom_SelectedIndexChanged(object sender, EventArgs e)
@@ -246,20 +239,11 @@ namespace flight1
             { comboFrom.ForeColor = Color.Black; }
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
-            
-            
             if (Global.guest > 0 && Global.guest <5)
             { Global.guest = Global.guest + 1; }
             lblGuestCount.Text = Global.guest.ToString();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -267,17 +251,6 @@ namespace flight1
             if (Global.guest > 1)
             { Global.guest = Global.guest - 1; }
             lblGuestCount.Text = Global.guest.ToString();
-        }
-
-        private void dateTimeout_ValueChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void dateTimereturn_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -296,18 +269,12 @@ namespace flight1
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res=MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (res == DialogResult.OK)
             {
-
                 comboFrom.Text = "Select Departure ..";
                 comboTo.Text = "Select Arrival ..";
                 comboCabin.Text = "Select Cabin ..";
@@ -321,7 +288,6 @@ namespace flight1
 
         private void buttonsearch_Click(object sender, EventArgs e)
         {
-            
             if (comboFrom.Text == comboTo.Text)
             { MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 comboFrom.ForeColor = Color.IndianRed;
@@ -351,9 +317,6 @@ namespace flight1
             Global.flightfrom = comboFrom.Text;
             Global.flightto = comboTo.Text;
             Global.cabin = comboCabin.Text;
-
-            
-            
 
             Global.fromdate  = dateTimeOut.Value;
 
@@ -421,7 +384,7 @@ namespace flight1
 
 
             }
-                if (f2.label10.Text == "Economy")
+            if (f2.label10.Text == "Economy")
             {
                 f2.label56.Text = Global.e1.ToString("n0");
                 f2.label57.Text = Global.e2.ToString("n0");
@@ -436,7 +399,6 @@ namespace flight1
                 f2.label58.Text = Global.b3.ToString("n0");
                 f2.label59.Text = Global.b4.ToString("n0");
                 f2.label60.Text = Global.b5.ToString("n0");
-
             }
             if (f2.label10.Text == "First Class")
             {
@@ -473,68 +435,41 @@ namespace flight1
             {
                 to4 = to4 - 24;
                 f2.label32.Text = "Non-stop flight (+1 day)";
-
             }
             if (to5 > 23)
             {
                 to5 = to5 - 24;
                 f2.label38.Text = "Non-stop flight (+1 day)";
-
             }
-
 
             f2.label15.Text = to1.ToString() + " : 00";
             f2.label16.Text = "Flight number: BN " + Global.fnumber.ToString();
             f2.label18.Text = "Airbus " + Global.fjet.ToString();
 
-
-
-
-
-
-
             f2.label22.Text = to2.ToString() + " : 00";
             f2.label21.Text = "Flight number: BN " + (Global.fnumber + 20).ToString();
             f2.label19.Text = "Airbus " + (Global.fjet + 12).ToString();
-
-
 
             f2.label28.Text = to3.ToString() + " : 00";
             f2.label27.Text = "Flight number: BN " + (Global.fnumber + 35).ToString();
             f2.label25.Text = "Airbus " + (Global.fjet + 22).ToString();
 
-
-
-
             f2.label34.Text = to4.ToString() + " : 00";
             f2.label33.Text = "Flight number: BN " + (Global.fnumber + 46).ToString();
             f2.label31.Text = "Airbus " + (Global.fjet + 32).ToString();
-
-
 
             f2.label40.Text = to5.ToString() + " : 00";
             f2.label39.Text = "Flight number: BN " + (Global.fnumber + 550).ToString();
             f2.label37.Text = "Airbus " + (Global.fjet + 42).ToString();
 
-
-
             if (Global.returnflight == true)
             {
                 f2.label1.Text = "Two-way Route";
-
             }
             else
             {
                 f2.label1.Text = "One-way Route";
-
             }
-
-           
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
 
         }
 
@@ -542,13 +477,6 @@ namespace flight1
         {
             panelNews.BackColor = Color.FromArgb(150, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panelNews.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-
-        }
-
-
-
-        private void label7_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -564,37 +492,11 @@ namespace flight1
             { comboTo.ForeColor = Color.Black; }
         }
 
-        private void label14_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form8 f8 = new Form8();
             f8.Show();
-            
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

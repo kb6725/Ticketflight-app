@@ -256,7 +256,6 @@
             this.lblGuestCount.TabIndex = 0;
             this.lblGuestCount.Text = "1";
             this.lblGuestCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblGuestCount.Click += new System.EventHandler(this.label5_Click);
             // 
             // lblGuest
             // 
@@ -318,7 +317,6 @@
             this.groupBoxTicketType.TabIndex = 4;
             this.groupBoxTicketType.TabStop = false;
             this.groupBoxTicketType.Text = "Select ticket type";
-            this.groupBoxTicketType.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // panelDates
             // 
@@ -345,7 +343,6 @@
             this.dateTimeReturn.Size = new System.Drawing.Size(196, 32);
             this.dateTimeReturn.TabIndex = 0;
             this.dateTimeReturn.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
-            this.dateTimeReturn.ValueChanged += new System.EventHandler(this.dateTimereturn_ValueChanged);
             // 
             // dateTimeOut
             // 
@@ -359,7 +356,6 @@
             this.dateTimeOut.Size = new System.Drawing.Size(196, 32);
             this.dateTimeOut.TabIndex = 0;
             this.dateTimeOut.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
-            this.dateTimeOut.ValueChanged += new System.EventHandler(this.dateTimeout_ValueChanged);
             // 
             // lblReturn
             // 
@@ -466,7 +462,6 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Look up Booking Number";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label14.Click += new System.EventHandler(this.label14_Click_1);
             // 
             // pictureBoxNews2
             // 
@@ -501,7 +496,6 @@
             this.lblNewsDesc2.Size = new System.Drawing.Size(220, 40);
             this.lblNewsDesc2.TabIndex = 9;
             this.lblNewsDesc2.Text = "Special Airport help for elderly or infirm passengers";
-            this.lblNewsDesc2.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBoxNews1
             // 
