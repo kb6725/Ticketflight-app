@@ -52,71 +52,71 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form 8.cs">
+    <Compile Include="FormSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form 8.Designer.cs">
-      <DependentUpon>Form 8.cs</DependentUpon>
+    <Compile Include="FormSearch.Designer.cs">
+      <DependentUpon>FormSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form 7.cs">
+    <Compile Include="FormConfirmed.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form 7.Designer.cs">
-      <DependentUpon>Form 7.cs</DependentUpon>
+    <Compile Include="FormConfirmed.Designer.cs">
+      <DependentUpon>FormConfirmed.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form 6.cs">
+    <Compile Include="FormPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form 6.Designer.cs">
-      <DependentUpon>Form 6.cs</DependentUpon>
+    <Compile Include="FormPayment.Designer.cs">
+      <DependentUpon>FormPayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form 5.cs">
+    <Compile Include="FormFlightSeatExtra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form 5.Designer.cs">
-      <DependentUpon>Form 5.cs</DependentUpon>
+    <Compile Include="FormFlightSeatExtra.Designer.cs">
+      <DependentUpon>FormFlightSeatExtra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="FormReturnFlight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="FormReturnFlight.Designer.cs">
+      <DependentUpon>FormReturnFlight.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FormOutboundFlight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormOutboundFlight.Designer.cs">
+      <DependentUpon>FormOutboundFlight.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form 8.resx">
-      <DependentUpon>Form 8.cs</DependentUpon>
+    <EmbeddedResource Include="FormSearch.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form 7.resx">
-      <DependentUpon>Form 7.cs</DependentUpon>
+    <EmbeddedResource Include="FormConfirmed.resx">
+      <DependentUpon>FormConfirmed.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form 6.resx">
-      <DependentUpon>Form 6.cs</DependentUpon>
+    <EmbeddedResource Include="FormPayment.resx">
+      <DependentUpon>FormPayment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form 5.resx">
-      <DependentUpon>Form 5.cs</DependentUpon>
+    <EmbeddedResource Include="FormFlightSeatExtra.resx">
+      <DependentUpon>FormFlightSeatExtra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="FormReturnFlight.resx">
+      <DependentUpon>FormReturnFlight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FormOutboundFlight.resx">
+      <DependentUpon>FormOutboundFlight.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
