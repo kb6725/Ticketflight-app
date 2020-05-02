@@ -82,6 +82,7 @@
             // panelBookFlight
             // 
             this.panelBookFlight.BackColor = System.Drawing.Color.White;
+            this.panelBookFlight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelBookFlight.Controls.Add(this.buttonGuestMinus);
             this.panelBookFlight.Controls.Add(this.buttonGuestPlus);
             this.panelBookFlight.Controls.Add(this.radioButtonOneWay);

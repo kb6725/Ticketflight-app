@@ -20,8 +20,8 @@ namespace flight1
         // upseat: seat selection after upgrade, outticket/returnticket: price of ticket after selection, servicefee=meal+bag+seat+insu, totaltick: all fee / 1 pax, finaltick: all fee / all pax
         public static decimal upseat, outticket, returnticket,outandreturnticket,tax,airportfee,meal,bag,insurance,servicefee,totaltick,finaltick;
         
-        
         public static DateTime fromdate, todate;
+        
         // define 1 way / return
         public static Boolean returnflight;
 
@@ -31,7 +31,5 @@ namespace flight1
 
         //card1: first 4 digit, booknum: booking number gen randomly 
         public static double card1,card2,card3,card4,cvv, booknum;
-        
-
     }
 }

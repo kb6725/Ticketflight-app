@@ -13,176 +13,18 @@ namespace flight1
 {
     public partial class FormMain : Form
     {
-
-
-
-        ArrayList destination = new ArrayList { "Alabama",
-"Alaska",
-"Arizona",
-"Arkansas",
-"California",
-"Colorado",
-"Connecticut",
-"Delaware",
-"Florida",
-"Georgia",
-"Hawaii",
-"Idaho",
-"Illinois",
-"Indiana",
-"Iowa",
-"Kansas",
-"Kentucky",
-"Lousiana",
-"Maine",
-"Maryland",
-"Massachusetts",
-"Michigan",
-"Minnesota",
-"Mississippi",
-"Missouri",
-"Montana",
-"Nebraska",
-"Nevada",
-"New Hempshire",
-"New Jersey",
-"New Mexico",
-"New York",
-"North Carolina",
-"North Dakota",
-"Ohio",
-"Oklahoma",
-"Oregon",
-"Pennsylvania",
-"Rhode Island",
-"South Carolina",
-"South Dakota",
-"Tennese",
-"Texas",
-"Utah",
-"Vermont",
-"Virginia",
-"Washington",
-"West Virginia",
-"Wisconsin",
-"Wyoming",
- };
-        ArrayList flightduration = new ArrayList { "3",
-"2",
-"5",
-"6",
-"5",
-"3",
-"6",
-"4",
-"6",
-"7",
-"6",
-"7",
-"9",
-"6",
-"4",
-"7",
-"7",
-"9",
-"6",
-"8",
-"4",
-"4",
-"10",
-"2",
-"8",
-"9",
-"7",
-"4",
-"6",
-"4",
-"7",
-"6",
-"2",
-"7",
-"8",
-"6",
-"7",
-"4",
-"6",
-"1",
-"2",
-"3",
-"7",
-"6",
-"7",
-"5",
-"6",
-"7",
-"8",
-"9",
- };
-        ArrayList pricelist = new ArrayList { "580",
-"774",
-"445",
-"784",
-"986",
-"779",
-"350",
-"1350",
-"1125",
-"646",
-"1058",
-"466",
-"1057",
-"554",
-"1400",
-"174",
-"346",
-"1244",
-"1564",
-"742",
-"1422",
-"866",
-"662",
-"668",
-"115",
-"166",
-"643",
-"1577",
-"1259",
-"2155",
-"126",
-"164",
-"995",
-"264",
-"648",
-"979",
-"464",
-"1444",
-"621",
-"597",
-"442",
-"1024",
-"879",
-"646",
-"584",
-"250",
-"315",
-"668",
-"994",
-"194",
- };
-
-
-
-        public OleDbConnection con;
-        public OleDbDataAdapter dad;
-        public OleDbCommand com;
-        public DataSet ds;
-
-
-
+        ArrayList destination = new ArrayList { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii",
+            "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana",
+            "Nebraska", "Nevada", "New Hempshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island",
+            "South Carolina", "South Dakota", "Tennese", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"};
+        ArrayList flightduration = new ArrayList { "3", "2", "5", "6", "5", "3", "6", "4", "6", "7", "6", "7", "9", "6", "4", "7", "7", "9", "6", "8", "4", "4", "10", "2", "8",
+            "9", "7", "4", "6", "4", "7", "6", "2", "7", "8", "6", "7", "4", "6", "1", "2", "3", "7", "6", "7", "5", "6", "7", "8", "9"};
+        ArrayList pricelist = new ArrayList { "580", "774", "445", "784", "986", "779", "350", "1350", "1125", "646", "1058", "466", "1057", "554", "1400", "174", "346", "1244",
+            "1564", "742", "1422", "866", "662", "668", "115", "166", "643", "1577", "1259", "2155","126", "164", "995", "264", "648", "979", "464", "1444", "621", "597", "442",
+            "1024", "879", "646", "584", "250", "315", "668", "994", "194"};
         public FormMain()
         {
             InitializeComponent();
-            Cursor.Current = Cursors.WaitCursor;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -190,19 +32,16 @@ namespace flight1
             comboFrom.DataSource = destination.ToArray();
             comboTo.DataSource = destination.ToArray();
             comboFrom.Focus();
-            // TODO: This line of code loads data into the 'flightDataSet1.Places' table. You can move, or remove it, as needed.
-            //this.placesTableAdapter1.Fill(this.flightDataSet1.Places);
-            // TODO: This line of code loads data into the 'flightDataSet.Places' table. You can move, or remove it, as needed.
-            //this.placesTableAdapter.Fill(this.flightDataSet.Places);
+
             radioButtonReturn.Checked = true;
 
             comboCabin.SelectedIndex = 1;
 
             comboFrom.SelectedIndex = -1;
-            comboFrom.Text = "Select Departure ..";
+            comboFrom.Text = "Select Departure...";
             
             comboTo.SelectedIndex = -1;
-            comboTo.Text = "Select Arrival ..";
+            comboTo.Text = "Select Arrival...";
             dateTimeOut.MinDate = DateTime.Today;
             dateTimeReturn.MinDate = DateTime.Today;
             Cursor.Current = Cursors.Default;
@@ -289,13 +128,12 @@ namespace flight1
         private void buttonsearch_Click(object sender, EventArgs e)
         {
             if (comboFrom.Text == comboTo.Text)
-            { MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            {
+                MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 comboFrom.ForeColor = Color.IndianRed;
                 comboFrom.ForeColor = Color.Black;
-                
-                
-                
-                return; }
+                return;
+            }
 
             if (comboFrom.SelectedIndex < 0)
             {
@@ -470,14 +308,12 @@ namespace flight1
             {
                 f2.label1.Text = "One-way Route";
             }
-
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             panelNews.BackColor = Color.FromArgb(150, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panelNews.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -496,7 +332,8 @@ namespace flight1
         {
             this.Hide();
             Form8 f8 = new Form8();
-            f8.Show();
+            f8.ShowDialog();
+            this.Show();
         }
     }
 }
