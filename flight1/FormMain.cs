@@ -27,7 +27,7 @@ namespace flight1
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
         {
             comboFrom.DataSource = destination.ToArray();
             comboTo.DataSource = destination.ToArray();
@@ -44,7 +44,6 @@ namespace flight1
             comboTo.Text = "Select Arrival...";
             dateTimeOut.MinDate = DateTime.Today;
             dateTimeReturn.MinDate = DateTime.Today;
-            Cursor.Current = Cursors.Default;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -72,12 +71,6 @@ namespace flight1
             Global.returnflight = true;
         }
 
-        private void comboFrom_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboFrom.SelectedIndex != -1)
-            { comboFrom.ForeColor = Color.Black; }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (Global.guest > 0 && Global.guest <5)
@@ -98,7 +91,7 @@ namespace flight1
             ControlPaint.DrawBorder(e.Graphics, panelDates.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -108,7 +101,7 @@ namespace flight1
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res=MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -125,7 +118,7 @@ namespace flight1
            
         }
 
-        private void buttonsearch_Click(object sender, EventArgs e)
+        private void btnSearchFlight_Click(object sender, EventArgs e)
         {
             if (comboFrom.Text == comboTo.Text)
             {
@@ -322,13 +315,7 @@ namespace flight1
             ControlPaint.DrawBorder(e.Graphics, panelTicketSearch.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
-        private void comboTo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboTo.SelectedIndex != -1)
-            { comboTo.ForeColor = Color.Black; }
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        private void btnSearchTicket_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form8 f8 = new Form8();

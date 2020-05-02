@@ -82,7 +82,6 @@
             // panelBookFlight
             // 
             this.panelBookFlight.BackColor = System.Drawing.Color.White;
-            this.panelBookFlight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelBookFlight.Controls.Add(this.buttonGuestMinus);
             this.panelBookFlight.Controls.Add(this.buttonGuestPlus);
             this.panelBookFlight.Controls.Add(this.radioButtonOneWay);
@@ -176,7 +175,6 @@
             this.comboTo.Size = new System.Drawing.Size(196, 32);
             this.comboTo.TabIndex = 1;
             this.comboTo.ValueMember = "Place";
-            this.comboTo.SelectedIndexChanged += new System.EventHandler(this.comboTo_SelectedIndexChanged);
             // 
             // placesBindingSource
             // 
@@ -206,7 +204,6 @@
             this.comboCabin.Size = new System.Drawing.Size(196, 32);
             this.comboCabin.TabIndex = 1;
             this.comboCabin.Text = "Select Cabin ...";
-            this.comboCabin.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
             // 
             // comboFrom
             // 
@@ -226,7 +223,6 @@
             this.comboFrom.Size = new System.Drawing.Size(196, 32);
             this.comboFrom.TabIndex = 1;
             this.comboFrom.ValueMember = "Place";
-            this.comboFrom.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
             // 
             // placesBindingSource1
             // 
@@ -398,7 +394,7 @@
             this.btnSearchFlight.TabIndex = 4;
             this.btnSearchFlight.Text = "Search Flight";
             this.btnSearchFlight.UseVisualStyleBackColor = false;
-            this.btnSearchFlight.Click += new System.EventHandler(this.buttonsearch_Click);
+            this.btnSearchFlight.Click += new System.EventHandler(this.btnSearchFlight_Click);
             // 
             // btnReset
             // 
@@ -411,7 +407,7 @@
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.button4_Click);
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnExit
             // 
@@ -424,7 +420,7 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.button3_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panelTicketSearch
             // 
@@ -450,7 +446,7 @@
             this.btnSearchTicket.TabIndex = 2;
             this.btnSearchTicket.Text = "Search Ticket";
             this.btnSearchTicket.UseVisualStyleBackColor = false;
-            this.btnSearchTicket.Click += new System.EventHandler(this.button7_Click);
+            this.btnSearchTicket.Click += new System.EventHandler(this.btnSearchTicket_Click);
             // 
             // label14
             // 
@@ -491,12 +487,12 @@
             // 
             this.lblNewsDesc2.BackColor = System.Drawing.Color.Transparent;
             this.lblNewsDesc2.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewsDesc2.Location = new System.Drawing.Point(26, 418);
+            this.lblNewsDesc2.Location = new System.Drawing.Point(22, 417);
             this.lblNewsDesc2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNewsDesc2.Name = "lblNewsDesc2";
             this.lblNewsDesc2.Size = new System.Drawing.Size(220, 40);
             this.lblNewsDesc2.TabIndex = 9;
-            this.lblNewsDesc2.Text = "Special Airport help for elderly or infirm passengers";
+            this.lblNewsDesc2.Text = "Special assistance for elderly or disabled passengers";
             // 
             // pictureBoxNews1
             // 
@@ -518,7 +514,7 @@
             this.lblNewsDesc1.Name = "lblNewsDesc1";
             this.lblNewsDesc1.Size = new System.Drawing.Size(223, 43);
             this.lblNewsDesc1.TabIndex = 8;
-            this.lblNewsDesc1.Text = "Self checkin, a seamless experience";
+            this.lblNewsDesc1.Text = "Self check in: a seamless experience";
             // 
             // pictureBoxNews3
             // 
@@ -561,7 +557,7 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Image = global::flight1.Properties.Resources.logo;
             this.pictureBoxLogo.Location = new System.Drawing.Point(11, 8);
             this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
@@ -591,7 +587,7 @@
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "Bamboo Airways Flight Booking";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelBookFlight.ResumeLayout(false);
             this.panelBookFlight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.placesBindingSource)).EndInit();
