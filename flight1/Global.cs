@@ -26,7 +26,7 @@ namespace flight1
         public static DateTime fromdate, todate;
         
         // define 1 way / return
-        public static Boolean returnflight;
+        public static Boolean returnflight = true;
 
         // customer info: pp: passport
         public static string phone,p1name, p1pp, p1email,   expmonth, expyear, cardname, p2name, p2pp, p3name, p3pp, p4name, p4pp, p5name, p5pp;
