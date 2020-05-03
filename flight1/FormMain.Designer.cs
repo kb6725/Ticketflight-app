@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelBookFlight = new System.Windows.Forms.Panel();
-            this.buttonGuestMinus = new System.Windows.Forms.Button();
-            this.buttonGuestPlus = new System.Windows.Forms.Button();
+            this.btnGuestMinus = new System.Windows.Forms.Button();
+            this.btnGuestPlus = new System.Windows.Forms.Button();
             this.radioButtonOneWay = new System.Windows.Forms.RadioButton();
             this.radioButtonReturn = new System.Windows.Forms.RadioButton();
             this.comboTo = new System.Windows.Forms.ComboBox();
@@ -82,8 +82,8 @@
             // panelBookFlight
             // 
             this.panelBookFlight.BackColor = System.Drawing.Color.White;
-            this.panelBookFlight.Controls.Add(this.buttonGuestMinus);
-            this.panelBookFlight.Controls.Add(this.buttonGuestPlus);
+            this.panelBookFlight.Controls.Add(this.btnGuestMinus);
+            this.panelBookFlight.Controls.Add(this.btnGuestPlus);
             this.panelBookFlight.Controls.Add(this.radioButtonOneWay);
             this.panelBookFlight.Controls.Add(this.radioButtonReturn);
             this.panelBookFlight.Controls.Add(this.comboTo);
@@ -103,29 +103,29 @@
             this.panelBookFlight.TabIndex = 1;
             this.panelBookFlight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // buttonGuestMinus
+            // btnGuestMinus
             // 
-            this.buttonGuestMinus.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuestMinus.Location = new System.Drawing.Point(355, 223);
-            this.buttonGuestMinus.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonGuestMinus.Name = "buttonGuestMinus";
-            this.buttonGuestMinus.Size = new System.Drawing.Size(32, 32);
-            this.buttonGuestMinus.TabIndex = 5;
-            this.buttonGuestMinus.Text = "-";
-            this.buttonGuestMinus.UseVisualStyleBackColor = true;
-            this.buttonGuestMinus.Click += new System.EventHandler(this.button2_Click);
+            this.btnGuestMinus.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuestMinus.Location = new System.Drawing.Point(355, 223);
+            this.btnGuestMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuestMinus.Name = "btnGuestMinus";
+            this.btnGuestMinus.Size = new System.Drawing.Size(32, 32);
+            this.btnGuestMinus.TabIndex = 5;
+            this.btnGuestMinus.Text = "-";
+            this.btnGuestMinus.UseVisualStyleBackColor = true;
+            this.btnGuestMinus.Click += new System.EventHandler(this.btnGuestMinus_Click);
             // 
-            // buttonGuestPlus
+            // btnGuestPlus
             // 
-            this.buttonGuestPlus.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuestPlus.Location = new System.Drawing.Point(450, 223);
-            this.buttonGuestPlus.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonGuestPlus.Name = "buttonGuestPlus";
-            this.buttonGuestPlus.Size = new System.Drawing.Size(32, 32);
-            this.buttonGuestPlus.TabIndex = 5;
-            this.buttonGuestPlus.Text = "+";
-            this.buttonGuestPlus.UseVisualStyleBackColor = true;
-            this.buttonGuestPlus.Click += new System.EventHandler(this.button1_Click);
+            this.btnGuestPlus.Font = new System.Drawing.Font("Calibri", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuestPlus.Location = new System.Drawing.Point(450, 223);
+            this.btnGuestPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuestPlus.Name = "btnGuestPlus";
+            this.btnGuestPlus.Size = new System.Drawing.Size(32, 32);
+            this.btnGuestPlus.TabIndex = 5;
+            this.btnGuestPlus.Text = "+";
+            this.btnGuestPlus.UseVisualStyleBackColor = true;
+            this.btnGuestPlus.Click += new System.EventHandler(this.btnGuestPlus_Click);
             // 
             // radioButtonOneWay
             // 
@@ -140,7 +140,7 @@
             this.radioButtonOneWay.TabStop = true;
             this.radioButtonOneWay.Text = "One-way";
             this.radioButtonOneWay.UseVisualStyleBackColor = false;
-            this.radioButtonOneWay.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButtonOneWay.CheckedChanged += new System.EventHandler(this.radioButtonOneWay_CheckedChanged);
             // 
             // radioButtonReturn
             // 
@@ -155,7 +155,7 @@
             this.radioButtonReturn.TabStop = true;
             this.radioButtonReturn.Text = "Return";
             this.radioButtonReturn.UseVisualStyleBackColor = false;
-            this.radioButtonReturn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButtonReturn.CheckedChanged += new System.EventHandler(this.radioButtonReturn_CheckedChanged);
             // 
             // comboTo
             // 
@@ -620,8 +620,8 @@
         private System.Windows.Forms.ComboBox comboTo;
         private System.Windows.Forms.Label lblTo;
         private System.Windows.Forms.Label lblFrom;
-        private System.Windows.Forms.Button buttonGuestMinus;
-        private System.Windows.Forms.Button buttonGuestPlus;
+        private System.Windows.Forms.Button btnGuestMinus;
+        private System.Windows.Forms.Button btnGuestPlus;
         private System.Windows.Forms.ComboBox comboCabin;
         private System.Windows.Forms.Label lblGuestCount;
         private System.Windows.Forms.Label lblGuest;

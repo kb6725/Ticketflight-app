@@ -139,9 +139,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::flight1.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(11, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(258, 292);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -159,7 +159,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Location = new System.Drawing.Point(1084, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(314, 578);
             this.panel1.TabIndex = 1;
@@ -240,7 +240,7 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(23, 41);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(269, 214);
             this.panel2.TabIndex = 2;
@@ -370,7 +370,7 @@
             this.panel9.Controls.Add(this.label43);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Location = new System.Drawing.Point(23, 287);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(269, 276);
             this.panel9.TabIndex = 3;
@@ -496,7 +496,7 @@
             this.panel10.Controls.Add(this.label40);
             this.panel10.Controls.Add(this.label55);
             this.panel10.Location = new System.Drawing.Point(0, 166);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(269, 110);
             this.panel10.TabIndex = 5;
@@ -571,7 +571,7 @@
             this.panel8.Controls.Add(this.panel3);
             this.panel8.Controls.Add(this.label18);
             this.panel8.Location = new System.Drawing.Point(273, 32);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(797, 740);
             this.panel8.TabIndex = 3;
@@ -582,7 +582,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(329, 58);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(22, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -637,7 +637,7 @@
             this.panel4.Controls.Add(this.label57);
             this.panel4.Controls.Add(this.label56);
             this.panel4.Location = new System.Drawing.Point(23, 336);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(756, 72);
             this.panel4.TabIndex = 4;
@@ -713,7 +713,7 @@
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.label26);
             this.panel5.Location = new System.Drawing.Point(23, 436);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(755, 284);
             this.panel5.TabIndex = 4;
@@ -727,7 +727,7 @@
             this.panel12.Controls.Add(this.label66);
             this.panel12.Controls.Add(this.label62);
             this.panel12.Location = new System.Drawing.Point(12, 209);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(728, 41);
             this.panel12.TabIndex = 6;
@@ -788,7 +788,7 @@
             this.panel11.Controls.Add(this.label65);
             this.panel11.Controls.Add(this.label60);
             this.panel11.Location = new System.Drawing.Point(12, 155);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(728, 41);
             this.panel11.TabIndex = 6;
@@ -849,7 +849,7 @@
             this.panel7.Controls.Add(this.label64);
             this.panel7.Controls.Add(this.label59);
             this.panel7.Location = new System.Drawing.Point(12, 102);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(728, 41);
             this.panel7.TabIndex = 6;
@@ -910,7 +910,7 @@
             this.panel6.Controls.Add(this.label63);
             this.panel6.Controls.Add(this.label58);
             this.panel6.Location = new System.Drawing.Point(12, 50);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(728, 41);
             this.panel6.TabIndex = 6;
@@ -991,7 +991,7 @@
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Location = new System.Drawing.Point(23, 162);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(755, 145);
             this.panel3.TabIndex = 4;
@@ -1146,7 +1146,7 @@
             this.button2.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(1124, 695);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 32);
             this.button2.TabIndex = 10;
@@ -1160,7 +1160,7 @@
             this.button3.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(1255, 695);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 32);
             this.button3.TabIndex = 10;
@@ -1175,7 +1175,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(1122, 623);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(250, 55);
             this.button1.TabIndex = 37;
@@ -1192,7 +1192,7 @@
             this.panel13.Controls.Add(this.label69);
             this.panel13.Controls.Add(this.pictureBox7);
             this.panel13.Location = new System.Drawing.Point(41, 302);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(182, 369);
             this.panel13.TabIndex = 40;
@@ -1244,7 +1244,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(13, 349);
             this.pictureBox7.TabIndex = 16;
@@ -1265,7 +1265,7 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form7";
             this.Text = "Printable Ticket";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

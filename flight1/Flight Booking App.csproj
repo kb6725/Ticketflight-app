@@ -173,9 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
-    <EmbeddedResource Include="Resources\logo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <Content Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

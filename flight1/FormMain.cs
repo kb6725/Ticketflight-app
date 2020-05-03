@@ -52,7 +52,7 @@ namespace flight1
             ControlPaint.DrawBorder(e.Graphics, panelBookFlight.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonOneWay_CheckedChanged(object sender, EventArgs e)
         {
             lblTo.Hide();
             
@@ -61,7 +61,7 @@ namespace flight1
             Global.returnflight = false;
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonReturn_CheckedChanged(object sender, EventArgs e)
         {
             lblTo.Show();
             comboTo.Show();
@@ -71,18 +71,24 @@ namespace flight1
             Global.returnflight = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGuestPlus_Click(object sender, EventArgs e)
         {
-            if (Global.guest > 0 && Global.guest <5)
-            { Global.guest = Global.guest + 1; }
-            lblGuestCount.Text = Global.guest.ToString();
+            // Make sure # guests selected is < 5 before adding
+            if (Global.guest < 5)
+            {
+                Global.guest++;
+                lblGuestCount.Text = Global.guest.ToString();
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnGuestMinus_Click(object sender, EventArgs e)
         {
+            // Make sure # guests selected is > 1 before subtracting
             if (Global.guest > 1)
-            { Global.guest = Global.guest - 1; }
-            lblGuestCount.Text = Global.guest.ToString();
+            {
+                Global.guest--;
+                lblGuestCount.Text = Global.guest.ToString();
+            }
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
