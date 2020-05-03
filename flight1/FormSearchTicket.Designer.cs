@@ -172,7 +172,6 @@
             this.labelsum.TabIndex = 1;
             this.labelsum.Text = "a";
             this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelsum.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label2
             // 
@@ -209,7 +208,6 @@
             this.lblSummary.TabIndex = 1;
             this.lblSummary.Text = "Flight Summary";
             this.lblSummary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblSummary.Click += new System.EventHandler(this.label3_Click);
             // 
             // panelSummary
             // 
@@ -248,7 +246,6 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "a";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label8
             // 
@@ -316,7 +313,6 @@
             this.label54.TabIndex = 4;
             this.label54.Text = "..";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
             // label46
             // 
@@ -453,7 +449,6 @@
             this.label30.TabIndex = 4;
             this.label30.Text = "..";
             this.label30.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // label40
             // 
@@ -465,7 +460,6 @@
             this.label40.TabIndex = 4;
             this.label40.Text = "..";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
             // label55
             // 
@@ -517,7 +511,6 @@
             this.maskedTxtBoxBookingNum.Name = "maskedTxtBoxBookingNum";
             this.maskedTxtBoxBookingNum.Size = new System.Drawing.Size(81, 27);
             this.maskedTxtBoxBookingNum.TabIndex = 7;
-            this.maskedTxtBoxBookingNum.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             this.maskedTxtBoxBookingNum.TextChanged += new System.EventHandler(this.maskedTextBox1_textchange);
             // 
             // btnSearch
@@ -546,7 +539,6 @@
             this.lblEnterBookingNum.Size = new System.Drawing.Size(197, 23);
             this.lblEnterBookingNum.TabIndex = 6;
             this.lblEnterBookingNum.Text = "Enter Booking Number : ";
-            this.lblEnterBookingNum.Click += new System.EventHandler(this.label20_Click);
             // 
             // lblSearchBookingTicket
             // 
@@ -906,7 +898,6 @@
             this.label26.TabIndex = 0;
             this.label26.Text = "Other Passengers Information";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // panel3
             // 
@@ -1073,7 +1064,7 @@
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FormSearchTicket
             // 
@@ -1092,7 +1083,7 @@
             this.Name = "FormSearchTicket";
             this.Text = "Printable Ticket";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form8_Load);
+            this.Load += new System.EventHandler(this.FormSearchTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelSummaryPrice.ResumeLayout(false);
             this.panelSummary.ResumeLayout(false);

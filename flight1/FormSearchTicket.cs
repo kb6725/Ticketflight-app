@@ -25,12 +25,10 @@ namespace flight1
        
         public FormSearchTicket()
         {
-
             InitializeComponent();
-           
         }
 
-        private void Form8_Load(object sender, EventArgs e)
+        private void FormSearchTicket_Load(object sender, EventArgs e)
         {
             panel3.Visible = false;
             panel4.Visible = false;
@@ -41,129 +39,13 @@ namespace flight1
             panel12.Visible = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
-
         }
-
-        private void labelsum_Click(object sender, EventArgs e)
+        private void panel8_Paint(object sender, PaintEventArgs e)
         {
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label54_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-           
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-   
-        }
-            private void panel8_Paint(object sender, PaintEventArgs e)
-            {
             panelSearch.BackColor = Color.FromArgb(120, Color.White);
-             }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-            {
-                
-            }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-        
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label40_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -182,16 +64,6 @@ namespace flight1
         {
             panel5.BackColor = Color.FromArgb(200, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
@@ -304,24 +176,14 @@ namespace flight1
                     panel5.Visible = false;
                     panelSummaryPrice.Visible = false;
                 }
-                
-
             }
-
-
-
-
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, EventArgs e)
-        {
-            
-        }
         private void maskedTextBox1_textchange(object sender, EventArgs e)
         {
             if (maskedTxtBoxBookingNum.Text != "")
