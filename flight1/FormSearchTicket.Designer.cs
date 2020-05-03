@@ -147,7 +147,7 @@
             this.panelSummaryPrice.Name = "panelSummaryPrice";
             this.panelSummaryPrice.Size = new System.Drawing.Size(314, 578);
             this.panelSummaryPrice.TabIndex = 1;
-            this.panelSummaryPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panelSummaryPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSummaryPrice_Paint);
             // 
             // lblDateOutput
             // 
@@ -221,7 +221,7 @@
             this.panelSummary.Name = "panelSummary";
             this.panelSummary.Size = new System.Drawing.Size(269, 214);
             this.panelSummary.TabIndex = 2;
-            this.panelSummary.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panelSummary.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSummary_Paint);
             // 
             // lblGuestOutput
             // 
@@ -290,7 +290,7 @@
             this.panelPrice.Name = "panelPrice";
             this.panelPrice.Size = new System.Drawing.Size(269, 276);
             this.panelPrice.TabIndex = 3;
-            this.panelPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            this.panelPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrice_Paint);
             // 
             // lblTotalPricePassenger
             // 
@@ -415,7 +415,7 @@
             this.panelTotals.Name = "panelTotals";
             this.panelTotals.Size = new System.Drawing.Size(269, 110);
             this.panelTotals.TabIndex = 5;
-            this.panelTotals.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+            this.panelTotals.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTotals_Paint);
             // 
             // lblTotalTicketPrice
             // 
@@ -488,7 +488,7 @@
             this.panelSearch.Name = "panelSearch";
             this.panelSearch.Size = new System.Drawing.Size(797, 740);
             this.panelSearch.TabIndex = 3;
-            this.panelSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            this.panelSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSearch_Paint);
             // 
             // label12
             // 
@@ -511,7 +511,7 @@
             this.maskedTxtBoxBookingNum.Name = "maskedTxtBoxBookingNum";
             this.maskedTxtBoxBookingNum.Size = new System.Drawing.Size(81, 27);
             this.maskedTxtBoxBookingNum.TabIndex = 7;
-            this.maskedTxtBoxBookingNum.TextChanged += new System.EventHandler(this.maskedTextBox1_textchange);
+            this.maskedTxtBoxBookingNum.TextChanged += new System.EventHandler(this.maskedTxtBoxBookingNum_TextChanged);
             // 
             // btnSearch
             // 
@@ -526,7 +526,7 @@
             this.btnSearch.TabIndex = 37;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.button1_Click_2);
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblEnterBookingNum
             // 
@@ -566,7 +566,7 @@
             this.panelPaymentInfo.Name = "panelPaymentInfo";
             this.panelPaymentInfo.Size = new System.Drawing.Size(756, 72);
             this.panelPaymentInfo.TabIndex = 4;
-            this.panelPaymentInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panelPaymentInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPaymentInfo_Paint);
             // 
             // lblPaymentInfo
             // 
@@ -642,7 +642,7 @@
             this.panelOtherInfo.Name = "panelOtherInfo";
             this.panelOtherInfo.Size = new System.Drawing.Size(755, 284);
             this.panelOtherInfo.TabIndex = 4;
-            this.panelOtherInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.panelOtherInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelOtherInfo_Paint);
             // 
             // panelOtherPass5
             // 
@@ -919,7 +919,7 @@
             this.panelPriPassengerInfo.Name = "panelPriPassengerInfo";
             this.panelPriPassengerInfo.Size = new System.Drawing.Size(755, 145);
             this.panelPriPassengerInfo.TabIndex = 4;
-            this.panelPriPassengerInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panelPriPassengerInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPriPassengerInfo_Paint);
             // 
             // lblPhoneNumOutput
             // 

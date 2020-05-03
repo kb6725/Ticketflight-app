@@ -22,7 +22,6 @@ namespace flight1
 {
     public partial class FormSearchTicket : Form
     {
-       
         public FormSearchTicket()
         {
             InitializeComponent();
@@ -39,49 +38,7 @@ namespace flight1
             panelOtherPass5.Visible = false;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
-        }
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            panelSearch.BackColor = Color.FromArgb(120, Color.White);
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            panelPriPassengerInfo.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panelPriPassengerInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-            panelPaymentInfo.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panelPaymentInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-            panelOtherInfo.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panelOtherInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panelTotals.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panelPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panelSummary.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-       
-        private void button1_Click_2(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             if (maskedTxtBoxBookingNum.Text == "")
             { maskedTxtBoxBookingNum.BackColor = Color.IndianRed;return; }
@@ -184,13 +141,56 @@ namespace flight1
             this.Close();
         }
 
-        private void maskedTextBox1_textchange(object sender, EventArgs e)
+        private void maskedTxtBoxBookingNum_TextChanged(object sender, EventArgs e)
         {
             if (maskedTxtBoxBookingNum.Text != "")
             { maskedTxtBoxBookingNum.BackColor = Color.White; }
         }
+
+        // Painting for fancy transparency & outlines
+        private void panelSummaryPrice_Paint(object sender, PaintEventArgs e)
+        {
+            panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
+        }
+        private void panelSearch_Paint(object sender, PaintEventArgs e)
+        {
+            panelSearch.BackColor = Color.FromArgb(120, Color.White);
+        }
+
+        private void panelPriPassengerInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelPriPassengerInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPriPassengerInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPaymentInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelPaymentInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPaymentInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelOtherInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelOtherInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelOtherInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelTotals_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelTotals.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPrice_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelSummary_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelSummary.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
     }
-    } 
+} 
     
     
     
