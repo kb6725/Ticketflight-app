@@ -16,9 +16,7 @@ namespace flight1
     {
         public Form6()
         {
-
             InitializeComponent();
-            Cursor.Current = Cursors.WaitCursor;
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -65,127 +63,14 @@ namespace flight1
             Cursor.Current = Cursors.Default;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.BackColor = Color.FromArgb(180, Color.White);
-           
         }
 
-        private void labelsum_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label54_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-           
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-   
-        }
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
             panel8.BackColor = Color.FromArgb(180, Color.White);
-            
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-            {
-                
-            }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
-
-        }
-    
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label40_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -348,10 +233,6 @@ namespace flight1
                 MessageBox.Show("Please input 16-digit Card Number, 3-digit CVV number and Phone number", "Invalid Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
             }
-
-
-
-
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -422,10 +303,6 @@ namespace flight1
             { textBox4.Enabled = true; }
         }
 
-        private void dateTimepicker_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked==true) 
@@ -487,8 +364,6 @@ namespace flight1
                 checkBox1.Checked = false;
                 comboBox1.SelectedIndex = -1;
                 comboBox2.SelectedIndex = -1;
-
-
             }
         }
 
@@ -510,11 +385,6 @@ namespace flight1
             if (maskedTextBox1.Text != "")
 
             { maskedTextBox1.BackColor = Color.White; }
-        }
-
-        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-            
         }
 
         private void maskedTextBox2_TextChange(object sender, EventArgs e)
@@ -601,7 +471,6 @@ namespace flight1
             { textBox5.BackColor = Color.White; }
         }
     } 
-    
-    }
+}
     
 

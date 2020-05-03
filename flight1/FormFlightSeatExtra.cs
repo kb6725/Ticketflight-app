@@ -68,8 +68,6 @@ namespace flight1
         public Form5()
         {
             InitializeComponent();
-
-
         }
 
         private void Form5_Load(object sender, EventArgs e)
@@ -95,7 +93,6 @@ namespace flight1
                 label22.Visible = true;
                 comboBox1.Visible = true;
                 label24.Visible = true;
-
             }
 
             if (Global.cabin == "Business")
@@ -108,7 +105,6 @@ namespace flight1
                 label22.Visible = true;
                 comboBox1.Visible = true;
                 label24.Visible = true;
-
             }
             //First class have No upgrade
             if (Global.cabin == "First Class")
@@ -197,66 +193,11 @@ namespace flight1
                 comboBox7.SelectedIndex = -1;
             }
             Cursor.Current = Cursors.Default;
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.BackColor = Color.FromArgb(180, Color.White);
-
-        }
-
-        private void labelsum_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label54_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -264,8 +205,6 @@ namespace flight1
             if (comboBox1.SelectedIndex != -1)
             { label13.ForeColor = Color.Black; }
         }
-
-
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -446,13 +385,11 @@ namespace flight1
 
 
             label55.Text = Global.totaltick.ToString("c1");
-
-
         }
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
             panel8.BackColor = Color.FromArgb(120, Color.White);
-            }
+        }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -481,8 +418,6 @@ namespace flight1
 
             Global.totaltick = Global.outticket + Global.returnticket + Global.servicefee + Global.tax + Global.airportfee;
             label55.Text = Global.totaltick.ToString("c1");
-
-
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -519,9 +454,6 @@ namespace flight1
 
             Global.totaltick = Global.outticket + Global.returnticket + Global.servicefee + Global.tax + Global.airportfee;
             label55.Text = Global.totaltick.ToString("c1");
-
-
-
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -748,45 +680,16 @@ namespace flight1
             if (comboBox7.SelectedIndex != -1)
             { label26.ForeColor = Color.Black; }
         }
-        public void Combo()
-        {
-
-        }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox8.SelectedIndex != -1)
             { label27.ForeColor = Color.Black; }
-        }
-
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label51_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint_1(object sender, PaintEventArgs e)
-        {
-            
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -915,13 +818,7 @@ namespace flight1
                         comboBox9.Visible = true;
                     }
                 }
-
             }
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
         }
     }
 } 

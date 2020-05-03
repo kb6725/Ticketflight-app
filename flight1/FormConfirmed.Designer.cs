@@ -188,7 +188,6 @@
             this.labelsum.TabIndex = 1;
             this.labelsum.Text = "a";
             this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelsum.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label2
             // 
@@ -225,7 +224,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Flight Summary";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel2
             // 
@@ -305,7 +303,6 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "a";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label6
             // 
@@ -397,7 +394,6 @@
             this.label54.TabIndex = 4;
             this.label54.Text = "..";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
             // label46
             // 
@@ -534,7 +530,6 @@
             this.label30.TabIndex = 4;
             this.label30.Text = "..";
             this.label30.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // label40
             // 
@@ -546,7 +541,6 @@
             this.label40.TabIndex = 4;
             this.label40.Text = "..";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
             // label55
             // 
@@ -600,7 +594,6 @@
             this.label20.Size = new System.Drawing.Size(207, 23);
             this.label20.TabIndex = 6;
             this.label20.Text = "Your Booking Number is : ";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label12
             // 
@@ -613,7 +606,6 @@
             this.label12.Size = new System.Drawing.Size(165, 23);
             this.label12.TabIndex = 3;
             this.label12.Text = "Payment authorized";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -973,7 +965,6 @@
             this.label26.TabIndex = 0;
             this.label26.Text = "Other Passengers Information";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // panel3
             // 

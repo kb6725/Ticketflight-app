@@ -11,55 +11,18 @@ using System.Windows.Forms;
 
 namespace flight1
 {
-
-
     public partial class FormReturnFlight : Form
     {
         Form5 f5 = new Form5();
         
-            
-
         public FormReturnFlight()
         {
             InitializeComponent();
-
-
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-            Cursor.Current = Cursors.Default;
-
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.BackColor = Color.FromArgb(180, Color.White);
-            
-
-        }
-
-        private void labelsum_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -153,7 +116,7 @@ namespace flight1
 
             f5.label55.Text = (Global.totaltick.ToString("c1"));
         }
-            private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             button1.PerformClick();
 
@@ -177,7 +140,7 @@ namespace flight1
                 f5.label54.Text = Global.tax.ToString("c1");
 
                 f5.label55.Text = (Global.totaltick.ToString("c1"));
-            }
+        }
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -203,16 +166,10 @@ namespace flight1
                 f5.label54.Text = Global.tax.ToString("c1");
 
                 f5.label55.Text = (Global.totaltick.ToString("c1"));
-            }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
-            
             panel8.BackColor = Color.FromArgb(150, Color.White);
         }
 

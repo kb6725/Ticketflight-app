@@ -196,7 +196,6 @@
             this.labelsum.TabIndex = 1;
             this.labelsum.Text = "a";
             this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelsum.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label2
             // 
@@ -276,7 +275,6 @@
             this.label51.TabIndex = 1;
             this.label51.Text = "hrs";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label51.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label49
             // 
@@ -289,7 +287,6 @@
             this.label49.TabIndex = 1;
             this.label49.Text = "aa";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label49.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label10
             // 
@@ -684,7 +681,6 @@
             this.label12.Size = new System.Drawing.Size(227, 23);
             this.label12.TabIndex = 3;
             this.label12.Text = "Let us take you home safetly";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -1356,7 +1352,6 @@
             this.Name = "FormReturnFlight";
             this.Text = "Form4";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

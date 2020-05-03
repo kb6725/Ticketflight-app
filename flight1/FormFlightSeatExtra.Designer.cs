@@ -176,7 +176,6 @@
             this.labelsum.TabIndex = 1;
             this.labelsum.Text = "a";
             this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelsum.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label2
             // 
@@ -384,7 +383,6 @@
             this.label54.TabIndex = 4;
             this.label54.Text = "..";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
             // label46
             // 
@@ -451,7 +449,6 @@
             this.label62.TabIndex = 2;
             this.label62.Text = "..";
             this.label62.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label62.Click += new System.EventHandler(this.label51_Click);
             // 
             // label44
             // 
@@ -777,7 +774,6 @@
             this.label27.TabIndex = 2;
             this.label27.Text = "Passenger 4 seat";
             this.label27.Visible = false;
-            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label26
             // 
@@ -812,7 +808,6 @@
             this.label29.TabIndex = 2;
             this.label29.Text = "Fee / passenger";
             this.label29.Visible = false;
-            this.label29.Click += new System.EventHandler(this.label13_Click);
             // 
             // label13
             // 
@@ -824,7 +819,6 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Passenger 1 seat";
             this.label13.Visible = false;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label22
             // 
@@ -835,7 +829,6 @@
             this.label22.Size = new System.Drawing.Size(168, 41);
             this.label22.TabIndex = 2;
             this.label22.Text = "Tired to long a flight? Upgrade your seat now (*)\r\n";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label21
             // 
@@ -905,7 +898,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label12
             // 
@@ -918,7 +910,6 @@
             this.label12.Size = new System.Drawing.Size(444, 23);
             this.label12.TabIndex = 3;
             this.label12.Text = "Relax and enjoy the best service while you are on the sky";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 

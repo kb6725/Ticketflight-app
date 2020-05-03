@@ -20,48 +20,15 @@ namespace flight1
         public FormOutboundFlight()
         {
             InitializeComponent();
-            Cursor.Current = Cursors.WaitCursor;
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-            Cursor.Current = Cursors.Default;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.BackColor = Color.FromArgb(180, Color.White);
-            
-
-        }
-
-        private void labelsum_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
-                
-                
                 f4.label49.Text = (Global.duration*2).ToString();
                 f4.labelsum.Text = labelsum.Text;
                 f4.label4.Text = label4.Text;
@@ -145,14 +112,7 @@ namespace flight1
                 f5.label6.Text = label6.Text;
                 f5.label10.Text = label10.Text;
                 f5.label9.Text = label9.Text;
-
-
             }
-        }
-
-        private void label54_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)

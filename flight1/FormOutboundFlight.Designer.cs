@@ -196,7 +196,6 @@
             this.labelsum.TabIndex = 1;
             this.labelsum.Text = "a";
             this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelsum.Click += new System.EventHandler(this.labelsum_Click);
             // 
             // label2
             // 
@@ -414,7 +413,6 @@
             this.label54.TabIndex = 4;
             this.label54.Text = "..";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
             // label46
             // 
@@ -682,7 +680,6 @@
             this.label12.Size = new System.Drawing.Size(450, 23);
             this.label12.TabIndex = 3;
             this.label12.Text = "Choose the best flight and let us connect you to the world";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -1369,7 +1366,6 @@
             this.Name = "FormOutboundFlight";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
