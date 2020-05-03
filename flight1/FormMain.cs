@@ -31,55 +31,6 @@ namespace flight1
             dateTimeReturn.MinDate = DateTime.Today;
         }
 
-        private void panelBookFlight_Paint(object sender, PaintEventArgs e)
-        {
-            panelBookFlight.BackColor = Color.FromArgb(150, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panelBookFlight.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void radioButtonOneWay_CheckedChanged(object sender, EventArgs e)
-        {
-            lblReturn.Hide();
-            dateTimeReturn.Hide();
-            Global.returnflight = false;
-        }
-
-        private void radioButtonReturn_CheckedChanged(object sender, EventArgs e)
-        {
-            lblTo.Show();
-            comboTo.Show();
-            lblReturn.Show();
-            dateTimeReturn.Show();
-
-            Global.returnflight = true;
-        }
-
-        private void btnGuestPlus_Click(object sender, EventArgs e)
-        {
-            // Make sure # guests selected is < 5 before adding
-            if (Global.guest < 5)
-            {
-                Global.guest++;
-                lblGuestCount.Text = Global.guest.ToString();
-            }
-        }
-
-        private void btnGuestMinus_Click(object sender, EventArgs e)
-        {
-            // Make sure # guests selected is > 1 before subtracting
-            if (Global.guest > 1)
-            {
-                Global.guest--;
-                lblGuestCount.Text = Global.guest.ToString();
-            }
-        }
-
-        private void panelDates_Paint(object sender, PaintEventArgs e)
-        {
-            panelDates.BackColor = Color.FromArgb(150, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panelDates.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult response = MessageBox.Show("Are you sure you want to exit?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -110,6 +61,49 @@ namespace flight1
                 dateTimeReturn.Value = DateTime.Today;
             }
         }
+
+        private void btnSearchTicket_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormSearchTicket FormSearchTicket = new FormSearchTicket();
+            FormSearchTicket.ShowDialog();
+            this.Show();
+        }
+
+        private void radioButtonOneWay_CheckedChanged(object sender, EventArgs e)
+        {
+            lblReturn.Hide();
+            dateTimeReturn.Hide();
+            Global.returnflight = false;
+        }
+
+        private void radioButtonReturn_CheckedChanged(object sender, EventArgs e)
+        {
+            lblReturn.Show();
+            dateTimeReturn.Show();
+            Global.returnflight = true;
+        }
+
+        private void btnGuestPlus_Click(object sender, EventArgs e)
+        {
+            // Make sure # guests selected is < 5 before adding
+            if (Global.guest < 5)
+            {
+                Global.guest++;
+                lblGuestCount.Text = Global.guest.ToString();
+            }
+        }
+
+        private void btnGuestMinus_Click(object sender, EventArgs e)
+        {
+            // Make sure # guests selected is > 1 before subtracting
+            if (Global.guest > 1)
+            {
+                Global.guest--;
+                lblGuestCount.Text = Global.guest.ToString();
+            }
+        }
+
         private void btnSearchFlight_Click(object sender, EventArgs e)
         {
             // Error checking
@@ -298,6 +292,7 @@ namespace flight1
                 FormOutboundFlight.label1.Text = "One-way Route";
             }
         }
+
         // Painting for fancy transparency & outlines
         private void panelNews_Paint(object sender, PaintEventArgs e)
         {
@@ -311,12 +306,16 @@ namespace flight1
             ControlPaint.DrawBorder(e.Graphics, panelTicketSearch.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
-        private void btnSearchTicket_Click(object sender, EventArgs e)
+        private void panelBookFlight_Paint(object sender, PaintEventArgs e)
         {
-            this.Hide();
-            FormSearchTicket FormSearchTicket = new FormSearchTicket();
-            FormSearchTicket.ShowDialog();
-            this.Show();
+            panelBookFlight.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelBookFlight.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelDates_Paint(object sender, PaintEventArgs e)
+        {
+            panelDates.BackColor = Color.FromArgb(150, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelDates.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
     }
 }
