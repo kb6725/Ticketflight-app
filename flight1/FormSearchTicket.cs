@@ -30,13 +30,13 @@ namespace flight1
 
         private void FormSearchTicket_Load(object sender, EventArgs e)
         {
-            panel3.Visible = false;
-            panel4.Visible = false;
-            panel5.Visible = false;
+            panelPriPassengerInfo.Visible = false;
+            panelPaymentInfo.Visible = false;
+            panelOtherInfo.Visible = false;
             panelSummaryPrice.Visible = false;
-            panel7.Visible = false;
-            panel11.Visible = false;
-            panel12.Visible = false;
+            panelOtherPass3.Visible = false;
+            panelOtherPass4.Visible = false;
+            panelOtherPass5.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -50,25 +50,25 @@ namespace flight1
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            panel3.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelPriPassengerInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPriPassengerInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-            panel4.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelPaymentInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPaymentInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
-            panel5.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            panelOtherInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelOtherInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
-            ControlPaint.DrawBorder(e.Graphics, panel10.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            ControlPaint.DrawBorder(e.Graphics, panelTotals.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
@@ -94,73 +94,73 @@ namespace flight1
                 if (words[i]==search)
                 {
                     label12.Text = "";
-                    label22.Text = words[i+1];
-                    label23.Text = words[i+2];
-                    label27.Text = words[i + 3];
-                    label31.Text = words[i + 4];
-                    label56.Text = words[i + 6];
-                    label35.Text = words[i + 5];
-                    label57.Text = words[i + 7];
-                    label58.Text = words[i + 8];
-                    label63.Text = words[i + 9];
-                    label59.Text = words[i + 10];
-                    label64.Text = words[i +11];
-                    label60.Text = words[i +12];
-                    label65.Text = words[i + 13];
-                    label62.Text = words[i + 14];
-                    label66.Text = words[i + 15];
-                    labelsum.Text= (words[i + 16]+" - " +words[i+17]).ToString();
+                    lblPassFullNameOutput.Text = words[i+1];
+                    lblDOBOutput.Text = words[i+2];
+                    lblPassportNumOutput.Text = words[i + 3];
+                    lblEmailOutput.Text = words[i + 4];
+                    lblCardNumOutput.Text = words[i + 6];
+                    lblPhoneNumOutput.Text = words[i + 5];
+                    lblCardNameOutput.Text = words[i + 7];
+                    lblPass2NameOutput.Text = words[i + 8];
+                    lblPass2PassportOutput.Text = words[i + 9];
+                    lblPass3NameOutput.Text = words[i + 10];
+                    lblPass3PassportOutput.Text = words[i +11];
+                    lblPass4NameOutput.Text = words[i +12];
+                    lblPass4PassportOutput.Text = words[i + 13];
+                    lblPass5NameOutput.Text = words[i + 14];
+                    lblPass5PassportOutput.Text = words[i + 15];
+                    lblRouteOutput.Text= (words[i + 16]+" - " +words[i+17]).ToString();
                     
-                    label4.Text = (words[i + 18] + " - " + words[i + 19]).ToString();
-                    label10.Text= words[i + 20];
-                    label9.Text = words[i + 21];
-                    label51.Text = "$"+words[i + 22];
-                    label52.Text = "$" + words[i + 23];
-                    label53.Text = "$" + words[i + 24];
-                    label54.Text = "$" + words[i + 25];
-                    label55.Text = "$" + words[i + 26];
+                    lblDateOutput.Text = (words[i + 18] + " - " + words[i + 19]).ToString();
+                    lblCabinOutput.Text= words[i + 20];
+                    lblGuestOutput.Text = words[i + 21];
+                    lblTicketPricePassengerOutput.Text = "$"+words[i + 22];
+                    lblServiceFeeOutput.Text = "$" + words[i + 23];
+                    lblAirportFeeOutput.Text = "$" + words[i + 24];
+                    lblTaxOutput.Text = "$" + words[i + 25];
+                    lblTotalPricePassengerOutput.Text = "$" + words[i + 26];
 
-                    label30.Text = words[i + 21];
-                    label40.Text = "$" + words[i + 27];
+                    lblNumPassengersOutput.Text = words[i + 21];
+                    lblTotalTicketPriceOutput.Text = "$" + words[i + 27];
                     Global.guest = int.Parse(words[i + 21]);
-                    panel3.Visible = true;
-                    panel4.Visible = true;
+                    panelPriPassengerInfo.Visible = true;
+                    panelPaymentInfo.Visible = true;
 
                     if (Global.guest == 2)
                     {
-                        panel5.Visible = true;
-                        panel6.Visible = true;
+                        panelOtherInfo.Visible = true;
+                        panelOtherPass2.Visible = true;
 
-                        panel7.Visible = false;
-                        panel11.Visible = false;
-                        panel12.Visible = false;
+                        panelOtherPass3.Visible = false;
+                        panelOtherPass4.Visible = false;
+                        panelOtherPass5.Visible = false;
                     }
 
                     if (Global.guest == 3)
                     {
-                        panel5.Visible = true;
-                        panel7.Visible = true;
-                        panel6.Visible = true;
-                        panel11.Visible = false;
-                        panel12.Visible = false;
+                        panelOtherInfo.Visible = true;
+                        panelOtherPass3.Visible = true;
+                        panelOtherPass2.Visible = true;
+                        panelOtherPass4.Visible = false;
+                        panelOtherPass5.Visible = false;
                     }
 
                     if (Global.guest == 4)
                     {
-                        panel5.Visible = true;
-                        panel7.Visible = true;
-                        panel6.Visible = true;
-                        panel11.Visible = true;
-                        panel12.Visible = false;
+                        panelOtherInfo.Visible = true;
+                        panelOtherPass3.Visible = true;
+                        panelOtherPass2.Visible = true;
+                        panelOtherPass4.Visible = true;
+                        panelOtherPass5.Visible = false;
 
                     }
                     if (Global.guest == 5)
                     {
-                        panel5.Visible = true;
-                        panel7.Visible = true;
-                        panel6.Visible = true;
-                        panel11.Visible = true;
-                        panel12.Visible = true;
+                        panelOtherInfo.Visible = true;
+                        panelOtherPass3.Visible = true;
+                        panelOtherPass2.Visible = true;
+                        panelOtherPass4.Visible = true;
+                        panelOtherPass5.Visible = true;
                     }
 
 
@@ -171,9 +171,9 @@ namespace flight1
                 else
                 {
                     label12.Text = "Record Not Found";
-                    panel3.Visible = false;
-                    panel4.Visible = false;
-                    panel5.Visible = false;
+                    panelPriPassengerInfo.Visible = false;
+                    panelPaymentInfo.Visible = false;
+                    panelOtherInfo.Visible = false;
                     panelSummaryPrice.Visible = false;
                 }
             }
