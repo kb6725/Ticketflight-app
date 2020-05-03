@@ -35,13 +35,6 @@ namespace flight1
 
             radioButtonReturn.Checked = true;
 
-            comboCabin.SelectedIndex = 1;
-
-            comboFrom.SelectedIndex = -1;
-            comboFrom.Text = "Select Departure...";
-            
-            comboTo.SelectedIndex = -1;
-            comboTo.Text = "Select Arrival...";
             dateTimeOut.MinDate = DateTime.Today;
             dateTimeReturn.MinDate = DateTime.Today;
         }
@@ -99,31 +92,28 @@ namespace flight1
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult res = new DialogResult();
-            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to exit?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
+                // Close the program
                 this.Close();
             }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            DialogResult res = new DialogResult();
-            res=MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to reset?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
-                comboFrom.Text = "Select Departure ..";
-                comboTo.Text = "Select Arrival ..";
-                comboCabin.Text = "Select Cabin ..";
-                lblGuestCount.Text = "1";
+                comboFrom.Text = "Select Departure...";
+                comboTo.Text = "Select Arrival...";
+                comboCabin.Text = "Select Cabin...";
+                lblGuestCount.Text = "1"; Global.guest = 1;
                 radioButtonReturn.Checked = true;
                 dateTimeOut.Value = DateTime.Today;
                 dateTimeReturn.Value = DateTime.Today;
             }
-           
         }
-
         private void btnSearchFlight_Click(object sender, EventArgs e)
         {
             if (comboFrom.Text == comboTo.Text)

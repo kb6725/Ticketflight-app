@@ -11,6 +11,9 @@ namespace flight1
 {
     public class Global
     {
+        // Global Application Title
+        public static string appTitle = "Bamboo Airways Flight Booking";
+
         // strings store flight info, cabinupgrade stores seat avail after paying extra fee
         public static string flightfrom, flightto, cabin,cabinupgrade;
 

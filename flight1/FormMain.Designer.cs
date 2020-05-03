@@ -174,6 +174,7 @@
             this.comboTo.Name = "comboTo";
             this.comboTo.Size = new System.Drawing.Size(196, 32);
             this.comboTo.TabIndex = 1;
+            this.comboTo.Text = "Select Arrival...";
             this.comboTo.ValueMember = "Place";
             // 
             // placesBindingSource
@@ -203,7 +204,7 @@
             this.comboCabin.Name = "comboCabin";
             this.comboCabin.Size = new System.Drawing.Size(196, 32);
             this.comboCabin.TabIndex = 1;
-            this.comboCabin.Text = "Select Cabin ...";
+            this.comboCabin.Text = "Select Cabin...";
             // 
             // comboFrom
             // 
@@ -222,6 +223,7 @@
             this.comboFrom.Name = "comboFrom";
             this.comboFrom.Size = new System.Drawing.Size(196, 32);
             this.comboFrom.TabIndex = 1;
+            this.comboFrom.Text = "Select Departure...";
             this.comboFrom.ValueMember = "Place";
             // 
             // placesBindingSource1
