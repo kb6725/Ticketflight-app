@@ -101,7 +101,7 @@
             this.panelBookFlight.Name = "panelBookFlight";
             this.panelBookFlight.Size = new System.Drawing.Size(588, 288);
             this.panelBookFlight.TabIndex = 1;
-            this.panelBookFlight.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panelBookFlight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBookFlight_Paint);
             // 
             // btnGuestMinus
             // 
@@ -430,7 +430,7 @@
             this.panelDates.Name = "panelDates";
             this.panelDates.Size = new System.Drawing.Size(588, 98);
             this.panelDates.TabIndex = 3;
-            this.panelDates.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panelDates.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDates_Paint);
             // 
             // dateTimeReturn
             // 
@@ -535,7 +535,7 @@
             this.panelTicketSearch.Name = "panelTicketSearch";
             this.panelTicketSearch.Size = new System.Drawing.Size(188, 135);
             this.panelTicketSearch.TabIndex = 12;
-            this.panelTicketSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            this.panelTicketSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTicketSearch_Paint);
             // 
             // btnSearchTicket
             // 
@@ -656,7 +656,7 @@
             this.panelNews.Name = "panelNews";
             this.panelNews.Size = new System.Drawing.Size(266, 685);
             this.panelNews.TabIndex = 11;
-            this.panelNews.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panelNews.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNews_Paint);
             // 
             // pictureBoxLogo
             // 

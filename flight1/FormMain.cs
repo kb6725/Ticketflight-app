@@ -31,7 +31,7 @@ namespace flight1
             dateTimeReturn.MinDate = DateTime.Today;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelBookFlight_Paint(object sender, PaintEventArgs e)
         {
             panelBookFlight.BackColor = Color.FromArgb(150, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panelBookFlight.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
@@ -74,7 +74,7 @@ namespace flight1
             }
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void panelDates_Paint(object sender, PaintEventArgs e)
         {
             panelDates.BackColor = Color.FromArgb(150, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panelDates.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
@@ -158,18 +158,17 @@ namespace flight1
                 MessageBox.Show("Outbound Date cannot be later than Return Date", "Invalidate Date selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            FormOutboundFlight f2 = new FormOutboundFlight();
-            FormSearchTicket f8 = new FormSearchTicket();
+            FormOutboundFlight FormOutboundFlight = new FormOutboundFlight();
             this.Hide();
-            f2.Show();
-            f2.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
-            f2.label4.Text = dateTimeOut.Text + " - " + dateTimeReturn.Text;
+            FormOutboundFlight.Show();
+            FormOutboundFlight.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
+            FormOutboundFlight.label4.Text = dateTimeOut.Text + " - " + dateTimeReturn.Text;
             if (radioButtonOneWay.Checked)
-            { f2.label6.Text = "One way flight"; }
+            { FormOutboundFlight.label6.Text = "One way flight"; }
             else
-            { f2.label6.Text = len.Days.ToString() + " day(s)"; }
-            f2.label9.Text = Global.guest.ToString();
-            f2.label10.Text = Global.cabin.ToString();
+            { FormOutboundFlight.label6.Text = len.Days.ToString() + " day(s)"; }
+            FormOutboundFlight.label9.Text = Global.guest.ToString();
+            FormOutboundFlight.label10.Text = Global.cabin.ToString();
 
 
 
@@ -185,7 +184,7 @@ namespace flight1
             Global.coreticket = int.Parse(price);
 
 
-            if (f2.label10.Text == "Economy")
+            if (FormOutboundFlight.label10.Text == "Economy")
             {
                 Global.e1= Global.coreticket;
                 Global.e2 = (Global.coreticket + 70);
@@ -193,7 +192,7 @@ namespace flight1
                 Global.e4 = (Global.coreticket + 150);
                 Global.e5 = (Global.coreticket - 30);
             }
-            if (f2.label10.Text == "Business")
+            if (FormOutboundFlight.label10.Text == "Business")
             {
                 Global.b1 = (Global.coreticket * 2);
                 Global.b2 = (Global.coreticket * 2 + 70);
@@ -202,7 +201,7 @@ namespace flight1
                 Global.b5 = (Global.coreticket * 2 - 30);
 
             }
-            if (f2.label10.Text == "First Class")
+            if (FormOutboundFlight.label10.Text == "First Class")
             {
                 Global.f1 = (Global.coreticket * 4);
                 Global.f2= (Global.coreticket * 4 + 70);
@@ -212,37 +211,37 @@ namespace flight1
 
 
             }
-            if (f2.label10.Text == "Economy")
+            if (FormOutboundFlight.label10.Text == "Economy")
             {
-                f2.label56.Text = Global.e1.ToString("n0");
-                f2.label57.Text = Global.e2.ToString("n0");
-                f2.label58.Text = Global.e3.ToString("n0");
-                f2.label59.Text = Global.e4.ToString("n0");
-                f2.label60.Text = Global.e5.ToString("n0");
+                FormOutboundFlight.label56.Text = Global.e1.ToString("n0");
+                FormOutboundFlight.label57.Text = Global.e2.ToString("n0");
+                FormOutboundFlight.label58.Text = Global.e3.ToString("n0");
+                FormOutboundFlight.label59.Text = Global.e4.ToString("n0");
+                FormOutboundFlight.label60.Text = Global.e5.ToString("n0");
             }
-            if (f2.label10.Text == "Business")
+            if (FormOutboundFlight.label10.Text == "Business")
             {
-                f2.label56.Text = Global.b1.ToString("n0");
-                f2.label57.Text = Global.b2.ToString("n0");
-                f2.label58.Text = Global.b3.ToString("n0");
-                f2.label59.Text = Global.b4.ToString("n0");
-                f2.label60.Text = Global.b5.ToString("n0");
+                FormOutboundFlight.label56.Text = Global.b1.ToString("n0");
+                FormOutboundFlight.label57.Text = Global.b2.ToString("n0");
+                FormOutboundFlight.label58.Text = Global.b3.ToString("n0");
+                FormOutboundFlight.label59.Text = Global.b4.ToString("n0");
+                FormOutboundFlight.label60.Text = Global.b5.ToString("n0");
             }
-            if (f2.label10.Text == "First Class")
+            if (FormOutboundFlight.label10.Text == "First Class")
             {
-                f2.label56.Text = Global.f1.ToString("n0");
-                f2.label57.Text = Global.f2.ToString("n0");
-                f2.label58.Text = Global.f3.ToString("n0");
-                f2.label59.Text = Global.f4.ToString("n0");
-                f2.label60.Text = Global.f5.ToString("n0");
+                FormOutboundFlight.label56.Text = Global.f1.ToString("n0");
+                FormOutboundFlight.label57.Text = Global.f2.ToString("n0");
+                FormOutboundFlight.label58.Text = Global.f3.ToString("n0");
+                FormOutboundFlight.label59.Text = Global.f4.ToString("n0");
+                FormOutboundFlight.label60.Text = Global.f5.ToString("n0");
             }
 
             //duration = int.Parse(dur);
-            f2.label13.Text = "Flight Duration: " + Global.duration + " hours";
-            f2.label24.Text = "Flight Duration: " + Global.duration + " hours";
-            f2.label36.Text = "Flight Duration: " + Global.duration + " hours";
-            f2.label42.Text = "Flight Duration: " + Global.duration + " hours";
-            f2.label30.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.label13.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.label24.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.label36.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.label42.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.label30.Text = "Flight Duration: " + Global.duration + " hours";
 
             Random rd = new Random();
             Global.fnumber = rd.Next(100, 930);
@@ -257,56 +256,56 @@ namespace flight1
             to4 = Global.duration + 16;
             to5 = Global.duration + 22;
 
-            f2.label49.Text = dur.ToString();
+            FormOutboundFlight.label49.Text = dur.ToString();
 
             if (to4 > 23)
             {
                 to4 = to4 - 24;
-                f2.label32.Text = "Non-stop flight (+1 day)";
+                FormOutboundFlight.label32.Text = "Non-stop flight (+1 day)";
             }
             if (to5 > 23)
             {
                 to5 = to5 - 24;
-                f2.label38.Text = "Non-stop flight (+1 day)";
+                FormOutboundFlight.label38.Text = "Non-stop flight (+1 day)";
             }
 
-            f2.label15.Text = to1.ToString() + " : 00";
-            f2.label16.Text = "Flight number: BN " + Global.fnumber.ToString();
-            f2.label18.Text = "Airbus " + Global.fjet.ToString();
+            FormOutboundFlight.label15.Text = to1.ToString() + " : 00";
+            FormOutboundFlight.label16.Text = "Flight number: BN " + Global.fnumber.ToString();
+            FormOutboundFlight.label18.Text = "Airbus " + Global.fjet.ToString();
 
-            f2.label22.Text = to2.ToString() + " : 00";
-            f2.label21.Text = "Flight number: BN " + (Global.fnumber + 20).ToString();
-            f2.label19.Text = "Airbus " + (Global.fjet + 12).ToString();
+            FormOutboundFlight.label22.Text = to2.ToString() + " : 00";
+            FormOutboundFlight.label21.Text = "Flight number: BN " + (Global.fnumber + 20).ToString();
+            FormOutboundFlight.label19.Text = "Airbus " + (Global.fjet + 12).ToString();
 
-            f2.label28.Text = to3.ToString() + " : 00";
-            f2.label27.Text = "Flight number: BN " + (Global.fnumber + 35).ToString();
-            f2.label25.Text = "Airbus " + (Global.fjet + 22).ToString();
+            FormOutboundFlight.label28.Text = to3.ToString() + " : 00";
+            FormOutboundFlight.label27.Text = "Flight number: BN " + (Global.fnumber + 35).ToString();
+            FormOutboundFlight.label25.Text = "Airbus " + (Global.fjet + 22).ToString();
 
-            f2.label34.Text = to4.ToString() + " : 00";
-            f2.label33.Text = "Flight number: BN " + (Global.fnumber + 46).ToString();
-            f2.label31.Text = "Airbus " + (Global.fjet + 32).ToString();
+            FormOutboundFlight.label34.Text = to4.ToString() + " : 00";
+            FormOutboundFlight.label33.Text = "Flight number: BN " + (Global.fnumber + 46).ToString();
+            FormOutboundFlight.label31.Text = "Airbus " + (Global.fjet + 32).ToString();
 
-            f2.label40.Text = to5.ToString() + " : 00";
-            f2.label39.Text = "Flight number: BN " + (Global.fnumber + 550).ToString();
-            f2.label37.Text = "Airbus " + (Global.fjet + 42).ToString();
+            FormOutboundFlight.label40.Text = to5.ToString() + " : 00";
+            FormOutboundFlight.label39.Text = "Flight number: BN " + (Global.fnumber + 550).ToString();
+            FormOutboundFlight.label37.Text = "Airbus " + (Global.fjet + 42).ToString();
 
             if (Global.returnflight == true)
             {
-                f2.label1.Text = "Two-way Route";
+                FormOutboundFlight.label1.Text = "Two-way Route";
             }
             else
             {
-                f2.label1.Text = "One-way Route";
+                FormOutboundFlight.label1.Text = "One-way Route";
             }
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        // Painting for fancy transparency & outlines
+        private void panelNews_Paint(object sender, PaintEventArgs e)
         {
             panelNews.BackColor = Color.FromArgb(150, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panelNews.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
+        private void panelTicketSearch_Paint(object sender, PaintEventArgs e)
         {
             panelTicketSearch.BackColor = Color.FromArgb(150, Color.White);
             ControlPaint.DrawBorder(e.Graphics, panelTicketSearch.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
@@ -315,8 +314,8 @@ namespace flight1
         private void btnSearchTicket_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormSearchTicket f8 = new FormSearchTicket();
-            f8.ShowDialog();
+            FormSearchTicket FormSearchTicket = new FormSearchTicket();
+            FormSearchTicket.ShowDialog();
             this.Show();
         }
     }

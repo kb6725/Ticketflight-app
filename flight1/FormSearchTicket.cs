@@ -315,9 +315,7 @@ namespace flight1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            FormMain f1 = new FormMain();
-            f1.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, EventArgs e)
