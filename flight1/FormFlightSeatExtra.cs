@@ -524,7 +524,7 @@ namespace flight1
             else { label18.ForeColor = Color.Black; }
 
 
-            Form6 f6 = new Form6();
+            FormPayment f6 = new FormPayment();
 
             if (Global.guest == 5)
             {
@@ -652,12 +652,12 @@ namespace flight1
                 f6.Show();
 
 
-                f6.labelsum.Text = labelsum.Text;
-                f6.label49.Text = label49.Text;
-                f6.label4.Text = label4.Text;
-                f6.label6.Text = label6.Text;
-                f6.label10.Text = label10.Text;
-                f6.label9.Text = label9.Text;
+                f6.lblRouteOutput.Text = labelsum.Text;
+                f6.lblDurationOutput.Text = label49.Text;
+                f6.lblDateOutput.Text = label4.Text;
+                f6.lblLengthOutput.Text = label6.Text;
+                f6.lblCabinOutput.Text = label10.Text;
+                f6.lblPassengersOutput.Text = label9.Text;
 
             }
             Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;

@@ -12,171 +12,154 @@ using System.Xml.Schema;
 
 namespace flight1
 {
-    public partial class Form6 : Form
+    public partial class FormPayment : Form
     {
-        public Form6()
+        public FormPayment()
         {
             InitializeComponent();
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void FormPayment_Load(object sender, EventArgs e)
         {
-            dateTimepicker.MaxDate = DateTime.Now;
-            dateTimePicker1.MaxDate = DateTime.Now;
-            dateTimePicker2.MaxDate = DateTime.Now;
-            dateTimePicker3.MaxDate = DateTime.Now;
-            dateTimePicker4.MaxDate = DateTime.Now;
-            label30.Text = Global.guest.ToString();
+            dateTimepickerDOB.MaxDate = DateTime.Now;
+            dateTimePickerPass2DOB.MaxDate = DateTime.Now;
+            dateTimePickerPass3DOB.MaxDate = DateTime.Now;
+            dateTimePickerPass4DOB.MaxDate = DateTime.Now;
+            dateTimePickerPass5DOB.MaxDate = DateTime.Now;
+            lblNumPassengersOutput.Text = Global.guest.ToString();
             Global.finaltick = Global.guest * Global.totaltick;
-            label40.Text = (Global.finaltick).ToString("c1");
-            label51.Text = (Global.outticket + Global.returnticket).ToString("C1");
-            label52.Text = Global.servicefee.ToString("c1");
-            label53.Text = Global.airportfee.ToString("c1");
-            label54.Text= Global.tax.ToString("c1");
-            label55.Text =( Global.totaltick).ToString("c1");
+            lblTotalTicketPriceOutput.Text = (Global.finaltick).ToString("c1");
+            lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("C1");
+            lblServiceFeeOutput.Text = Global.servicefee.ToString("c1");
+            lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+            lblTaxOutput.Text= Global.tax.ToString("c1");
+            lblTotalPricePassengerOutput.Text =( Global.totaltick).ToString("c1");
             Global.finaltick = Global.totaltick * Global.guest;
-            label40.Text = Global.finaltick.ToString("c1");
+            lblTotalTicketPriceOutput.Text = Global.finaltick.ToString("c1");
 
             if (Global.guest == 1)
-            { panel5.Visible = false; }
+            { panelOtherPassInfo.Visible = false; }
             if (Global.guest == 2)
             {
-                panel5.Visible = true;
-                panel7.Visible = false;
-                panel11.Visible = false;
-                panel12.Visible = false; 
+                panelOtherPassInfo.Visible = true;
+                panelPass3.Visible = false;
+                panelPass4.Visible = false;
+                panelPass5.Visible = false; 
             }
             if (Global.guest == 3)
             {
-                panel5.Visible = true;
-                panel7.Visible = true;
-                panel11.Visible = false;
-                panel12.Visible = false;
+                panelOtherPassInfo.Visible = true;
+                panelPass3.Visible = true;
+                panelPass4.Visible = false;
+                panelPass5.Visible = false;
             }
             if (Global.guest == 4)
             {
-                panel5.Visible = true;
-                panel7.Visible = true;
-                panel11.Visible = true;
-                panel12.Visible = false;
+                panelOtherPassInfo.Visible = true;
+                panelPass3.Visible = true;
+                panelPass4.Visible = true;
+                panelPass5.Visible = false;
             }
-            Cursor.Current = Cursors.Default;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnConfirmPayment_Click(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(180, Color.White);
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            panel8.BackColor = Color.FromArgb(180, Color.White);
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            panel3.BackColor = Color.FromArgb(220, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            if (textBox1.Text == "")
-            { textBox1.BackColor = Color.IndianRed; }
-            if (textBox3.Text == "")
-            { textBox3.BackColor = Color.IndianRed; }
-            if (textBox8.Text == "")
-            { textBox8.BackColor = Color.IndianRed; }
-            if (textBox10.Text == "")
-            { textBox10.BackColor = Color.IndianRed; }
-            if (textBox13.Text == "")
-            { textBox13.BackColor = Color.IndianRed; }
-            if (textBox16.Text == "")
-            { textBox16.BackColor = Color.IndianRed; }
-            if (textBox2.Text == "" || textBox2.Text.Contains("@")==false)
-            { textBox2.BackColor = Color.IndianRed; }
+            if (txtBoxName.Text == "")
+            { txtBoxName.BackColor = Color.IndianRed; }
+            if (txtBoxPassportNum.Text == "")
+            { txtBoxPassportNum.BackColor = Color.IndianRed; }
+            if (textBoxCard1.Text == "")
+            { textBoxCard1.BackColor = Color.IndianRed; }
+            if (textBoxCard2.Text == "")
+            { textBoxCard2.BackColor = Color.IndianRed; }
+            if (textBoxCard3.Text == "")
+            { textBoxCard3.BackColor = Color.IndianRed; }
+            if (textBoxCard4.Text == "")
+            { textBoxCard4.BackColor = Color.IndianRed; }
+            if (txtBoxEmail.Text == "" || txtBoxEmail.Text.Contains("@")==false)
+            { txtBoxEmail.BackColor = Color.IndianRed; }
            
-            if (textBox4.Text == "")
-            { textBox4.BackColor = Color.IndianRed; }
-            if (comboBox1.Text == "")
-            { comboBox1.BackColor = Color.IndianRed; }
-            if (comboBox2.Text == "")
-            { comboBox2.BackColor = Color.IndianRed; }
-            if (maskedTextBox2.Text == "")
-            { maskedTextBox2.BackColor = Color.IndianRed; }
+            if (txtBoxCardholderName.Text == "")
+            { txtBoxCardholderName.BackColor = Color.IndianRed; }
+            if (comboBoxExpirationMonth.Text == "")
+            { comboBoxExpirationMonth.BackColor = Color.IndianRed; }
+            if (comboBoxYear.Text == "")
+            { comboBoxYear.BackColor = Color.IndianRed; }
+            if (maskedTextBoxCVV.Text == "")
+            { maskedTextBoxCVV.BackColor = Color.IndianRed; }
 
-            if (maskedTextBox1.Text== "(   )    -")
-            { maskedTextBox1.BackColor = Color.IndianRed; }
-            if (textBox11.Text == "")
-            { textBox11.BackColor = Color.IndianRed; }
-            if (textBox7.Text == "")
-            { textBox7.BackColor = Color.IndianRed; }
-            if (textBox14.Text == "")
-            { textBox14.BackColor = Color.IndianRed; }
+            if (maskedTextBoxPhone.Text== "(   )    -")
+            { maskedTextBoxPhone.BackColor = Color.IndianRed; }
+            if (txtBoxPass2Name.Text == "")
+            { txtBoxPass2Name.BackColor = Color.IndianRed; }
+            if (txtBoxPass3Name.Text == "")
+            { txtBoxPass3Name.BackColor = Color.IndianRed; }
+            if (txtBoxPass4Name.Text == "")
+            { txtBoxPass4Name.BackColor = Color.IndianRed; }
 
-            if (textBox17.Text == "")
-            { textBox17.BackColor = Color.IndianRed; }
+            if (txtBoxPass5Name.Text == "")
+            { txtBoxPass5Name.BackColor = Color.IndianRed; }
 
-            if (textBox5.Text == "")
-            { textBox5.BackColor = Color.IndianRed; }
+            if (txtBoxPass2PassportNum.Text == "")
+            { txtBoxPass2PassportNum.BackColor = Color.IndianRed; }
 
-            if (textBox12.Text == "")
-            { textBox12.BackColor = Color.IndianRed; }
+            if (txtBoxPass3PassportNum.Text == "")
+            { txtBoxPass3PassportNum.BackColor = Color.IndianRed; }
 
-            if (textBox15.Text == "")
-            { textBox15.BackColor = Color.IndianRed; }
-            if (textBox18.Text == "")
-            { textBox18.BackColor = Color.IndianRed; }
+            if (txtBoxPass4PassportNum.Text == "")
+            { txtBoxPass4PassportNum.BackColor = Color.IndianRed; }
+            if (txtBoxPass5PassportNum.Text == "")
+            { txtBoxPass5PassportNum.BackColor = Color.IndianRed; }
 
 
             Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
-            if (textBox2.TextLength > 1)
-            {if (textBox2.Text.Contains( "@"))
+            if (txtBoxEmail.TextLength > 1)
+            {if (txtBoxEmail.Text.Contains( "@"))
                 {
 
                 }
                 else 
                 {
-                    MessageBox.Show("Please enter valid email address", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please enter valid email address", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return ; 
                 }     
             }
 
-            if (textBox1.TextLength < 1 || textBox3.TextLength < 1 || textBox2.TextLength < 1 || maskedTextBox1.TextLength < 1 || textBox8.TextLength < 1 || textBox10.TextLength < 1 || textBox13.TextLength < 1 || textBox16.TextLength < 1 || maskedTextBox2.TextLength < 1 || textBox4.TextLength < 1 || comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1 )
+            if (txtBoxName.TextLength < 1 || txtBoxPassportNum.TextLength < 1 || txtBoxEmail.TextLength < 1 || maskedTextBoxPhone.TextLength < 1 || textBoxCard1.TextLength < 1 || textBoxCard2.TextLength < 1 || textBoxCard3.TextLength < 1 || textBoxCard4.TextLength < 1 || maskedTextBoxCVV.TextLength < 1 || txtBoxCardholderName.TextLength < 1 || comboBoxExpirationMonth.SelectedIndex == -1 || comboBoxYear.SelectedIndex == -1 )
             {
-                MessageBox.Show("Please input all Customer Information and Payment to proceed", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please input all Customer Information and Payment to proceed", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (Global.guest ==2)
             {
-                if (textBox11.Text == "" || textBox5.Text == "")
+                if (txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
-                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             if (Global.guest ==3)
             {
-                if (textBox7.Text == "" || textBox12.Text == "" || textBox11.Text == "" || textBox5.Text == "")
+                if (txtBoxPass3Name.Text == "" || txtBoxPass3PassportNum.Text == "" || txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
-                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             if (Global.guest ==4)
             {
-                if (textBox14.Text == "" || textBox15.Text == ""|| textBox7.Text == "" || textBox12.Text == "" || textBox11.Text == "" || textBox5.Text == "")
+                if (txtBoxPass4Name.Text == "" || txtBoxPass4PassportNum.Text == ""|| txtBoxPass3Name.Text == "" || txtBoxPass3PassportNum.Text == "" || txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
-                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             if (Global.guest ==5)
             {
-                if (textBox17.Text == "" || textBox18.Text == ""|| textBox14.Text == "" || textBox15.Text == "" || textBox7.Text == "" || textBox12.Text == "" || textBox11.Text == "" || textBox5.Text == "")
+                if (txtBoxPass5Name.Text == "" || txtBoxPass5PassportNum.Text == ""|| txtBoxPass4Name.Text == "" || txtBoxPass4PassportNum.Text == "" || txtBoxPass3Name.Text == "" || txtBoxPass3PassportNum.Text == "" || txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
-                    MessageBox.Show("Please input Information for all Passengers", "Missing Required Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please input Information for all Passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -184,293 +167,302 @@ namespace flight1
 
 
             Form7 f7 = new Form7();
-            Global.p1name = textBox1.Text;
-            Global.p1pp = textBox3.Text;
-            Global.p1email = textBox2.Text;
+            Global.p1name = txtBoxName.Text;
+            Global.p1pp = txtBoxPassportNum.Text;
+            Global.p1email = txtBoxEmail.Text;
             
-            Global.expmonth = comboBox1.Text;
-            Global.expyear = comboBox2.Text;
-            Global.cardname = textBox4.Text;
-            Global.p2name = textBox11.Text;
-            Global.p2pp = textBox5.Text;
-            Global.p3name = textBox7.Text;
-            Global.p3pp = textBox12.Text;
-            Global.p4name = textBox14.Text;
-            Global.p4pp = textBox15.Text;
-            Global.p5name = textBox17.Text;
-            Global.p5pp = textBox18.Text;
+            Global.expmonth = comboBoxExpirationMonth.Text;
+            Global.expyear = comboBoxYear.Text;
+            Global.cardname = txtBoxCardholderName.Text;
+            Global.p2name = txtBoxPass2Name.Text;
+            Global.p2pp = txtBoxPass2PassportNum.Text;
+            Global.p3name = txtBoxPass3Name.Text;
+            Global.p3pp = txtBoxPass3PassportNum.Text;
+            Global.p4name = txtBoxPass4Name.Text;
+            Global.p4pp = txtBoxPass4PassportNum.Text;
+            Global.p5name = txtBoxPass5Name.Text;
+            Global.p5pp = txtBoxPass5PassportNum.Text;
             
-            Global.p1dob = dateTimepicker.Value;
-            Global.p2dob = dateTimePicker1.Value;
-            Global.p3dob = dateTimePicker2.Value;
-            Global.p4dob = dateTimePicker3.Value;
-            Global.p5dob = dateTimePicker4.Value;
-            Global.phone = maskedTextBox1.Text;
-            f7.labelsum.Text = labelsum.Text;
-            f7.label49.Text = label49.Text;
-            f7.label4.Text = label4.Text;
-            f7.label6.Text = label6.Text;
-            f7.label49.Text = label49.Text;
-            f7.label10.Text = label10.Text;
-            f7.label9.Text = label9.Text;
+            Global.p1dob = dateTimepickerDOB.Value;
+            Global.p2dob = dateTimePickerPass2DOB.Value;
+            Global.p3dob = dateTimePickerPass3DOB.Value;
+            Global.p4dob = dateTimePickerPass4DOB.Value;
+            Global.p5dob = dateTimePickerPass5DOB.Value;
+            Global.phone = maskedTextBoxPhone.Text;
+            f7.labelsum.Text = lblRouteOutput.Text;
+            f7.label49.Text = lblDurationOutput.Text;
+            f7.label4.Text = lblDateOutput.Text;
+            f7.label6.Text = lblLengthOutput.Text;
+            f7.label49.Text = lblDurationOutput.Text;
+            f7.label10.Text = lblCabinOutput.Text;
+            f7.label9.Text = lblPassengersOutput.Text;
 
-            f7.label56.Text = "**** " + textBox16.Text;
+            f7.label56.Text = "**** " + textBoxCard4.Text;
 
             try
             {
-                Global.card1 = double.Parse(textBox8.Text);
-                Global.card2 = double.Parse(textBox10.Text);
-                Global.card3 = double.Parse(textBox13.Text);
-                Global.card4= double.Parse(textBox16.Text);
+                Global.card1 = double.Parse(textBoxCard1.Text);
+                Global.card2 = double.Parse(textBoxCard2.Text);
+                Global.card3 = double.Parse(textBoxCard3.Text);
+                Global.card4= double.Parse(textBoxCard4.Text);
 
-                Global.cvv = double.Parse(maskedTextBox2.Text);
+                Global.cvv = double.Parse(maskedTextBoxCVV.Text);
                 
                 this.Hide();
                 f7.Show();
             }
             catch
             {
-                MessageBox.Show("Please input 16-digit Card Number, 3-digit CVV number and Phone number", "Invalid Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return;
+                MessageBox.Show("Please input 16-digit Card Number, 3-digit CVV number and Phone number", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
             }
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-            panel4.BackColor = Color.FromArgb(220, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-            panel5.BackColor = Color.FromArgb(220, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox2.Text != "" && textBox2.Text.Contains("@") == true)
-
-            { textBox2.BackColor = Color.White; }
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox8.TextLength == 4)
-            { textBox10.Focus(); }
-          
-            if (textBox8.Text != "")
-
-            { textBox8.BackColor = Color.White; }
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox10.TextLength == 4)
-            { textBox13.Focus(); }
-            if (textBox10.Text != "")
-
-            { textBox10.BackColor = Color.White; }
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox13.TextLength == 4)
-            { textBox16.Focus(); }
-            if (textBox13.Text != "")
-
-            { textBox13.BackColor = Color.White; }
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox16.Text != "")
-
-            { textBox16.BackColor = Color.White; }
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                textBox4.Text = textBox1.Text;
-                textBox4.Enabled = false;
-            }
-
-            else
-            { textBox4.Enabled = true; }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked==true) 
-            { textBox4.Text = textBox1.Text;  }
-            else { textBox4.Text = ""; }
-            if (textBox1.Text != "")
-
-            { textBox1.BackColor = Color.White; }
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel10.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel9.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Form5 f5 = new Form5();
-            this.Hide();
-            f5.Show();
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            Form6 f6 = new Form6();
+            FormPayment f6 = new FormPayment();
             DialogResult res = new DialogResult();
             res = MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (res == DialogResult.OK)
             {
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox8.Text = "";
-                textBox10.Text = "";
-                textBox13.Text = "";
-                textBox16.Text = "";
-                textBox4.Text = "";
-                textBox11.Text = "";
-                textBox14.Text = "";
-                textBox7.Text = "";
-                textBox17.Text = "";
-                textBox5.Text = "";
-                textBox12.Text = "";
-                textBox15.Text = "";
-                textBox18.Text = "";
-                maskedTextBox2.Text = "";
-                maskedTextBox1.Text = "";
-                checkBox1.Checked = false;
-                comboBox1.SelectedIndex = -1;
-                comboBox2.SelectedIndex = -1;
+                txtBoxName.Text = "";
+                txtBoxEmail.Text = "";
+                txtBoxPassportNum.Text = "";
+                textBoxCard1.Text = "";
+                textBoxCard2.Text = "";
+                textBoxCard3.Text = "";
+                textBoxCard4.Text = "";
+                txtBoxCardholderName.Text = "";
+                txtBoxPass2Name.Text = "";
+                txtBoxPass4Name.Text = "";
+                txtBoxPass3Name.Text = "";
+                txtBoxPass5Name.Text = "";
+                txtBoxPass2PassportNum.Text = "";
+                txtBoxPass3PassportNum.Text = "";
+                txtBoxPass4PassportNum.Text = "";
+                txtBoxPass5PassportNum.Text = "";
+                maskedTextBoxCVV.Text = "";
+                maskedTextBoxPhone.Text = "";
+                checkBoxSame.Checked = false;
+                comboBoxExpirationMonth.SelectedIndex = -1;
+                comboBoxYear.SelectedIndex = -1;
             }
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        // Reset backcolor if user enters text
+        private void checkBoxSame_CheckedChanged(object sender, EventArgs e)
         {
-            if (textBox3.Text != "")
-
-            { textBox3.BackColor = Color.White; }
+            if (checkBoxSame.Checked)
+            {
+                txtBoxCardholderName.Text = txtBoxName.Text;
+                txtBoxCardholderName.Enabled = false;
+            }
+            else
+            {
+                txtBoxCardholderName.Enabled = true;
+            }
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void txtBoxEmail_TextChanged(object sender, EventArgs e)
         {
-            if (maskedTextBox1.Text != "")
+            if (txtBoxEmail.Text != "" && txtBoxEmail.Text.Contains("@") == true)
 
-            { maskedTextBox1.BackColor = Color.White; }
-        }
-        private void maskedTextBox1_TextChange(object sender, EventArgs e)
-        {
-            if (maskedTextBox1.Text != "")
-
-            { maskedTextBox1.BackColor = Color.White; }
+            { txtBoxEmail.BackColor = Color.White; }
         }
 
-        private void maskedTextBox2_TextChange(object sender, EventArgs e)
+        private void textBoxCard1_TextChanged(object sender, EventArgs e)
         {
-            if (maskedTextBox2.Text != "")
+            if (textBoxCard1.TextLength == 4)
+            { textBoxCard2.Focus(); }
 
-            { maskedTextBox2.BackColor = Color.White; }
+            if (textBoxCard1.Text != "")
+
+            { textBoxCard1.BackColor = Color.White; }
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void textBoxCard2_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex != -1)
+            if (textBoxCard2.TextLength == 4)
+            { textBoxCard3.Focus(); }
+            if (textBoxCard2.Text != "")
 
-            { comboBox1.BackColor = Color.White; }
+            { textBoxCard2.BackColor = Color.White; }
         }
 
-        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void textBoxCard3_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox2.SelectedIndex != -1)
+            if (textBoxCard3.TextLength == 4)
+            { textBoxCard4.Focus(); }
+            if (textBoxCard3.Text != "")
 
-            { comboBox2.BackColor = Color.White; }
+            { textBoxCard3.BackColor = Color.White; }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void textBoxCard4_TextChanged(object sender, EventArgs e)
         {
-            if (textBox4.Text != "")
+            if (textBoxCard4.Text != "")
 
-            { textBox4.BackColor = Color.White; }
+            { textBoxCard4.BackColor = Color.White; }
         }
 
-        private void textBox11_TextChanged(object sender, EventArgs e)
+        private void txtBoxName_TextChanged(object sender, EventArgs e)
         {
-            if (textBox11.Text != "" )
+            if (checkBoxSame.Checked==true) 
+            { txtBoxCardholderName.Text = txtBoxName.Text;  }
+            else { txtBoxCardholderName.Text = ""; }
+            if (txtBoxName.Text != "")
 
-            { textBox11.BackColor = Color.White; }
+            { txtBoxName.BackColor = Color.White; }
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void txtBoxPassportNum_TextChanged(object sender, EventArgs e)
         {
-            if (textBox7.Text != "")
+            if (txtBoxPassportNum.Text != "")
 
-            { textBox7.BackColor = Color.White; }
+            { txtBoxPassportNum.BackColor = Color.White; }
         }
 
-        private void textBox14_TextChanged(object sender, EventArgs e)
+        private void maskedTextBoxPhone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            if (textBox14.Text != "")
+            if (maskedTextBoxPhone.Text != "")
 
-            { textBox14.BackColor = Color.White; }
+            { maskedTextBoxPhone.BackColor = Color.White; }
+        }
+        private void maskedTextBoxPhone_TextChange(object sender, EventArgs e)
+        {
+            if (maskedTextBoxPhone.Text != "")
+
+            { maskedTextBoxPhone.BackColor = Color.White; }
         }
 
-        private void textBox17_TextChanged(object sender, EventArgs e)
+        private void maskedTextBoxCVV_TextChange(object sender, EventArgs e)
         {
-            if (textBox17.Text != "")
+            if (maskedTextBoxCVV.Text != "")
 
-            { textBox17.BackColor = Color.White; }
+            { maskedTextBoxCVV.BackColor = Color.White; }
         }
 
-        private void textBox12_TextChanged(object sender, EventArgs e)
+        private void comboBoxExpirationMonth_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (textBox12.Text != "")
+            if (comboBoxExpirationMonth.SelectedIndex != -1)
 
-            { textBox12.BackColor = Color.White; }
+            { comboBoxExpirationMonth.BackColor = Color.White; }
         }
 
-        private void textBox15_TextChanged(object sender, EventArgs e)
+        private void comboBoxYear_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (textBox15.Text != "")
+            if (comboBoxYear.SelectedIndex != -1)
 
-            { textBox15.BackColor = Color.White; }
+            { comboBoxYear.BackColor = Color.White; }
         }
 
-        private void textBox18_TextChanged(object sender, EventArgs e)
+        private void txtBoxCardholderName_TextChanged(object sender, EventArgs e)
         {
-            if (textBox18.Text != "")
+            if (txtBoxCardholderName.Text != "")
 
-            { textBox18.BackColor = Color.White; }
+            { txtBoxCardholderName.BackColor = Color.White; }
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void txtBoxPass2Name_TextChanged(object sender, EventArgs e)
         {
-            if (textBox5.Text != "")
+            if (txtBoxPass2Name.Text != "" )
 
-            { textBox5.BackColor = Color.White; }
+            { txtBoxPass2Name.BackColor = Color.White; }
         }
-    } 
+
+        private void txtBoxPass3Name_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass3Name.Text != "")
+
+            { txtBoxPass3Name.BackColor = Color.White; }
+        }
+
+        private void txtBoxPass4Name_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass4Name.Text != "")
+
+            { txtBoxPass4Name.BackColor = Color.White; }
+        }
+
+        private void txtBoxPass5Name_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass5Name.Text != "")
+
+            { txtBoxPass5Name.BackColor = Color.White; }
+        }
+
+        private void txtBoxPass3PassportNum_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass3PassportNum.Text != "")
+
+            { txtBoxPass3PassportNum.BackColor = Color.White; }
+        }
+
+        private void txtBoxPass4PassportNum_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass4PassportNum.Text != "")
+
+            { txtBoxPass4PassportNum.BackColor = Color.White; }
+        }
+
+        private void txtBoxPass5PassportNum_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass5PassportNum.Text != "")
+
+            { txtBoxPass5PassportNum.BackColor = Color.White; }
+        }
+
+        private void txtBoxPass2PassportNum_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxPass2PassportNum.Text != "")
+
+            { txtBoxPass2PassportNum.BackColor = Color.White; }
+        }
+
+        // Painting for fancy transparency & outlines
+        private void panelTotals_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelTotals.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPrice_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlightSummary_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlightSummary.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPaymentInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelPaymentInfo.BackColor = Color.FromArgb(220, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPaymentInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelOtherPassInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelOtherPassInfo.BackColor = Color.FromArgb(220, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelOtherPassInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelSummaryPrice_Paint(object sender, PaintEventArgs e)
+        {
+            panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
+        }
+
+        private void panelPaymentOptions_Paint(object sender, PaintEventArgs e)
+        {
+            panelPaymentOptions.BackColor = Color.FromArgb(180, Color.White);
+        }
+
+        private void panelPriPassengerInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelPriPassengerInfo.BackColor = Color.FromArgb(220, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPriPassengerInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+    }
 }
     
 
