@@ -97,7 +97,7 @@ namespace flight1
             {
                 // Reset combo boxes
                 comboFrom.SelectedIndex = -1; comboTo.SelectedIndex = -1; comboCabin.SelectedIndex = -1;
-                comboFrom.Text = "Select Departure..."; comboTo.Text = "Select Arrival..."; comboCabin.Text = "Select Cabin...";
+                comboFrom.Text = "Select Departure..."; comboTo.Text = "Select Destination..."; comboCabin.Text = "Select Cabin...";
 
                 // Reset guest counter
                 lblGuestCount.Text = "1"; Global.guest = 1;
@@ -112,26 +112,31 @@ namespace flight1
         }
         private void btnSearchFlight_Click(object sender, EventArgs e)
         {
+            // Error checking
+            // Error if destination & departure are the same
             if (comboFrom.Text == comboTo.Text)
             {
-                MessageBox.Show("Please select a different destination from departure", "Departure / Destination duplicate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please select a different destination from departure!", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 comboFrom.ForeColor = Color.IndianRed;
                 comboFrom.ForeColor = Color.Black;
                 return;
             }
 
+            // Error if no departure is selected
             if (comboFrom.SelectedIndex < 0)
             {
-                MessageBox.Show("Please select Destination to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please select a departure location!", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 comboFrom.ForeColor = Color.IndianRed;
                 if (comboTo.SelectedIndex < 0)
                 { comboTo.ForeColor = Color.IndianRed; }
                     return;
             }
             else { comboFrom.ForeColor = Color.Black; }
+            
+            // Error if no destination is selected
             if (comboTo.SelectedIndex < 0)
 
-            { MessageBox.Show("Please select Arrival to proceed", "Invalid Departure / Destination", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            { MessageBox.Show("Please select a destination location to proceed!", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 comboTo.ForeColor = Color.IndianRed;
                 return;
             }
@@ -154,7 +159,7 @@ namespace flight1
                 return;
             }
             FormOutboundFlight f2 = new FormOutboundFlight();
-            Form8 f8 = new Form8();
+            FormSearchTicket f8 = new FormSearchTicket();
             this.Hide();
             f2.Show();
             f2.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
@@ -173,7 +178,7 @@ namespace flight1
             int destinationindex;
             string dur,price;
             
-            destinationindex = comboFrom.SelectedIndex ;
+            destinationindex = comboFrom.SelectedIndex;
             dur = flightduration[destinationindex].ToString();
             Global.duration = int.Parse(dur) ;
             price = pricelist[destinationindex].ToString();
@@ -310,7 +315,7 @@ namespace flight1
         private void btnSearchTicket_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form8 f8 = new Form8();
+            FormSearchTicket f8 = new FormSearchTicket();
             f8.ShowDialog();
             this.Show();
         }

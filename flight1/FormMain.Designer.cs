@@ -36,10 +36,8 @@
             this.radioButtonOneWay = new System.Windows.Forms.RadioButton();
             this.radioButtonReturn = new System.Windows.Forms.RadioButton();
             this.comboTo = new System.Windows.Forms.ComboBox();
-            this.placesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboCabin = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
-            this.placesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblTo = new System.Windows.Forms.Label();
             this.lblGuestCount = new System.Windows.Forms.Label();
             this.lblGuest = new System.Windows.Forms.Label();
@@ -47,6 +45,8 @@
             this.lblFrom = new System.Windows.Forms.Label();
             this.lblBookFlight = new System.Windows.Forms.Label();
             this.groupBoxTicketType = new System.Windows.Forms.GroupBox();
+            this.placesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.placesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panelDates = new System.Windows.Forms.Panel();
             this.dateTimeReturn = new System.Windows.Forms.DateTimePicker();
             this.dateTimeOut = new System.Windows.Forms.DateTimePicker();
@@ -162,6 +162,7 @@
             // 
             this.comboTo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboTo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboTo.DisplayMember = "Place";
             this.comboTo.DropDownHeight = 150;
             this.comboTo.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -224,12 +225,8 @@
             this.comboTo.Name = "comboTo";
             this.comboTo.Size = new System.Drawing.Size(196, 32);
             this.comboTo.TabIndex = 1;
-            this.comboTo.Text = "Select Arrival...";
+            this.comboTo.Text = "Select Destination...";
             this.comboTo.ValueMember = "Place";
-            // 
-            // placesBindingSource
-            // 
-            this.placesBindingSource.DataMember = "Places";
             // 
             // comboCabin
             // 
@@ -260,6 +257,7 @@
             // 
             this.comboFrom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboFrom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboFrom.DisplayMember = "Place";
             this.comboFrom.DropDownHeight = 150;
             this.comboFrom.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -324,10 +322,6 @@
             this.comboFrom.TabIndex = 1;
             this.comboFrom.Text = "Select Departure...";
             this.comboFrom.ValueMember = "Place";
-            // 
-            // placesBindingSource1
-            // 
-            this.placesBindingSource1.DataMember = "Places";
             // 
             // lblTo
             // 
@@ -416,8 +410,17 @@
             this.groupBoxTicketType.TabStop = false;
             this.groupBoxTicketType.Text = "Select ticket type";
             // 
+            // placesBindingSource
+            // 
+            this.placesBindingSource.DataMember = "Places";
+            // 
+            // placesBindingSource1
+            // 
+            this.placesBindingSource1.DataMember = "Places";
+            // 
             // panelDates
             // 
+            this.panelDates.BackColor = System.Drawing.Color.White;
             this.panelDates.Controls.Add(this.dateTimeReturn);
             this.panelDates.Controls.Add(this.dateTimeOut);
             this.panelDates.Controls.Add(this.lblReturn);

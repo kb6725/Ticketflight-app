@@ -106,7 +106,7 @@ namespace flight1
 
 
             Global.outandreturnticket = Global.outticket + Global.returnticket;
-            Form8 f8 = new Form8();
+            FormSearchTicket f8 = new FormSearchTicket();
             //to DB
             StreamWriter str;
 
