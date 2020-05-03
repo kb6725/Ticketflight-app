@@ -20,12 +20,7 @@ namespace flight1
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            panel1.BackColor = Color.FromArgb(180, Color.White);
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnSelectFlight1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Global.returnticket = 0;
@@ -54,19 +49,19 @@ namespace flight1
             f5.label10.Text = Global.cabin;
             f5.comboBox1.SelectedItem = Global.cabin;
            
-            f5.labelsum.Text = labelsum.Text;
+            f5.labelsum.Text = lblRouteOutput.Text;
             f5.label49.Text = Global.duration.ToString();
-            f5.label6.Text = label6.Text;
+            f5.label6.Text = lblLengthOutput.Text;
             f5.label10.Text= Global.cabin;
             f5.label9.Text = Global.guest.ToString() ;
-            f5.label4.Text = label4.Text;
+            f5.label4.Text = lblDateOutput.Text;
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSelectFlight2_Click(object sender, EventArgs e)
         {
 
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
             Global.returnticket = 0;
             Global.airportfee = 0;
             Global.tax = 0;
@@ -91,9 +86,9 @@ namespace flight1
             f5.label55.Text = (Global.totaltick.ToString("c1"));
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSelectFlight3_Click(object sender, EventArgs e)
         {
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
 
             Global.returnticket = 0;
             Global.airportfee = 0;
@@ -116,9 +111,9 @@ namespace flight1
 
             f5.label55.Text = (Global.totaltick.ToString("c1"));
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void btnSelectFlight4_Click(object sender, EventArgs e)
         {
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
 
                 Global.returnticket = 0;
                 Global.airportfee = 0;
@@ -144,7 +139,7 @@ namespace flight1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
 
                 Global.returnticket = 0;
                 Global.airportfee = 0;
@@ -168,57 +163,7 @@ namespace flight1
                 f5.label55.Text = (Global.totaltick.ToString("c1"));
         }
 
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            panel8.BackColor = Color.FromArgb(150, Color.White);
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel6.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel7.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel11_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel1.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel9.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel10.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -228,11 +173,56 @@ namespace flight1
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        // Painting for fancy transparency & outlines
+        private void panelReturnFlight_Paint(object sender, PaintEventArgs e)
         {
-            FormOutboundFlight f2 = new FormOutboundFlight();
-            this.Hide();
-            f2.Show();
+            panelReturnFlight.BackColor = Color.FromArgb(150, Color.White);
+        }
+
+        private void panelFlight1_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight1.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight2_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight3_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight4_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight5_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlightSummary_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlightSummary.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPrice_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelTotal_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelTotal.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelSummaryPrice_Paint(object sender, PaintEventArgs e)
+        {
+            panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelSummaryPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
     }
 }

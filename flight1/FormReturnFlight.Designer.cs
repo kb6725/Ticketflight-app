@@ -29,1311 +29,1311 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReturnFlight));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.labelsum = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panelSummaryPrice = new System.Windows.Forms.Panel();
+            this.lblDateOutput = new System.Windows.Forms.Label();
+            this.lblRouteOutput = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblRoute = new System.Windows.Forms.Label();
+            this.lblFlightSummary = new System.Windows.Forms.Label();
+            this.panelFlightSummary = new System.Windows.Forms.Panel();
+            this.lblPassengersOutput = new System.Windows.Forms.Label();
+            this.lblHours = new System.Windows.Forms.Label();
+            this.lblDurationOutput = new System.Windows.Forms.Label();
+            this.lblCabinOutput = new System.Windows.Forms.Label();
+            this.lblDuration = new System.Windows.Forms.Label();
+            this.lblLengthOutput = new System.Windows.Forms.Label();
+            this.lblLength = new System.Windows.Forms.Label();
+            this.lblPassengers = new System.Windows.Forms.Label();
+            this.lblCabin = new System.Windows.Forms.Label();
+            this.panelPrice = new System.Windows.Forms.Panel();
+            this.lblTicketPricePassengerOutput = new System.Windows.Forms.Label();
+            this.lblTaxOutput = new System.Windows.Forms.Label();
+            this.lblAirportFeeOutput = new System.Windows.Forms.Label();
+            this.lblServiceFeeOutput = new System.Windows.Forms.Label();
+            this.lblTotalPricePassenger = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
+            this.lblAirportFee = new System.Windows.Forms.Label();
+            this.lblServiceFee = new System.Windows.Forms.Label();
+            this.lblTicketPricePassenger = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.panelTotal = new System.Windows.Forms.Panel();
+            this.lblTotalPricePassengerOutput = new System.Windows.Forms.Label();
+            this.lblFlight1DurationOutput = new System.Windows.Forms.Label();
+            this.panelFlight1 = new System.Windows.Forms.Panel();
+            this.lblDollar1 = new System.Windows.Forms.Label();
+            this.lblFlight1PriceOutput = new System.Windows.Forms.Label();
+            this.btnSelectFlight1 = new System.Windows.Forms.Button();
+            this.lblPlane1Output = new System.Windows.Forms.Label();
+            this.lblFlight1Type = new System.Windows.Forms.Label();
+            this.lblFlight1NumOutput = new System.Windows.Forms.Label();
+            this.lblFlight1TimeTo = new System.Windows.Forms.Label();
+            this.lblFlight1TimeFrom = new System.Windows.Forms.Label();
+            this.pictureBoxFlight1 = new System.Windows.Forms.PictureBox();
+            this.panelReturnFlight = new System.Windows.Forms.Panel();
+            this.lblReturnFlightDesc = new System.Windows.Forms.Label();
+            this.lblReturnFlight = new System.Windows.Forms.Label();
+            this.panelFlight5 = new System.Windows.Forms.Panel();
+            this.lblDollar5 = new System.Windows.Forms.Label();
+            this.lblFlight5PriceOutput = new System.Windows.Forms.Label();
+            this.btnSelectFlight5 = new System.Windows.Forms.Button();
+            this.lblPlane5Output = new System.Windows.Forms.Label();
+            this.lblFlight5Type = new System.Windows.Forms.Label();
+            this.lblFlight5NumOutput = new System.Windows.Forms.Label();
+            this.lblFlight5TimeTo = new System.Windows.Forms.Label();
+            this.lblFlight5TimeFrom = new System.Windows.Forms.Label();
+            this.lblFlight5DurationOutput = new System.Windows.Forms.Label();
+            this.pictureBoxFlight5 = new System.Windows.Forms.PictureBox();
+            this.panelFlight4 = new System.Windows.Forms.Panel();
+            this.lblDollar4 = new System.Windows.Forms.Label();
+            this.lblFlight4PriceOutput = new System.Windows.Forms.Label();
+            this.btnSelectFlight4 = new System.Windows.Forms.Button();
+            this.lblPlane4Output = new System.Windows.Forms.Label();
+            this.lblFlight4Type = new System.Windows.Forms.Label();
+            this.lblFlight4NumOutput = new System.Windows.Forms.Label();
+            this.lblFlight4TimeTo = new System.Windows.Forms.Label();
+            this.lblFlight4TimeFrom = new System.Windows.Forms.Label();
+            this.lblFlight4DurationOutput = new System.Windows.Forms.Label();
+            this.pictureBoxFlight4 = new System.Windows.Forms.PictureBox();
+            this.panelFlight3 = new System.Windows.Forms.Panel();
+            this.lblDollar3 = new System.Windows.Forms.Label();
+            this.lblFlight3PriceOutput = new System.Windows.Forms.Label();
+            this.btnSelectFlight3 = new System.Windows.Forms.Button();
+            this.lblPlane3Output = new System.Windows.Forms.Label();
+            this.lblFlight3Type = new System.Windows.Forms.Label();
+            this.lblFlight3NumOutput = new System.Windows.Forms.Label();
+            this.lblFlight3TimeTo = new System.Windows.Forms.Label();
+            this.lblFlight3TimeFrom = new System.Windows.Forms.Label();
+            this.lblFlight3DurationOutput = new System.Windows.Forms.Label();
+            this.pictureBoxFlight3 = new System.Windows.Forms.PictureBox();
+            this.panelFlight2 = new System.Windows.Forms.Panel();
+            this.lblDollar2 = new System.Windows.Forms.Label();
+            this.lblFlight2PriceOutput = new System.Windows.Forms.Label();
+            this.btnSelectFlight2 = new System.Windows.Forms.Button();
+            this.lblPlane2Output = new System.Windows.Forms.Label();
+            this.lblFlight2Type = new System.Windows.Forms.Label();
+            this.lblFlight2NumOutput = new System.Windows.Forms.Label();
+            this.lblFlight2TimeTo = new System.Windows.Forms.Label();
+            this.lblFlight2TimeFrom = new System.Windows.Forms.Label();
+            this.lblFlight2DurationOutput = new System.Windows.Forms.Label();
+            this.pictureBoxFlight2 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panelBookingProgress = new System.Windows.Forms.Panel();
+            this.lblSeatFlightOptions = new System.Windows.Forms.Label();
+            this.lblConfirmation = new System.Windows.Forms.Label();
+            this.lblPayment = new System.Windows.Forms.Label();
+            this.lblChooseFlights = new System.Windows.Forms.Label();
+            this.pictureBoxBookingProgress = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelSummaryPrice.SuspendLayout();
+            this.panelFlightSummary.SuspendLayout();
+            this.panelPrice.SuspendLayout();
+            this.panelTotal.SuspendLayout();
+            this.panelFlight1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight1)).BeginInit();
+            this.panelReturnFlight.SuspendLayout();
+            this.panelFlight5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight5)).BeginInit();
+            this.panelFlight4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight4)).BeginInit();
+            this.panelFlight3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight3)).BeginInit();
+            this.panelFlight2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight2)).BeginInit();
+            this.panelBookingProgress.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBookingProgress)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::flight1.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 292);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.labelsum);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Location = new System.Drawing.Point(1084, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 555);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 148);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 27);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "a";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelsum
-            // 
-            this.labelsum.BackColor = System.Drawing.Color.Transparent;
-            this.labelsum.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelsum.Location = new System.Drawing.Point(28, 80);
-            this.labelsum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelsum.Name = "labelsum";
-            this.labelsum.Size = new System.Drawing.Size(178, 27);
-            this.labelsum.TabIndex = 1;
-            this.labelsum.Text = "a";
-            this.labelsum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 127);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Date";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 61);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Route";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(64, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 29);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Flight Summary";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label51);
-            this.panel2.Controls.Add(this.label49);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label50);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(23, 41);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(269, 214);
-            this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(194, 167);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 27);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "a";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(219, 39);
-            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(38, 27);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "hrs";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label49
-            // 
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(187, 38);
-            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(38, 27);
-            this.label49.TabIndex = 1;
-            this.label49.Text = "aa";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(52, 167);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 27);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "a";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(187, 19);
-            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(79, 29);
-            this.label50.TabIndex = 1;
-            this.label50.Text = "Duration";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(187, 106);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 27);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "a";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(194, 84);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 29);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Length";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(173, 145);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 29);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Passengers";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(47, 145);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 29);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Cabin";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.label56);
-            this.panel9.Controls.Add(this.label58);
-            this.panel9.Controls.Add(this.label59);
-            this.panel9.Controls.Add(this.label60);
-            this.panel9.Controls.Add(this.label47);
-            this.panel9.Controls.Add(this.label46);
-            this.panel9.Controls.Add(this.label45);
-            this.panel9.Controls.Add(this.label48);
-            this.panel9.Controls.Add(this.label44);
-            this.panel9.Controls.Add(this.label43);
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(23, 287);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(269, 229);
-            this.panel9.TabIndex = 3;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
-            // 
-            // label56
-            // 
-            this.label56.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(165, 37);
-            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(83, 19);
-            this.label56.TabIndex = 9;
-            this.label56.Text = "..";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label58
-            // 
-            this.label58.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(140, 126);
-            this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(108, 19);
-            this.label58.TabIndex = 8;
-            this.label58.Text = "..";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label59
-            // 
-            this.label59.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(167, 95);
-            this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(81, 19);
-            this.label59.TabIndex = 6;
-            this.label59.Text = "..";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label60
-            // 
-            this.label60.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(167, 66);
-            this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(81, 19);
-            this.label60.TabIndex = 7;
-            this.label60.Text = "..";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(17, 184);
-            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(168, 19);
-            this.label47.TabIndex = 4;
-            this.label47.Text = "Total Price / passenger:";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(19, 126);
-            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(80, 19);
-            this.label46.TabIndex = 4;
-            this.label46.Text = "Tax (10%) :";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(19, 95);
-            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(123, 19);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "Airport Fee (5%) :";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(20, 66);
-            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(95, 19);
-            this.label48.TabIndex = 2;
-            this.label48.Text = "Service Fee : ";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(20, 37);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(176, 19);
-            this.label44.TabIndex = 2;
-            this.label44.Text = "Ticket Price / passenger : ";
-            // 
-            // label43
-            // 
-            this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(40, 3);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(195, 29);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "Price";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label61);
-            this.panel10.Location = new System.Drawing.Point(0, 166);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(269, 63);
-            this.panel10.TabIndex = 5;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
-            // 
-            // label61
-            // 
-            this.label61.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(136, 19);
-            this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(114, 19);
-            this.label61.TabIndex = 10;
-            this.label61.Text = "..";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(238, 15);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(17, 19);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "b";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label62);
-            this.panel3.Controls.Add(this.label57);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(18, 93);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(691, 98);
-            this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.BackColor = System.Drawing.Color.Transparent;
-            this.label62.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label62.Location = new System.Drawing.Point(425, 31);
-            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(23, 27);
-            this.label62.TabIndex = 6;
-            this.label62.Text = "$";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.BackColor = System.Drawing.Color.Transparent;
-            this.label57.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label57.Location = new System.Drawing.Point(441, 31);
-            this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(23, 27);
-            this.label57.TabIndex = 6;
-            this.label57.Text = "a";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(502, 24);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 48);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Select Flight";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(70, 64);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(17, 19);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "d";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(238, 43);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(104, 19);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "Non-stop flight";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(70, 43);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(16, 19);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "c";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(140, 11);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(28, 27);
-            this.label15.TabIndex = 5;
-            this.label15.Text = " a";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(68, 11);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 27);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "6 : 00  - ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(5, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.SystemColors.Control;
-            this.panel8.Controls.Add(this.label12);
-            this.panel8.Controls.Add(this.label11);
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel6);
-            this.panel8.Controls.Add(this.panel5);
-            this.panel8.Controls.Add(this.panel4);
-            this.panel8.Controls.Add(this.panel3);
-            this.panel8.Location = new System.Drawing.Point(285, 32);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(731, 740);
-            this.panel8.TabIndex = 3;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(19, 51);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(227, 23);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Let us take you home safetly";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Berlin Sans FB", 21.91304F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 20);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(298, 33);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Choose a Return Flight";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.label66);
-            this.panel7.Controls.Add(this.label55);
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Controls.Add(this.label37);
-            this.panel7.Controls.Add(this.label38);
-            this.panel7.Controls.Add(this.label39);
-            this.panel7.Controls.Add(this.label40);
-            this.panel7.Controls.Add(this.label41);
-            this.panel7.Controls.Add(this.label42);
-            this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Location = new System.Drawing.Point(18, 613);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(691, 98);
-            this.panel7.TabIndex = 2;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.BackColor = System.Drawing.Color.Transparent;
-            this.label66.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label66.Location = new System.Drawing.Point(425, 33);
-            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(23, 27);
-            this.label66.TabIndex = 6;
-            this.label66.Text = "$";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.Transparent;
-            this.label55.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label55.Location = new System.Drawing.Point(441, 33);
-            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(23, 27);
-            this.label55.TabIndex = 6;
-            this.label55.Text = "a";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(502, 24);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(163, 48);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Select Flight";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(70, 64);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(17, 19);
-            this.label37.TabIndex = 8;
-            this.label37.Text = "d";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(238, 43);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(104, 19);
-            this.label38.TabIndex = 7;
-            this.label38.Text = "Non-stop flight";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(70, 43);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(16, 19);
-            this.label39.TabIndex = 6;
-            this.label39.Text = "c";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(147, 11);
-            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(23, 27);
-            this.label40.TabIndex = 5;
-            this.label40.Text = "a";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(68, 11);
-            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(94, 27);
-            this.label41.TabIndex = 4;
-            this.label41.Text = "23 : 00  - ";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(238, 15);
-            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(17, 19);
-            this.label42.TabIndex = 3;
-            this.label42.Text = "b";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(5, 11);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.label65);
-            this.panel6.Controls.Add(this.label54);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.label31);
-            this.panel6.Controls.Add(this.label32);
-            this.panel6.Controls.Add(this.label33);
-            this.panel6.Controls.Add(this.label34);
-            this.panel6.Controls.Add(this.label35);
-            this.panel6.Controls.Add(this.label36);
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Location = new System.Drawing.Point(18, 483);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(691, 98);
-            this.panel6.TabIndex = 2;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.BackColor = System.Drawing.Color.Transparent;
-            this.label65.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label65.Location = new System.Drawing.Point(425, 33);
-            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(23, 27);
-            this.label65.TabIndex = 6;
-            this.label65.Text = "$";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.Color.Transparent;
-            this.label54.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label54.Location = new System.Drawing.Point(441, 33);
-            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(23, 27);
-            this.label54.TabIndex = 6;
-            this.label54.Text = "a";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(502, 24);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 48);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Select Flight";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(70, 64);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(17, 19);
-            this.label31.TabIndex = 8;
-            this.label31.Text = "d";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(238, 43);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(104, 19);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "Non-stop flight";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(70, 43);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(16, 19);
-            this.label33.TabIndex = 6;
-            this.label33.Text = "c";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(147, 11);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(23, 27);
-            this.label34.TabIndex = 5;
-            this.label34.Text = "a";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(68, 11);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(94, 27);
-            this.label35.TabIndex = 4;
-            this.label35.Text = "17 : 00  - ";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(238, 15);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(17, 19);
-            this.label36.TabIndex = 3;
-            this.label36.Text = "b";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(5, 11);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label64);
-            this.panel5.Controls.Add(this.label53);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.label25);
-            this.panel5.Controls.Add(this.label26);
-            this.panel5.Controls.Add(this.label27);
-            this.panel5.Controls.Add(this.label28);
-            this.panel5.Controls.Add(this.label29);
-            this.panel5.Controls.Add(this.label30);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Location = new System.Drawing.Point(18, 353);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(691, 98);
-            this.panel5.TabIndex = 2;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.BackColor = System.Drawing.Color.Transparent;
-            this.label64.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label64.Location = new System.Drawing.Point(425, 33);
-            this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(23, 27);
-            this.label64.TabIndex = 6;
-            this.label64.Text = "$";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.BackColor = System.Drawing.Color.Transparent;
-            this.label53.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label53.Location = new System.Drawing.Point(441, 33);
-            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(23, 27);
-            this.label53.TabIndex = 6;
-            this.label53.Text = "a";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(502, 24);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(163, 48);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Select Flight";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(70, 64);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(17, 19);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "d";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(238, 43);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(104, 19);
-            this.label26.TabIndex = 7;
-            this.label26.Text = "Non-stop flight";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(70, 43);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(16, 19);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "c";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(147, 11);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(23, 27);
-            this.label28.TabIndex = 5;
-            this.label28.Text = "a";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(68, 11);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(94, 27);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "14 : 00  - ";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(238, 15);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(17, 19);
-            this.label30.TabIndex = 3;
-            this.label30.Text = "b";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(5, 11);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label63);
-            this.panel4.Controls.Add(this.label52);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.label20);
-            this.panel4.Controls.Add(this.label21);
-            this.panel4.Controls.Add(this.label22);
-            this.panel4.Controls.Add(this.label23);
-            this.panel4.Controls.Add(this.label24);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(18, 223);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(691, 98);
-            this.panel4.TabIndex = 2;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.BackColor = System.Drawing.Color.Transparent;
-            this.label63.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label63.Location = new System.Drawing.Point(425, 33);
-            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(23, 27);
-            this.label63.TabIndex = 6;
-            this.label63.Text = "$";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.BackColor = System.Drawing.Color.Transparent;
-            this.label52.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label52.Location = new System.Drawing.Point(441, 33);
-            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(23, 27);
-            this.label52.TabIndex = 6;
-            this.label52.Text = "a";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(502, 24);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 48);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Select Flight";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(70, 64);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(17, 19);
-            this.label19.TabIndex = 8;
-            this.label19.Text = "d";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(238, 43);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 19);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Non-stop flight";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(70, 43);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(16, 19);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "c";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(141, 11);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(23, 27);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "a";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(68, 11);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(94, 27);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "10 : 00  - ";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(238, 15);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(17, 19);
-            this.label24.TabIndex = 3;
-            this.label24.Text = "b";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(5, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Silver;
-            this.button6.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(1124, 695);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(250, 32);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Exit";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.Controls.Add(this.label67);
-            this.panel13.Controls.Add(this.label68);
-            this.panel13.Controls.Add(this.label69);
-            this.panel13.Controls.Add(this.label70);
-            this.panel13.Controls.Add(this.pictureBox7);
-            this.panel13.Location = new System.Drawing.Point(41, 302);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(182, 369);
-            this.panel13.TabIndex = 41;
-            // 
-            // label67
-            // 
-            this.label67.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(22, 121);
-            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(151, 37);
-            this.label67.TabIndex = 17;
-            this.label67.Text = "Seat Reservation\r\nFlight Options";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(21, 336);
-            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(94, 19);
-            this.label68.TabIndex = 17;
-            this.label68.Text = "Confirmation";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(22, 226);
-            this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(66, 19);
-            this.label69.TabIndex = 17;
-            this.label69.Text = "Payment";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(20, 32);
-            this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(102, 19);
-            this.label70.TabIndex = 17;
-            this.label70.Text = "Choose Flights";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(13, 349);
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.Image = global::flight1.Properties.Resources.logo;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(11, 8);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(258, 292);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // panelSummaryPrice
+            // 
+            this.panelSummaryPrice.BackColor = System.Drawing.Color.Transparent;
+            this.panelSummaryPrice.Controls.Add(this.lblDateOutput);
+            this.panelSummaryPrice.Controls.Add(this.lblRouteOutput);
+            this.panelSummaryPrice.Controls.Add(this.lblDate);
+            this.panelSummaryPrice.Controls.Add(this.lblRoute);
+            this.panelSummaryPrice.Controls.Add(this.lblFlightSummary);
+            this.panelSummaryPrice.Controls.Add(this.panelFlightSummary);
+            this.panelSummaryPrice.Controls.Add(this.panelPrice);
+            this.panelSummaryPrice.Location = new System.Drawing.Point(1084, 32);
+            this.panelSummaryPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.panelSummaryPrice.Name = "panelSummaryPrice";
+            this.panelSummaryPrice.Size = new System.Drawing.Size(314, 555);
+            this.panelSummaryPrice.TabIndex = 1;
+            this.panelSummaryPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSummaryPrice_Paint);
+            // 
+            // lblDateOutput
+            // 
+            this.lblDateOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblDateOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateOutput.Location = new System.Drawing.Point(28, 148);
+            this.lblDateOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateOutput.Name = "lblDateOutput";
+            this.lblDateOutput.Size = new System.Drawing.Size(178, 27);
+            this.lblDateOutput.TabIndex = 1;
+            this.lblDateOutput.Text = "a";
+            this.lblDateOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblRouteOutput
+            // 
+            this.lblRouteOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblRouteOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRouteOutput.Location = new System.Drawing.Point(28, 80);
+            this.lblRouteOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRouteOutput.Name = "lblRouteOutput";
+            this.lblRouteOutput.Size = new System.Drawing.Size(178, 27);
+            this.lblRouteOutput.TabIndex = 1;
+            this.lblRouteOutput.Text = "a";
+            this.lblRouteOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate
+            // 
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(28, 127);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(178, 29);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "Date";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblRoute
+            // 
+            this.lblRoute.BackColor = System.Drawing.Color.Transparent;
+            this.lblRoute.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoute.Location = new System.Drawing.Point(26, 61);
+            this.lblRoute.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRoute.Name = "lblRoute";
+            this.lblRoute.Size = new System.Drawing.Size(180, 29);
+            this.lblRoute.TabIndex = 1;
+            this.lblRoute.Text = "Route";
+            this.lblRoute.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblFlightSummary
+            // 
+            this.lblFlightSummary.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlightSummary.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlightSummary.Location = new System.Drawing.Point(64, 20);
+            this.lblFlightSummary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlightSummary.Name = "lblFlightSummary";
+            this.lblFlightSummary.Size = new System.Drawing.Size(195, 29);
+            this.lblFlightSummary.TabIndex = 1;
+            this.lblFlightSummary.Text = "Flight Summary";
+            this.lblFlightSummary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panelFlightSummary
+            // 
+            this.panelFlightSummary.BackColor = System.Drawing.Color.Transparent;
+            this.panelFlightSummary.Controls.Add(this.lblPassengersOutput);
+            this.panelFlightSummary.Controls.Add(this.lblHours);
+            this.panelFlightSummary.Controls.Add(this.lblDurationOutput);
+            this.panelFlightSummary.Controls.Add(this.lblCabinOutput);
+            this.panelFlightSummary.Controls.Add(this.lblDuration);
+            this.panelFlightSummary.Controls.Add(this.lblLengthOutput);
+            this.panelFlightSummary.Controls.Add(this.lblLength);
+            this.panelFlightSummary.Controls.Add(this.lblPassengers);
+            this.panelFlightSummary.Controls.Add(this.lblCabin);
+            this.panelFlightSummary.Location = new System.Drawing.Point(23, 41);
+            this.panelFlightSummary.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFlightSummary.Name = "panelFlightSummary";
+            this.panelFlightSummary.Size = new System.Drawing.Size(269, 214);
+            this.panelFlightSummary.TabIndex = 2;
+            this.panelFlightSummary.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFlightSummary_Paint);
+            // 
+            // lblPassengersOutput
+            // 
+            this.lblPassengersOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassengersOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassengersOutput.Location = new System.Drawing.Point(194, 167);
+            this.lblPassengersOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPassengersOutput.Name = "lblPassengersOutput";
+            this.lblPassengersOutput.Size = new System.Drawing.Size(63, 27);
+            this.lblPassengersOutput.TabIndex = 1;
+            this.lblPassengersOutput.Text = "a";
+            this.lblPassengersOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHours
+            // 
+            this.lblHours.BackColor = System.Drawing.Color.Transparent;
+            this.lblHours.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHours.Location = new System.Drawing.Point(219, 39);
+            this.lblHours.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHours.Name = "lblHours";
+            this.lblHours.Size = new System.Drawing.Size(38, 27);
+            this.lblHours.TabIndex = 1;
+            this.lblHours.Text = "hrs";
+            this.lblHours.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblDurationOutput
+            // 
+            this.lblDurationOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblDurationOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDurationOutput.Location = new System.Drawing.Point(187, 38);
+            this.lblDurationOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDurationOutput.Name = "lblDurationOutput";
+            this.lblDurationOutput.Size = new System.Drawing.Size(38, 27);
+            this.lblDurationOutput.TabIndex = 1;
+            this.lblDurationOutput.Text = "aa";
+            this.lblDurationOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCabinOutput
+            // 
+            this.lblCabinOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblCabinOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCabinOutput.Location = new System.Drawing.Point(52, 167);
+            this.lblCabinOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCabinOutput.Name = "lblCabinOutput";
+            this.lblCabinOutput.Size = new System.Drawing.Size(82, 27);
+            this.lblCabinOutput.TabIndex = 1;
+            this.lblCabinOutput.Text = "a";
+            this.lblCabinOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDuration
+            // 
+            this.lblDuration.BackColor = System.Drawing.Color.Transparent;
+            this.lblDuration.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuration.Location = new System.Drawing.Point(187, 19);
+            this.lblDuration.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDuration.Name = "lblDuration";
+            this.lblDuration.Size = new System.Drawing.Size(79, 29);
+            this.lblDuration.TabIndex = 1;
+            this.lblDuration.Text = "Duration";
+            this.lblDuration.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblLengthOutput
+            // 
+            this.lblLengthOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblLengthOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLengthOutput.Location = new System.Drawing.Point(187, 106);
+            this.lblLengthOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLengthOutput.Name = "lblLengthOutput";
+            this.lblLengthOutput.Size = new System.Drawing.Size(77, 27);
+            this.lblLengthOutput.TabIndex = 1;
+            this.lblLengthOutput.Text = "a";
+            this.lblLengthOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLength
+            // 
+            this.lblLength.BackColor = System.Drawing.Color.Transparent;
+            this.lblLength.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLength.Location = new System.Drawing.Point(194, 84);
+            this.lblLength.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLength.Name = "lblLength";
+            this.lblLength.Size = new System.Drawing.Size(64, 29);
+            this.lblLength.TabIndex = 1;
+            this.lblLength.Text = "Length";
+            this.lblLength.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblPassengers
+            // 
+            this.lblPassengers.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassengers.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassengers.Location = new System.Drawing.Point(173, 145);
+            this.lblPassengers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPassengers.Name = "lblPassengers";
+            this.lblPassengers.Size = new System.Drawing.Size(94, 29);
+            this.lblPassengers.TabIndex = 1;
+            this.lblPassengers.Text = "Passengers";
+            this.lblPassengers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblCabin
+            // 
+            this.lblCabin.BackColor = System.Drawing.Color.Transparent;
+            this.lblCabin.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCabin.Location = new System.Drawing.Point(47, 145);
+            this.lblCabin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCabin.Name = "lblCabin";
+            this.lblCabin.Size = new System.Drawing.Size(95, 29);
+            this.lblCabin.TabIndex = 1;
+            this.lblCabin.Text = "Cabin";
+            this.lblCabin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panelPrice
+            // 
+            this.panelPrice.BackColor = System.Drawing.Color.Transparent;
+            this.panelPrice.Controls.Add(this.lblTicketPricePassengerOutput);
+            this.panelPrice.Controls.Add(this.lblTaxOutput);
+            this.panelPrice.Controls.Add(this.lblAirportFeeOutput);
+            this.panelPrice.Controls.Add(this.lblServiceFeeOutput);
+            this.panelPrice.Controls.Add(this.lblTotalPricePassenger);
+            this.panelPrice.Controls.Add(this.lblTax);
+            this.panelPrice.Controls.Add(this.lblAirportFee);
+            this.panelPrice.Controls.Add(this.lblServiceFee);
+            this.panelPrice.Controls.Add(this.lblTicketPricePassenger);
+            this.panelPrice.Controls.Add(this.lblPrice);
+            this.panelPrice.Controls.Add(this.panelTotal);
+            this.panelPrice.Location = new System.Drawing.Point(23, 287);
+            this.panelPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.panelPrice.Name = "panelPrice";
+            this.panelPrice.Size = new System.Drawing.Size(269, 229);
+            this.panelPrice.TabIndex = 3;
+            this.panelPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrice_Paint);
+            // 
+            // lblTicketPricePassengerOutput
+            // 
+            this.lblTicketPricePassengerOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketPricePassengerOutput.Location = new System.Drawing.Point(165, 37);
+            this.lblTicketPricePassengerOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketPricePassengerOutput.Name = "lblTicketPricePassengerOutput";
+            this.lblTicketPricePassengerOutput.Size = new System.Drawing.Size(83, 19);
+            this.lblTicketPricePassengerOutput.TabIndex = 9;
+            this.lblTicketPricePassengerOutput.Text = "..";
+            this.lblTicketPricePassengerOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblTaxOutput
+            // 
+            this.lblTaxOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaxOutput.Location = new System.Drawing.Point(140, 126);
+            this.lblTaxOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTaxOutput.Name = "lblTaxOutput";
+            this.lblTaxOutput.Size = new System.Drawing.Size(108, 19);
+            this.lblTaxOutput.TabIndex = 8;
+            this.lblTaxOutput.Text = "..";
+            this.lblTaxOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblAirportFeeOutput
+            // 
+            this.lblAirportFeeOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAirportFeeOutput.Location = new System.Drawing.Point(167, 95);
+            this.lblAirportFeeOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAirportFeeOutput.Name = "lblAirportFeeOutput";
+            this.lblAirportFeeOutput.Size = new System.Drawing.Size(81, 19);
+            this.lblAirportFeeOutput.TabIndex = 6;
+            this.lblAirportFeeOutput.Text = "..";
+            this.lblAirportFeeOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblServiceFeeOutput
+            // 
+            this.lblServiceFeeOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServiceFeeOutput.Location = new System.Drawing.Point(167, 66);
+            this.lblServiceFeeOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblServiceFeeOutput.Name = "lblServiceFeeOutput";
+            this.lblServiceFeeOutput.Size = new System.Drawing.Size(81, 19);
+            this.lblServiceFeeOutput.TabIndex = 7;
+            this.lblServiceFeeOutput.Text = "..";
+            this.lblServiceFeeOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblTotalPricePassenger
+            // 
+            this.lblTotalPricePassenger.AutoSize = true;
+            this.lblTotalPricePassenger.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPricePassenger.Location = new System.Drawing.Point(17, 184);
+            this.lblTotalPricePassenger.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalPricePassenger.Name = "lblTotalPricePassenger";
+            this.lblTotalPricePassenger.Size = new System.Drawing.Size(168, 19);
+            this.lblTotalPricePassenger.TabIndex = 4;
+            this.lblTotalPricePassenger.Text = "Total Price / passenger:";
+            // 
+            // lblTax
+            // 
+            this.lblTax.AutoSize = true;
+            this.lblTax.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTax.Location = new System.Drawing.Point(19, 126);
+            this.lblTax.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(80, 19);
+            this.lblTax.TabIndex = 4;
+            this.lblTax.Text = "Tax (10%) :";
+            // 
+            // lblAirportFee
+            // 
+            this.lblAirportFee.AutoSize = true;
+            this.lblAirportFee.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAirportFee.Location = new System.Drawing.Point(19, 95);
+            this.lblAirportFee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAirportFee.Name = "lblAirportFee";
+            this.lblAirportFee.Size = new System.Drawing.Size(123, 19);
+            this.lblAirportFee.TabIndex = 3;
+            this.lblAirportFee.Text = "Airport Fee (5%) :";
+            // 
+            // lblServiceFee
+            // 
+            this.lblServiceFee.AutoSize = true;
+            this.lblServiceFee.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServiceFee.Location = new System.Drawing.Point(20, 66);
+            this.lblServiceFee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblServiceFee.Name = "lblServiceFee";
+            this.lblServiceFee.Size = new System.Drawing.Size(95, 19);
+            this.lblServiceFee.TabIndex = 2;
+            this.lblServiceFee.Text = "Service Fee : ";
+            // 
+            // lblTicketPricePassenger
+            // 
+            this.lblTicketPricePassenger.AutoSize = true;
+            this.lblTicketPricePassenger.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketPricePassenger.Location = new System.Drawing.Point(20, 37);
+            this.lblTicketPricePassenger.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketPricePassenger.Name = "lblTicketPricePassenger";
+            this.lblTicketPricePassenger.Size = new System.Drawing.Size(176, 19);
+            this.lblTicketPricePassenger.TabIndex = 2;
+            this.lblTicketPricePassenger.Text = "Ticket Price / passenger : ";
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrice.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(40, 3);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(195, 29);
+            this.lblPrice.TabIndex = 1;
+            this.lblPrice.Text = "Price";
+            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panelTotal
+            // 
+            this.panelTotal.Controls.Add(this.lblTotalPricePassengerOutput);
+            this.panelTotal.Location = new System.Drawing.Point(0, 166);
+            this.panelTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTotal.Name = "panelTotal";
+            this.panelTotal.Size = new System.Drawing.Size(269, 63);
+            this.panelTotal.TabIndex = 5;
+            this.panelTotal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTotal_Paint);
+            // 
+            // lblTotalPricePassengerOutput
+            // 
+            this.lblTotalPricePassengerOutput.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPricePassengerOutput.Location = new System.Drawing.Point(136, 19);
+            this.lblTotalPricePassengerOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalPricePassengerOutput.Name = "lblTotalPricePassengerOutput";
+            this.lblTotalPricePassengerOutput.Size = new System.Drawing.Size(114, 19);
+            this.lblTotalPricePassengerOutput.TabIndex = 10;
+            this.lblTotalPricePassengerOutput.Text = "..";
+            this.lblTotalPricePassengerOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblFlight1DurationOutput
+            // 
+            this.lblFlight1DurationOutput.AutoSize = true;
+            this.lblFlight1DurationOutput.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight1DurationOutput.Location = new System.Drawing.Point(238, 15);
+            this.lblFlight1DurationOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight1DurationOutput.Name = "lblFlight1DurationOutput";
+            this.lblFlight1DurationOutput.Size = new System.Drawing.Size(17, 19);
+            this.lblFlight1DurationOutput.TabIndex = 3;
+            this.lblFlight1DurationOutput.Text = "b";
+            // 
+            // panelFlight1
+            // 
+            this.panelFlight1.BackColor = System.Drawing.Color.White;
+            this.panelFlight1.Controls.Add(this.lblDollar1);
+            this.panelFlight1.Controls.Add(this.lblFlight1PriceOutput);
+            this.panelFlight1.Controls.Add(this.btnSelectFlight1);
+            this.panelFlight1.Controls.Add(this.lblPlane1Output);
+            this.panelFlight1.Controls.Add(this.lblFlight1Type);
+            this.panelFlight1.Controls.Add(this.lblFlight1NumOutput);
+            this.panelFlight1.Controls.Add(this.lblFlight1TimeTo);
+            this.panelFlight1.Controls.Add(this.lblFlight1TimeFrom);
+            this.panelFlight1.Controls.Add(this.lblFlight1DurationOutput);
+            this.panelFlight1.Controls.Add(this.pictureBoxFlight1);
+            this.panelFlight1.Location = new System.Drawing.Point(18, 93);
+            this.panelFlight1.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFlight1.Name = "panelFlight1";
+            this.panelFlight1.Size = new System.Drawing.Size(691, 98);
+            this.panelFlight1.TabIndex = 2;
+            this.panelFlight1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFlight1_Paint);
+            // 
+            // lblDollar1
+            // 
+            this.lblDollar1.AutoSize = true;
+            this.lblDollar1.BackColor = System.Drawing.Color.Transparent;
+            this.lblDollar1.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDollar1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblDollar1.Location = new System.Drawing.Point(425, 31);
+            this.lblDollar1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDollar1.Name = "lblDollar1";
+            this.lblDollar1.Size = new System.Drawing.Size(23, 27);
+            this.lblDollar1.TabIndex = 6;
+            this.lblDollar1.Text = "$";
+            this.lblDollar1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblFlight1PriceOutput
+            // 
+            this.lblFlight1PriceOutput.AutoSize = true;
+            this.lblFlight1PriceOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight1PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight1PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblFlight1PriceOutput.Location = new System.Drawing.Point(441, 31);
+            this.lblFlight1PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight1PriceOutput.Name = "lblFlight1PriceOutput";
+            this.lblFlight1PriceOutput.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight1PriceOutput.TabIndex = 6;
+            this.lblFlight1PriceOutput.Text = "a";
+            // 
+            // btnSelectFlight1
+            // 
+            this.btnSelectFlight1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSelectFlight1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSelectFlight1.BackgroundImage")));
+            this.btnSelectFlight1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSelectFlight1.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectFlight1.Location = new System.Drawing.Point(502, 24);
+            this.btnSelectFlight1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSelectFlight1.Name = "btnSelectFlight1";
+            this.btnSelectFlight1.Size = new System.Drawing.Size(163, 48);
+            this.btnSelectFlight1.TabIndex = 9;
+            this.btnSelectFlight1.Text = "Select Flight";
+            this.btnSelectFlight1.UseVisualStyleBackColor = false;
+            this.btnSelectFlight1.Click += new System.EventHandler(this.btnSelectFlight1_Click);
+            // 
+            // lblPlane1Output
+            // 
+            this.lblPlane1Output.AutoSize = true;
+            this.lblPlane1Output.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlane1Output.Location = new System.Drawing.Point(70, 64);
+            this.lblPlane1Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlane1Output.Name = "lblPlane1Output";
+            this.lblPlane1Output.Size = new System.Drawing.Size(17, 19);
+            this.lblPlane1Output.TabIndex = 8;
+            this.lblPlane1Output.Text = "d";
+            // 
+            // lblFlight1Type
+            // 
+            this.lblFlight1Type.AutoSize = true;
+            this.lblFlight1Type.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight1Type.Location = new System.Drawing.Point(238, 43);
+            this.lblFlight1Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight1Type.Name = "lblFlight1Type";
+            this.lblFlight1Type.Size = new System.Drawing.Size(104, 19);
+            this.lblFlight1Type.TabIndex = 7;
+            this.lblFlight1Type.Text = "Non-stop flight";
+            // 
+            // lblFlight1NumOutput
+            // 
+            this.lblFlight1NumOutput.AutoSize = true;
+            this.lblFlight1NumOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight1NumOutput.Location = new System.Drawing.Point(70, 43);
+            this.lblFlight1NumOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight1NumOutput.Name = "lblFlight1NumOutput";
+            this.lblFlight1NumOutput.Size = new System.Drawing.Size(16, 19);
+            this.lblFlight1NumOutput.TabIndex = 6;
+            this.lblFlight1NumOutput.Text = "c";
+            // 
+            // lblFlight1TimeTo
+            // 
+            this.lblFlight1TimeTo.AutoSize = true;
+            this.lblFlight1TimeTo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight1TimeTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight1TimeTo.Location = new System.Drawing.Point(140, 11);
+            this.lblFlight1TimeTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight1TimeTo.Name = "lblFlight1TimeTo";
+            this.lblFlight1TimeTo.Size = new System.Drawing.Size(28, 27);
+            this.lblFlight1TimeTo.TabIndex = 5;
+            this.lblFlight1TimeTo.Text = " a";
+            // 
+            // lblFlight1TimeFrom
+            // 
+            this.lblFlight1TimeFrom.AutoSize = true;
+            this.lblFlight1TimeFrom.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight1TimeFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight1TimeFrom.Location = new System.Drawing.Point(68, 11);
+            this.lblFlight1TimeFrom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight1TimeFrom.Name = "lblFlight1TimeFrom";
+            this.lblFlight1TimeFrom.Size = new System.Drawing.Size(83, 27);
+            this.lblFlight1TimeFrom.TabIndex = 4;
+            this.lblFlight1TimeFrom.Text = "6 : 00  - ";
+            // 
+            // pictureBoxFlight1
+            // 
+            this.pictureBoxFlight1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFlight1.Image")));
+            this.pictureBoxFlight1.Location = new System.Drawing.Point(5, 11);
+            this.pictureBoxFlight1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxFlight1.Name = "pictureBoxFlight1";
+            this.pictureBoxFlight1.Size = new System.Drawing.Size(47, 41);
+            this.pictureBoxFlight1.TabIndex = 0;
+            this.pictureBoxFlight1.TabStop = false;
+            // 
+            // panelReturnFlight
+            // 
+            this.panelReturnFlight.BackColor = System.Drawing.SystemColors.Control;
+            this.panelReturnFlight.Controls.Add(this.lblReturnFlightDesc);
+            this.panelReturnFlight.Controls.Add(this.lblReturnFlight);
+            this.panelReturnFlight.Controls.Add(this.panelFlight5);
+            this.panelReturnFlight.Controls.Add(this.panelFlight4);
+            this.panelReturnFlight.Controls.Add(this.panelFlight3);
+            this.panelReturnFlight.Controls.Add(this.panelFlight2);
+            this.panelReturnFlight.Controls.Add(this.panelFlight1);
+            this.panelReturnFlight.Location = new System.Drawing.Point(285, 32);
+            this.panelReturnFlight.Margin = new System.Windows.Forms.Padding(2);
+            this.panelReturnFlight.Name = "panelReturnFlight";
+            this.panelReturnFlight.Size = new System.Drawing.Size(731, 740);
+            this.panelReturnFlight.TabIndex = 3;
+            this.panelReturnFlight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelReturnFlight_Paint);
+            // 
+            // lblReturnFlightDesc
+            // 
+            this.lblReturnFlightDesc.AutoSize = true;
+            this.lblReturnFlightDesc.BackColor = System.Drawing.Color.Transparent;
+            this.lblReturnFlightDesc.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReturnFlightDesc.Location = new System.Drawing.Point(19, 51);
+            this.lblReturnFlightDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblReturnFlightDesc.Name = "lblReturnFlightDesc";
+            this.lblReturnFlightDesc.Size = new System.Drawing.Size(227, 23);
+            this.lblReturnFlightDesc.TabIndex = 3;
+            this.lblReturnFlightDesc.Text = "Let us take you home safetly";
+            // 
+            // lblReturnFlight
+            // 
+            this.lblReturnFlight.AutoSize = true;
+            this.lblReturnFlight.BackColor = System.Drawing.Color.Transparent;
+            this.lblReturnFlight.Font = new System.Drawing.Font("Berlin Sans FB", 21.91304F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReturnFlight.Location = new System.Drawing.Point(18, 20);
+            this.lblReturnFlight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblReturnFlight.Name = "lblReturnFlight";
+            this.lblReturnFlight.Size = new System.Drawing.Size(298, 33);
+            this.lblReturnFlight.TabIndex = 3;
+            this.lblReturnFlight.Text = "Choose a Return Flight";
+            // 
+            // panelFlight5
+            // 
+            this.panelFlight5.BackColor = System.Drawing.Color.White;
+            this.panelFlight5.Controls.Add(this.lblDollar5);
+            this.panelFlight5.Controls.Add(this.lblFlight5PriceOutput);
+            this.panelFlight5.Controls.Add(this.btnSelectFlight5);
+            this.panelFlight5.Controls.Add(this.lblPlane5Output);
+            this.panelFlight5.Controls.Add(this.lblFlight5Type);
+            this.panelFlight5.Controls.Add(this.lblFlight5NumOutput);
+            this.panelFlight5.Controls.Add(this.lblFlight5TimeTo);
+            this.panelFlight5.Controls.Add(this.lblFlight5TimeFrom);
+            this.panelFlight5.Controls.Add(this.lblFlight5DurationOutput);
+            this.panelFlight5.Controls.Add(this.pictureBoxFlight5);
+            this.panelFlight5.Location = new System.Drawing.Point(18, 613);
+            this.panelFlight5.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFlight5.Name = "panelFlight5";
+            this.panelFlight5.Size = new System.Drawing.Size(691, 98);
+            this.panelFlight5.TabIndex = 2;
+            this.panelFlight5.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFlight5_Paint);
+            // 
+            // lblDollar5
+            // 
+            this.lblDollar5.AutoSize = true;
+            this.lblDollar5.BackColor = System.Drawing.Color.Transparent;
+            this.lblDollar5.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDollar5.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblDollar5.Location = new System.Drawing.Point(425, 33);
+            this.lblDollar5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDollar5.Name = "lblDollar5";
+            this.lblDollar5.Size = new System.Drawing.Size(23, 27);
+            this.lblDollar5.TabIndex = 6;
+            this.lblDollar5.Text = "$";
+            this.lblDollar5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblFlight5PriceOutput
+            // 
+            this.lblFlight5PriceOutput.AutoSize = true;
+            this.lblFlight5PriceOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight5PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight5PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblFlight5PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight5PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight5PriceOutput.Name = "lblFlight5PriceOutput";
+            this.lblFlight5PriceOutput.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight5PriceOutput.TabIndex = 6;
+            this.lblFlight5PriceOutput.Text = "a";
+            // 
+            // btnSelectFlight5
+            // 
+            this.btnSelectFlight5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSelectFlight5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSelectFlight5.BackgroundImage")));
+            this.btnSelectFlight5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSelectFlight5.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectFlight5.Location = new System.Drawing.Point(502, 24);
+            this.btnSelectFlight5.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSelectFlight5.Name = "btnSelectFlight5";
+            this.btnSelectFlight5.Size = new System.Drawing.Size(163, 48);
+            this.btnSelectFlight5.TabIndex = 9;
+            this.btnSelectFlight5.Text = "Select Flight";
+            this.btnSelectFlight5.UseVisualStyleBackColor = false;
+            this.btnSelectFlight5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // lblPlane5Output
+            // 
+            this.lblPlane5Output.AutoSize = true;
+            this.lblPlane5Output.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlane5Output.Location = new System.Drawing.Point(70, 64);
+            this.lblPlane5Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlane5Output.Name = "lblPlane5Output";
+            this.lblPlane5Output.Size = new System.Drawing.Size(17, 19);
+            this.lblPlane5Output.TabIndex = 8;
+            this.lblPlane5Output.Text = "d";
+            // 
+            // lblFlight5Type
+            // 
+            this.lblFlight5Type.AutoSize = true;
+            this.lblFlight5Type.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight5Type.Location = new System.Drawing.Point(238, 43);
+            this.lblFlight5Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight5Type.Name = "lblFlight5Type";
+            this.lblFlight5Type.Size = new System.Drawing.Size(104, 19);
+            this.lblFlight5Type.TabIndex = 7;
+            this.lblFlight5Type.Text = "Non-stop flight";
+            // 
+            // lblFlight5NumOutput
+            // 
+            this.lblFlight5NumOutput.AutoSize = true;
+            this.lblFlight5NumOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight5NumOutput.Location = new System.Drawing.Point(70, 43);
+            this.lblFlight5NumOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight5NumOutput.Name = "lblFlight5NumOutput";
+            this.lblFlight5NumOutput.Size = new System.Drawing.Size(16, 19);
+            this.lblFlight5NumOutput.TabIndex = 6;
+            this.lblFlight5NumOutput.Text = "c";
+            // 
+            // lblFlight5TimeTo
+            // 
+            this.lblFlight5TimeTo.AutoSize = true;
+            this.lblFlight5TimeTo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight5TimeTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight5TimeTo.Location = new System.Drawing.Point(147, 11);
+            this.lblFlight5TimeTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight5TimeTo.Name = "lblFlight5TimeTo";
+            this.lblFlight5TimeTo.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight5TimeTo.TabIndex = 5;
+            this.lblFlight5TimeTo.Text = "a";
+            // 
+            // lblFlight5TimeFrom
+            // 
+            this.lblFlight5TimeFrom.AutoSize = true;
+            this.lblFlight5TimeFrom.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight5TimeFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight5TimeFrom.Location = new System.Drawing.Point(68, 11);
+            this.lblFlight5TimeFrom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight5TimeFrom.Name = "lblFlight5TimeFrom";
+            this.lblFlight5TimeFrom.Size = new System.Drawing.Size(94, 27);
+            this.lblFlight5TimeFrom.TabIndex = 4;
+            this.lblFlight5TimeFrom.Text = "23 : 00  - ";
+            // 
+            // lblFlight5DurationOutput
+            // 
+            this.lblFlight5DurationOutput.AutoSize = true;
+            this.lblFlight5DurationOutput.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight5DurationOutput.Location = new System.Drawing.Point(238, 15);
+            this.lblFlight5DurationOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight5DurationOutput.Name = "lblFlight5DurationOutput";
+            this.lblFlight5DurationOutput.Size = new System.Drawing.Size(17, 19);
+            this.lblFlight5DurationOutput.TabIndex = 3;
+            this.lblFlight5DurationOutput.Text = "b";
+            // 
+            // pictureBoxFlight5
+            // 
+            this.pictureBoxFlight5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFlight5.Image")));
+            this.pictureBoxFlight5.Location = new System.Drawing.Point(5, 11);
+            this.pictureBoxFlight5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxFlight5.Name = "pictureBoxFlight5";
+            this.pictureBoxFlight5.Size = new System.Drawing.Size(47, 41);
+            this.pictureBoxFlight5.TabIndex = 0;
+            this.pictureBoxFlight5.TabStop = false;
+            // 
+            // panelFlight4
+            // 
+            this.panelFlight4.BackColor = System.Drawing.Color.White;
+            this.panelFlight4.Controls.Add(this.lblDollar4);
+            this.panelFlight4.Controls.Add(this.lblFlight4PriceOutput);
+            this.panelFlight4.Controls.Add(this.btnSelectFlight4);
+            this.panelFlight4.Controls.Add(this.lblPlane4Output);
+            this.panelFlight4.Controls.Add(this.lblFlight4Type);
+            this.panelFlight4.Controls.Add(this.lblFlight4NumOutput);
+            this.panelFlight4.Controls.Add(this.lblFlight4TimeTo);
+            this.panelFlight4.Controls.Add(this.lblFlight4TimeFrom);
+            this.panelFlight4.Controls.Add(this.lblFlight4DurationOutput);
+            this.panelFlight4.Controls.Add(this.pictureBoxFlight4);
+            this.panelFlight4.Location = new System.Drawing.Point(18, 483);
+            this.panelFlight4.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFlight4.Name = "panelFlight4";
+            this.panelFlight4.Size = new System.Drawing.Size(691, 98);
+            this.panelFlight4.TabIndex = 2;
+            this.panelFlight4.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFlight4_Paint);
+            // 
+            // lblDollar4
+            // 
+            this.lblDollar4.AutoSize = true;
+            this.lblDollar4.BackColor = System.Drawing.Color.Transparent;
+            this.lblDollar4.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDollar4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblDollar4.Location = new System.Drawing.Point(425, 33);
+            this.lblDollar4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDollar4.Name = "lblDollar4";
+            this.lblDollar4.Size = new System.Drawing.Size(23, 27);
+            this.lblDollar4.TabIndex = 6;
+            this.lblDollar4.Text = "$";
+            this.lblDollar4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblFlight4PriceOutput
+            // 
+            this.lblFlight4PriceOutput.AutoSize = true;
+            this.lblFlight4PriceOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight4PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight4PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblFlight4PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight4PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight4PriceOutput.Name = "lblFlight4PriceOutput";
+            this.lblFlight4PriceOutput.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight4PriceOutput.TabIndex = 6;
+            this.lblFlight4PriceOutput.Text = "a";
+            // 
+            // btnSelectFlight4
+            // 
+            this.btnSelectFlight4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSelectFlight4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSelectFlight4.BackgroundImage")));
+            this.btnSelectFlight4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSelectFlight4.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectFlight4.Location = new System.Drawing.Point(502, 24);
+            this.btnSelectFlight4.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSelectFlight4.Name = "btnSelectFlight4";
+            this.btnSelectFlight4.Size = new System.Drawing.Size(163, 48);
+            this.btnSelectFlight4.TabIndex = 9;
+            this.btnSelectFlight4.Text = "Select Flight";
+            this.btnSelectFlight4.UseVisualStyleBackColor = false;
+            this.btnSelectFlight4.Click += new System.EventHandler(this.btnSelectFlight4_Click);
+            // 
+            // lblPlane4Output
+            // 
+            this.lblPlane4Output.AutoSize = true;
+            this.lblPlane4Output.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlane4Output.Location = new System.Drawing.Point(70, 64);
+            this.lblPlane4Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlane4Output.Name = "lblPlane4Output";
+            this.lblPlane4Output.Size = new System.Drawing.Size(17, 19);
+            this.lblPlane4Output.TabIndex = 8;
+            this.lblPlane4Output.Text = "d";
+            // 
+            // lblFlight4Type
+            // 
+            this.lblFlight4Type.AutoSize = true;
+            this.lblFlight4Type.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight4Type.Location = new System.Drawing.Point(238, 43);
+            this.lblFlight4Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight4Type.Name = "lblFlight4Type";
+            this.lblFlight4Type.Size = new System.Drawing.Size(104, 19);
+            this.lblFlight4Type.TabIndex = 7;
+            this.lblFlight4Type.Text = "Non-stop flight";
+            // 
+            // lblFlight4NumOutput
+            // 
+            this.lblFlight4NumOutput.AutoSize = true;
+            this.lblFlight4NumOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight4NumOutput.Location = new System.Drawing.Point(70, 43);
+            this.lblFlight4NumOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight4NumOutput.Name = "lblFlight4NumOutput";
+            this.lblFlight4NumOutput.Size = new System.Drawing.Size(16, 19);
+            this.lblFlight4NumOutput.TabIndex = 6;
+            this.lblFlight4NumOutput.Text = "c";
+            // 
+            // lblFlight4TimeTo
+            // 
+            this.lblFlight4TimeTo.AutoSize = true;
+            this.lblFlight4TimeTo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight4TimeTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight4TimeTo.Location = new System.Drawing.Point(147, 11);
+            this.lblFlight4TimeTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight4TimeTo.Name = "lblFlight4TimeTo";
+            this.lblFlight4TimeTo.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight4TimeTo.TabIndex = 5;
+            this.lblFlight4TimeTo.Text = "a";
+            // 
+            // lblFlight4TimeFrom
+            // 
+            this.lblFlight4TimeFrom.AutoSize = true;
+            this.lblFlight4TimeFrom.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight4TimeFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight4TimeFrom.Location = new System.Drawing.Point(68, 11);
+            this.lblFlight4TimeFrom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight4TimeFrom.Name = "lblFlight4TimeFrom";
+            this.lblFlight4TimeFrom.Size = new System.Drawing.Size(94, 27);
+            this.lblFlight4TimeFrom.TabIndex = 4;
+            this.lblFlight4TimeFrom.Text = "17 : 00  - ";
+            // 
+            // lblFlight4DurationOutput
+            // 
+            this.lblFlight4DurationOutput.AutoSize = true;
+            this.lblFlight4DurationOutput.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight4DurationOutput.Location = new System.Drawing.Point(238, 15);
+            this.lblFlight4DurationOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight4DurationOutput.Name = "lblFlight4DurationOutput";
+            this.lblFlight4DurationOutput.Size = new System.Drawing.Size(17, 19);
+            this.lblFlight4DurationOutput.TabIndex = 3;
+            this.lblFlight4DurationOutput.Text = "b";
+            // 
+            // pictureBoxFlight4
+            // 
+            this.pictureBoxFlight4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFlight4.Image")));
+            this.pictureBoxFlight4.Location = new System.Drawing.Point(5, 11);
+            this.pictureBoxFlight4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxFlight4.Name = "pictureBoxFlight4";
+            this.pictureBoxFlight4.Size = new System.Drawing.Size(47, 41);
+            this.pictureBoxFlight4.TabIndex = 0;
+            this.pictureBoxFlight4.TabStop = false;
+            // 
+            // panelFlight3
+            // 
+            this.panelFlight3.BackColor = System.Drawing.Color.White;
+            this.panelFlight3.Controls.Add(this.lblDollar3);
+            this.panelFlight3.Controls.Add(this.lblFlight3PriceOutput);
+            this.panelFlight3.Controls.Add(this.btnSelectFlight3);
+            this.panelFlight3.Controls.Add(this.lblPlane3Output);
+            this.panelFlight3.Controls.Add(this.lblFlight3Type);
+            this.panelFlight3.Controls.Add(this.lblFlight3NumOutput);
+            this.panelFlight3.Controls.Add(this.lblFlight3TimeTo);
+            this.panelFlight3.Controls.Add(this.lblFlight3TimeFrom);
+            this.panelFlight3.Controls.Add(this.lblFlight3DurationOutput);
+            this.panelFlight3.Controls.Add(this.pictureBoxFlight3);
+            this.panelFlight3.Location = new System.Drawing.Point(18, 353);
+            this.panelFlight3.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFlight3.Name = "panelFlight3";
+            this.panelFlight3.Size = new System.Drawing.Size(691, 98);
+            this.panelFlight3.TabIndex = 2;
+            this.panelFlight3.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFlight3_Paint);
+            // 
+            // lblDollar3
+            // 
+            this.lblDollar3.AutoSize = true;
+            this.lblDollar3.BackColor = System.Drawing.Color.Transparent;
+            this.lblDollar3.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDollar3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblDollar3.Location = new System.Drawing.Point(425, 33);
+            this.lblDollar3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDollar3.Name = "lblDollar3";
+            this.lblDollar3.Size = new System.Drawing.Size(23, 27);
+            this.lblDollar3.TabIndex = 6;
+            this.lblDollar3.Text = "$";
+            this.lblDollar3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblFlight3PriceOutput
+            // 
+            this.lblFlight3PriceOutput.AutoSize = true;
+            this.lblFlight3PriceOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight3PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight3PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblFlight3PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight3PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight3PriceOutput.Name = "lblFlight3PriceOutput";
+            this.lblFlight3PriceOutput.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight3PriceOutput.TabIndex = 6;
+            this.lblFlight3PriceOutput.Text = "a";
+            // 
+            // btnSelectFlight3
+            // 
+            this.btnSelectFlight3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSelectFlight3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSelectFlight3.BackgroundImage")));
+            this.btnSelectFlight3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSelectFlight3.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectFlight3.Location = new System.Drawing.Point(502, 24);
+            this.btnSelectFlight3.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSelectFlight3.Name = "btnSelectFlight3";
+            this.btnSelectFlight3.Size = new System.Drawing.Size(163, 48);
+            this.btnSelectFlight3.TabIndex = 9;
+            this.btnSelectFlight3.Text = "Select Flight";
+            this.btnSelectFlight3.UseVisualStyleBackColor = false;
+            this.btnSelectFlight3.Click += new System.EventHandler(this.btnSelectFlight3_Click);
+            // 
+            // lblPlane3Output
+            // 
+            this.lblPlane3Output.AutoSize = true;
+            this.lblPlane3Output.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlane3Output.Location = new System.Drawing.Point(70, 64);
+            this.lblPlane3Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlane3Output.Name = "lblPlane3Output";
+            this.lblPlane3Output.Size = new System.Drawing.Size(17, 19);
+            this.lblPlane3Output.TabIndex = 8;
+            this.lblPlane3Output.Text = "d";
+            // 
+            // lblFlight3Type
+            // 
+            this.lblFlight3Type.AutoSize = true;
+            this.lblFlight3Type.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight3Type.Location = new System.Drawing.Point(238, 43);
+            this.lblFlight3Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight3Type.Name = "lblFlight3Type";
+            this.lblFlight3Type.Size = new System.Drawing.Size(104, 19);
+            this.lblFlight3Type.TabIndex = 7;
+            this.lblFlight3Type.Text = "Non-stop flight";
+            // 
+            // lblFlight3NumOutput
+            // 
+            this.lblFlight3NumOutput.AutoSize = true;
+            this.lblFlight3NumOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight3NumOutput.Location = new System.Drawing.Point(70, 43);
+            this.lblFlight3NumOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight3NumOutput.Name = "lblFlight3NumOutput";
+            this.lblFlight3NumOutput.Size = new System.Drawing.Size(16, 19);
+            this.lblFlight3NumOutput.TabIndex = 6;
+            this.lblFlight3NumOutput.Text = "c";
+            // 
+            // lblFlight3TimeTo
+            // 
+            this.lblFlight3TimeTo.AutoSize = true;
+            this.lblFlight3TimeTo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight3TimeTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight3TimeTo.Location = new System.Drawing.Point(147, 11);
+            this.lblFlight3TimeTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight3TimeTo.Name = "lblFlight3TimeTo";
+            this.lblFlight3TimeTo.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight3TimeTo.TabIndex = 5;
+            this.lblFlight3TimeTo.Text = "a";
+            // 
+            // lblFlight3TimeFrom
+            // 
+            this.lblFlight3TimeFrom.AutoSize = true;
+            this.lblFlight3TimeFrom.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight3TimeFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight3TimeFrom.Location = new System.Drawing.Point(68, 11);
+            this.lblFlight3TimeFrom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight3TimeFrom.Name = "lblFlight3TimeFrom";
+            this.lblFlight3TimeFrom.Size = new System.Drawing.Size(94, 27);
+            this.lblFlight3TimeFrom.TabIndex = 4;
+            this.lblFlight3TimeFrom.Text = "14 : 00  - ";
+            // 
+            // lblFlight3DurationOutput
+            // 
+            this.lblFlight3DurationOutput.AutoSize = true;
+            this.lblFlight3DurationOutput.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight3DurationOutput.Location = new System.Drawing.Point(238, 15);
+            this.lblFlight3DurationOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight3DurationOutput.Name = "lblFlight3DurationOutput";
+            this.lblFlight3DurationOutput.Size = new System.Drawing.Size(17, 19);
+            this.lblFlight3DurationOutput.TabIndex = 3;
+            this.lblFlight3DurationOutput.Text = "b";
+            // 
+            // pictureBoxFlight3
+            // 
+            this.pictureBoxFlight3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFlight3.Image")));
+            this.pictureBoxFlight3.Location = new System.Drawing.Point(5, 11);
+            this.pictureBoxFlight3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxFlight3.Name = "pictureBoxFlight3";
+            this.pictureBoxFlight3.Size = new System.Drawing.Size(47, 41);
+            this.pictureBoxFlight3.TabIndex = 0;
+            this.pictureBoxFlight3.TabStop = false;
+            // 
+            // panelFlight2
+            // 
+            this.panelFlight2.BackColor = System.Drawing.Color.White;
+            this.panelFlight2.Controls.Add(this.lblDollar2);
+            this.panelFlight2.Controls.Add(this.lblFlight2PriceOutput);
+            this.panelFlight2.Controls.Add(this.btnSelectFlight2);
+            this.panelFlight2.Controls.Add(this.lblPlane2Output);
+            this.panelFlight2.Controls.Add(this.lblFlight2Type);
+            this.panelFlight2.Controls.Add(this.lblFlight2NumOutput);
+            this.panelFlight2.Controls.Add(this.lblFlight2TimeTo);
+            this.panelFlight2.Controls.Add(this.lblFlight2TimeFrom);
+            this.panelFlight2.Controls.Add(this.lblFlight2DurationOutput);
+            this.panelFlight2.Controls.Add(this.pictureBoxFlight2);
+            this.panelFlight2.Location = new System.Drawing.Point(18, 223);
+            this.panelFlight2.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFlight2.Name = "panelFlight2";
+            this.panelFlight2.Size = new System.Drawing.Size(691, 98);
+            this.panelFlight2.TabIndex = 2;
+            this.panelFlight2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFlight2_Paint);
+            // 
+            // lblDollar2
+            // 
+            this.lblDollar2.AutoSize = true;
+            this.lblDollar2.BackColor = System.Drawing.Color.Transparent;
+            this.lblDollar2.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDollar2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblDollar2.Location = new System.Drawing.Point(425, 33);
+            this.lblDollar2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDollar2.Name = "lblDollar2";
+            this.lblDollar2.Size = new System.Drawing.Size(23, 27);
+            this.lblDollar2.TabIndex = 6;
+            this.lblDollar2.Text = "$";
+            this.lblDollar2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblFlight2PriceOutput
+            // 
+            this.lblFlight2PriceOutput.AutoSize = true;
+            this.lblFlight2PriceOutput.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight2PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight2PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblFlight2PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight2PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight2PriceOutput.Name = "lblFlight2PriceOutput";
+            this.lblFlight2PriceOutput.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight2PriceOutput.TabIndex = 6;
+            this.lblFlight2PriceOutput.Text = "a";
+            // 
+            // btnSelectFlight2
+            // 
+            this.btnSelectFlight2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSelectFlight2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSelectFlight2.BackgroundImage")));
+            this.btnSelectFlight2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSelectFlight2.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectFlight2.Location = new System.Drawing.Point(502, 24);
+            this.btnSelectFlight2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSelectFlight2.Name = "btnSelectFlight2";
+            this.btnSelectFlight2.Size = new System.Drawing.Size(163, 48);
+            this.btnSelectFlight2.TabIndex = 9;
+            this.btnSelectFlight2.Text = "Select Flight";
+            this.btnSelectFlight2.UseVisualStyleBackColor = false;
+            this.btnSelectFlight2.Click += new System.EventHandler(this.btnSelectFlight2_Click);
+            // 
+            // lblPlane2Output
+            // 
+            this.lblPlane2Output.AutoSize = true;
+            this.lblPlane2Output.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlane2Output.Location = new System.Drawing.Point(70, 64);
+            this.lblPlane2Output.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlane2Output.Name = "lblPlane2Output";
+            this.lblPlane2Output.Size = new System.Drawing.Size(17, 19);
+            this.lblPlane2Output.TabIndex = 8;
+            this.lblPlane2Output.Text = "d";
+            // 
+            // lblFlight2Type
+            // 
+            this.lblFlight2Type.AutoSize = true;
+            this.lblFlight2Type.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight2Type.Location = new System.Drawing.Point(238, 43);
+            this.lblFlight2Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight2Type.Name = "lblFlight2Type";
+            this.lblFlight2Type.Size = new System.Drawing.Size(104, 19);
+            this.lblFlight2Type.TabIndex = 7;
+            this.lblFlight2Type.Text = "Non-stop flight";
+            // 
+            // lblFlight2NumOutput
+            // 
+            this.lblFlight2NumOutput.AutoSize = true;
+            this.lblFlight2NumOutput.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight2NumOutput.Location = new System.Drawing.Point(70, 43);
+            this.lblFlight2NumOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight2NumOutput.Name = "lblFlight2NumOutput";
+            this.lblFlight2NumOutput.Size = new System.Drawing.Size(16, 19);
+            this.lblFlight2NumOutput.TabIndex = 6;
+            this.lblFlight2NumOutput.Text = "c";
+            // 
+            // lblFlight2TimeTo
+            // 
+            this.lblFlight2TimeTo.AutoSize = true;
+            this.lblFlight2TimeTo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight2TimeTo.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight2TimeTo.Location = new System.Drawing.Point(141, 11);
+            this.lblFlight2TimeTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight2TimeTo.Name = "lblFlight2TimeTo";
+            this.lblFlight2TimeTo.Size = new System.Drawing.Size(23, 27);
+            this.lblFlight2TimeTo.TabIndex = 5;
+            this.lblFlight2TimeTo.Text = "a";
+            // 
+            // lblFlight2TimeFrom
+            // 
+            this.lblFlight2TimeFrom.AutoSize = true;
+            this.lblFlight2TimeFrom.BackColor = System.Drawing.Color.Transparent;
+            this.lblFlight2TimeFrom.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight2TimeFrom.Location = new System.Drawing.Point(68, 11);
+            this.lblFlight2TimeFrom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight2TimeFrom.Name = "lblFlight2TimeFrom";
+            this.lblFlight2TimeFrom.Size = new System.Drawing.Size(94, 27);
+            this.lblFlight2TimeFrom.TabIndex = 4;
+            this.lblFlight2TimeFrom.Text = "10 : 00  - ";
+            // 
+            // lblFlight2DurationOutput
+            // 
+            this.lblFlight2DurationOutput.AutoSize = true;
+            this.lblFlight2DurationOutput.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlight2DurationOutput.Location = new System.Drawing.Point(238, 15);
+            this.lblFlight2DurationOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFlight2DurationOutput.Name = "lblFlight2DurationOutput";
+            this.lblFlight2DurationOutput.Size = new System.Drawing.Size(17, 19);
+            this.lblFlight2DurationOutput.TabIndex = 3;
+            this.lblFlight2DurationOutput.Text = "b";
+            // 
+            // pictureBoxFlight2
+            // 
+            this.pictureBoxFlight2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFlight2.Image")));
+            this.pictureBoxFlight2.Location = new System.Drawing.Point(5, 11);
+            this.pictureBoxFlight2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxFlight2.Name = "pictureBoxFlight2";
+            this.pictureBoxFlight2.Size = new System.Drawing.Size(47, 41);
+            this.pictureBoxFlight2.TabIndex = 0;
+            this.pictureBoxFlight2.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Silver;
+            this.btnExit.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExit.Location = new System.Drawing.Point(1124, 695);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(250, 32);
+            this.btnExit.TabIndex = 11;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panelBookingProgress
+            // 
+            this.panelBookingProgress.BackColor = System.Drawing.Color.Transparent;
+            this.panelBookingProgress.Controls.Add(this.lblSeatFlightOptions);
+            this.panelBookingProgress.Controls.Add(this.lblConfirmation);
+            this.panelBookingProgress.Controls.Add(this.lblPayment);
+            this.panelBookingProgress.Controls.Add(this.lblChooseFlights);
+            this.panelBookingProgress.Controls.Add(this.pictureBoxBookingProgress);
+            this.panelBookingProgress.Location = new System.Drawing.Point(41, 302);
+            this.panelBookingProgress.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBookingProgress.Name = "panelBookingProgress";
+            this.panelBookingProgress.Size = new System.Drawing.Size(182, 369);
+            this.panelBookingProgress.TabIndex = 41;
+            // 
+            // lblSeatFlightOptions
+            // 
+            this.lblSeatFlightOptions.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeatFlightOptions.Location = new System.Drawing.Point(22, 121);
+            this.lblSeatFlightOptions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeatFlightOptions.Name = "lblSeatFlightOptions";
+            this.lblSeatFlightOptions.Size = new System.Drawing.Size(151, 37);
+            this.lblSeatFlightOptions.TabIndex = 17;
+            this.lblSeatFlightOptions.Text = "Seat Reservation\r\nFlight Options";
+            // 
+            // lblConfirmation
+            // 
+            this.lblConfirmation.AutoSize = true;
+            this.lblConfirmation.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmation.Location = new System.Drawing.Point(21, 336);
+            this.lblConfirmation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblConfirmation.Name = "lblConfirmation";
+            this.lblConfirmation.Size = new System.Drawing.Size(94, 19);
+            this.lblConfirmation.TabIndex = 17;
+            this.lblConfirmation.Text = "Confirmation";
+            // 
+            // lblPayment
+            // 
+            this.lblPayment.AutoSize = true;
+            this.lblPayment.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayment.Location = new System.Drawing.Point(22, 226);
+            this.lblPayment.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPayment.Name = "lblPayment";
+            this.lblPayment.Size = new System.Drawing.Size(66, 19);
+            this.lblPayment.TabIndex = 17;
+            this.lblPayment.Text = "Payment";
+            // 
+            // lblChooseFlights
+            // 
+            this.lblChooseFlights.AutoSize = true;
+            this.lblChooseFlights.Font = new System.Drawing.Font("Calibri Light", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChooseFlights.Location = new System.Drawing.Point(20, 32);
+            this.lblChooseFlights.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblChooseFlights.Name = "lblChooseFlights";
+            this.lblChooseFlights.Size = new System.Drawing.Size(102, 19);
+            this.lblChooseFlights.TabIndex = 17;
+            this.lblChooseFlights.Text = "Choose Flights";
+            // 
+            // pictureBoxBookingProgress
+            // 
+            this.pictureBoxBookingProgress.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBookingProgress.Image")));
+            this.pictureBoxBookingProgress.Location = new System.Drawing.Point(2, 2);
+            this.pictureBoxBookingProgress.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxBookingProgress.Name = "pictureBoxBookingProgress";
+            this.pictureBoxBookingProgress.Size = new System.Drawing.Size(13, 349);
+            this.pictureBoxBookingProgress.TabIndex = 16;
+            this.pictureBoxBookingProgress.TabStop = false;
             // 
             // FormReturnFlight
             // 
@@ -1341,43 +1341,43 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1443, 856);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1443, 783);
+            this.Controls.Add(this.panelBookingProgress);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.panelSummaryPrice);
+            this.Controls.Add(this.panelReturnFlight);
+            this.Controls.Add(this.pictureBoxLogo);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "FormReturnFlight";
-            this.Text = "Form4";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.Text = "Bamboo Airways Flight Booking - Return Flight";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panelSummaryPrice.ResumeLayout(false);
+            this.panelFlightSummary.ResumeLayout(false);
+            this.panelPrice.ResumeLayout(false);
+            this.panelPrice.PerformLayout();
+            this.panelTotal.ResumeLayout(false);
+            this.panelFlight1.ResumeLayout(false);
+            this.panelFlight1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight1)).EndInit();
+            this.panelReturnFlight.ResumeLayout(false);
+            this.panelReturnFlight.PerformLayout();
+            this.panelFlight5.ResumeLayout(false);
+            this.panelFlight5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight5)).EndInit();
+            this.panelFlight4.ResumeLayout(false);
+            this.panelFlight4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight4)).EndInit();
+            this.panelFlight3.ResumeLayout(false);
+            this.panelFlight3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight3)).EndInit();
+            this.panelFlight2.ResumeLayout(false);
+            this.panelFlight2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlight2)).EndInit();
+            this.panelBookingProgress.ResumeLayout(false);
+            this.panelBookingProgress.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBookingProgress)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1385,100 +1385,100 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label labelsum;
-        public System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label10;
-        public System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.Label label15;
-        public System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        public System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button5;
-        public System.Windows.Forms.Label label37;
-        public System.Windows.Forms.Label label39;
-        public System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        public System.Windows.Forms.Label label42;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Label label31;
-        public System.Windows.Forms.Label label33;
-        public System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        public System.Windows.Forms.Label label36;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Label label25;
-        public System.Windows.Forms.Label label27;
-        public System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        public System.Windows.Forms.Label label30;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        public System.Windows.Forms.Label label21;
-        public System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        public System.Windows.Forms.Label label24;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label48;
-        public System.Windows.Forms.Label label43;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label label49;
-        public System.Windows.Forms.Label label50;
-        public System.Windows.Forms.Label label38;
-        public System.Windows.Forms.Label label32;
-        public System.Windows.Forms.Label label26;
-        public System.Windows.Forms.Label label51;
-        public System.Windows.Forms.Label label57;
-        public System.Windows.Forms.Label label55;
-        public System.Windows.Forms.Label label54;
-        public System.Windows.Forms.Label label53;
-        public System.Windows.Forms.Label label52;
-        public System.Windows.Forms.Label label58;
-        public System.Windows.Forms.Label label60;
-        public System.Windows.Forms.Label label61;
-        public System.Windows.Forms.Label label56;
-        public System.Windows.Forms.Label label59;
-        public System.Windows.Forms.Label label62;
-        public System.Windows.Forms.Label label66;
-        public System.Windows.Forms.Label label65;
-        public System.Windows.Forms.Label label64;
-        public System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panelSummaryPrice;
+        private System.Windows.Forms.Label lblFlightSummary;
+        public System.Windows.Forms.Label lblRouteOutput;
+        public System.Windows.Forms.Label lblDateOutput;
+        private System.Windows.Forms.Label lblDate;
+        public System.Windows.Forms.Label lblLengthOutput;
+        private System.Windows.Forms.Label lblLength;
+        public System.Windows.Forms.Label lblCabinOutput;
+        public System.Windows.Forms.Label lblPassengersOutput;
+        private System.Windows.Forms.Label lblPassengers;
+        private System.Windows.Forms.Label lblCabin;
+        private System.Windows.Forms.Panel panelFlightSummary;
+        private System.Windows.Forms.Panel panelFlight1;
+        private System.Windows.Forms.Panel panelReturnFlight;
+        private System.Windows.Forms.Label lblReturnFlight;
+        private System.Windows.Forms.Label lblReturnFlightDesc;
+        private System.Windows.Forms.PictureBox pictureBoxFlight1;
+        public System.Windows.Forms.Label lblFlight1DurationOutput;
+        private System.Windows.Forms.Label lblFlight1TimeFrom;
+        public System.Windows.Forms.Label lblFlight1TimeTo;
+        public System.Windows.Forms.Label lblFlight1NumOutput;
+        private System.Windows.Forms.Label lblFlight1Type;
+        public System.Windows.Forms.Label lblPlane1Output;
+        private System.Windows.Forms.Button btnSelectFlight1;
+        private System.Windows.Forms.Panel panelFlight5;
+        private System.Windows.Forms.Button btnSelectFlight5;
+        public System.Windows.Forms.Label lblPlane5Output;
+        public System.Windows.Forms.Label lblFlight5NumOutput;
+        public System.Windows.Forms.Label lblFlight5TimeTo;
+        private System.Windows.Forms.Label lblFlight5TimeFrom;
+        public System.Windows.Forms.Label lblFlight5DurationOutput;
+        private System.Windows.Forms.PictureBox pictureBoxFlight5;
+        private System.Windows.Forms.Panel panelFlight4;
+        private System.Windows.Forms.Button btnSelectFlight4;
+        public System.Windows.Forms.Label lblPlane4Output;
+        public System.Windows.Forms.Label lblFlight4NumOutput;
+        public System.Windows.Forms.Label lblFlight4TimeTo;
+        private System.Windows.Forms.Label lblFlight4TimeFrom;
+        public System.Windows.Forms.Label lblFlight4DurationOutput;
+        private System.Windows.Forms.PictureBox pictureBoxFlight4;
+        private System.Windows.Forms.Panel panelFlight3;
+        private System.Windows.Forms.Button btnSelectFlight3;
+        public System.Windows.Forms.Label lblPlane3Output;
+        public System.Windows.Forms.Label lblFlight3NumOutput;
+        public System.Windows.Forms.Label lblFlight3TimeTo;
+        private System.Windows.Forms.Label lblFlight3TimeFrom;
+        public System.Windows.Forms.Label lblFlight3DurationOutput;
+        private System.Windows.Forms.PictureBox pictureBoxFlight3;
+        private System.Windows.Forms.Panel panelFlight2;
+        private System.Windows.Forms.Button btnSelectFlight2;
+        public System.Windows.Forms.Label lblPlane2Output;
+        private System.Windows.Forms.Label lblFlight2Type;
+        public System.Windows.Forms.Label lblFlight2NumOutput;
+        public System.Windows.Forms.Label lblFlight2TimeTo;
+        private System.Windows.Forms.Label lblFlight2TimeFrom;
+        public System.Windows.Forms.Label lblFlight2DurationOutput;
+        private System.Windows.Forms.PictureBox pictureBoxFlight2;
+        private System.Windows.Forms.Panel panelPrice;
+        private System.Windows.Forms.Label lblTotalPricePassenger;
+        private System.Windows.Forms.Label lblTax;
+        private System.Windows.Forms.Label lblAirportFee;
+        private System.Windows.Forms.Label lblTicketPricePassenger;
+        private System.Windows.Forms.Panel panelTotal;
+        private System.Windows.Forms.Label lblServiceFee;
+        public System.Windows.Forms.Label lblPrice;
+        public System.Windows.Forms.Label lblRoute;
+        public System.Windows.Forms.Label lblDurationOutput;
+        public System.Windows.Forms.Label lblDuration;
+        public System.Windows.Forms.Label lblFlight5Type;
+        public System.Windows.Forms.Label lblFlight4Type;
+        public System.Windows.Forms.Label lblFlight3Type;
+        public System.Windows.Forms.Label lblHours;
+        public System.Windows.Forms.Label lblFlight1PriceOutput;
+        public System.Windows.Forms.Label lblFlight5PriceOutput;
+        public System.Windows.Forms.Label lblFlight4PriceOutput;
+        public System.Windows.Forms.Label lblFlight3PriceOutput;
+        public System.Windows.Forms.Label lblFlight2PriceOutput;
+        public System.Windows.Forms.Label lblTaxOutput;
+        public System.Windows.Forms.Label lblServiceFeeOutput;
+        public System.Windows.Forms.Label lblTotalPricePassengerOutput;
+        public System.Windows.Forms.Label lblTicketPricePassengerOutput;
+        public System.Windows.Forms.Label lblAirportFeeOutput;
+        public System.Windows.Forms.Label lblDollar1;
+        public System.Windows.Forms.Label lblDollar5;
+        public System.Windows.Forms.Label lblDollar4;
+        public System.Windows.Forms.Label lblDollar3;
+        public System.Windows.Forms.Label lblDollar2;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panelBookingProgress;
+        private System.Windows.Forms.Label lblSeatFlightOptions;
+        private System.Windows.Forms.Label lblConfirmation;
+        private System.Windows.Forms.Label lblPayment;
+        private System.Windows.Forms.Label lblChooseFlights;
+        private System.Windows.Forms.PictureBox pictureBoxBookingProgress;
     }
 }

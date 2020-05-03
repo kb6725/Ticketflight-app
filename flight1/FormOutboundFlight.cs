@@ -29,58 +29,58 @@ namespace flight1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-                f4.label49.Text = (Global.duration*2).ToString();
-                f4.labelsum.Text = labelsum.Text;
-                f4.label4.Text = label4.Text;
-                f4.label6.Text = label6.Text;
-                f4.label10.Text = label10.Text;
-                f4.label9.Text = label9.Text;
+                f4.lblDurationOutput.Text = (Global.duration*2).ToString();
+                f4.lblRouteOutput.Text = labelsum.Text;
+                f4.lblDateOutput.Text = label4.Text;
+                f4.lblLengthOutput.Text = label6.Text;
+                f4.lblCabinOutput.Text = label10.Text;
+                f4.lblPassengersOutput.Text = label9.Text;
 
-                f4.label13.Text = "Flight Duration: " + Global.duration + " hours";
-                f4.label24.Text = "Flight Duration: " + Global.duration + " hours";
-                f4.label30.Text = "Flight Duration: " + Global.duration + " hours";
-                f4.label36.Text = "Flight Duration: " + Global.duration + " hours";
-                f4.label42.Text = "Flight Duration: " + Global.duration + " hours";
+                f4.lblFlight1DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+                f4.lblFlight2DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+                f4.lblFlight3DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+                f4.lblFlight4DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+                f4.lblFlight5DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
 
-                f4.label15.Text = 6 + Global.duration + " : 00";
-                f4.label22.Text = 10 + Global.duration + " : 00";
+                f4.lblFlight1TimeTo.Text = 6 + Global.duration + " : 00";
+                f4.lblFlight2TimeTo.Text = 10 + Global.duration + " : 00";
 
                 if (Global.duration + 14>23)
-                { f4.label28.Text = 14 + Global.duration - 24 + " : 00"; 
-                f4.label26.Text = "Non-stop flight (+1 day)";}
-                else f4.label28.Text = 14 + Global.duration + " : 00";
+                { f4.lblFlight3TimeTo.Text = 14 + Global.duration - 24 + " : 00"; 
+                f4.lblFlight3Type.Text = "Non-stop flight (+1 day)";}
+                else f4.lblFlight3TimeTo.Text = 14 + Global.duration + " : 00";
 
                 if (Global.duration + 17 > 23)
-                { f4.label34.Text = 17 + Global.duration - 24 + " : 00";
-                    f4.label32.Text = "Non-stop flight (+1 day)";
+                { f4.lblFlight4TimeTo.Text = 17 + Global.duration - 24 + " : 00";
+                    f4.lblFlight4Type.Text = "Non-stop flight (+1 day)";
                 }
-                else f4.label34.Text = 17 + Global.duration + " : 00";
+                else f4.lblFlight4TimeTo.Text = 17 + Global.duration + " : 00";
 
                 if (Global.duration + 23 > 23)
-                { f4.label40.Text = 23 + Global.duration - 24 + " : 00";
-                    f4.label38.Text = "Non-stop flight (+1 day)";
+                { f4.lblFlight5TimeTo.Text = 23 + Global.duration - 24 + " : 00";
+                    f4.lblFlight5Type.Text = "Non-stop flight (+1 day)";
                 }
-                else f4.label40.Text = 23 + Global.duration + " : 00";
+                else f4.lblFlight5TimeTo.Text = 23 + Global.duration + " : 00";
 
 
 
-                f4.label16.Text = "Flight number: RT " + Global.fnumber;
-                f4.label21.Text = "Flight number: RT " + (Global.fnumber + 15);
-                f4.label27.Text = "Flight number: RT " + (Global.fnumber + 19);
-                f4.label33.Text = "Flight number: RT " + (Global.fnumber + 35);
-                f4.label39.Text = "Flight number: RT " + (Global.fnumber + 51);
+                f4.lblFlight1NumOutput.Text = "Flight number: RT " + Global.fnumber;
+                f4.lblFlight2NumOutput.Text = "Flight number: RT " + (Global.fnumber + 15);
+                f4.lblFlight3NumOutput.Text = "Flight number: RT " + (Global.fnumber + 19);
+                f4.lblFlight4NumOutput.Text = "Flight number: RT " + (Global.fnumber + 35);
+                f4.lblFlight5NumOutput.Text = "Flight number: RT " + (Global.fnumber + 51);
 
-                f4.label18.Text = "Boeing " + Global.fjet;
-                f4.label19.Text = "Boeing " + (Global.fjet + 28);
-                f4.label25.Text = "Boeing " + (Global.fjet + 33);
-                f4.label31.Text = "Boeing " + (Global.fjet + 38);
-                f4.label37.Text = "Boeing " + (Global.fjet + 44);
+                f4.lblPlane1Output.Text = "Boeing " + Global.fjet;
+                f4.lblPlane2Output.Text = "Boeing " + (Global.fjet + 28);
+                f4.lblPlane3Output.Text = "Boeing " + (Global.fjet + 33);
+                f4.lblPlane4Output.Text = "Boeing " + (Global.fjet + 38);
+                f4.lblPlane5Output.Text = "Boeing " + (Global.fjet + 44);
 
-                f4.label57.Text = label56.Text;
-                f4.label52.Text = label57.Text;
-                f4.label53.Text = label58.Text;
-                f4.label54.Text = label59.Text;
-                f4.label55.Text = label60.Text;
+                f4.lblFlight1PriceOutput.Text = label56.Text;
+                f4.lblFlight2PriceOutput.Text = label57.Text;
+                f4.lblFlight3PriceOutput.Text = label58.Text;
+                f4.lblFlight4PriceOutput.Text = label59.Text;
+                f4.lblFlight5PriceOutput.Text = label60.Text;
 
 
                 if (Global.cabin == "Economy")
@@ -94,10 +94,10 @@ namespace flight1
                 Global.tax= (Global.outticket * 10 / 100);
 
                 Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
-                f4.label56.Text = Global.outticket.ToString("c1");
-                f4.label59.Text = (Global.airportfee).ToString("c1");
-                f4.label58.Text = (Global.tax).ToString("c1");
-                f4.label61.Text = (Global.totaltick).ToString("c1");
+                f4.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
+                f4.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
+                f4.lblTaxOutput.Text = (Global.tax).ToString("c1");
+                f4.lblTotalPricePassengerOutput.Text = (Global.totaltick).ToString("c1");
             if (Global.returnflight == true)
             {
                 this.Hide();
@@ -134,10 +134,10 @@ namespace flight1
 
             Global.totaltick = Global.tax + Global.outticket + Global.airportfee;
 
-            f4.label56.Text = Global.outticket.ToString("c1");
-            f4.label59.Text = (Global.airportfee).ToString("c1");
-            f4.label58.Text = (Global.tax).ToString("c1");
-            f4.label61.Text = (Global.totaltick).ToString("c1");
+            f4.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
+            f4.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
+            f4.lblTaxOutput.Text = (Global.tax).ToString("c1");
+            f4.lblTotalPricePassengerOutput.Text = (Global.totaltick).ToString("c1");
 
 
 
@@ -184,10 +184,10 @@ namespace flight1
 
             Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-            f4.label56.Text = Global.outticket.ToString("c1");
-            f4.label59.Text = (Global.airportfee).ToString("c1");
-            f4.label58.Text = (Global.tax).ToString("c1");
-            f4.label61.Text = (Global.totaltick).ToString("c1");
+            f4.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
+            f4.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
+            f4.lblTaxOutput.Text = (Global.tax).ToString("c1");
+            f4.lblTotalPricePassengerOutput.Text = (Global.totaltick).ToString("c1");
 
             if (Global.returnflight == true)
             {
@@ -229,10 +229,10 @@ namespace flight1
             Global.tax = (Global.outticket * 10 / 100);
 
             Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
-            f4.label56.Text = Global.outticket.ToString("c1");
-            f4.label59.Text = (Global.airportfee).ToString("c1");
-            f4.label58.Text = (Global.tax).ToString("c1");
-            f4.label61.Text = (Global.totaltick).ToString("c1");
+            f4.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
+            f4.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
+            f4.lblTaxOutput.Text = (Global.tax).ToString("c1");
+            f4.lblTotalPricePassengerOutput.Text = (Global.totaltick).ToString("c1");
 
             if (Global.returnflight == true)
             {
@@ -275,10 +275,10 @@ namespace flight1
 
             Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-            f4.label56.Text = Global.outticket.ToString("c1");
-            f4.label59.Text = (Global.airportfee).ToString("c1");
-            f4.label58.Text = (Global.tax).ToString("c1");
-            f4.label61.Text = (Global.totaltick).ToString("c1");
+            f4.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
+            f4.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
+            f4.lblTaxOutput.Text = (Global.tax).ToString("c1");
+            f4.lblTotalPricePassengerOutput.Text = (Global.totaltick).ToString("c1");
 
             if (Global.returnflight == true)
             {

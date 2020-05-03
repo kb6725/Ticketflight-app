@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSelectFlight1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAxCAIAAACtRidtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAghJREFUeF7t2UtSwkAUheHeggvQoUOdOHOiVemZ5R4cWCU+EHEFLsVy6jso6uo8
@@ -133,7 +133,7 @@
         UAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxFlight1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAAuCAIAAAD7gO21AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAABkpJREFUaEPVmGlQU1cUx6+dLjPtdPzQ6ofO9Fu1n/3QzjitS3GBoASzEHHU2oIK
@@ -166,7 +166,7 @@
         yGL5F5ltP0YHdNz6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSelectFlight5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAxCAIAAACtRidtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAghJREFUeF7t2UtSwkAUheHeggvQoUOdOHOiVemZ5R4cWCU+EHEFLsVy6jso6uo8
@@ -181,7 +181,7 @@
         UAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxFlight5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAAuCAIAAAD7gO21AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAABkpJREFUaEPVmGlQU1cUx6+dLjPtdPzQ6ofO9Fu1n/3QzjitS3GBoASzEHHU2oIK
@@ -214,7 +214,7 @@
         yGL5F5ltP0YHdNz6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSelectFlight4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAxCAIAAACtRidtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAghJREFUeF7t2UtSwkAUheHeggvQoUOdOHOiVemZ5R4cWCU+EHEFLsVy6jso6uo8
@@ -229,7 +229,7 @@
         UAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxFlight4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAAuCAIAAAD7gO21AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAABkpJREFUaEPVmGlQU1cUx6+dLjPtdPzQ6ofO9Fu1n/3QzjitS3GBoASzEHHU2oIK
@@ -262,7 +262,7 @@
         yGL5F5ltP0YHdNz6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSelectFlight3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAxCAIAAACtRidtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAghJREFUeF7t2UtSwkAUheHeggvQoUOdOHOiVemZ5R4cWCU+EHEFLsVy6jso6uo8
@@ -277,7 +277,7 @@
         UAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxFlight3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAAuCAIAAAD7gO21AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAABkpJREFUaEPVmGlQU1cUx6+dLjPtdPzQ6ofO9Fu1n/3QzjitS3GBoASzEHHU2oIK
@@ -310,7 +310,7 @@
         yGL5F5ltP0YHdNz6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSelectFlight2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAxCAIAAACtRidtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAghJREFUeF7t2UtSwkAUheHeggvQoUOdOHOiVemZ5R4cWCU+EHEFLsVy6jso6uo8
@@ -325,7 +325,7 @@
         UAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxFlight2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAAuCAIAAAD7gO21AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAABkpJREFUaEPVmGlQU1cUx6+dLjPtdPzQ6ofO9Fu1n/3QzjitS3GBoASzEHHU2oIK
@@ -358,7 +358,7 @@
         yGL5F5ltP0YHdNz6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxBookingProgress.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAGuCAIAAAAWJhGHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAplJREFUeF7t2cFt3FAUQ1Ej/aWmlJF9Wkkz7sLh/Hc5or41zqwGCMIDBYH4SMAL
