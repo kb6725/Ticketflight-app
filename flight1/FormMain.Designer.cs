@@ -146,6 +146,7 @@
             // 
             this.radioButtonReturn.AutoSize = true;
             this.radioButtonReturn.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonReturn.Checked = true;
             this.radioButtonReturn.Font = new System.Drawing.Font("Calibri", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonReturn.Location = new System.Drawing.Point(365, 32);
             this.radioButtonReturn.Margin = new System.Windows.Forms.Padding(2);
@@ -161,14 +162,63 @@
             // 
             this.comboTo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboTo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboTo.DataSource = this.placesBindingSource;
-            this.comboTo.DisplayMember = "Place";
             this.comboTo.DropDownHeight = 150;
             this.comboTo.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboTo.FormattingEnabled = true;
             this.comboTo.IntegralHeight = false;
             this.comboTo.ItemHeight = 24;
+            this.comboTo.Items.AddRange(new object[] {
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "Florida",
+            "Georgia",
+            "Hawaii",
+            "Idaho",
+            "Illinois",
+            "Indiana",
+            "Iowa",
+            "Kansas",
+            "Kentucky",
+            "Louisiana",
+            "Maine",
+            "Maryland",
+            "Massachusetts",
+            "Michigan",
+            "Minnesota",
+            "Mississippi",
+            "Missouri",
+            "Montana",
+            "Nebraska",
+            "Nevada",
+            "New Hampshire",
+            "New Jersey",
+            "New Mexico",
+            "New York",
+            "North Carolina",
+            "North Dakota",
+            "Ohio",
+            "Oklahoma",
+            "Oregon",
+            "Pennsylvania",
+            "Rhode Island",
+            "South Carolina",
+            "South Dakota",
+            "Tennessee",
+            "Texas",
+            "Utah",
+            "Vermont",
+            "Virginia",
+            "Washington",
+            "West Virginia",
+            "Wisconsin",
+            "Wyoming"});
             this.comboTo.Location = new System.Drawing.Point(350, 114);
             this.comboTo.Margin = new System.Windows.Forms.Padding(2);
             this.comboTo.Name = "comboTo";
@@ -210,14 +260,63 @@
             // 
             this.comboFrom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboFrom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboFrom.DataSource = this.placesBindingSource1;
-            this.comboFrom.DisplayMember = "Place";
             this.comboFrom.DropDownHeight = 150;
             this.comboFrom.Font = new System.Drawing.Font("Calibri", 15.02609F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboFrom.FormattingEnabled = true;
             this.comboFrom.IntegralHeight = false;
             this.comboFrom.ItemHeight = 24;
+            this.comboFrom.Items.AddRange(new object[] {
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "Florida",
+            "Georgia",
+            "Hawaii",
+            "Idaho",
+            "Illinois",
+            "Indiana",
+            "Iowa",
+            "Kansas",
+            "Kentucky",
+            "Louisiana",
+            "Maine",
+            "Maryland",
+            "Massachusetts",
+            "Michigan",
+            "Minnesota",
+            "Mississippi",
+            "Missouri",
+            "Montana",
+            "Nebraska",
+            "Nevada",
+            "New Hampshire",
+            "New Jersey",
+            "New Mexico",
+            "New York",
+            "North Carolina",
+            "North Dakota",
+            "Ohio",
+            "Oklahoma",
+            "Oregon",
+            "Pennsylvania",
+            "Rhode Island",
+            "South Carolina",
+            "South Dakota",
+            "Tennessee",
+            "Texas",
+            "Utah",
+            "Vermont",
+            "Virginia",
+            "Washington",
+            "West Virginia",
+            "Wisconsin",
+            "Wyoming"});
             this.comboFrom.Location = new System.Drawing.Point(43, 111);
             this.comboFrom.Margin = new System.Windows.Forms.Padding(2);
             this.comboFrom.Name = "comboFrom";

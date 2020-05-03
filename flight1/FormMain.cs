@@ -13,10 +13,6 @@ namespace flight1
 {
     public partial class FormMain : Form
     {
-        ArrayList destination = new ArrayList { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii",
-            "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana",
-            "Nebraska", "Nevada", "New Hempshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island",
-            "South Carolina", "South Dakota", "Tennese", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"};
         ArrayList flightduration = new ArrayList { "3", "2", "5", "6", "5", "3", "6", "4", "6", "7", "6", "7", "9", "6", "4", "7", "7", "9", "6", "8", "4", "4", "10", "2", "8",
             "9", "7", "4", "6", "4", "7", "6", "2", "7", "8", "6", "7", "4", "6", "1", "2", "3", "7", "6", "7", "5", "6", "7", "8", "9"};
         ArrayList pricelist = new ArrayList { "580", "774", "445", "784", "986", "779", "350", "1350", "1125", "646", "1058", "466", "1057", "554", "1400", "174", "346", "1244",
@@ -29,11 +25,7 @@ namespace flight1
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            comboFrom.DataSource = destination.ToArray();
-            comboTo.DataSource = destination.ToArray();
             comboFrom.Focus();
-
-            radioButtonReturn.Checked = true;
 
             dateTimeOut.MinDate = DateTime.Today;
             dateTimeReturn.MinDate = DateTime.Today;
@@ -47,8 +39,6 @@ namespace flight1
 
         private void radioButtonOneWay_CheckedChanged(object sender, EventArgs e)
         {
-            lblTo.Hide();
-            
             lblReturn.Hide();
             dateTimeReturn.Hide();
             Global.returnflight = false;
@@ -105,11 +95,17 @@ namespace flight1
             DialogResult response = MessageBox.Show("Are you sure you want to reset?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (response == DialogResult.OK)
             {
-                comboFrom.Text = "Select Departure...";
-                comboTo.Text = "Select Arrival...";
-                comboCabin.Text = "Select Cabin...";
+                // Reset combo boxes
+                comboFrom.SelectedIndex = -1; comboTo.SelectedIndex = -1; comboCabin.SelectedIndex = -1;
+                comboFrom.Text = "Select Departure..."; comboTo.Text = "Select Arrival..."; comboCabin.Text = "Select Cabin...";
+
+                // Reset guest counter
                 lblGuestCount.Text = "1"; Global.guest = 1;
+
+                // Reset ticket type radio button
                 radioButtonReturn.Checked = true;
+
+                // Reset date boxes
                 dateTimeOut.Value = DateTime.Today;
                 dateTimeReturn.Value = DateTime.Today;
             }
