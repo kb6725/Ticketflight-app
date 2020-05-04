@@ -725,7 +725,7 @@
             // 
             this.lblExpirationYear.AutoSize = true;
             this.lblExpirationYear.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpirationYear.Location = new System.Drawing.Point(618, 76);
+            this.lblExpirationYear.Location = new System.Drawing.Point(616, 76);
             this.lblExpirationYear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExpirationYear.Name = "lblExpirationYear";
             this.lblExpirationYear.Size = new System.Drawing.Size(38, 19);
@@ -1307,9 +1307,9 @@
             this.lblPassengerFullName.Location = new System.Drawing.Point(10, 43);
             this.lblPassengerFullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassengerFullName.Name = "lblPassengerFullName";
-            this.lblPassengerFullName.Size = new System.Drawing.Size(154, 19);
+            this.lblPassengerFullName.Size = new System.Drawing.Size(127, 19);
             this.lblPassengerFullName.TabIndex = 0;
-            this.lblPassengerFullName.Text = "Passenger\'s Full Name";
+            this.lblPassengerFullName.Text = "Passenger\'s Name";
             // 
             // btnReset
             // 
@@ -1413,7 +1413,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1443, 856);
+            this.ClientSize = new System.Drawing.Size(1410, 783);
             this.ControlBox = false;
             this.Controls.Add(this.panelBookingProgress);
             this.Controls.Add(this.btnConfirmPayment);

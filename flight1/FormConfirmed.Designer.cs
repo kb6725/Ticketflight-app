@@ -676,7 +676,7 @@
             this.lblCardNameOutput.AutoSize = true;
             this.lblCardNameOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblCardNameOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardNameOutput.Location = new System.Drawing.Point(530, 39);
+            this.lblCardNameOutput.Location = new System.Drawing.Point(545, 39);
             this.lblCardNameOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCardNameOutput.Name = "lblCardNameOutput";
             this.lblCardNameOutput.Size = new System.Drawing.Size(57, 19);
@@ -688,7 +688,7 @@
             this.lblCardNumOutput.AutoSize = true;
             this.lblCardNumOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblCardNumOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardNumOutput.Location = new System.Drawing.Point(104, 37);
+            this.lblCardNumOutput.Location = new System.Drawing.Point(113, 37);
             this.lblCardNumOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCardNumOutput.Name = "lblCardNumOutput";
             this.lblCardNumOutput.Size = new System.Drawing.Size(57, 19);
@@ -765,7 +765,7 @@
             this.lblPass5NameOutput.AutoSize = true;
             this.lblPass5NameOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblPass5NameOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass5NameOutput.Location = new System.Drawing.Point(128, 11);
+            this.lblPass5NameOutput.Location = new System.Drawing.Point(140, 11);
             this.lblPass5NameOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass5NameOutput.Name = "lblPass5NameOutput";
             this.lblPass5NameOutput.Size = new System.Drawing.Size(57, 19);
@@ -826,7 +826,7 @@
             this.lblPass4NameOutput.AutoSize = true;
             this.lblPass4NameOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblPass4NameOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass4NameOutput.Location = new System.Drawing.Point(128, 12);
+            this.lblPass4NameOutput.Location = new System.Drawing.Point(140, 12);
             this.lblPass4NameOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass4NameOutput.Name = "lblPass4NameOutput";
             this.lblPass4NameOutput.Size = new System.Drawing.Size(57, 19);
@@ -887,7 +887,7 @@
             this.lblPass3NameOutput.AutoSize = true;
             this.lblPass3NameOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblPass3NameOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass3NameOutput.Location = new System.Drawing.Point(128, 11);
+            this.lblPass3NameOutput.Location = new System.Drawing.Point(140, 11);
             this.lblPass3NameOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass3NameOutput.Name = "lblPass3NameOutput";
             this.lblPass3NameOutput.Size = new System.Drawing.Size(57, 19);
@@ -948,7 +948,7 @@
             this.lblPass2NameOutput.AutoSize = true;
             this.lblPass2NameOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblPass2NameOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass2NameOutput.Location = new System.Drawing.Point(128, 12);
+            this.lblPass2NameOutput.Location = new System.Drawing.Point(140, 12);
             this.lblPass2NameOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass2NameOutput.Name = "lblPass2NameOutput";
             this.lblPass2NameOutput.Size = new System.Drawing.Size(57, 19);
@@ -1041,7 +1041,7 @@
             this.lblPassFullNameOutput.AutoSize = true;
             this.lblPassFullNameOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblPassFullNameOutput.Font = new System.Drawing.Font("Calibri", 11.26957F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassFullNameOutput.Location = new System.Drawing.Point(153, 44);
+            this.lblPassFullNameOutput.Location = new System.Drawing.Point(144, 44);
             this.lblPassFullNameOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassFullNameOutput.Name = "lblPassFullNameOutput";
             this.lblPassFullNameOutput.Size = new System.Drawing.Size(57, 19);
@@ -1115,9 +1115,9 @@
             this.lblPassFullName.Location = new System.Drawing.Point(10, 43);
             this.lblPassFullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassFullName.Name = "lblPassFullName";
-            this.lblPassFullName.Size = new System.Drawing.Size(164, 19);
+            this.lblPassFullName.Size = new System.Drawing.Size(137, 19);
             this.lblPassFullName.TabIndex = 0;
-            this.lblPassFullName.Text = "Passenger\'s Full Name :";
+            this.lblPassFullName.Text = "Passenger\'s Name :";
             // 
             // lblCongratsDesc
             // 

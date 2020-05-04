@@ -678,7 +678,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1424, 800);
+            this.ClientSize = new System.Drawing.Size(1357, 726);
             this.ControlBox = false;
             this.Controls.Add(this.panelTicketSearch);
             this.Controls.Add(this.btnExit);

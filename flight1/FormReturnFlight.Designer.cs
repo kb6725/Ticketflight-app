@@ -564,7 +564,7 @@
             this.lblFlight1PriceOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblFlight1PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFlight1PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFlight1PriceOutput.Location = new System.Drawing.Point(441, 31);
+            this.lblFlight1PriceOutput.Location = new System.Drawing.Point(444, 31);
             this.lblFlight1PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFlight1PriceOutput.Name = "lblFlight1PriceOutput";
             this.lblFlight1PriceOutput.Size = new System.Drawing.Size(23, 27);
@@ -678,9 +678,9 @@
             this.lblReturnFlightDesc.Location = new System.Drawing.Point(19, 51);
             this.lblReturnFlightDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReturnFlightDesc.Name = "lblReturnFlightDesc";
-            this.lblReturnFlightDesc.Size = new System.Drawing.Size(227, 23);
+            this.lblReturnFlightDesc.Size = new System.Drawing.Size(221, 23);
             this.lblReturnFlightDesc.TabIndex = 3;
-            this.lblReturnFlightDesc.Text = "Let us take you home safetly";
+            this.lblReturnFlightDesc.Text = "Let us take you home safely";
             // 
             // lblReturnFlight
             // 
@@ -734,7 +734,7 @@
             this.lblFlight5PriceOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblFlight5PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFlight5PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFlight5PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight5PriceOutput.Location = new System.Drawing.Point(444, 33);
             this.lblFlight5PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFlight5PriceOutput.Name = "lblFlight5PriceOutput";
             this.lblFlight5PriceOutput.Size = new System.Drawing.Size(23, 27);
@@ -874,7 +874,7 @@
             this.lblFlight4PriceOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblFlight4PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFlight4PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFlight4PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight4PriceOutput.Location = new System.Drawing.Point(444, 33);
             this.lblFlight4PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFlight4PriceOutput.Name = "lblFlight4PriceOutput";
             this.lblFlight4PriceOutput.Size = new System.Drawing.Size(23, 27);
@@ -1014,7 +1014,7 @@
             this.lblFlight3PriceOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblFlight3PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFlight3PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFlight3PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight3PriceOutput.Location = new System.Drawing.Point(444, 33);
             this.lblFlight3PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFlight3PriceOutput.Name = "lblFlight3PriceOutput";
             this.lblFlight3PriceOutput.Size = new System.Drawing.Size(23, 27);
@@ -1154,7 +1154,7 @@
             this.lblFlight2PriceOutput.BackColor = System.Drawing.Color.Transparent;
             this.lblFlight2PriceOutput.Font = new System.Drawing.Font("Calibri", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFlight2PriceOutput.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFlight2PriceOutput.Location = new System.Drawing.Point(441, 33);
+            this.lblFlight2PriceOutput.Location = new System.Drawing.Point(444, 33);
             this.lblFlight2PriceOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFlight2PriceOutput.Name = "lblFlight2PriceOutput";
             this.lblFlight2PriceOutput.Size = new System.Drawing.Size(23, 27);
