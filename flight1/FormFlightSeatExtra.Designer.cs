@@ -1111,7 +1111,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormFlightSeatExtra";
-            this.Text = " ";
+            this.Text = "Bamboo Airways Flight Booking - Seats and Extra Options";
             this.Load += new System.EventHandler(this.FormFlightSeatExtra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelFlightSummaryPrice.ResumeLayout(false);
