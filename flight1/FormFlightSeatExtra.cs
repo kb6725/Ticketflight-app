@@ -459,7 +459,7 @@ namespace flight1
             {
                 if (comboBoxPass1Seat.SelectedIndex == -1 || comboBoxPass2Seat.SelectedIndex == -1 || comboBoxPass3Seat.SelectedIndex == -1 || comboBoxPass4Seat.SelectedIndex == -1 || comboBoxPass5Seat.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Please pick seat selection. Seat allocation should not be unselected", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please pick seat selection. Seat allocation should not be unselected", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass4Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex)
@@ -469,7 +469,7 @@ namespace flight1
                 }
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -478,7 +478,7 @@ namespace flight1
             {
                 if ( comboBoxPass1Seat.SelectedIndex == -1 || comboBoxPass2Seat.SelectedIndex == -1 || comboBoxPass3Seat.SelectedIndex == -1 || comboBoxPass4Seat.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please pick seat selection for all passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex)
@@ -488,7 +488,7 @@ namespace flight1
                 }
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
                     return;
                 }
             }
@@ -497,7 +497,7 @@ namespace flight1
             {
                 if (comboBoxPass1Seat.SelectedIndex == -1 || comboBoxPass2Seat.SelectedIndex == -1 || comboBoxPass3Seat.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please pick seat selection for all passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -508,7 +508,7 @@ namespace flight1
                 }
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -517,7 +517,7 @@ namespace flight1
             {
                 if ( comboBoxPass1Seat.SelectedIndex == -1 || comboBoxPass2Seat.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please pick seat selection for all passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex)
@@ -526,7 +526,7 @@ namespace flight1
                 }
                 else
                 {
-                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Passengers' seats cannot be duplicated or blank", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -535,17 +535,15 @@ namespace flight1
             {
                 if ( comboBoxPass1Seat.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Please pick seat selection for all passengers", "Invalid Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please pick seat selection for all passengers", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             
             if (comboBoxMealOptions.SelectedIndex == -1 || comboBoxInsurance.SelectedIndex == -1 || comboBoxBaggage.SelectedIndex == -1)
             {
-
-                MessageBox.Show("Please confirm Meal , Insurance and Baggage option", "Invalid Options Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please confirm Meal , Insurance and Baggage option", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-
             }
             if (comboBoxMealOptions.SelectedIndex != -1 && comboBoxInsurance.SelectedIndex != -1 && comboBoxBaggage.SelectedIndex != -1)
             {
@@ -591,9 +589,8 @@ namespace flight1
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            DialogResult res = new DialogResult();
-            res = MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to reset?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
                 comboBoxSeatUpgrade.SelectedIndex = -1;
                 comboBoxPass1Seat.SelectedIndex = -1;

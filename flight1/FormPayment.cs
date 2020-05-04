@@ -220,10 +220,8 @@ namespace flight1
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            FormPayment f6 = new FormPayment();
-            DialogResult res = new DialogResult();
-            res = MessageBox.Show("Are you sure to Reset ?", "Reset prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to reset?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
                 txtBoxName.Text = "";
                 txtBoxEmail.Text = "";

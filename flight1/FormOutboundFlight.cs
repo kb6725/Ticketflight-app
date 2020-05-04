@@ -298,10 +298,10 @@ namespace flight1
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult res = new DialogResult();
-            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to exit?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
+                // Close the program
                 Application.Exit();
             }
         }

@@ -276,9 +276,8 @@ namespace flight1
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            DialogResult res = new DialogResult();
-            res = MessageBox.Show("Are you sure to redirect ?", "Redirect prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to go to the homepage?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
                 FormMain f1 = new FormMain();
                 f1.Show();
@@ -288,10 +287,10 @@ namespace flight1
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult res = new DialogResult();
-            res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.OK)
+            DialogResult response = MessageBox.Show("Are you sure you want to exit?", Global.appTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (response == DialogResult.OK)
             {
+                // Close the program
                 System.Windows.Forms.Application.Exit();
             }
         }

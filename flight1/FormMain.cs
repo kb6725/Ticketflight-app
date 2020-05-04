@@ -149,7 +149,7 @@ namespace flight1
             { }
             else
             {
-                MessageBox.Show("Outbound Date cannot be later than Return Date", "Invalidate Date selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Outbound Date cannot be later than Return Date", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             FormOutboundFlight FormOutboundFlight = new FormOutboundFlight();
