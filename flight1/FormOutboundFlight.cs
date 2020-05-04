@@ -13,7 +13,6 @@ namespace flight1
 {
     public partial class FormOutboundFlight : Form
     {
-        
         FormReturnFlight f4 = new FormReturnFlight();
         FormFlightSeatExtra f5 = new FormFlightSeatExtra();
       
@@ -22,19 +21,14 @@ namespace flight1
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            panel1.BackColor = Color.FromArgb(180, Color.White);
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnSelectFlight1_Click(object sender, EventArgs e)
         {
                 f4.lblDurationOutput.Text = (Global.duration*2).ToString();
-                f4.lblRouteOutput.Text = labelsum.Text;
-                f4.lblDateOutput.Text = label4.Text;
-                f4.lblLengthOutput.Text = label6.Text;
-                f4.lblCabinOutput.Text = label10.Text;
-                f4.lblPassengersOutput.Text = label9.Text;
+                f4.lblRouteOutput.Text = lblRouteOutput.Text;
+                f4.lblDateOutput.Text = lblDateOutput.Text;
+                f4.lblLengthOutput.Text = lblLengthOutput.Text;
+                f4.lblCabinOutput.Text = lblCabinOutput.Text;
+                f4.lblPassengersOutput.Text = lblPassengersOutput.Text;
 
                 f4.lblFlight1DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
                 f4.lblFlight2DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
@@ -76,11 +70,11 @@ namespace flight1
                 f4.lblPlane4Output.Text = "Boeing " + (Global.fjet + 38);
                 f4.lblPlane5Output.Text = "Boeing " + (Global.fjet + 44);
 
-                f4.lblFlight1PriceOutput.Text = label56.Text;
-                f4.lblFlight2PriceOutput.Text = label57.Text;
-                f4.lblFlight3PriceOutput.Text = label58.Text;
-                f4.lblFlight4PriceOutput.Text = label59.Text;
-                f4.lblFlight5PriceOutput.Text = label60.Text;
+                f4.lblFlight1PriceOutput.Text = lblFlight1PriceOutput.Text;
+                f4.lblFlight2PriceOutput.Text = lblFlight2PriceOutput.Text;
+                f4.lblFlight3PriceOutput.Text = lblFlight3PriceOutput.Text;
+                f4.lblFlight4PriceOutput.Text = lblFlight4PriceOutput.Text;
+                f4.lblFlight5PriceOutput.Text = lblFlight5PriceOutput.Text;
 
 
                 if (Global.cabin == "Economy")
@@ -106,19 +100,18 @@ namespace flight1
             else {
                 this.Hide();
                 f5.Show();
-                f5.lblRouteOutput.Text = labelsum.Text;
-                f5.lblDurationOutput.Text = label49.Text;
-                f5.lblDateOutput.Text = label4.Text;
-                f5.lblLengthOutput.Text = label6.Text;
-                f5.lblCabinOutput.Text = label10.Text;
-                f5.lblPassengersOutput.Text = label9.Text;
+                f5.lblRouteOutput.Text = lblRouteOutput.Text;
+                f5.lblDurationOutput.Text = lblDurationOutput.Text;
+                f5.lblDateOutput.Text = lblDateOutput.Text;
+                f5.lblLengthOutput.Text = lblLengthOutput.Text;
+                f5.lblCabinOutput.Text = lblCabinOutput.Text;
+                f5.lblPassengersOutput.Text = lblPassengersOutput.Text;
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSelectFlight2_Click(object sender, EventArgs e)
         {
-            
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
             Global.outticket = 0;
             Global.tax = 0;
             Global.airportfee = 0;
@@ -150,12 +143,12 @@ namespace flight1
             {
                 this.Hide();
                 f5.Show();
-                f5.lblRouteOutput.Text = labelsum.Text;
-                f5.lblDurationOutput.Text = label49.Text;
-                f5.lblDateOutput.Text = label4.Text;
-                f5.lblLengthOutput.Text = label6.Text;
-                f5.lblCabinOutput.Text = label10.Text;
-                f5.lblPassengersOutput.Text = label9.Text;
+                f5.lblRouteOutput.Text = lblRouteOutput.Text;
+                f5.lblDurationOutput.Text = lblDurationOutput.Text;
+                f5.lblDateOutput.Text = lblDateOutput.Text;
+                f5.lblLengthOutput.Text = lblLengthOutput.Text;
+                f5.lblCabinOutput.Text = lblCabinOutput.Text;
+                f5.lblPassengersOutput.Text = lblPassengersOutput.Text;
 
                 f5.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
                 f5.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
@@ -165,9 +158,9 @@ namespace flight1
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSelectFlight3_Click(object sender, EventArgs e)
         {
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
 
             Global.outticket = 0;
             Global.tax = 0;
@@ -198,12 +191,12 @@ namespace flight1
             {
                 this.Hide();
                 f5.Show();
-                f5.lblRouteOutput.Text = labelsum.Text;
-                f5.lblDurationOutput.Text = label49.Text;
-                f5.lblDateOutput.Text = label4.Text;
-                f5.lblLengthOutput.Text = label6.Text;
-                f5.lblCabinOutput.Text = label10.Text;
-                f5.lblPassengersOutput.Text = label9.Text;
+                f5.lblRouteOutput.Text = lblRouteOutput.Text;
+                f5.lblDurationOutput.Text = lblDurationOutput.Text;
+                f5.lblDateOutput.Text = lblDateOutput.Text;
+                f5.lblLengthOutput.Text = lblLengthOutput.Text;
+                f5.lblCabinOutput.Text = lblCabinOutput.Text;
+                f5.lblPassengersOutput.Text = lblPassengersOutput.Text;
 
                 f5.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
                 f5.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
@@ -212,9 +205,9 @@ namespace flight1
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnSelectFlight4_Click(object sender, EventArgs e)
         {
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
             Global.outticket = 0;
             Global.tax = 0;
             Global.airportfee = 0;
@@ -243,12 +236,12 @@ namespace flight1
             {
                 this.Hide();
                 f5.Show();
-                f5.lblRouteOutput.Text = labelsum.Text;
-                f5.lblDurationOutput.Text = label49.Text;
-                f5.lblDateOutput.Text = label4.Text;
-                f5.lblLengthOutput.Text = label6.Text;
-                f5.lblCabinOutput.Text = label10.Text;
-                f5.lblPassengersOutput.Text = label9.Text;
+                f5.lblRouteOutput.Text = lblRouteOutput.Text;
+                f5.lblDurationOutput.Text = lblDurationOutput.Text;
+                f5.lblDateOutput.Text = lblDateOutput.Text;
+                f5.lblLengthOutput.Text = lblLengthOutput.Text;
+                f5.lblCabinOutput.Text = lblCabinOutput.Text;
+                f5.lblPassengersOutput.Text = lblPassengersOutput.Text;
 
                 f5.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
                 f5.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
@@ -257,9 +250,9 @@ namespace flight1
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnSelectFlight5_Click(object sender, EventArgs e)
         {
-            button1.PerformClick();
+            btnSelectFlight1.PerformClick();
             Global.outticket = 0;
             Global.tax = 0;
             Global.airportfee = 0;
@@ -289,12 +282,12 @@ namespace flight1
             {
                 this.Hide();
                 f5.Show();
-                f5.lblRouteOutput.Text = labelsum.Text;
-                f5.lblDurationOutput.Text = label49.Text;
-                f5.lblDateOutput.Text = label4.Text;
-                f5.lblLengthOutput.Text = label6.Text;
-                f5.lblCabinOutput.Text = label10.Text;
-                f5.lblPassengersOutput.Text = label9.Text;
+                f5.lblRouteOutput.Text = lblRouteOutput.Text;
+                f5.lblDurationOutput.Text = lblDurationOutput.Text;
+                f5.lblDateOutput.Text = lblDateOutput.Text;
+                f5.lblLengthOutput.Text = lblLengthOutput.Text;
+                f5.lblCabinOutput.Text = lblCabinOutput.Text;
+                f5.lblPassengersOutput.Text = lblPassengersOutput.Text;
 
                 f5.lblTicketPricePassengerOutput.Text = Global.outticket.ToString("c1");
                 f5.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
@@ -303,60 +296,14 @@ namespace flight1
             }
         }
 
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            panel8.BackColor = Color.FromArgb(180, Color.White);
-            
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel6.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel7.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel9.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel10.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        private void btnPrevious_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormMain f1 = new FormMain();
             f1.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -364,6 +311,57 @@ namespace flight1
             {
                 this.Close();
             }
+        }
+
+        // Painting for fancy transparency & outlines
+        private void panelOutboundFlight_Paint(object sender, PaintEventArgs e)
+        {
+            panelOutboundFlight.BackColor = Color.FromArgb(180, Color.White);
+        }
+
+        private void panelFlight1_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight1.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight2_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight3_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight4_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlight5_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlight5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlightSummary_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlightSummary.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPrice_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelTotals_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelTotals.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlightSummaryPrice_Paint(object sender, PaintEventArgs e)
+        {
+            panelFlightSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
         }
     }
 }

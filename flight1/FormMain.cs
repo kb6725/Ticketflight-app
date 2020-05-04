@@ -155,14 +155,14 @@ namespace flight1
             FormOutboundFlight FormOutboundFlight = new FormOutboundFlight();
             this.Hide();
             FormOutboundFlight.Show();
-            FormOutboundFlight.labelsum.Text = Global.flightfrom + " - " + Global.flightto;
-            FormOutboundFlight.label4.Text = dateTimeOut.Text + " - " + dateTimeReturn.Text;
+            FormOutboundFlight.lblRouteOutput.Text = Global.flightfrom + " - " + Global.flightto;
+            FormOutboundFlight.lblDateOutput.Text = dateTimeOut.Text + " - " + dateTimeReturn.Text;
             if (radioButtonOneWay.Checked)
-            { FormOutboundFlight.label6.Text = "One way flight"; }
+            { FormOutboundFlight.lblLengthOutput.Text = "One way flight"; }
             else
-            { FormOutboundFlight.label6.Text = len.Days.ToString() + " day(s)"; }
-            FormOutboundFlight.label9.Text = Global.guest.ToString();
-            FormOutboundFlight.label10.Text = Global.cabin.ToString();
+            { FormOutboundFlight.lblLengthOutput.Text = len.Days.ToString() + " day(s)"; }
+            FormOutboundFlight.lblPassengersOutput.Text = Global.guest.ToString();
+            FormOutboundFlight.lblCabinOutput.Text = Global.cabin.ToString();
 
 
 
@@ -177,7 +177,7 @@ namespace flight1
             price = pricelist[destinationindex].ToString();
             Global.coreticket = int.Parse(price);
 
-            if (FormOutboundFlight.label10.Text == "Economy")
+            if (FormOutboundFlight.lblCabinOutput.Text == "Economy")
             {
                 Global.e1= Global.coreticket;
                 Global.e2 = (Global.coreticket + 70);
@@ -185,7 +185,7 @@ namespace flight1
                 Global.e4 = (Global.coreticket + 150);
                 Global.e5 = (Global.coreticket - 30);
             }
-            if (FormOutboundFlight.label10.Text == "Business")
+            if (FormOutboundFlight.lblCabinOutput.Text == "Business")
             {
                 Global.b1 = (Global.coreticket * 2);
                 Global.b2 = (Global.coreticket * 2 + 70);
@@ -194,7 +194,7 @@ namespace flight1
                 Global.b5 = (Global.coreticket * 2 - 30);
 
             }
-            if (FormOutboundFlight.label10.Text == "First Class")
+            if (FormOutboundFlight.lblCabinOutput.Text == "First Class")
             {
                 Global.f1 = (Global.coreticket * 4);
                 Global.f2= (Global.coreticket * 4 + 70);
@@ -204,37 +204,37 @@ namespace flight1
 
 
             }
-            if (FormOutboundFlight.label10.Text == "Economy")
+            if (FormOutboundFlight.lblCabinOutput.Text == "Economy")
             {
-                FormOutboundFlight.label56.Text = Global.e1.ToString("n0");
-                FormOutboundFlight.label57.Text = Global.e2.ToString("n0");
-                FormOutboundFlight.label58.Text = Global.e3.ToString("n0");
-                FormOutboundFlight.label59.Text = Global.e4.ToString("n0");
-                FormOutboundFlight.label60.Text = Global.e5.ToString("n0");
+                FormOutboundFlight.lblFlight1PriceOutput.Text = Global.e1.ToString("n0");
+                FormOutboundFlight.lblFlight2PriceOutput.Text = Global.e2.ToString("n0");
+                FormOutboundFlight.lblFlight3PriceOutput.Text = Global.e3.ToString("n0");
+                FormOutboundFlight.lblFlight4PriceOutput.Text = Global.e4.ToString("n0");
+                FormOutboundFlight.lblFlight5PriceOutput.Text = Global.e5.ToString("n0");
             }
-            if (FormOutboundFlight.label10.Text == "Business")
+            if (FormOutboundFlight.lblCabinOutput.Text == "Business")
             {
-                FormOutboundFlight.label56.Text = Global.b1.ToString("n0");
-                FormOutboundFlight.label57.Text = Global.b2.ToString("n0");
-                FormOutboundFlight.label58.Text = Global.b3.ToString("n0");
-                FormOutboundFlight.label59.Text = Global.b4.ToString("n0");
-                FormOutboundFlight.label60.Text = Global.b5.ToString("n0");
+                FormOutboundFlight.lblFlight1PriceOutput.Text = Global.b1.ToString("n0");
+                FormOutboundFlight.lblFlight2PriceOutput.Text = Global.b2.ToString("n0");
+                FormOutboundFlight.lblFlight3PriceOutput.Text = Global.b3.ToString("n0");
+                FormOutboundFlight.lblFlight4PriceOutput.Text = Global.b4.ToString("n0");
+                FormOutboundFlight.lblFlight5PriceOutput.Text = Global.b5.ToString("n0");
             }
-            if (FormOutboundFlight.label10.Text == "First Class")
+            if (FormOutboundFlight.lblCabinOutput.Text == "First Class")
             {
-                FormOutboundFlight.label56.Text = Global.f1.ToString("n0");
-                FormOutboundFlight.label57.Text = Global.f2.ToString("n0");
-                FormOutboundFlight.label58.Text = Global.f3.ToString("n0");
-                FormOutboundFlight.label59.Text = Global.f4.ToString("n0");
-                FormOutboundFlight.label60.Text = Global.f5.ToString("n0");
+                FormOutboundFlight.lblFlight1PriceOutput.Text = Global.f1.ToString("n0");
+                FormOutboundFlight.lblFlight2PriceOutput.Text = Global.f2.ToString("n0");
+                FormOutboundFlight.lblFlight3PriceOutput.Text = Global.f3.ToString("n0");
+                FormOutboundFlight.lblFlight4PriceOutput.Text = Global.f4.ToString("n0");
+                FormOutboundFlight.lblFlight5PriceOutput.Text = Global.f5.ToString("n0");
             }
 
             //duration = int.Parse(dur);
-            FormOutboundFlight.label13.Text = "Flight Duration: " + Global.duration + " hours";
-            FormOutboundFlight.label24.Text = "Flight Duration: " + Global.duration + " hours";
-            FormOutboundFlight.label36.Text = "Flight Duration: " + Global.duration + " hours";
-            FormOutboundFlight.label42.Text = "Flight Duration: " + Global.duration + " hours";
-            FormOutboundFlight.label30.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.lblFlight1DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.lblFlight2DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.lblFlight4DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.lblFlight5DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
+            FormOutboundFlight.lblFlight3DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
 
             Random rd = new Random();
             Global.fnumber = rd.Next(100, 930);
@@ -249,46 +249,46 @@ namespace flight1
             to4 = Global.duration + 16;
             to5 = Global.duration + 22;
 
-            FormOutboundFlight.label49.Text = dur.ToString();
+            FormOutboundFlight.lblDurationOutput.Text = dur.ToString();
 
             if (to4 > 23)
             {
                 to4 = to4 - 24;
-                FormOutboundFlight.label32.Text = "Non-stop flight (+1 day)";
+                FormOutboundFlight.lblFlight4Type.Text = "Non-stop flight (+1 day)";
             }
             if (to5 > 23)
             {
                 to5 = to5 - 24;
-                FormOutboundFlight.label38.Text = "Non-stop flight (+1 day)";
+                FormOutboundFlight.lblFlight5Type.Text = "Non-stop flight (+1 day)";
             }
 
-            FormOutboundFlight.label15.Text = to1.ToString() + " : 00";
-            FormOutboundFlight.label16.Text = "Flight number: BN " + Global.fnumber.ToString();
-            FormOutboundFlight.label18.Text = "Airbus " + Global.fjet.ToString();
+            FormOutboundFlight.lblFlight1TimeTo.Text = to1.ToString() + " : 00";
+            FormOutboundFlight.lblFlight1NumOutput.Text = "Flight number: BN " + Global.fnumber.ToString();
+            FormOutboundFlight.lblPlane1Output.Text = "Airbus " + Global.fjet.ToString();
 
-            FormOutboundFlight.label22.Text = to2.ToString() + " : 00";
-            FormOutboundFlight.label21.Text = "Flight number: BN " + (Global.fnumber + 20).ToString();
-            FormOutboundFlight.label19.Text = "Airbus " + (Global.fjet + 12).ToString();
+            FormOutboundFlight.lblFlight2TimeTo.Text = to2.ToString() + " : 00";
+            FormOutboundFlight.lblFlight2NumOutput.Text = "Flight number: BN " + (Global.fnumber + 20).ToString();
+            FormOutboundFlight.lblPlane2Output.Text = "Airbus " + (Global.fjet + 12).ToString();
 
-            FormOutboundFlight.label28.Text = to3.ToString() + " : 00";
-            FormOutboundFlight.label27.Text = "Flight number: BN " + (Global.fnumber + 35).ToString();
-            FormOutboundFlight.label25.Text = "Airbus " + (Global.fjet + 22).ToString();
+            FormOutboundFlight.lblFlight3TimeTo.Text = to3.ToString() + " : 00";
+            FormOutboundFlight.lblFlight3NumOutput.Text = "Flight number: BN " + (Global.fnumber + 35).ToString();
+            FormOutboundFlight.lblPlane3Output.Text = "Airbus " + (Global.fjet + 22).ToString();
 
-            FormOutboundFlight.label34.Text = to4.ToString() + " : 00";
-            FormOutboundFlight.label33.Text = "Flight number: BN " + (Global.fnumber + 46).ToString();
-            FormOutboundFlight.label31.Text = "Airbus " + (Global.fjet + 32).ToString();
+            FormOutboundFlight.lblFlight4TimeTo.Text = to4.ToString() + " : 00";
+            FormOutboundFlight.lblFlight4NumOutput.Text = "Flight number: BN " + (Global.fnumber + 46).ToString();
+            FormOutboundFlight.lblPlane4Output.Text = "Airbus " + (Global.fjet + 32).ToString();
 
-            FormOutboundFlight.label40.Text = to5.ToString() + " : 00";
-            FormOutboundFlight.label39.Text = "Flight number: BN " + (Global.fnumber + 550).ToString();
-            FormOutboundFlight.label37.Text = "Airbus " + (Global.fjet + 42).ToString();
+            FormOutboundFlight.lblFlight5TimeTo.Text = to5.ToString() + " : 00";
+            FormOutboundFlight.lblFlight5NumOutput.Text = "Flight number: BN " + (Global.fnumber + 550).ToString();
+            FormOutboundFlight.lblPlane5Output.Text = "Airbus " + (Global.fjet + 42).ToString();
 
             if (Global.returnflight == true)
             {
-                FormOutboundFlight.label1.Text = "Two-way Route";
+                FormOutboundFlight.lblRoute.Text = "Two-way Route";
             }
             else
             {
-                FormOutboundFlight.label1.Text = "One-way Route";
+                FormOutboundFlight.lblRoute.Text = "One-way Route";
             }
         }
 
