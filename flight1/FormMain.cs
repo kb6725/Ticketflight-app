@@ -37,7 +37,7 @@ namespace flight1
             if (response == DialogResult.OK)
             {
                 // Close the program
-                this.Close();
+                Application.Exit();
             }
         }
 
