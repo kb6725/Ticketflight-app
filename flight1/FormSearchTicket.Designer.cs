@@ -1082,7 +1082,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormSearchTicket";
-            this.Text = "Bamboo Airways Flight Booking - Printable Ticket";
+            this.Text = "Bamboo Airways Flight Booking - Search Tickets";
             this.Load += new System.EventHandler(this.FormSearchTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelSummaryPrice.ResumeLayout(false);

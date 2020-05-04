@@ -169,7 +169,7 @@ namespace flight1
             res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (res == DialogResult.OK)
             {
-                this.Close();
+                Application.Exit();
             }
         }
 

@@ -1354,7 +1354,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1390, 781);
+            this.ClientSize = new System.Drawing.Size(1411, 781);
+            this.ControlBox = false;
             this.Controls.Add(this.panelBookingProgress);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panelFlightSummaryPrice);

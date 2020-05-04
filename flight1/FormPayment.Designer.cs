@@ -1414,6 +1414,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1443, 856);
+            this.ControlBox = false;
             this.Controls.Add(this.panelBookingProgress);
             this.Controls.Add(this.btnConfirmPayment);
             this.Controls.Add(this.btnReset);
