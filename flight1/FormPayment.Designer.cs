@@ -1240,7 +1240,7 @@
             this.txtBoxEmail.Font = new System.Drawing.Font("Calibri Light", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxEmail.Location = new System.Drawing.Point(532, 40);
             this.txtBoxEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBoxEmail.MaxLength = 10;
+            this.txtBoxEmail.MaxLength = 22;
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(191, 27);
             this.txtBoxEmail.TabIndex = 2;
