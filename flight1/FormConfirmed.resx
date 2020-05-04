@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxCheck.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAfQCAYAAACaOMR5AAAABGdBTUEAALGPC/xhBQAAvy1JREFUeF7s
         3Xm0ZXV95/1fDVDM3UEUHB6JaNSOdqJtiJoQn8eIpuMQDYZofNI8xhZMa0c6xJZOovGcWwUUoCIICM5M
@@ -939,7 +939,7 @@
         JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEla0yL+H51dWmoBGnRQAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnExport.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAxCAIAAACtRidtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAghJREFUeF7t2UtSwkAUheHeggvQoUOdOHOiVemZ5R4cWCU+EHEFLsVy6jso6uo8
@@ -954,7 +954,7 @@
         UAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxBookingProgress.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAGuCAIAAAAWJhGHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
         rwAAEa8B9/1LhAAAAdpJREFUeF7t2EFOxDAQRFHE/Tgfe07HLYZyuqZtt+UQFkQg/a8eRbH7SbPOy2Pu

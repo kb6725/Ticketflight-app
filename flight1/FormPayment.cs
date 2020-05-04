@@ -166,7 +166,7 @@ namespace flight1
 
 
 
-            Form7 f7 = new Form7();
+            FormConfirmed f7 = new FormConfirmed();
             Global.p1name = txtBoxName.Text;
             Global.p1pp = txtBoxPassportNum.Text;
             Global.p1email = txtBoxEmail.Text;
@@ -189,15 +189,15 @@ namespace flight1
             Global.p4dob = dateTimePickerPass4DOB.Value;
             Global.p5dob = dateTimePickerPass5DOB.Value;
             Global.phone = maskedTextBoxPhone.Text;
-            f7.labelsum.Text = lblRouteOutput.Text;
-            f7.label49.Text = lblDurationOutput.Text;
-            f7.label4.Text = lblDateOutput.Text;
-            f7.label6.Text = lblLengthOutput.Text;
-            f7.label49.Text = lblDurationOutput.Text;
-            f7.label10.Text = lblCabinOutput.Text;
-            f7.label9.Text = lblPassengersOutput.Text;
+            f7.lblRouteOutput.Text = lblRouteOutput.Text;
+            f7.lblDurationOutput.Text = lblDurationOutput.Text;
+            f7.lblDateOutput.Text = lblDateOutput.Text;
+            f7.lblLengthOutput.Text = lblLengthOutput.Text;
+            f7.lblDurationOutput.Text = lblDurationOutput.Text;
+            f7.lblCabinOutput.Text = lblCabinOutput.Text;
+            f7.lblGuestOutput.Text = lblPassengersOutput.Text;
 
-            f7.label56.Text = "**** " + textBoxCard4.Text;
+            f7.lblCardNumOutput.Text = "**** " + textBoxCard4.Text;
 
             try
             {

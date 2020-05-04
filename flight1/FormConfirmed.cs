@@ -20,154 +20,101 @@ using Xceed.Words.NET;
 
 namespace flight1
 {
-    public partial class Form7 : Form
+    public partial class FormConfirmed : Form
     {
-        public Form7()
+        public FormConfirmed()
         {
             InitializeComponent();
         }
 
-        private void Form7_Load(object sender, EventArgs e)
+        private void FormConfirmed_Load(object sender, EventArgs e)
         {
-            Random rd = new Random();
-            Global.booknum  = rd.Next(100000, 999999);
-            label20.Text = "Your Booking number is : " + Global.booknum;
+            Random rand = new Random();
+            Global.booknum  = rand.Next(100000, 999999);
+            lblBookingNumber.Text = "Your Booking number is : " + Global.booknum;
 
 
-            label22.Text = Global.p1name;
-            label23.Text = Global.p1dob.ToShortDateString();
-            label27.Text = Global.p1pp;
-            label31.Text = Global.p1email;
-            label35.Text = Global.phone.ToString();
-            label57.Text = Global.cardname;
+            lblPassFullNameOutput.Text = Global.p1name;
+            lblDOBOutput.Text = Global.p1dob.ToShortDateString();
+            lblPassportNumOutput.Text = Global.p1pp;
+            lblEmailOutput.Text = Global.p1email;
+            lblPhoneOutput.Text = Global.phone.ToString();
+            lblCardNameOutput.Text = Global.cardname;
             
             
-            label58.Text = Global.p2name;
-            label59.Text = Global.p3name;
-            label60.Text = Global.p4name;
-            label62.Text = Global.p5name;
+            lblPass2NameOutput.Text = Global.p2name;
+            lblPass3NameOutput.Text = Global.p3name;
+            lblPass4NameOutput.Text = Global.p4name;
+            lblPass5NameOutput.Text = Global.p5name;
 
-            label63.Text = Global.p2pp;
-            label64.Text = Global.p3pp;
-            label65.Text = Global.p4pp;
-            label66.Text = Global.p5pp;
+            lblPass2PassportOutput.Text = Global.p2pp;
+            lblPass3PassportOutput.Text = Global.p3pp;
+            lblPass4PassportOutput.Text = Global.p4pp;
+            lblPass5PassportOutput.Text = Global.p5pp;
 
             if (Global.guest == 1)
-            { panel5.Visible = false; }
+            {
+                panelOtherPassInfo.Visible = false;
+            }
             if (Global.guest == 2)
-            { panel5.Visible = true;
-                panel6.Visible = true;
-                panel7.Visible = false;
-                panel11.Visible = false;
-                panel12.Visible = false;
-
+            { panelOtherPassInfo.Visible = true;
+                panelPass2.Visible = true;
+                panelPass3.Visible = false;
+                panelPass4.Visible = false;
+                panelPass5.Visible = false;
             }
             if (Global.guest == 3)
             {
-                panel5.Visible = true;
-                panel6.Visible = true;
-                panel7.Visible = true;
-                panel11.Visible = false;
-                panel12.Visible = false;
-
+                panelOtherPassInfo.Visible = true;
+                panelPass2.Visible = true;
+                panelPass3.Visible = true;
+                panelPass4.Visible = false;
+                panelPass5.Visible = false;
             }
             if (Global.guest == 4)
             {
-                panel5.Visible = true;
-                panel6.Visible = true;
-                panel7.Visible = true;
-                panel11.Visible = true;
-                panel12.Visible = false;
-
+                panelOtherPassInfo.Visible = true;
+                panelPass2.Visible = true;
+                panelPass3.Visible = true;
+                panelPass4.Visible = true;
+                panelPass5.Visible = false;
             }
             if (Global.guest == 5)
             {
-                panel5.Visible = true;
-                panel6.Visible = true;
-                panel7.Visible = true;
-                panel11.Visible = true;
-                panel12.Visible = true;
-
+                panelOtherPassInfo.Visible = true;
+                panelPass2.Visible = true;
+                panelPass3.Visible = true;
+                panelPass4.Visible = true;
+                panelPass5.Visible = true;
             }
 
-            label51.Text = (Global.outticket + Global.returnticket).ToString ("C1");
-            label52.Text = Global.servicefee.ToString("C1");
-            label53.Text = Global.airportfee.ToString("C1");
-            label54.Text = Global.tax.ToString("C1");
-            label55.Text = Global.totaltick.ToString("C1");
-            label30.Text = Global.guest.ToString();
-            label40.Text = Global.finaltick.ToString("C1");
-            Cursor.Current = Cursors.Default;
+            lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString ("C1");
+            lblServiceFeeOutput.Text = Global.servicefee.ToString("C1");
+            lblAirportFeeOutput.Text = Global.airportfee.ToString("C1");
+            lblTaxOutput.Text = Global.tax.ToString("C1");
+            lblTotalPricePassengerOutput.Text = Global.totaltick.ToString("C1");
+            lblNumPassengersOutput.Text = Global.guest.ToString();
+            lblTotalTicketPriceOutput.Text = Global.finaltick.ToString("C1");
 
 
 
             Global.outandreturnticket = Global.outticket + Global.returnticket;
-            FormSearchTicket f8 = new FormSearchTicket();
-            //to DB
-            StreamWriter str;
 
-
+            // Save ticket to data.txt so user can look it up on FormSearchTicket
+            StreamWriter stream;
             if (File.Exists("data.txt"))
-
             {
-                str = File.AppendText("data.txt");
-
+                stream = File.AppendText("data.txt");
             }
             else
             {
-                str = File.CreateText("data.txt");
-
+                stream = File.CreateText("data.txt");
             }
-            str.WriteLine("," + Global.booknum + "," + Global.p1name + "," + Global.p1dob.ToShortDateString() + "," + Global.p1pp + "," + Global.p1email + "," + Global.phone + "," + Global.card4 + "," + Global.cardname + "," + Global.p2name + "," + Global.p2pp + "," + Global.p3name + "," + Global.p3pp + "," + Global.p4name + "," + Global.p4pp + "," + Global.p5name + "," + Global.p5pp + "," + Global.flightfrom + "," + Global.flightto + "," + Global.fromdate.ToShortDateString() + "," + Global.todate.ToShortDateString() + "," + Global.cabinupgrade + "," + Global.guest + "," + Global.outandreturnticket + "," + Global.servicefee + "," + Global.airportfee + "," + Global.tax + "," + Global.totaltick + "," + Global.finaltick + ",");
-
-
-            str.Close();
+            stream.WriteLine("," + Global.booknum + "," + Global.p1name + "," + Global.p1dob.ToShortDateString() + "," + Global.p1pp + "," + Global.p1email + "," + Global.phone + "," + Global.card4 + "," + Global.cardname + "," + Global.p2name + "," + Global.p2pp + "," + Global.p3name + "," + Global.p3pp + "," + Global.p4name + "," + Global.p4pp + "," + Global.p5name + "," + Global.p5pp + "," + Global.flightfrom + "," + Global.flightto + "," + Global.fromdate.ToShortDateString() + "," + Global.todate.ToShortDateString() + "," + Global.cabinupgrade + "," + Global.guest + "," + Global.outandreturnticket + "," + Global.servicefee + "," + Global.airportfee + "," + Global.tax + "," + Global.totaltick + "," + Global.finaltick + ",");
+            stream.Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            panel1.BackColor = Color.FromArgb(180, Color.White);
-
-        }
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            panel8.BackColor = Color.FromArgb(120, Color.White);
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            panel3.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-            panel4.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel4.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-            panel5.BackColor = Color.FromArgb(200, Color.White);
-            ControlPaint.DrawBorder(e.Graphics, panel5.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel10.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel9.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, panel2.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
+        private void btnExport_Click(object sender, EventArgs e)
         {
             // export ticket
             object oMissing = System.Reflection.Missing.Value;
@@ -216,7 +163,7 @@ namespace flight1
             oPara15.Range.InsertParagraphAfter();
             Microsoft.Office.Interop.Word.Paragraph oPara16;
             oPara16 = oDoc.Content.Paragraphs.Add(ref oMissing);
-            oPara16.Range.Text = "Flight Route : " + labelsum.Text + "\t\t\t" + "Flight Date : " + label4.Text;
+            oPara16.Range.Text = "Flight Route : " + lblRouteOutput.Text + "\t\t\t" + "Flight Date : " + lblDateOutput.Text;
             oPara16.Range.Font.Bold = 0;
             oPara16.Range.Font.Size = 12;
             oPara16.Format.SpaceAfter = 4;
@@ -327,7 +274,7 @@ namespace flight1
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res = MessageBox.Show("Are you sure to redirect ?", "Redirect prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -339,14 +286,58 @@ namespace flight1
             }
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
             res = MessageBox.Show("Are you sure to Exit ?", "Exit prompt", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (res == DialogResult.OK)
             {
-                this.Close();
+                System.Windows.Forms.Application.Exit();
             }
+        }
+
+        // Painting for fancy transparency & outlines
+        private void panelSummaryPrice_Paint(object sender, PaintEventArgs e)
+        {
+            panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
+
+        }
+        private void panelConfirmed_Paint(object sender, PaintEventArgs e)
+        {
+            panelConfirmed.BackColor = Color.FromArgb(120, Color.White);
+        }
+
+        private void panelPrimaryPassInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelPrimaryPassInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPrimaryPassInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPaymentInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelPaymentInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelPaymentInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelOtherPassInfo_Paint(object sender, PaintEventArgs e)
+        {
+            panelOtherPassInfo.BackColor = Color.FromArgb(200, Color.White);
+            ControlPaint.DrawBorder(e.Graphics, panelOtherPassInfo.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelTotals_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelTotals.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelPrice_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelPrice.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+        }
+
+        private void panelFlightSummary_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, panelFlightSummary.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
         }
     }
 } 

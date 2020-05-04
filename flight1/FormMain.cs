@@ -177,7 +177,6 @@ namespace flight1
             price = pricelist[destinationindex].ToString();
             Global.coreticket = int.Parse(price);
 
-
             if (FormOutboundFlight.label10.Text == "Economy")
             {
                 Global.e1= Global.coreticket;

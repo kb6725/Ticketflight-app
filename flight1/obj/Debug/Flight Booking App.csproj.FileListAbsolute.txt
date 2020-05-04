@@ -5,8 +5,6 @@ C:\Users\Evan\Desktop\flightapp\flight1\bin\Debug\Xceed.Document.NET.dll
 C:\Users\Evan\Desktop\flightapp\flight1\bin\Debug\Xceed.Words.NET.dll
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\Flight Booking App.csprojAssemblyReference.cache
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\Flight Booking App.csproj.ResolveComReference.cache
-C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.Form7.resources
-C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.Form6.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormMain.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.Form5.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormReturnFlight.resources
@@ -17,3 +15,5 @@ C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\Flight Booking App.csproj.Copy
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.exe
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.pdb
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormSearchTicket.resources
+C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormPayment.resources
+C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormConfirmed.resources
