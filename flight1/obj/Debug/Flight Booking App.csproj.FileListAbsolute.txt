@@ -6,7 +6,6 @@ C:\Users\Evan\Desktop\flightapp\flight1\bin\Debug\Xceed.Words.NET.dll
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\Flight Booking App.csprojAssemblyReference.cache
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\Flight Booking App.csproj.ResolveComReference.cache
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormMain.resources
-C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.Form5.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormReturnFlight.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormOutboundFlight.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.Properties.Resources.resources
@@ -17,3 +16,4 @@ C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.pdb
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormSearchTicket.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormPayment.resources
 C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormConfirmed.resources
+C:\Users\Evan\Desktop\flightapp\flight1\obj\Debug\flight1.FormFlightSeatExtra.resources

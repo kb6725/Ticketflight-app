@@ -13,7 +13,7 @@ namespace flight1
 {
     public partial class FormReturnFlight : Form
     {
-        Form5 f5 = new Form5();
+        FormFlightSeatExtra f5 = new FormFlightSeatExtra();
 
         public FormReturnFlight()
         {
@@ -39,22 +39,22 @@ namespace flight1
             Global.tax= (Global.outticket + Global.returnticket) * 10 / 100;
             Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-            f5.label62.Text = (Global.outticket+Global.returnticket).ToString("c1");
-            f5.label53.Text = Global.airportfee.ToString("c1");
-            f5.label54.Text = Global.tax.ToString("c1");
+            f5.lblTicketPricePassengerOutput.Text = (Global.outticket+Global.returnticket).ToString("c1");
+            f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+            f5.lblTaxOutput.Text = Global.tax.ToString("c1");
             
-            f5.label55.Text = (Global.totaltick.ToString("c1"));
+            f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
 
             f5.Show();
-            f5.label10.Text = Global.cabin;
-            f5.comboBox1.SelectedItem = Global.cabin;
+            f5.lblCabinOutput.Text = Global.cabin;
+            f5.comboBoxSeatUpgrade.SelectedItem = Global.cabin;
            
-            f5.labelsum.Text = lblRouteOutput.Text;
-            f5.label49.Text = Global.duration.ToString();
-            f5.label6.Text = lblLengthOutput.Text;
-            f5.label10.Text= Global.cabin;
-            f5.label9.Text = Global.guest.ToString() ;
-            f5.label4.Text = lblDateOutput.Text;
+            f5.lblRouteOutput.Text = lblRouteOutput.Text;
+            f5.lblDurationOutput.Text = Global.duration.ToString();
+            f5.lblLengthOutput.Text = lblLengthOutput.Text;
+            f5.lblCabinOutput.Text= Global.cabin;
+            f5.lblPassengersOutput.Text = Global.guest.ToString() ;
+            f5.lblDateOutput.Text = lblDateOutput.Text;
 
         }
 
@@ -79,11 +79,11 @@ namespace flight1
             Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
             Global.totaltick = Global.tax + Global.outticket + Global.returnticket +  Global.airportfee;
 
-            f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
-            f5.label53.Text = Global.airportfee.ToString("c1");
-            f5.label54.Text = Global.tax.ToString("c1");
+            f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
+            f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+            f5.lblTaxOutput.Text = Global.tax.ToString("c1");
 
-            f5.label55.Text = (Global.totaltick.ToString("c1"));
+            f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
         }
 
         private void btnSelectFlight3_Click(object sender, EventArgs e)
@@ -105,11 +105,11 @@ namespace flight1
             Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
             Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-            f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
-            f5.label53.Text = Global.airportfee.ToString("c1");
-            f5.label54.Text = Global.tax.ToString("c1");
+            f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
+            f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+            f5.lblTaxOutput.Text = Global.tax.ToString("c1");
 
-            f5.label55.Text = (Global.totaltick.ToString("c1"));
+            f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
         }
         private void btnSelectFlight4_Click(object sender, EventArgs e)
         {
@@ -130,11 +130,11 @@ namespace flight1
                 Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
                 Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-                f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
-                f5.label53.Text = Global.airportfee.ToString("c1");
-                f5.label54.Text = Global.tax.ToString("c1");
+                f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
+                f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+                f5.lblTaxOutput.Text = Global.tax.ToString("c1");
 
-                f5.label55.Text = (Global.totaltick.ToString("c1"));
+                f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -156,11 +156,11 @@ namespace flight1
                 Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
                 Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-                f5.label62.Text = (Global.outticket + Global.returnticket).ToString("c1");
-                f5.label53.Text = Global.airportfee.ToString("c1");
-                f5.label54.Text = Global.tax.ToString("c1");
+                f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
+                f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+                f5.lblTaxOutput.Text = Global.tax.ToString("c1");
 
-                f5.label55.Text = (Global.totaltick.ToString("c1"));
+                f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
         }
 
         private void btnExit_Click(object sender, EventArgs e)
