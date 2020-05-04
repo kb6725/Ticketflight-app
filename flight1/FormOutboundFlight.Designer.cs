@@ -118,7 +118,6 @@
             this.lblFlight2DurationOutput = new System.Windows.Forms.Label();
             this.pictureBoxFlight2 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
             this.panelBookingProgress = new System.Windows.Forms.Panel();
             this.lblSeatFlightOptions = new System.Windows.Forms.Label();
             this.lblConfirmation = new System.Windows.Forms.Label();
@@ -1267,20 +1266,6 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnPrevious
-            // 
-            this.btnPrevious.BackColor = System.Drawing.Color.Silver;
-            this.btnPrevious.Font = new System.Drawing.Font("Calibri", 13.77391F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPrevious.Location = new System.Drawing.Point(1123, 652);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(250, 32);
-            this.btnPrevious.TabIndex = 15;
-            this.btnPrevious.Text = "Previous";
-            this.btnPrevious.UseVisualStyleBackColor = false;
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
             // panelBookingProgress
             // 
             this.panelBookingProgress.BackColor = System.Drawing.Color.Transparent;
@@ -1359,7 +1344,6 @@
             this.Controls.Add(this.panelBookingProgress);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panelFlightSummaryPrice);
-            this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.panelOutboundFlight);
             this.Controls.Add(this.pictureBoxLogo);
             this.DoubleBuffered = true;
@@ -1478,7 +1462,6 @@
         public System.Windows.Forms.Label lblDollar3;
         public System.Windows.Forms.Label lblDollar2;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Label lblTicketPricePassengerOutput;
         private System.Windows.Forms.Panel panelFlightSummary;
         public System.Windows.Forms.Label lblDurationOutput;

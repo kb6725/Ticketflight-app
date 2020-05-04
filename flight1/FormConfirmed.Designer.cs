@@ -1248,6 +1248,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1422, 781);
+            this.ControlBox = false;
             this.Controls.Add(this.panelBookingProgress);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnExit);

@@ -296,13 +296,6 @@ namespace flight1
             }
         }
 
-        private void btnPrevious_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormMain f1 = new FormMain();
-            f1.Show();
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult res = new DialogResult();
