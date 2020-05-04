@@ -33,14 +33,12 @@ namespace flight1
             Global.booknum  = rand.Next(100000, 999999);
             lblBookingNumber.Text = "Your Booking number is : " + Global.booknum;
 
-
             lblPassFullNameOutput.Text = Global.p1name;
             lblDOBOutput.Text = Global.p1dob.ToShortDateString();
             lblPassportNumOutput.Text = Global.p1pp;
             lblEmailOutput.Text = Global.p1email;
             lblPhoneOutput.Text = Global.phone.ToString();
             lblCardNameOutput.Text = Global.cardname;
-            
             
             lblPass2NameOutput.Text = Global.p2name;
             lblPass3NameOutput.Text = Global.p3name;
@@ -95,8 +93,6 @@ namespace flight1
             lblTotalPricePassengerOutput.Text = Global.totaltick.ToString("C1");
             lblNumPassengersOutput.Text = Global.guest.ToString();
             lblTotalTicketPriceOutput.Text = Global.finaltick.ToString("C1");
-
-
 
             Global.outandreturnticket = Global.outticket + Global.returnticket;
 
@@ -299,7 +295,6 @@ namespace flight1
         private void panelSummaryPrice_Paint(object sender, PaintEventArgs e)
         {
             panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
-
         }
         private void panelConfirmed_Paint(object sender, PaintEventArgs e)
         {

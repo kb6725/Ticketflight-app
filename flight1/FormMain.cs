@@ -164,10 +164,6 @@ namespace flight1
             FormOutboundFlight.lblPassengersOutput.Text = Global.guest.ToString();
             FormOutboundFlight.lblCabinOutput.Text = Global.cabin.ToString();
 
-
-
-           
-
             int destinationindex;
             string dur,price;
             
@@ -229,7 +225,6 @@ namespace flight1
                 FormOutboundFlight.lblFlight5PriceOutput.Text = Global.f5.ToString("n0");
             }
 
-            //duration = int.Parse(dur);
             FormOutboundFlight.lblFlight1DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
             FormOutboundFlight.lblFlight2DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";
             FormOutboundFlight.lblFlight4DurationOutput.Text = "Flight Duration: " + Global.duration + " hours";

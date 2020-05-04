@@ -38,7 +38,9 @@ namespace flight1
             lblTotalTicketPriceOutput.Text = Global.finaltick.ToString("c1");
 
             if (Global.guest == 1)
-            { panelOtherPassInfo.Visible = false; }
+            {
+                panelOtherPassInfo.Visible = false;
+            }
             if (Global.guest == 2)
             {
                 panelOtherPassInfo.Visible = true;
@@ -111,17 +113,13 @@ namespace flight1
             if (txtBoxPass5PassportNum.Text == "")
             { txtBoxPass5PassportNum.BackColor = Color.IndianRed; }
 
-
             Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
             if (txtBoxEmail.TextLength > 1)
-            {if (txtBoxEmail.Text.Contains( "@"))
-                {
-
-                }
-                else 
+            {
+                if (!txtBoxEmail.Text.Contains("@"))
                 {
                     MessageBox.Show("Please enter valid email address", Global.appTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return ; 
+                    return; 
                 }     
             }
 
@@ -131,7 +129,7 @@ namespace flight1
                 return;
             }
 
-            if (Global.guest ==2)
+            if (Global.guest == 2)
             {
                 if (txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
@@ -139,7 +137,7 @@ namespace flight1
                     return;
                 }
             }
-            if (Global.guest ==3)
+            if (Global.guest == 3)
             {
                 if (txtBoxPass3Name.Text == "" || txtBoxPass3PassportNum.Text == "" || txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
@@ -147,7 +145,7 @@ namespace flight1
                     return;
                 }
             }
-            if (Global.guest ==4)
+            if (Global.guest == 4)
             {
                 if (txtBoxPass4Name.Text == "" || txtBoxPass4PassportNum.Text == ""|| txtBoxPass3Name.Text == "" || txtBoxPass3PassportNum.Text == "" || txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
@@ -155,7 +153,7 @@ namespace flight1
                     return;
                 }
             }
-            if (Global.guest ==5)
+            if (Global.guest == 5)
             {
                 if (txtBoxPass5Name.Text == "" || txtBoxPass5PassportNum.Text == ""|| txtBoxPass4Name.Text == "" || txtBoxPass4PassportNum.Text == "" || txtBoxPass3Name.Text == "" || txtBoxPass3PassportNum.Text == "" || txtBoxPass2Name.Text == "" || txtBoxPass2PassportNum.Text == "")
                 {
@@ -163,8 +161,6 @@ namespace flight1
                     return;
                 }
             }
-
-
 
             FormConfirmed f7 = new FormConfirmed();
             Global.p1name = txtBoxName.Text;
@@ -264,157 +260,192 @@ namespace flight1
         private void txtBoxEmail_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxEmail.Text != "" && txtBoxEmail.Text.Contains("@") == true)
-
-            { txtBoxEmail.BackColor = Color.White; }
+            {
+                txtBoxEmail.BackColor = Color.White;
+            }
         }
 
         private void textBoxCard1_TextChanged(object sender, EventArgs e)
         {
             if (textBoxCard1.TextLength == 4)
-            { textBoxCard2.Focus(); }
+            {
+                textBoxCard2.Focus();
+            }
 
             if (textBoxCard1.Text != "")
-
-            { textBoxCard1.BackColor = Color.White; }
+            {
+                textBoxCard1.BackColor = Color.White;
+            }
         }
 
         private void textBoxCard2_TextChanged(object sender, EventArgs e)
         {
             if (textBoxCard2.TextLength == 4)
-            { textBoxCard3.Focus(); }
-            if (textBoxCard2.Text != "")
+            {
+                textBoxCard3.Focus();
+            }
 
-            { textBoxCard2.BackColor = Color.White; }
+            if (textBoxCard2.Text != "")
+            {
+                textBoxCard2.BackColor = Color.White;
+            }
         }
 
         private void textBoxCard3_TextChanged(object sender, EventArgs e)
         {
             if (textBoxCard3.TextLength == 4)
-            { textBoxCard4.Focus(); }
-            if (textBoxCard3.Text != "")
+            {
+                textBoxCard4.Focus();
+            }
 
-            { textBoxCard3.BackColor = Color.White; }
+            if (textBoxCard3.Text != "")
+            {
+                textBoxCard3.BackColor = Color.White;
+            }
         }
 
         private void textBoxCard4_TextChanged(object sender, EventArgs e)
         {
             if (textBoxCard4.Text != "")
-
-            { textBoxCard4.BackColor = Color.White; }
+            {
+                textBoxCard4.BackColor = Color.White;
+            }
         }
 
         private void txtBoxName_TextChanged(object sender, EventArgs e)
         {
             if (checkBoxSame.Checked==true) 
-            { txtBoxCardholderName.Text = txtBoxName.Text;  }
-            else { txtBoxCardholderName.Text = ""; }
-            if (txtBoxName.Text != "")
+            {
+                txtBoxCardholderName.Text = txtBoxName.Text;
+            }
+            else
+            {
+                txtBoxCardholderName.Text = "";
+            }
 
-            { txtBoxName.BackColor = Color.White; }
+            if (txtBoxName.Text != "")
+            {
+                txtBoxName.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPassportNum_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPassportNum.Text != "")
-
-            { txtBoxPassportNum.BackColor = Color.White; }
+            {
+                txtBoxPassportNum.BackColor = Color.White;
+            }
         }
 
         private void maskedTextBoxPhone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
             if (maskedTextBoxPhone.Text != "")
-
-            { maskedTextBoxPhone.BackColor = Color.White; }
+            {
+                maskedTextBoxPhone.BackColor = Color.White;
+            }
         }
         private void maskedTextBoxPhone_TextChange(object sender, EventArgs e)
         {
             if (maskedTextBoxPhone.Text != "")
-
-            { maskedTextBoxPhone.BackColor = Color.White; }
+            {
+                maskedTextBoxPhone.BackColor = Color.White;
+            }
         }
 
         private void maskedTextBoxCVV_TextChange(object sender, EventArgs e)
         {
             if (maskedTextBoxCVV.Text != "")
-
-            { maskedTextBoxCVV.BackColor = Color.White; }
+            {
+                maskedTextBoxCVV.BackColor = Color.White;
+            }
         }
 
         private void comboBoxExpirationMonth_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (comboBoxExpirationMonth.SelectedIndex != -1)
-
-            { comboBoxExpirationMonth.BackColor = Color.White; }
+            {
+                comboBoxExpirationMonth.BackColor = Color.White;
+            }
         }
 
         private void comboBoxYear_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (comboBoxYear.SelectedIndex != -1)
-
-            { comboBoxYear.BackColor = Color.White; }
+            {
+                comboBoxYear.BackColor = Color.White;
+            }
         }
 
         private void txtBoxCardholderName_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxCardholderName.Text != "")
-
-            { txtBoxCardholderName.BackColor = Color.White; }
+            {
+                txtBoxCardholderName.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass2Name_TextChanged(object sender, EventArgs e)
         {
-            if (txtBoxPass2Name.Text != "" )
-
-            { txtBoxPass2Name.BackColor = Color.White; }
+            if (txtBoxPass2Name.Text != "")
+            {
+                txtBoxPass2Name.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass3Name_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass3Name.Text != "")
-
-            { txtBoxPass3Name.BackColor = Color.White; }
+            {
+                txtBoxPass3Name.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass4Name_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass4Name.Text != "")
-
-            { txtBoxPass4Name.BackColor = Color.White; }
+            {
+                txtBoxPass4Name.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass5Name_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass5Name.Text != "")
-
-            { txtBoxPass5Name.BackColor = Color.White; }
+            {
+                txtBoxPass5Name.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass3PassportNum_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass3PassportNum.Text != "")
-
-            { txtBoxPass3PassportNum.BackColor = Color.White; }
+            {
+                txtBoxPass3PassportNum.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass4PassportNum_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass4PassportNum.Text != "")
-
-            { txtBoxPass4PassportNum.BackColor = Color.White; }
+            {
+                txtBoxPass4PassportNum.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass5PassportNum_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass5PassportNum.Text != "")
-
-            { txtBoxPass5PassportNum.BackColor = Color.White; }
+            {
+                txtBoxPass5PassportNum.BackColor = Color.White;
+            }
         }
 
         private void txtBoxPass2PassportNum_TextChanged(object sender, EventArgs e)
         {
             if (txtBoxPass2PassportNum.Text != "")
-
-            { txtBoxPass2PassportNum.BackColor = Color.White; }
+            {
+                txtBoxPass2PassportNum.BackColor = Color.White;
+            }
         }
 
         // Painting for fancy transparency & outlines

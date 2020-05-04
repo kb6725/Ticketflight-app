@@ -30,8 +30,9 @@ namespace flight1
         private void FormFlightSeatExtra_Load(object sender, EventArgs e)
         {
             if (Global.returnflight == true)
-
-            { Global.duration = Global.duration * 2; }
+            {
+                Global.duration = Global.duration * 2;
+            }
             lblDurationOutput.Text = Global.duration.ToString();
             
             lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
@@ -61,7 +62,7 @@ namespace flight1
                 comboBoxSeatUpgrade.Visible = true;
                 lblSeatInfo.Visible = true;
             }
-            //First class have No upgrade
+            // First class have no upgrades
             if (Global.cabin == "First Class")
             {
                 Global.cabinupgrade = "First Class";
@@ -152,14 +153,17 @@ namespace flight1
         private void comboBoxPass1Seat_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxSeatUpgrade.SelectedIndex != -1)
-            { lblPass1Seat.ForeColor = Color.Black; }
+            {
+                lblPass1Seat.ForeColor = Color.Black;
+            }
         }
 
         private void comboBoxSeatUpgrade_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxSeatUpgrade.SelectedIndex!= - 1)
-            { lblSeatUpgrade.ForeColor = Color.Black; }
-
+            {
+                lblSeatUpgrade.ForeColor = Color.Black;
+            }
 
             if (Global.cabin == "Economy")
             {
@@ -168,12 +172,10 @@ namespace flight1
                     Global.cabinupgrade = "First Class";
                     Global.upseat = 800;
                     lblSeatFeePerPass.Visible = true;
-
                 }
 
                 if (comboBoxSeatUpgrade.Text == "Upgrade to Business (+250)")
                 {
-
                     Global.upseat = 250;
                     Global.cabinupgrade = "Business";
                     lblSeatFeePerPass.Visible = true;
@@ -191,7 +193,6 @@ namespace flight1
             {
                 if (comboBoxSeatUpgrade.Text == "Upgrade to First Class (+500)")
                 {
-
                     Global.cabinupgrade = "First Class";
                     Global.upseat = 500;
                     lblSeatFeePerPass.Visible = true;
@@ -202,12 +203,14 @@ namespace flight1
                     Global.upseat = 0;
 
                     Global.cabinupgrade = "Business";
-
                 }
 
             }
+
             if (Global.cabin == "First Class")
-            { Global.cabinupgrade = "First Class"; }
+            {
+                Global.cabinupgrade = "First Class";
+            }
 
             if (Global.cabinupgrade == "First Class")
             {
@@ -221,7 +224,6 @@ namespace flight1
                 comboBoxPass4Seat.SelectedIndex = -1;
                 comboBoxPass5Seat.SelectedIndex = -1;
                 comboBoxPass3Seat.SelectedIndex = -1;
-                
             }
             if (Global.cabinupgrade == "Business")
             {
@@ -236,8 +238,6 @@ namespace flight1
                 comboBoxPass4Seat.SelectedIndex = -1;
                 comboBoxPass5Seat.SelectedIndex = -1;
                 comboBoxPass3Seat.SelectedIndex = -1;
-                
-
             }
             if (Global.cabinupgrade == "Economy")
             {
@@ -252,9 +252,7 @@ namespace flight1
                 comboBoxPass4Seat.SelectedIndex = -1;
                 comboBoxPass5Seat.SelectedIndex = -1;
                 comboBoxPass3Seat.SelectedIndex = -1;
-                
             }
-
 
             if (Global.guest == 1)
             {
@@ -323,15 +321,11 @@ namespace flight1
                 comboBoxPass5Seat.Visible = true;
             }
 
-
-
-
             Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
             lblServiceFeeOutput.Text = Global.servicefee.ToString("c1");
 
             lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
             lblTaxOutput.Text = (Global.tax).ToString("c1");
-
 
             lblTotalPricePassengerOutput.Text = Global.totaltick.ToString("c1");
         }
@@ -339,23 +333,23 @@ namespace flight1
         private void comboBoxInsurance_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxInsurance.SelectedIndex != -1)
-            { lblInsuranceDesc.ForeColor = Color.Black; }
+            {
+                lblInsuranceDesc.ForeColor = Color.Black;
+            }
+            
             Global.insurance = 0;
 
             if (comboBoxInsurance.Text == "No insurance - $0")
             {
                 Global.insurance = 0;
-
             }
             if (comboBoxInsurance.Text == "Basic coverage - $15")
             {
                 Global.insurance = 15;
-
             }
             if (comboBoxInsurance.Text == "Premium coverage - $30")
             {
                 Global.insurance = 30;
-
             }
 
             Global.servicefee = Global.insurance + Global.bag + Global.meal + Global.upseat;
@@ -368,8 +362,12 @@ namespace flight1
         private void comboBoxBaggage_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxBaggage.SelectedIndex != -1)
-            { lblBaggageDesc.ForeColor = Color.Black; }
+            {
+                lblBaggageDesc.ForeColor = Color.Black;
+            }
+            
             Global.bag = 0;
+
             if (comboBoxBaggage.Text == "Carry on - $0")
             {
                 Global.bag = 0;
@@ -397,8 +395,12 @@ namespace flight1
         private void comboBoxMealOptions_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxMealOptions.SelectedIndex != -1)
-            { lblMealOptionsDesc.ForeColor = Color.Black; }
+            {
+                lblMealOptionsDesc.ForeColor = Color.Black;
+            }
+
             Global.meal = 0;
+
             if (comboBoxMealOptions.Text == "No Meal - $0")
             {
                 Global.meal = 0;
@@ -422,7 +424,6 @@ namespace flight1
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-
             if (comboBoxSeatUpgrade.SelectedIndex == -1)
             { lblSeatUpgrade.ForeColor = Color.IndianRed; }
             else { lblSeatUpgrade.ForeColor = Color.Black; }
@@ -452,7 +453,6 @@ namespace flight1
             { lblBaggageDesc.ForeColor = Color.IndianRed; }
             else { lblBaggageDesc.ForeColor = Color.Black; }
 
-
             FormPayment f6 = new FormPayment();
 
             if (Global.guest == 5)
@@ -464,8 +464,7 @@ namespace flight1
                 }
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass4Seat.SelectedIndex != comboBoxPass5Seat.SelectedIndex)
                 {
-                    
-
+                    // Do nothing
                 }
                 else
                 {
@@ -483,8 +482,7 @@ namespace flight1
                 }
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex && comboBoxPass3Seat.SelectedIndex != comboBoxPass4Seat.SelectedIndex)
                 {
-                    
-
+                    // Do nothing
                 }
                 else
                 {
@@ -503,8 +501,7 @@ namespace flight1
 
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex && comboBoxPass1Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex && comboBoxPass2Seat.SelectedIndex != comboBoxPass3Seat.SelectedIndex)
                 {
-                  
-
+                    // Do nothing
                 }
                 else
                 {
@@ -522,7 +519,7 @@ namespace flight1
                 }
                 if (comboBoxPass1Seat.SelectedIndex != comboBoxPass2Seat.SelectedIndex)
                 {
-                    
+                    // Do nothing
                 }
                 else
                 {
@@ -551,14 +548,12 @@ namespace flight1
 
                 f6.Show();
 
-
                 f6.lblRouteOutput.Text = lblRouteOutput.Text;
                 f6.lblDurationOutput.Text = lblDurationOutput.Text;
                 f6.lblDateOutput.Text = lblDateOutput.Text;
                 f6.lblLengthOutput.Text = lblLengthOutput.Text;
                 f6.lblCabinOutput.Text = lblCabinOutput.Text;
                 f6.lblPassengersOutput.Text = lblPassengersOutput.Text;
-
             }
             Global.servicefee = Global.meal + Global.insurance + Global.bag + Global.upseat;
         }

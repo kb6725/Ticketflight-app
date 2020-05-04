@@ -59,7 +59,7 @@
             this.lblTotalTicketPriceOutput = new System.Windows.Forms.Label();
             this.lblTotalPricePassengerOutput = new System.Windows.Forms.Label();
             this.panelSearch = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblRecordError = new System.Windows.Forms.Label();
             this.maskedTxtBoxBookingNum = new System.Windows.Forms.MaskedTextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.lblEnterBookingNum = new System.Windows.Forms.Label();
@@ -475,7 +475,7 @@
             // panelSearch
             // 
             this.panelSearch.BackColor = System.Drawing.Color.Transparent;
-            this.panelSearch.Controls.Add(this.label12);
+            this.panelSearch.Controls.Add(this.lblRecordError);
             this.panelSearch.Controls.Add(this.maskedTxtBoxBookingNum);
             this.panelSearch.Controls.Add(this.btnSearch);
             this.panelSearch.Controls.Add(this.lblEnterBookingNum);
@@ -492,15 +492,15 @@
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label12.Location = new System.Drawing.Point(444, 98);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 19);
-            this.label12.TabIndex = 38;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRecordError.AutoSize = true;
+            this.lblRecordError.Font = new System.Drawing.Font("Calibri", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecordError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblRecordError.Location = new System.Drawing.Point(444, 98);
+            this.lblRecordError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRecordError.Name = "label12";
+            this.lblRecordError.Size = new System.Drawing.Size(0, 19);
+            this.lblRecordError.TabIndex = 38;
+            this.lblRecordError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // maskedTxtBoxBookingNum
             // 
@@ -1188,6 +1188,6 @@
         public System.Windows.Forms.Label lblCardNumOutput;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.MaskedTextBox maskedTxtBoxBookingNum;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblRecordError;
     }
 }

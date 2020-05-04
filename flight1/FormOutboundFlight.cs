@@ -15,7 +15,7 @@ namespace flight1
     {
         FormReturnFlight f4 = new FormReturnFlight();
         FormFlightSeatExtra f5 = new FormFlightSeatExtra();
-      
+
         public FormOutboundFlight()
         {
             InitializeComponent();
@@ -131,8 +131,6 @@ namespace flight1
             f4.lblAirportFeeOutput.Text = (Global.airportfee).ToString("c1");
             f4.lblTaxOutput.Text = (Global.tax).ToString("c1");
             f4.lblTotalPricePassengerOutput.Text = (Global.totaltick).ToString("c1");
-
-
 
             if (Global.returnflight == true)
             {

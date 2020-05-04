@@ -41,8 +41,11 @@ namespace flight1
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (maskedTxtBoxBookingNum.Text == "")
-            { maskedTxtBoxBookingNum.BackColor = Color.IndianRed;return; }
-            // search 
+            {
+                maskedTxtBoxBookingNum.BackColor = Color.IndianRed;
+                return;
+            }
+
             string[] words = File.ReadAllText("data.txt").Split(',');
             string search = maskedTxtBoxBookingNum.Text;
             
@@ -50,7 +53,7 @@ namespace flight1
             {
                 if (words[i]==search)
                 {
-                    label12.Text = "";
+                    lblRecordError.Text = "";
                     lblPassFullNameOutput.Text = words[i+1];
                     lblDOBOutput.Text = words[i+2];
                     lblPassportNumOutput.Text = words[i + 3];
@@ -92,8 +95,7 @@ namespace flight1
                         panelOtherPass4.Visible = false;
                         panelOtherPass5.Visible = false;
                     }
-
-                    if (Global.guest == 3)
+                    else if (Global.guest == 3)
                     {
                         panelOtherInfo.Visible = true;
                         panelOtherPass3.Visible = true;
@@ -101,17 +103,15 @@ namespace flight1
                         panelOtherPass4.Visible = false;
                         panelOtherPass5.Visible = false;
                     }
-
-                    if (Global.guest == 4)
+                    else if (Global.guest == 4)
                     {
                         panelOtherInfo.Visible = true;
                         panelOtherPass3.Visible = true;
                         panelOtherPass2.Visible = true;
                         panelOtherPass4.Visible = true;
                         panelOtherPass5.Visible = false;
-
                     }
-                    if (Global.guest == 5)
+                    else if (Global.guest == 5)
                     {
                         panelOtherInfo.Visible = true;
                         panelOtherPass3.Visible = true;
@@ -120,14 +120,12 @@ namespace flight1
                         panelOtherPass5.Visible = true;
                     }
 
-
                     panelSummaryPrice.Visible = true;
-
-                    break;
+                    return;
                 }
                 else
                 {
-                    label12.Text = "Record Not Found";
+                    lblRecordError.Text = "Record Not Found";
                     panelPriPassengerInfo.Visible = false;
                     panelPaymentInfo.Visible = false;
                     panelOtherInfo.Visible = false;
@@ -144,7 +142,9 @@ namespace flight1
         private void maskedTxtBoxBookingNum_TextChanged(object sender, EventArgs e)
         {
             if (maskedTxtBoxBookingNum.Text != "")
-            { maskedTxtBoxBookingNum.BackColor = Color.White; }
+            {
+                maskedTxtBoxBookingNum.BackColor = Color.White;
+            }
         }
 
         // Painting for fancy transparency & outlines
@@ -152,6 +152,7 @@ namespace flight1
         {
             panelSummaryPrice.BackColor = Color.FromArgb(180, Color.White);
         }
+
         private void panelSearch_Paint(object sender, PaintEventArgs e)
         {
             panelSearch.BackColor = Color.FromArgb(120, Color.White);

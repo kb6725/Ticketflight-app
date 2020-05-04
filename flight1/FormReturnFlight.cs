@@ -28,12 +28,17 @@ namespace flight1
             Global.tax = 0;
 
             if (Global.cabin == "Economy")
-            { Global.returnticket = Global.e1; }
-            if (Global.cabin == "Business")
-            { Global.returnticket = Global.b1; }
-            if (Global.cabin == "First Class")
-            { Global.returnticket = Global.f1; }
-
+            {
+                Global.returnticket = Global.e1;
+            }
+            else if (Global.cabin == "Business")
+            {
+                Global.returnticket = Global.b1;
+            }
+            else if (Global.cabin == "First Class")
+            {
+                Global.returnticket = Global.f1;
+            }
 
             Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
             Global.tax= (Global.outticket + Global.returnticket) * 10 / 100;
@@ -55,12 +60,10 @@ namespace flight1
             f5.lblCabinOutput.Text= Global.cabin;
             f5.lblPassengersOutput.Text = Global.guest.ToString() ;
             f5.lblDateOutput.Text = lblDateOutput.Text;
-
         }
 
         private void btnSelectFlight2_Click(object sender, EventArgs e)
         {
-
             btnSelectFlight1.PerformClick();
             Global.returnticket = 0;
             Global.airportfee = 0;
@@ -114,53 +117,67 @@ namespace flight1
         private void btnSelectFlight4_Click(object sender, EventArgs e)
         {
             btnSelectFlight1.PerformClick();
-
-                Global.returnticket = 0;
-                Global.airportfee = 0;
-                Global.tax = 0;
-                Global.totaltick = 0;
+            
+            Global.returnticket = 0;
+            Global.airportfee = 0;
+            Global.tax = 0;
+            Global.totaltick = 0;
 
             if (Global.cabin == "Economy")
-            { Global.returnticket = Global.e4; }
-            if (Global.cabin == "Business")
-            { Global.returnticket = Global.b4; }
-            if (Global.cabin == "First Class")
-            { Global.returnticket = Global.f4; }
+            {
+                Global.returnticket = Global.e4;
+            }
+            else if (Global.cabin == "Business")
+            {
+                Global.returnticket = Global.b4;
+            }
+            else if (Global.cabin == "First Class")
+            {
+                Global.returnticket = Global.f4;
+            }
+
             Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
-                Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
-                Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
+            Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
+            Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
 
-                f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
-                f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
-                f5.lblTaxOutput.Text = Global.tax.ToString("c1");
+            f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
+            f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+            f5.lblTaxOutput.Text = Global.tax.ToString("c1");
 
-                f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
+            f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnSelectFlight5_Click(object sender, EventArgs e)
         {
             btnSelectFlight1.PerformClick();
 
-                Global.returnticket = 0;
-                Global.airportfee = 0;
-                Global.tax = 0;
-                Global.totaltick = 0;
+            Global.returnticket = 0;
+            Global.airportfee = 0;
+            Global.tax = 0;
+            Global.totaltick = 0;
 
             if (Global.cabin == "Economy")
-            { Global.returnticket = Global.e5; }
-            if (Global.cabin == "Business")
-            { Global.returnticket = Global.b5; }
-            if (Global.cabin == "First Class")
-            { Global.returnticket = Global.f5; }
+            {
+                Global.returnticket = Global.e5;
+            }
+            else if (Global.cabin == "Business")
+            {
+                Global.returnticket = Global.b5;
+            }
+            else if (Global.cabin == "First Class")
+            {
+                Global.returnticket = Global.f5;
+            }
+
             Global.airportfee = (Global.outticket + Global.returnticket) * 5 / 100;
-                Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
-                Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
-
-                f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
-                f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
-                f5.lblTaxOutput.Text = Global.tax.ToString("c1");
-
-                f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
+            Global.tax = (Global.outticket + Global.returnticket) * 10 / 100;
+            Global.totaltick = Global.tax + Global.outticket + Global.returnticket + Global.servicefee + Global.airportfee;
+            
+            f5.lblTicketPricePassengerOutput.Text = (Global.outticket + Global.returnticket).ToString("c1");
+            f5.lblAirportFeeOutput.Text = Global.airportfee.ToString("c1");
+            f5.lblTaxOutput.Text = Global.tax.ToString("c1");
+            
+            f5.lblTotalPricePassengerOutput.Text = (Global.totaltick.ToString("c1"));
         }
 
         private void btnExit_Click(object sender, EventArgs e)

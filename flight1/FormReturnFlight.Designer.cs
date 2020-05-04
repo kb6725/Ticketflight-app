@@ -754,7 +754,7 @@
             this.btnSelectFlight5.TabIndex = 9;
             this.btnSelectFlight5.Text = "Select Flight";
             this.btnSelectFlight5.UseVisualStyleBackColor = false;
-            this.btnSelectFlight5.Click += new System.EventHandler(this.button5_Click);
+            this.btnSelectFlight5.Click += new System.EventHandler(this.btnSelectFlight5_Click);
             // 
             // lblPlane5Output
             // 
